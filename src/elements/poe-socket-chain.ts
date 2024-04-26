@@ -26,8 +26,8 @@ export class PoeSocketChainElement extends LitElement {
 
 		return html`<ul
 			class=${classMap({
-				'grid-layout--w1': this.w === 1,
-				'grid-layout--w2': this.w === 2,
+				'item-width--w1': this.w === 1,
+				'item-width--w2': this.w === 2,
 			})}
 		>
 			${this.sockets.map(
@@ -90,7 +90,7 @@ export class PoeSocketChainElement extends LitElement {
 			justify-content: center;
 		}
 
-		.grid-layout--w1 {
+		.item-width--w1 {
 			grid-template-areas:
 				's1'
 				's2'
@@ -98,7 +98,7 @@ export class PoeSocketChainElement extends LitElement {
 				's4';
 		}
 
-		.grid-layout--w2 {
+		.item-width--w2 {
 			grid-template-areas:
 				's1 s2'
 				's4 s3'
