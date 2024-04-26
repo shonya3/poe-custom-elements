@@ -66,6 +66,7 @@ export class PoeItemElement extends LitElement {
 						class=${classMap({ hidden: !this.socketsVisible })}
 						.socketedItems=${this.item.socketedItems}
 						.sockets=${this.item.sockets}
+						.w=${this.item.w}
 				  ></poe-socket-chain>`
 				: nothing}
 		`;

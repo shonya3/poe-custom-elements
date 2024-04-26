@@ -1,4 +1,5 @@
-import { LitElement, html, css, TemplateResult } from 'lit';
+import { classMap } from 'lit/directives/class-map.js';
+import { LitElement, html, css, TemplateResult, nothing } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import type { Socket, SocketedItem } from '../poe.types';
 import './poe-item-socket';
@@ -16,9 +17,15 @@ declare global {
 export class PoeSocketChainElement extends LitElement {
 	@property({ type: Array }) socketedItems: Array<SocketedItem> = [];
 	@property({ type: Array }) sockets: Array<Socket> = [];
+	@property({ type: Number }) w!: number;
 
 	protected render(): TemplateResult {
-		return html`<ul>
+		return html`<ul
+			class=${classMap({
+				'grid-layout--w1': this.w === 1,
+				'grid-layout--w2': this.w === 2,
+			})}
+		>
 			${this.sockets.map(
 				(socket, i) => html`<li style="grid-area: s${i + 1}">
 					<poe-item-socket kind=${socket.sColour}></poe-item-socket>
@@ -38,6 +45,21 @@ export class PoeSocketChainElement extends LitElement {
 			display: flex;
 			align-items: center;
 			justify-content: center;
+		}
+
+		.grid-layout--w1 {
+			grid-template-areas:
+				's1'
+				's2'
+				's3'
+				's4';
+		}
+
+		.grid-layout--w2 {
+			grid-template-areas:
+				's1 s2'
+				's4 s3'
+				's5 s6';
 		}
 
 		ul {
