@@ -17,7 +17,12 @@ declare global {
 export class PoeItemElement extends LitElement {
 	/** PoE API item data https://www.pathofexile.com/developer/docs/reference#stashes-get */
 	@property({ type: Object }) item!: PoeItem;
-	@property({ type: Boolean, reflect: true, attribute: 'show-sockets' }) showSockets = false;
+	/** Controls the visibility of sockets.
+	 *
+	 *  If set to true, sockets are always visible.
+	 *  If set to false, sockets are only visible when the Alt key is pressed or when hovered over.
+	 */
+	@property({ type: Boolean, reflect: true, attribute: 'show-sockets' }) showSockets = true;
 
 	/** Main visibility state for sockets */
 	@state() socketsVisible = false;
@@ -33,7 +38,6 @@ export class PoeItemElement extends LitElement {
 		if (map.has('showSockets')) {
 			this.socketsVisible = this.showSockets;
 		}
-
 		if (map.has('altPressed')) {
 			if (this.altPressed) {
 				this.socketsVisible = true;
