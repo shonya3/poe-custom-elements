@@ -10,7 +10,7 @@ declare global {
 	}
 }
 
-type SocketLinkDirection = 'left-to-right' | 'top-to-bottom' | 'right-to-left' | 'none';
+type SocketLinkDirection = 'left-to-right' | 'top-to-bottom' | 'right-to-left';
 
 /**
  * @cssprop --default-cell-size - Size of one tab cell in pixels.
@@ -161,4 +161,3 @@ export class PoeSocketChainElement extends LitElement {
 		}
 	`;
 }
-// width: calc(var(--cell-size) / var(--default-cell-size));
