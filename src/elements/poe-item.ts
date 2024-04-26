@@ -1,6 +1,8 @@
-import { LitElement, html, css, TemplateResult, PropertyValueMap } from 'lit';
+import { LitElement, html, css, TemplateResult, PropertyValueMap, nothing } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import type { PoeItem } from '../poe.types';
+import './poe-socket-chain';
+import { styleMap } from 'lit/directives/style-map.js';
 
 declare global {
 	interface HTMLElementTagNameMap {
@@ -28,7 +30,17 @@ export class PoeItemElement extends LitElement {
 			return html`<p style="color: red">No Poe Api item data (.item)</p>`;
 		}
 
-		return html`<img alt=${this.item.baseType} .src=${this.item.icon} /> `;
+		return html`<img alt=${this.item.baseType} .src=${this.item.icon} />
+			${this.item.socketedItems && this.item.sockets
+				? html`<poe-socket-chain
+						style=${styleMap({
+							'--w': this.item.w.toString(),
+							'--h': this.item.h.toString(),
+						})}
+						.socketedItems=${this.item.socketedItems}
+						.sockets=${this.item.sockets}
+				  ></poe-socket-chain>`
+				: nothing} `;
 	}
 
 	static styles = css`
@@ -44,6 +56,7 @@ export class PoeItemElement extends LitElement {
 			width: calc(var(--cell-size) * var(--w));
 			height: calc(var(--cell-size) * var(--h));
 
+			position: relative;
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -52,6 +65,10 @@ export class PoeItemElement extends LitElement {
 		img {
 			display: block;
 			width: 100%;
+		}
+
+		poe-socket-chain {
+			position: absolute;
 		}
 	`;
 }

@@ -50,11 +50,15 @@ export interface IRequirement {
 	type?: number;
 }
 
-export interface ISocket {
+export interface Socket {
 	group: number;
 	attr: string;
-	sColour: string;
+	sColour: SocketKind;
 }
+
+export const SOCKET_KINDS = ['R', 'G', 'B', 'A'] as const;
+export type SocketKind = (typeof SOCKET_KINDS)[number];
+export type GemKind = 'support' | 'active';
 
 export interface ICategory {
 	gems: Array<string>;
@@ -74,7 +78,7 @@ export type PoeItem = {
 	ilvl: number;
 	icon: string;
 	league: string;
-	sockets?: Array<ISocket>;
+	sockets?: Array<Socket>;
 	shaper?: boolean;
 	elder?: boolean;
 	baseType: string;
@@ -88,7 +92,7 @@ export type PoeItem = {
 	implicitMods?: Array<string>;
 	explicitMods?: Array<string>;
 	fracturedMods?: Array<string>;
-	socketedItems?: Array<ISocketedItem>;
+	socketedItems?: Array<SocketedItem>;
 	properties?: Array<IProperty>;
 	flavourText?: Array<string>;
 	craftedMods?: Array<string>;
@@ -101,7 +105,7 @@ export type PoeItem = {
 	maxStackSize?: number;
 };
 
-export interface ISocketedItem {
+export interface SocketedItem {
 	id: string;
 	verified: boolean;
 	w: number;
