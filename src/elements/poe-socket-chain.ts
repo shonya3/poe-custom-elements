@@ -1,5 +1,5 @@
 import { classMap } from 'lit/directives/class-map.js';
-import { LitElement, html, css, TemplateResult } from 'lit';
+import { LitElement, html, css, TemplateResult, nothing } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import type { Socket, SocketedItem } from '../poe.types';
 import './poe-item-socket';
@@ -22,28 +22,37 @@ export class PoeSocketChainElement extends LitElement {
 	@property({ type: Number }) w!: number;
 
 	protected render(): TemplateResult {
-		console.log(Object.groupBy(this.sockets, socket => socket.group));
-
 		return html`<ul
 			class=${classMap({
 				'item-width--w1': this.w === 1,
 				'item-width--w2': this.w === 2,
 			})}
 		>
-			${this.sockets.map(
-				(socket, i) => html`<li style="grid-area: s${i + 1}">
-					<poe-item-socket kind=${socket.sColour}></poe-item-socket>
-					<div
-						class="socket-link socket-link--top-to-bottom"
-						class=${classMap({
-							'socket-link': true,
-							[`socket-link--${this.socketLinkDirection(i + 1)}`]: true,
-						})}
-					>
-						<img class="" src="/poe-images/Socket_Link_Horizontal.png" />
-					</div>
-				</li>`
-			)}
+			${Object.values(
+				Object.groupBy(
+					this.sockets.map((socket, i) => ({
+						socketNo: i + 1,
+						...socket,
+					})),
+					socket => socket.group
+				)
+			).flatMap((sockets = []) => {
+				return sockets.map(
+					(socket, i) => html`<li style="grid-area: s${socket.socketNo}">
+						<poe-item-socket kind=${socket.sColour}></poe-item-socket>
+						${i === sockets.length - 1
+							? nothing
+							: html`<div
+									class=${classMap({
+										'socket-link': true,
+										[`socket-link--${this.socketLinkDirection(socket.socketNo)}`]: true,
+									})}
+							  >
+									<img src="/poe-images/Socket_Link_Horizontal.png" />
+							  </div>`}
+					</li>`
+				);
+			})}
 		</ul>`;
 	}
 
