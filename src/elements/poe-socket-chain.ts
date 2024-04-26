@@ -13,6 +13,7 @@ declare global {
 type SocketLinkDirection = 'left-to-right' | 'top-to-bottom' | 'right-to-left' | 'none';
 
 /**
+ * @cssprop --default-cell-size - Size of one tab cell in pixels.
  * @cssprop --cell-size - Size of one tab cell in pixels.
  */
 @customElement('poe-socket-chain')
@@ -48,7 +49,7 @@ export class PoeSocketChainElement extends LitElement {
 										[`socket-link--${this.socketLinkDirection(socket.socketNo)}`]: true,
 									})}
 							  >
-									<img src="/poe-images/Socket_Link_Horizontal.png" />
+									<img class="socket-link-img" src="/poe-images/Socket_Link_Horizontal.png" />
 							  </div>`}
 					</li>`
 				);
@@ -93,6 +94,10 @@ export class PoeSocketChainElement extends LitElement {
 			box-sizing: border-box;
 		}
 		:host {
+			--default-socket-link-image-width-px: 38;
+			--socket-link-img-width: calc(
+				var(--default-socket-link-image-width-px) * var(--cell-size) / var(--default-cell-size)
+			);
 			display: inline-block;
 			display: flex;
 			align-items: center;
@@ -135,6 +140,10 @@ export class PoeSocketChainElement extends LitElement {
 			z-index: 5;
 		}
 
+		.socket-link-img {
+			width: var(--socket-link-img-width);
+		}
+
 		.socket-link--left-to-right {
 			right: 0px;
 			transform: translateX(50%);
@@ -152,3 +161,4 @@ export class PoeSocketChainElement extends LitElement {
 		}
 	`;
 }
+// width: calc(var(--cell-size) / var(--default-cell-size));

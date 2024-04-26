@@ -111,6 +111,7 @@ export class PoeItemElement extends LitElement {
 			box-sizing: border-box;
 		}
 		:host {
+			--default-cell-size: 47;
 			--cell-size: 47px; /** css prop */
 			--w: '(computed) number of horizontal cells';
 			--h: '(computed) number of vertical cells';
