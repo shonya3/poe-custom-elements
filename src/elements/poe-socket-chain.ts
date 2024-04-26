@@ -1,5 +1,5 @@
 import { classMap } from 'lit/directives/class-map.js';
-import { LitElement, html, css, TemplateResult, nothing } from 'lit';
+import { LitElement, html, css, TemplateResult } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import type { Socket, SocketedItem } from '../poe.types';
 import './poe-item-socket';
@@ -9,6 +9,8 @@ declare global {
 		'poe-socket-chain': PoeSocketChainElement;
 	}
 }
+
+type SocketLinkDirection = 'left-to-right' | 'top-to-bottom' | 'right-to-left' | 'none';
 
 /**
  * @cssprop --cell-size - Size of one tab cell in pixels.
@@ -20,6 +22,8 @@ export class PoeSocketChainElement extends LitElement {
 	@property({ type: Number }) w!: number;
 
 	protected render(): TemplateResult {
+		console.log(Object.groupBy(this.sockets, socket => socket.group));
+
 		return html`<ul
 			class=${classMap({
 				'grid-layout--w1': this.w === 1,
@@ -29,9 +33,48 @@ export class PoeSocketChainElement extends LitElement {
 			${this.sockets.map(
 				(socket, i) => html`<li style="grid-area: s${i + 1}">
 					<poe-item-socket kind=${socket.sColour}></poe-item-socket>
+					<div
+						class="socket-link socket-link--top-to-bottom"
+						class=${classMap({
+							'socket-link': true,
+							[`socket-link--${this.socketLinkDirection(i + 1)}`]: true,
+						})}
+					>
+						<img class="" src="/poe-images/Socket_Link_Horizontal.png" />
+					</div>
 				</li>`
 			)}
 		</ul>`;
+	}
+
+	socketLinkDirection(socketNo = 1): SocketLinkDirection {
+		switch (this.w) {
+			case 1: {
+				return 'top-to-bottom';
+			}
+
+			case 2: {
+				switch (socketNo) {
+					case 1:
+						return 'left-to-right';
+					case 2:
+						return 'top-to-bottom';
+					case 3:
+						return 'right-to-left';
+					case 4:
+						return 'top-to-bottom';
+					case 5:
+						return 'left-to-right';
+					default: {
+						throw new Error(`SocketNo can be 1 | 2 | 3 | 4 | 5, but not ${socketNo}`);
+					}
+				}
+			}
+
+			default: {
+				throw new Error(`Item width can be 1 cell or 2 cells, but not ${this.w}`);
+			}
+		}
 	}
 
 	static styles = css`
@@ -72,9 +115,31 @@ export class PoeSocketChainElement extends LitElement {
 		}
 
 		li {
+			position: relative;
 			display: flex;
 			justify-content: center;
 			align-items: center;
+		}
+
+		.socket-link {
+			position: absolute;
+			z-index: 5;
+		}
+
+		.socket-link--left-to-right {
+			right: 0px;
+			transform: translateX(50%);
+		}
+
+		.socket-link--right-to-left {
+			left: 0px;
+			transform: translateX(-50%);
+		}
+
+		.socket-link--top-to-bottom {
+			rotate: -90deg;
+			bottom: 0;
+			translate: 2px 50%;
 		}
 	`;
 }
