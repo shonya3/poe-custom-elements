@@ -56,7 +56,7 @@ export class PoeSocketChainElement extends LitElement {
 		</ul>`;
 	}
 
-	socketLinkDirection(socketNo = 1): SocketLinkDirection {
+	socketLinkDirection(socketNo: number): SocketLinkDirection {
 		switch (this.w) {
 			case 1: {
 				return 'top-to-bottom';
