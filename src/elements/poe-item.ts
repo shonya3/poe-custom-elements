@@ -22,7 +22,7 @@ export class PoeItemElement extends LitElement {
 	 *  If set to true, sockets are always visible.
 	 *  If set to false, sockets are only visible when the Alt key is pressed or when hovered over.
 	 */
-	@property({ type: Boolean, reflect: true, attribute: 'show-sockets' }) showSockets = true;
+	@property({ type: Boolean, reflect: true, attribute: 'show-sockets' }) showSockets = false;
 
 	/** Main visibility state for sockets */
 	@state() socketsVisible = false;
