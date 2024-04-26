@@ -1,7 +1,6 @@
 {
 	"compilerOptions": {
 		"target": "ESNext",
-		"experimentalDecorators": true,
 		"module": "ESNext",
 		"lib": ["ESNext", "DOM", "DOM.Iterable"],
 		"skipLibCheck": true,
@@ -18,7 +17,10 @@
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
 		"noFallthroughCasesInSwitch": true,
-		"emitDecoratorMetadata": true
+
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"useDefineForClassFields": false
 	},
 	"include": ["src"]
 }
