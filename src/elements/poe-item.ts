@@ -138,3 +138,5 @@ export class PoeItemElement extends LitElement {
 		}
 	`;
 }
+
+// icon shaper background: url(https://web.poecdn.com/image/inventory/ShaperBackground.png?w=1&h=3&x=65&y=111) center center no-repeat;

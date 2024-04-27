@@ -75,6 +75,7 @@ export type PoeItem = {
 	y: number;
 	w: number;
 	h: number;
+	rarity: ItemRarity;
 	ilvl: number;
 	icon: string;
 	league: string;
@@ -129,3 +130,6 @@ export interface SocketedItem {
 	secDescrText: string;
 	socket: number;
 }
+
+export const RARITY_VARIANTS = ['Normal', 'Magic', 'Rare', 'Unique'] as const;
+export type ItemRarity = (typeof RARITY_VARIANTS)[number];
