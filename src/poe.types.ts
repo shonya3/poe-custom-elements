@@ -65,6 +65,7 @@ export interface ICategory {
 	jewels: Array<string>;
 }
 
+/** PoE API item data https://www.pathofexile.com/developer/docs/reference#stashes-get */
 export type PoeItem = {
 	id: string;
 	name: string;

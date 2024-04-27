@@ -73,7 +73,7 @@ export class ItemInfoHeader extends LitElement {
 
 type FrameKind = 'normal' | 'magic' | 'rare' | 'unique' | 'gem' | 'currency' | 'necropolis';
 
-function headerBackgroundUrl(frameKind: FrameKind, identified?: boolean): string {
+function headerBackgroundUrl(frameKind: FrameKind, identified: boolean): string {
 	const size = singleOrDouble(frameKind, identified);
 	const left = `url(${headerAssetUrl(frameKind, size, 'left')}) top left no-repeat`;
 	const right = `url(${headerAssetUrl(frameKind, size, 'right')}) top right no-repeat`;
@@ -92,7 +92,7 @@ function headerAssetUrl(
 		.join('-')}.png`;
 }
 
-function singleOrDouble(frameKind: FrameKind, identified?: boolean): 'single' | 'double' {
+function singleOrDouble(frameKind: FrameKind, identified: boolean): 'single' | 'double' {
 	switch (frameKind) {
 		case 'normal':
 			return 'single';
