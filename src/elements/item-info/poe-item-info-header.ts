@@ -43,6 +43,7 @@ export class ItemInfoHeader extends LitElement {
 		}
 
 		.header {
+			font-family: 'fontin';
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -62,6 +63,7 @@ export class ItemInfoHeader extends LitElement {
 		}
 
 		.content {
+			font-size: 19px;
 			color: #fff;
 			display: flex;
 			align-items: center;
