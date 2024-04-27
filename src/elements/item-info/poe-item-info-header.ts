@@ -1,3 +1,5 @@
+import { poeColorsCssVariables } from './../../styles/poe-colors-vars.style';
+import { styles as poeColorsStyles } from '../../styles/poe-colors.style';
 import { LitElement, html, css, TemplateResult } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import type { PoeItem } from '../../poe.types';
@@ -23,6 +25,7 @@ export class ItemInfoHeader extends LitElement {
 				'header--single': size === 'single',
 				'header--double': size === 'double',
 				'header--necropolis': frame === 'necropolis',
+				[`${frame}`]: true,
 			})}
 			style="background: ${headerBackgroundUrl(frame ?? 'normal', this.item.identified)}"
 		>
@@ -36,10 +39,16 @@ export class ItemInfoHeader extends LitElement {
 	}
 
 	static styles = css`
+		${poeColorsStyles}
+
 		* {
 			padding: 0;
 			margin: 0;
 			box-sizing: border-box;
+		}
+
+		:host {
+			${poeColorsCssVariables}
 		}
 
 		.header {
@@ -64,7 +73,6 @@ export class ItemInfoHeader extends LitElement {
 
 		.content {
 			font-size: 19px;
-			color: #fff;
 			display: flex;
 			align-items: center;
 			justify-content: center;
