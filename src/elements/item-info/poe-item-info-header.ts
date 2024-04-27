@@ -72,6 +72,7 @@ export class ItemInfoHeader extends LitElement {
 		}
 
 		.content {
+			padding-inline: 2.5rem;
 			font-size: 19px;
 			display: flex;
 			align-items: center;

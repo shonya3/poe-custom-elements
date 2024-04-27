@@ -3,6 +3,7 @@ import { customElement, property } from 'lit/decorators.js';
 import type { TabWithItems } from '../poe.types';
 import './poe-item';
 import { styleMap } from 'lit/directives/style-map.js';
+import { tooltip } from './simple-tooltip';
 
 declare global {
 	interface HTMLElementTagNameMap {
@@ -50,7 +51,13 @@ export class PoeStashTabElement extends LitElement {
 							'grid-row': `${item.y + 1} / span ${item.h}`,
 						})}
 					>
-						<poe-item style="--cell-size: ${sizeOfCellPixels}" .item=${item}></poe-item>
+						<poe-item
+							style="--cell-size: ${sizeOfCellPixels}"
+							.item=${item}
+							${tooltip(
+								html`<poe-item-info style="display: block; z-index:500" .item=${item}></poe-item-info>`
+							)}
+						></poe-item>
 					</li>`
 				)}
 			</ul>
