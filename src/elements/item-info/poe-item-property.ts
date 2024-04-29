@@ -42,44 +42,46 @@ export class PoeItemPropertyElement extends LitElement {
 		.lightning {
 			color: gold;
 		}
-		.colorAugmented {
+		.augmented {
 			color: #88f;
 		}
 	`;
 }
 
+function colorValueClass(num: number): string {
+	switch (num) {
+		case 1:
+			return 'augmented';
+		case 4:
+			return 'fire';
+		case 5:
+			return 'cold';
+		case 6:
+			return 'lightning';
+		default:
+			return '';
+	}
+}
+
 function Values(property: ItemProperty) {
-	if (property.values.length === 0) {
-		return property.name;
+	if (property.displayMode === 0 && property.name !== 'Elemental Damage') {
 	}
 
 	if (property.displayMode === 0) {
-		if (property.name === 'Elemental Damage') {
-			const colorClass = (num: number) => {
-				switch (num) {
-					case 4:
-						return 'fire';
-					case 5:
-						return 'cold';
-					case 6:
-						return 'lightning';
-					default:
-						return '';
-				}
-			};
-			const values = property.values.map((value, i) => {
-				return html`<span
-						class=${classMap({
-							value: true,
-							[`${colorClass(value[1])}`]: true,
-						})}
-						>${value[0]}</span
-					>${i === property.values.length - 1 ? nothing : ','} `;
-			});
-			return html`${property.name} ${values}`;
+		if (!property.values.length) {
+			return property.name;
 		}
 
-		return html`${property.name}: <span class="value">${property.values[0][0]}</span>`;
+		const values = property.values.map((value, i) => {
+			return html`<span
+					class=${classMap({
+						value: true,
+						[`${colorValueClass(value[1])}`]: true,
+					})}
+					>${value[0]}</span
+				>${i === property.values.length - 1 ? nothing : ','} `;
+		});
+		return html`${property.name}: ${values}`;
 	}
 
 	if (property.displayMode === 3) {
