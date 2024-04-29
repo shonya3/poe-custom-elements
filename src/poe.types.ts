@@ -35,17 +35,19 @@ export interface Metadata {
 	};
 }
 
-export interface IProperty {
+export type ItemProperty = {
 	name: string;
-	values: Array<Array<string | number>>;
+	values: Array<ValueEntry>;
 	displayMode: number;
 	progress?: number;
 	type?: number;
-}
+};
+
+export type ValueEntry = [string, number];
 
 export interface IRequirement {
 	name: string;
-	values: Array<Array<string | number>>;
+	values: Array<ValueEntry>;
 	displayMode: number;
 	type?: number;
 }
@@ -95,7 +97,7 @@ export type PoeItem = {
 	explicitMods?: Array<string>;
 	fracturedMods?: Array<string>;
 	socketedItems?: Array<SocketedItem>;
-	properties?: Array<IProperty>;
+	properties?: Array<ItemProperty>;
 	flavourText?: Array<string>;
 	craftedMods?: Array<string>;
 	enchantMods?: Array<string>;
@@ -125,8 +127,8 @@ export interface SocketedItem {
 	frameType: number;
 	x?: number;
 	y?: number;
-	properties: Array<IProperty>;
-	additionalProperties?: Array<IProperty>;
+	properties: Array<ItemProperty>;
+	additionalProperties?: Array<ItemProperty>;
 	descrText: string;
 	secDescrText: string;
 	socket: number;
