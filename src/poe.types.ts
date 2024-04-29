@@ -37,17 +37,15 @@ export interface Metadata {
 
 export type ItemProperty = {
 	name: string;
-	values: Array<ValueEntry>;
+	values: Array<[string, number]>;
 	displayMode: number;
 	progress?: number;
 	type?: number;
 };
 
-export type ValueEntry = [string, number];
-
 export interface IRequirement {
 	name: string;
-	values: Array<ValueEntry>;
+	values: Array<[string, number]>;
 	displayMode: number;
 	type?: number;
 }
