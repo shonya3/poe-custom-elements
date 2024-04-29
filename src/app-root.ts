@@ -1,3 +1,4 @@
+import { elementalBow } from './../jsons/elementalBow';
 import { LitElement, html, css, TemplateResult } from 'lit';
 import { customElement, state } from 'lit/decorators.js';
 import type { PoeItem } from './poe.types';
@@ -8,6 +9,7 @@ import './elements/item-info/poe-item-info-header';
 import { TabWithItems } from './poe.types';
 import quadJson from '../jsons/QuadStash.json';
 import premJson from '../jsons/PremiumStash.json';
+import aTabJson from '../jsons/a.json';
 
 declare global {
 	interface HTMLElementTagNameMap {
@@ -19,10 +21,14 @@ declare global {
 export class AppRoot extends LitElement {
 	@state() quad = quadJson as TabWithItems;
 	@state() prem = premJson as TabWithItems;
+	@state() aTab = aTabJson as unknown as TabWithItems;
 	@state() item = item();
 
 	protected render(): TemplateResult {
-		return html`<poe-item-info-header .item=${this.item}></poe-item-info-header> ${this.Tabs()} `;
+		return html`
+			<poe-item-info .item=${elementalBow}></poe-item-info>
+			<poe-item-info .item=${this.aTab.items!.find(i => i.baseType === 'Plated Maul')!}></poe-item-info>
+		`;
 	}
 
 	protected Tabs(): TemplateResult {

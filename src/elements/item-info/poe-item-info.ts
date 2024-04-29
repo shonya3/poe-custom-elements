@@ -1,6 +1,7 @@
 import { LitElement, html, css, TemplateResult } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import type { PoeItem } from '../../poe.types';
+import './poe-item-info-content';
 
 declare global {
 	interface HTMLElementTagNameMap {
@@ -18,7 +19,8 @@ export class PoeItemInfoElement extends LitElement {
 			return html`<p style="color: red">No Poe Api item data (.item)</p>`;
 		}
 
-		return html`<poe-item-info-header .item=${this.item}></poe-item-info-header>`;
+		return html`<poe-item-info-header .item=${this.item}></poe-item-info-header>
+			<poe-item-info-content .item=${this.item}></poe-item-info-content> `;
 	}
 
 	static styles = css`
