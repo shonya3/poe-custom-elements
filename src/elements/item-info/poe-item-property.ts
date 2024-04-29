@@ -90,8 +90,8 @@ function Values(property: ItemProperty) {
 }
 
 function parseDisplayMode3(property: ItemProperty): string;
-function parseDisplayMode3<T>(property: ItemProperty, mapFn: (val: string) => T): T[];
-function parseDisplayMode3<T>(property: ItemProperty, mapFn?: (val: string) => T): T[] | string {
+function parseDisplayMode3<T>(property: ItemProperty, mapFn: (val: string) => T): Array<T | string>;
+function parseDisplayMode3<T>(property: ItemProperty, mapFn?: (val: string) => T): Array<T | string> | string {
 	if (property.displayMode !== 3) {
 		throw new Error(`Expected displayMode 3, got ${property.displayMode}`);
 	}
@@ -109,7 +109,7 @@ function parseDisplayMode3<T>(property: ItemProperty, mapFn?: (val: string) => T
 		return mapFn ? mapFn(value) : value;
 	});
 
-	return mapFn ? (result as T[]) : (result.join('') as string);
+	return mapFn ? result : result.join('');
 }
 
 console.log(
