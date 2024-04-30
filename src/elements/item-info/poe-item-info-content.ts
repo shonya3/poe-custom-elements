@@ -3,6 +3,7 @@ import { customElement, property } from 'lit/decorators.js';
 import type { PoeItem } from '../../poe.types';
 import './poe-separator';
 import './poe-item-property';
+import './poe-requirements';
 
 declare global {
 	interface HTMLElementTagNameMap {
@@ -22,6 +23,7 @@ export class PoeItemInfoContentElement extends LitElement {
 				})}
 			</ul>
 			<poe-separator></poe-separator>
+			<poe-requirements .requirements=${this.item.requirements ?? []}></poe-requirements>
 		</div>`;
 	}
 

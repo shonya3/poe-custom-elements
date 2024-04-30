@@ -43,12 +43,12 @@ export type ItemProperty = {
 	type?: number;
 };
 
-export interface IRequirement {
+export type Requirement = {
 	name: string;
 	values: Array<[string, number]>;
 	displayMode: number;
 	type?: number;
-}
+};
 
 export interface Socket {
 	group: number;
@@ -90,7 +90,7 @@ export type PoeItem = {
 	identified: boolean;
 	corrupted?: boolean;
 	lockedToCharacter?: boolean;
-	requirements?: Array<IRequirement>;
+	requirements?: Array<Requirement>;
 	implicitMods?: Array<string>;
 	explicitMods?: Array<string>;
 	fracturedMods?: Array<string>;
@@ -119,8 +119,8 @@ export interface SocketedItem {
 	corrupted?: boolean;
 	lockedToCharacter?: boolean;
 	category?: ICategory;
-	requirements: Array<IRequirement>;
-	nextLevelRequirements?: Array<IRequirement>;
+	requirements: Array<Requirement>;
+	nextLevelRequirements?: Array<Requirement>;
 	explicitMods: Array<string>;
 	frameType: number;
 	x?: number;
