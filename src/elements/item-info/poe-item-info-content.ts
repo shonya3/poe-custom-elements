@@ -1,6 +1,6 @@
-import { LitElement, html, css, TemplateResult } from 'lit';
+import { LitElement, html, css, TemplateResult, nothing } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import type { PoeItem } from '../../poe.types';
+import type { PoeItem, Requirement } from '../../poe.types';
 import './poe-separator';
 import './poe-item-property';
 import './poe-requirements';
@@ -15,6 +15,14 @@ declare global {
 export class PoeItemInfoContentElement extends LitElement {
 	@property({ type: Object }) item!: PoeItem;
 
+	get requirements(): Array<Requirement> {
+		return this.item.requirements ?? [];
+	}
+
+	get implicits(): Array<string> {
+		return this.item.implicitMods ?? [];
+	}
+
 	protected render(): TemplateResult {
 		return html`<div class="content">
 			<ul class="">
@@ -22,8 +30,17 @@ export class PoeItemInfoContentElement extends LitElement {
 					return html`<li><poe-item-property .property=${property}></poe-item-property></li>`;
 				})}
 			</ul>
-			<poe-separator></poe-separator>
-			<poe-requirements .requirements=${this.item.requirements ?? []}></poe-requirements>
+			${this.requirements.length
+				? html`<poe-separator></poe-separator>
+						<poe-requirements .requirements=${this.requirements}></poe-requirements>`
+				: nothing}
+			${this.implicits.length
+				? html`
+						<poe-separator> </poe-separator>${this.implicits.map(
+							imp => html`<p class="augmented">${imp}</p>`
+						)}
+				  `
+				: nothing}
 		</div>`;
 	}
 
@@ -43,6 +60,10 @@ export class PoeItemInfoContentElement extends LitElement {
 			padding-top: 0.4rem;
 			padding-bottom: 0.5rem;
 			text-align: center;
+		}
+
+		.augmented {
+			color: #88f;
 		}
 	`;
 }
