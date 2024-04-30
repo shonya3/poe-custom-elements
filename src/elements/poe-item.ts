@@ -1,8 +1,10 @@
-import { LitElement, html, css, TemplateResult, PropertyValueMap, nothing } from 'lit';
+import { LitElement, html, css, TemplateResult, PropertyValueMap, nothing, render } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import type { PoeItem } from '../poe.types';
 import './poe-socket-chain';
 import { classMap } from 'lit/directives/class-map.js';
+import { SimpleTooltip } from './simple-tooltip';
+import './simple-tooltip';
 
 declare global {
 	interface HTMLElementTagNameMap {
@@ -79,6 +81,16 @@ export class PoeItemElement extends LitElement {
 		this.addEventListener('mouseenter', this.onMouseEnter);
 		this.addEventListener('mouseleave', this.onMouseLeave);
 	}
+
+	protected firstUpdated(): void {
+		SimpleTooltip.lazy(this, tooltip => {
+			render(
+				html`<poe-item-info style="display: block; z-index:500" .item=${this.item}></poe-item-info>`,
+				tooltip
+			);
+		});
+	}
+
 	private onMouseEnter() {
 		this.hovered = true;
 	}

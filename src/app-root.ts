@@ -26,8 +26,10 @@ export class AppRoot extends LitElement {
 
 	protected render(): TemplateResult {
 		return html`
+			<poe-item .item=${this.aTab.items!.find(i => i.baseType === 'Plated Maul')!}></poe-item>
 			<poe-item-info .item=${elementalBow}></poe-item-info>
 			<poe-item-info .item=${this.aTab.items!.find(i => i.baseType === 'Plated Maul')!}></poe-item-info>
+			${this.Tabs()}
 		`;
 	}
 
