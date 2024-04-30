@@ -67,8 +67,13 @@ export class PoeItemInfoContentElement extends LitElement {
 			box-sizing: border-box;
 		}
 
+		ul {
+			list-style: none;
+		}
+
 		:host {
 			font-family: fontin;
+			display: inline-block;
 			background-color: rgba(0, 0, 0, 0.8);
 		}
 

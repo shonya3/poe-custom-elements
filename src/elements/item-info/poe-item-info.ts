@@ -31,6 +31,11 @@ export class PoeItemInfoElement extends LitElement {
 		}
 		:host {
 			display: block;
+			width: fit-content;
+		}
+
+		poe-item-info-content {
+			padding-inline: 1rem;
 		}
 	`;
 }
