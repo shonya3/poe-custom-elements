@@ -23,6 +23,14 @@ export class PoeItemInfoContentElement extends LitElement {
 		return this.item.implicitMods ?? [];
 	}
 
+	get explicits(): Array<string> {
+		return this.item.explicitMods ?? [];
+	}
+
+	get crafts(): Array<string> {
+		return this.item.craftedMods ?? [];
+	}
+
 	protected render(): TemplateResult {
 		return html`<div class="content">
 			<ul class="">
@@ -41,6 +49,14 @@ export class PoeItemInfoContentElement extends LitElement {
 						)}
 				  `
 				: nothing}
+			${this.explicits.length
+				? html`
+						<poe-separator> </poe-separator>${this.explicits.map(
+							exp => html`<p class="augmented">${exp}</p>`
+						)}
+				  `
+				: nothing}
+			${this.crafts.length ? html` ${this.crafts.map(craft => html`<p class="craft">${craft}</p>`)} ` : nothing}
 		</div>`;
 	}
 
@@ -64,6 +80,10 @@ export class PoeItemInfoContentElement extends LitElement {
 
 		.augmented {
 			color: #88f;
+		}
+
+		.craft {
+			color: #b4b4ff;
 		}
 	`;
 }
