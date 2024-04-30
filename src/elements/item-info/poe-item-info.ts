@@ -32,6 +32,7 @@ export class PoeItemInfoElement extends LitElement {
 		:host {
 			display: block;
 			width: fit-content;
+			min-width: max-content;
 		}
 
 		poe-item-info-content {
