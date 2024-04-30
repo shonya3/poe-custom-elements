@@ -24,6 +24,10 @@ export class AppRoot extends LitElement {
 	@state() aTab = aTabJson as unknown as TabWithItems;
 	@state() item = item();
 
+	protected render1(): TemplateResult {
+		return html` <poe-item .item=${this.aTab.items!.find(i => i.baseType === 'Plated Maul')!}></poe-item> `;
+	}
+
 	protected render(): TemplateResult {
 		return html`
 			<poe-item .item=${this.aTab.items!.find(i => i.baseType === 'Plated Maul')!}></poe-item>
