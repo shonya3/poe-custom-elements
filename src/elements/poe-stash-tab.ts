@@ -95,7 +95,7 @@ export class PoeStashTabElement extends LitElement {
 			box-sizing: border-box;
 		}
 		:host {
-			display: inline-block;
+			display: block;
 			--size: 569px;
 			--size-of-all-inner-borders: 5px;
 			--cells-side-count: '(computed) Number of cells';
