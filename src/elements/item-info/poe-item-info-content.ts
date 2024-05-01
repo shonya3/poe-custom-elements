@@ -1,6 +1,6 @@
 import { LitElement, html, css, TemplateResult, nothing } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import type { PoeItem, Requirement } from '../../poe.types';
+import type { ItemProperty, PoeItem, Requirement } from '../../poe.types';
 import './poe-separator';
 import './poe-item-property';
 import './poe-requirements';
@@ -14,6 +14,42 @@ declare global {
 @customElement('poe-item-info-content')
 export class PoeItemInfoContentElement extends LitElement {
 	@property({ type: Object }) item!: PoeItem;
+
+	protected render(): TemplateResult {
+		return html`<div class="content">
+			${[
+				this.properties.length
+					? html`<ul>
+							${this.properties.map(property => {
+								return html`<li><poe-item-property .property=${property}></poe-item-property></li>`;
+							})}
+					  </ul> `
+					: nothing,
+				this.requirements.length
+					? html` <poe-requirements .requirements=${this.requirements}></poe-requirements>`
+					: nothing,
+				this.implicits.length
+					? html` ${this.implicits.map(imp => html`<p class="augmented">${imp}</p>`)} `
+					: nothing,
+				this.explicits.length || this.crafts.length
+					? html`
+							${this.explicits.map(exp => html`<p class="augmented">${exp}</p>`)}
+							${this.crafts.map(craft => html`<p class="craft">${craft}</p>`)}
+					  `
+					: nothing,
+				this.item.identified ? nothing : html` <p class="unidentified">Unidentified</p>`,
+				this.item.corrupted ? html` <p class="corrupted">corrupted</p>` : nothing,
+			]
+				.filter(el => el !== nothing)
+				.flatMap((el, index, arr) =>
+					index === arr.length - 1 ? [el] : [el, html`<poe-separator></poe-separator>`]
+				)}
+		</div>`;
+	}
+
+	get properties(): Array<ItemProperty> {
+		return this.item.properties ?? [];
+	}
 
 	get requirements(): Array<Requirement> {
 		return this.item.requirements ?? [];
@@ -29,43 +65,6 @@ export class PoeItemInfoContentElement extends LitElement {
 
 	get crafts(): Array<string> {
 		return this.item.craftedMods ?? [];
-	}
-
-	protected render(): TemplateResult {
-		return html`<div class="content">
-			<ul class="">
-				${(this.item.properties ?? []).map(property => {
-					return html`<li><poe-item-property .property=${property}></poe-item-property></li>`;
-				})}
-			</ul>
-			${this.requirements.length
-				? html`<poe-separator></poe-separator>
-						<poe-requirements .requirements=${this.requirements}></poe-requirements>`
-				: nothing}
-			${this.implicits.length
-				? html`
-						<poe-separator> </poe-separator>${this.implicits.map(
-							imp => html`<p class="augmented">${imp}</p>`
-						)}
-				  `
-				: nothing}
-			${this.explicits.length
-				? html`
-						<poe-separator> </poe-separator>${this.explicits.map(
-							exp => html`<p class="augmented">${exp}</p>`
-						)}
-				  `
-				: nothing}
-			${this.crafts.length ? html` ${this.crafts.map(craft => html`<p class="craft">${craft}</p>`)} ` : nothing}
-			${this.item.identified
-				? nothing
-				: html`<poe-separator></poe-separator>
-						<p class="unidentified">Unidentified</p>`}
-			${this.item.corrupted
-				? html`<poe-separator></poe-separator>
-						<p class="corrupted">corrupted</p>`
-				: nothing}
-		</div>`;
 	}
 
 	static styles = css`
