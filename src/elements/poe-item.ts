@@ -1,10 +1,12 @@
 import { LitElement, html, css, TemplateResult, PropertyValueMap, nothing, render } from 'lit';
-import { customElement, property, state } from 'lit/decorators.js';
+import { customElement, property, query, state } from 'lit/decorators.js';
 import type { PoeItem } from '../poe.types';
 import './poe-socket-chain';
 import { classMap } from 'lit/directives/class-map.js';
 import { SimpleTooltip } from './simple-tooltip';
 import './simple-tooltip';
+import './tooltip-json-icon';
+import { JsonIconElement } from './tooltip-json-icon';
 
 declare global {
 	interface HTMLElementTagNameMap {
@@ -31,7 +33,9 @@ export class PoeItemElement extends LitElement {
 	@state() hovered = false;
 	@state() altPressed = false;
 
-	protected willUpdate(map: PropertyValueMap<this>): void {
+	@query('tooltip-json-icon') iconJson!: JsonIconElement;
+
+	protected async willUpdate(map: PropertyValueMap<this>): Promise<void> {
 		if (map.has('item')) {
 			this.style.setProperty('--w', this.item.w.toString());
 			this.style.setProperty('--h', this.item.h.toString());
@@ -71,6 +75,7 @@ export class PoeItemElement extends LitElement {
 						.w=${this.item.w}
 				  ></poe-socket-chain>`
 				: nothing}
+			<tooltip-json-icon></tooltip-json-icon>
 		`;
 	}
 
@@ -91,6 +96,23 @@ export class PoeItemElement extends LitElement {
 		});
 	}
 
+	onCtrlJClick = (e: KeyboardEvent) => {
+		if (this.hovered) {
+			if (e.key === 'j') {
+				const icon = this.iconJson ?? document.createElement('tooltip-json-icon');
+				if (!this.iconJson) {
+					this.shadowRoot!.append(icon);
+				}
+
+				navigator.clipboard.writeText(JSON.stringify(this.item, null, 4));
+				icon.showing = true;
+				setTimeout(() => {
+					icon.showing = false;
+				}, 2000);
+			}
+		}
+	};
+
 	private onMouseEnter() {
 		this.hovered = true;
 	}
@@ -110,10 +132,13 @@ export class PoeItemElement extends LitElement {
 		super.connectedCallback();
 		window.addEventListener('keydown', this.onAltPressed);
 		window.addEventListener('keyup', this.onAltReleased);
+		window.addEventListener('keydown', this.onCtrlJClick);
 	}
 	disconnectedCallback(): void {
 		super.disconnectedCallback();
 		window.removeEventListener('keydown', this.onAltPressed);
+		window.removeEventListener('keyup', this.onAltReleased);
+		window.removeEventListener('keydown', this.onCtrlJClick);
 	}
 
 	static styles = css`
@@ -148,7 +173,46 @@ export class PoeItemElement extends LitElement {
 		.hidden {
 			display: none !important;
 		}
+
+		#icon-json {
+			position: absolute;
+			top: 100px;
+			right: 0px;
+			color: yellow;
+			opacity: 0;
+			scale: 0.8;
+			transform: translate(10px, -10px);
+			transition: opacity, transform, top 0.2s ease-in;
+			z-index: 20;
+			pointer-events: none;
+		}
+
+		#icon-json.copied {
+			opacity: 1;
+			scale: 2;
+			top: 0px;
+		}
 	`;
 }
 
 // icon shaper background: url(https://web.poecdn.com/image/inventory/ShaperBackground.png?w=1&h=3&x=65&y=111) center center no-repeat;
+// function lazyIconJson(target: HTMLElement): SVGElement {
+// 	const icon = `
+//     <svg id="icon-json" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 32 32">
+// 		<path
+// 			fill="#d6d024"
+// 			d="M4 20v2h4.586L2 28.586L3.414 30L10 23.414V28h2v-8zm25-8l-2-6h-2v10h2v-6l2 6h2V6h-2zm-7.666-6h-2.667A1.67 1.67 0 0 0 17 7.667v6.667A1.67 1.67 0 0 0 18.666 16h2.667A1.67 1.67 0 0 0 23 14.334V7.667A1.67 1.67 0 0 0 21.334 6M21 14h-2V8h2zM9 7.667V10a2 2 0 0 0 2 2h2v2H9v2h4.334A1.67 1.67 0 0 0 15 14.334V12a2 2 0 0 0-2-2h-2V8h4V6h-4.334A1.67 1.67 0 0 0 9 7.667M5 14H3v-2H1v2.334A1.67 1.67 0 0 0 2.667 16h2.667A1.67 1.67 0 0 0 7 14.334V6H5z"
+// 		/>
+// 	</svg>
+//     `;
+// 	const template = document.createElement('template');
+// 	template.innerHTML = icon;
+// 	const node = template.content.children[0];
+// 	console.log(node);
+
+// 	target.shadowRoot?.append(node);
+// 	if (!target.shadowRoot) {
+// 		console.warn('Cannot insert json icon, no shadowRoot');
+// 	}
+// 	return node as SVGElement;
+// }

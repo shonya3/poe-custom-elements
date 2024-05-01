@@ -101,7 +101,11 @@ export class SimpleTooltip extends LitElement {
 		this.style.cssText = '';
 		computePosition(this.target!, this, {
 			strategy: 'fixed',
-			middleware: [offset(this.offset), shift(), autoPlacement({ allowedPlacements: ['top', 'bottom'] })],
+			middleware: [
+				offset(this.offset),
+				shift(),
+				autoPlacement({ allowedPlacements: ['bottom', 'top', 'top-start', 'left-start'] }),
+			],
 		}).then(({ x, y }: { x: number; y: number }) => {
 			this.style.left = `${x}px`;
 			this.style.top = `${y}px`;

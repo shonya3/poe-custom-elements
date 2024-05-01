@@ -10,6 +10,8 @@ import { TabWithItems } from './poe.types';
 import quadJson from '../jsons/QuadStash.json';
 import premJson from '../jsons/PremiumStash.json';
 import aTabJson from '../jsons/a.json';
+import influenceJson from '../jsons/influence.json';
+import garbageJson from '../jsons/garbage.json';
 
 declare global {
 	interface HTMLElementTagNameMap {
@@ -23,6 +25,8 @@ export class AppRoot extends LitElement {
 	@state() prem = premJson as TabWithItems;
 	@state() aTab = aTabJson as unknown as TabWithItems;
 	@state() item = item();
+	@state() influenceTab = influenceJson as TabWithItems;
+	@state() garbageTab = garbageJson as TabWithItems;
 
 	protected render(): TemplateResult {
 		return html`
@@ -41,8 +45,12 @@ export class AppRoot extends LitElement {
 
 	protected Tabs(): TemplateResult {
 		return html`
-			<poe-stash-tab .tab=${this.quad}></poe-stash-tab>
-			<poe-stash-tab style="margin-top: 2px" .tab=${this.prem}></poe-stash-tab>
+			<div style="display:flex; flex-wrap:wrap; gap:0.5rem">
+				<poe-stash-tab .tab=${this.quad}></poe-stash-tab>
+				<poe-stash-tab style="margin-top: 2px" .tab=${this.prem}></poe-stash-tab>
+				<poe-stash-tab .tab=${this.influenceTab}></poe-stash-tab>
+				<poe-stash-tab .tab=${this.garbageTab}></poe-stash-tab>
+			</div>
 		`;
 	}
 
