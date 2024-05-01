@@ -1,3 +1,4 @@
+import { rogueMarkers } from './../jsons/rogueMarkers';
 import { allflame } from './../jsons/allflame';
 import { elementalBow } from './../jsons/elementalBow';
 import { LitElement, html, css, TemplateResult } from 'lit';
@@ -13,6 +14,7 @@ import premJson from '../jsons/PremiumStash.json';
 import aTabJson from '../jsons/a.json';
 import influenceJson from '../jsons/influence.json';
 import garbageJson from '../jsons/garbage.json';
+import { tabs } from '../jsons/tabs';
 
 declare global {
 	interface HTMLElementTagNameMap {
@@ -31,6 +33,7 @@ export class AppRoot extends LitElement {
 
 	protected render(): TemplateResult {
 		return html`
+			<poe-item .item=${rogueMarkers}></poe-item>
 			<poe-item-info .item=${allflame}></poe-item-info>
 			${this.Tabs()}
 			<poe-item .item=${this.aTab.items!.find(i => i.baseType === 'Plated Maul')!}></poe-item>
@@ -49,6 +52,7 @@ export class AppRoot extends LitElement {
 		return html`
 			<div style="display:flex; flex-wrap:wrap; gap:0.5rem">
 				<poe-stash-tab .tab=${this.quad}></poe-stash-tab>
+				<poe-stash-tab .tab=${tabs.quadStd}></poe-stash-tab>
 				<poe-stash-tab style="margin-top: 2px" .tab=${this.prem}></poe-stash-tab>
 				<poe-stash-tab .tab=${this.influenceTab}></poe-stash-tab>
 				<poe-stash-tab .tab=${this.garbageTab}></poe-stash-tab>

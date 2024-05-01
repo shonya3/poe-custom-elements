@@ -79,6 +79,9 @@ export class PoeItemElement extends LitElement {
 				  ></poe-socket-chain>`
 				: nothing}
 			<tooltip-json-icon></tooltip-json-icon>
+			${this.item.stackSize
+				? html`<p class="stackSize">${this.item.stackSizeText || this.item.stackSize}</p>`
+				: nothing}
 		`;
 	}
 
@@ -162,6 +165,19 @@ export class PoeItemElement extends LitElement {
 			display: flex;
 			justify-content: center;
 			align-items: center;
+		}
+
+		.stackSize {
+			font-size: calc(var(--cell-size) / var(--default-cell-size) * 18);
+			font-weight: bold;
+			color: #fff;
+			position: absolute;
+			top: -1px;
+			left: 5%;
+			text-shadow: -1px -1px 0 #000, 0 -1px 0 #000, 1px -1px 0 #000, 1px 0 0 #000, 1px 1px 0 #000, 0 1px 0 #000,
+				-1px 1px 0 #000, -1px 0 0 #000, -1px -1px 3px #000, 0 -1px 3px #000, 1px -1px 0 #000, 1px 0 3px #000,
+				1px 1px 3px #000, 0 1px 3px #000, -1px 1px 3px #000, -1px 0 3px #000;
+			pointer-events: none;
 		}
 
 		img {
