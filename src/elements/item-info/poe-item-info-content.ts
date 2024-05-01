@@ -103,6 +103,7 @@ export class PoeItemInfoContentElement extends LitElement {
 			height: 100%;
 			color: #7f7f7f;
 			--description-width: 300px;
+			max-width: 500px;
 		}
 
 		.content {
