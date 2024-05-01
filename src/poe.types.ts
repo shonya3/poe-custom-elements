@@ -48,6 +48,7 @@ export type Requirement = {
 	values: Array<[string, number]>;
 	displayMode: number;
 	type?: number;
+	suffix?: string;
 };
 
 export interface Socket {
@@ -56,7 +57,7 @@ export interface Socket {
 	sColour: SocketKind;
 }
 
-export const SOCKET_KINDS = ['R', 'G', 'B', 'A'] as const;
+export const SOCKET_KINDS = ['R', 'G', 'B', 'A', 'W'] as const;
 export type SocketKind = (typeof SOCKET_KINDS)[number];
 export type GemKind = 'support' | 'active';
 
@@ -106,7 +107,25 @@ export type PoeItem = {
 	prophecyText?: string;
 	socket?: number;
 	stackSize?: number;
+	/** Textual representation of the stack size for display purposes.
+	 *  This property will be present on items that have 5-digit stack sizes (ie. > 9999).
+	 *  https://www.pathofexile.com/forum/view-thread/2936225
+	 */
+	stackSizeText?: string;
 	maxStackSize?: number;
+	additionalProperties?: Array<ItemProperty>;
+	secDescrText?: string;
+	artFilename?: string;
+	cisRaceReward?: boolean;
+	colour?: string;
+	support?: boolean;
+	talismanTier?: number;
+	influences?: Record<Influence, boolean>;
+	incubatedItem?: IncubatedItem;
+	nextLevelRequirements?: Array<Requirement>;
+	note?: string;
+	abyssJewel?: boolean;
+	hybrid?: HybridGem;
 };
 
 export interface SocketedItem {
@@ -132,7 +151,31 @@ export interface SocketedItem {
 	descrText: string;
 	secDescrText: string;
 	socket: number;
+	baseType?: string;
+	colour?: string;
+	identified?: boolean;
+	league?: string;
+	support?: boolean;
+	hybrid?: HybridGem;
 }
+
+export type IncubatedItem = {
+	name: string;
+	level: number;
+	progress: number;
+	total: number;
+};
+
+export type HybridGem = {
+	baseTypeName: string;
+	explicitMods?: Array<string>;
+	properties: Array<ItemProperty>;
+	secDescrText: string;
+	isVaalGem?: boolean;
+};
+
+export const INFLUENCE_VARIANTS = ['shaper', 'elder', 'redeemer', 'warlord', 'hunter', 'crusader'];
+export type Influence = (typeof INFLUENCE_VARIANTS)[number];
 
 export const RARITY_VARIANTS = ['Normal', 'Magic', 'Rare', 'Unique'] as const;
 export type ItemRarity = (typeof RARITY_VARIANTS)[number];
