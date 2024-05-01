@@ -1,4 +1,4 @@
-import { clusterJewelRare } from './../jsons/clusterJewelRare';
+import { allflame } from './../jsons/allflame';
 import { elementalBow } from './../jsons/elementalBow';
 import { LitElement, html, css, TemplateResult } from 'lit';
 import { customElement, state } from 'lit/decorators.js';
@@ -31,7 +31,7 @@ export class AppRoot extends LitElement {
 
 	protected render(): TemplateResult {
 		return html`
-			<poe-item-info .item=${clusterJewelRare}></poe-item-info>
+			<poe-item-info .item=${allflame}></poe-item-info>
 			${this.Tabs()}
 			<poe-item .item=${this.aTab.items!.find(i => i.baseType === 'Plated Maul')!}></poe-item>
 		`;

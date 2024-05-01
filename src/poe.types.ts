@@ -67,6 +67,8 @@ export interface ICategory {
 
 /** PoE API item data https://www.pathofexile.com/developer/docs/reference#stashes-get */
 export type PoeItem = {
+	/** Monster level. Appears on allflames */
+	itemLevel?: number;
 	id: string;
 	name: string;
 	verified: boolean;
@@ -76,7 +78,7 @@ export type PoeItem = {
 	y: number;
 	w: number;
 	h: number;
-	rarity: ItemRarity;
+	rarity?: ItemRarity;
 	ilvl: number;
 	icon: string;
 	league: string;

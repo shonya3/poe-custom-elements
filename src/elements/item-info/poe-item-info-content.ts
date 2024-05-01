@@ -25,6 +25,9 @@ export class PoeItemInfoContentElement extends LitElement {
 							})}
 					  </ul> `
 					: nothing,
+				this.item.itemLevel
+					? html`<p>Monster Level: <span class="monster-level">${this.item.itemLevel}</span></p>`
+					: nothing,
 				this.requirements.length
 					? html` <poe-requirements .requirements=${this.requirements}></poe-requirements>`
 					: nothing,
@@ -122,6 +125,10 @@ export class PoeItemInfoContentElement extends LitElement {
 		.unidentified,
 		.corrupted {
 			color: #d20000;
+		}
+
+		.monster-level {
+			color: #fff;
 		}
 
 		.description-text {
