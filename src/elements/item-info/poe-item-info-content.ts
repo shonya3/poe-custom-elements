@@ -90,6 +90,8 @@ export class PoeItemInfoContentElement extends LitElement {
 			padding-top: 0.4rem;
 			padding-bottom: 0.5rem;
 			text-align: center;
+			display: grid;
+			gap: 0.05rem;
 		}
 
 		.augmented {
