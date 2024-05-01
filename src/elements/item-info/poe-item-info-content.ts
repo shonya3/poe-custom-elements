@@ -61,6 +61,10 @@ export class PoeItemInfoContentElement extends LitElement {
 				? nothing
 				: html`<poe-separator></poe-separator>
 						<p class="unidentified">Unidentified</p>`}
+			${this.item.corrupted
+				? html`<poe-separator></poe-separator>
+						<p class="corrupted">corrupted</p>`
+				: nothing}
 		</div>`;
 	}
 
@@ -97,7 +101,8 @@ export class PoeItemInfoContentElement extends LitElement {
 			color: #b4b4ff;
 		}
 
-		.unidentified {
+		.unidentified,
+		.corrupted {
 			color: #d20000;
 		}
 	`;
