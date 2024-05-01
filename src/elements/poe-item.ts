@@ -165,6 +165,7 @@ export class PoeItemElement extends LitElement {
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			font-family: fontin;
 		}
 
 		.stackSize {
