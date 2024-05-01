@@ -57,6 +57,10 @@ export class PoeItemInfoContentElement extends LitElement {
 				  `
 				: nothing}
 			${this.crafts.length ? html` ${this.crafts.map(craft => html`<p class="craft">${craft}</p>`)} ` : nothing}
+			${this.item.identified
+				? nothing
+				: html`<poe-separator></poe-separator>
+						<p class="unidentified">Unidentified</p>`}
 		</div>`;
 	}
 
@@ -91,6 +95,10 @@ export class PoeItemInfoContentElement extends LitElement {
 
 		.craft {
 			color: #b4b4ff;
+		}
+
+		.unidentified {
+			color: #d20000;
 		}
 	`;
 }
