@@ -60,7 +60,7 @@ export class ItemInfoHeader extends LitElement {
 		}
 
 		.header--single {
-			height: 27px;
+			height: 33px;
 		}
 
 		.header--double {
