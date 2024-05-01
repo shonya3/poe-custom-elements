@@ -1,3 +1,4 @@
+import { clusterJewelRare } from './../jsons/clusterJewelRare';
 import { elementalBow } from './../jsons/elementalBow';
 import { LitElement, html, css, TemplateResult } from 'lit';
 import { customElement, state } from 'lit/decorators.js';
@@ -30,28 +31,7 @@ export class AppRoot extends LitElement {
 
 	protected render(): TemplateResult {
 		return html`
-			<poe-item-info
-				.item=${{
-					baseType: 'Breach Ring',
-					corrupted: true,
-					frameType: 2,
-					h: 1,
-					icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvQnJlYWNoUmluZyIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/c21b912df7/BreachRing.png',
-					id: '7788388f29e96638ff676b29f2cc4c37843e8218f010da07d310a3c8fe511be6',
-					identified: false,
-					ilvl: 66,
-					implicitMods: ['Properties are doubled while in a Breach'],
-					inventoryId: 'Stash1',
-					league: 'Hardcore Necropolis',
-					name: '',
-					rarity: 'Rare',
-					typeLine: 'Breach Ring',
-					verified: false,
-					w: 1,
-					x: 14,
-					y: 14,
-				} as PoeItem}
-			></poe-item-info>
+			<poe-item-info .item=${clusterJewelRare}></poe-item-info>
 			${this.Tabs()}
 			<poe-item .item=${this.aTab.items!.find(i => i.baseType === 'Plated Maul')!}></poe-item>
 		`;

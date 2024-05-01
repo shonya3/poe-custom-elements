@@ -28,6 +28,11 @@ export class PoeItemInfoContentElement extends LitElement {
 				this.requirements.length
 					? html` <poe-requirements .requirements=${this.requirements}></poe-requirements>`
 					: nothing,
+				this.enchantments.length
+					? html`${this.enchantments.map(enc =>
+							enc.split('\n').map(enc => html`<p class="enchant">${enc}</p>`)
+					  )}`
+					: nothing,
 				this.implicits.length
 					? html` ${this.implicits.map(imp => html`<p class="augmented">${imp}</p>`)} `
 					: nothing,
@@ -39,12 +44,21 @@ export class PoeItemInfoContentElement extends LitElement {
 					: nothing,
 				this.item.identified ? nothing : html` <p class="unidentified">Unidentified</p>`,
 				this.item.corrupted ? html` <p class="corrupted">corrupted</p>` : nothing,
+				this.item.descrText ? html`<p class="description-text">${this.item.descrText}</p>` : nothing,
 			]
 				.filter(el => el !== nothing)
 				.flatMap((el, index, arr) =>
 					index === arr.length - 1 ? [el] : [el, html`<poe-separator></poe-separator>`]
 				)}
 		</div>`;
+	}
+
+	protected firstUpdated(): void {
+		this.style.setProperty('--description-width', window.getComputedStyle(this).width);
+	}
+
+	get enchantments(): Array<string> {
+		return this.item.enchantMods ?? [];
 	}
 
 	get properties(): Array<ItemProperty> {
@@ -84,6 +98,8 @@ export class PoeItemInfoContentElement extends LitElement {
 			background-color: rgba(0, 0, 0, 0.8);
 			width: 100%;
 			height: 100%;
+			color: #7f7f7f;
+			--description-width: 300px;
 		}
 
 		.content {
@@ -98,13 +114,22 @@ export class PoeItemInfoContentElement extends LitElement {
 			color: #88f;
 		}
 
-		.craft {
+		.craft,
+		.enchant {
 			color: #b4b4ff;
 		}
 
 		.unidentified,
 		.corrupted {
 			color: #d20000;
+		}
+
+		.description-text {
+			margin-inline: auto;
+			display: flex;
+			font-style: italic;
+			max-width: var(--description-width);
+			text-wrap: balance;
 		}
 	`;
 }
