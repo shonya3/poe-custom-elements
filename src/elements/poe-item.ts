@@ -104,7 +104,7 @@ export class PoeItemElement extends LitElement {
 
 	onCtrlJClick = (e: KeyboardEvent) => {
 		if (this.hovered) {
-			if (e.key === 'j') {
+			if (e.code === 'KeyJ') {
 				const icon = this.iconJson ?? document.createElement('tooltip-json-icon');
 				if (!this.iconJson) {
 					this.shadowRoot!.append(icon);
