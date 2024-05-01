@@ -39,6 +39,9 @@ export class PoeItemElement extends LitElement {
 		if (map.has('item')) {
 			this.style.setProperty('--w', this.item.w.toString());
 			this.style.setProperty('--h', this.item.h.toString());
+			if (!this.item.identified) {
+				this.style.setProperty('background-color', 'rgba(210, 0, 0, .18)');
+			}
 		}
 
 		if (map.has('showSockets')) {
