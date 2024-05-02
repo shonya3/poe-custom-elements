@@ -35,13 +35,15 @@ export class SimpleTooltip extends LitElement {
 		:host {
 			/* Position fixed to help ensure the tooltip is "on top" */
 			position: fixed;
-			border: 1px solid darkgray;
+			/*border: 1px solid darkgray;
+			background-color: rgba(0, 0, 0, 0.8);
+            
+            */
 			padding: 4px;
 			border-radius: 4px;
 			display: inline-block;
 			pointer-events: none;
 			z-index: 900;
-			background-color: rgba(0, 0, 0, 0.8);
 
 			/* Animate in */
 			opacity: 0;

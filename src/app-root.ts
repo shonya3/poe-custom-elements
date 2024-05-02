@@ -1,3 +1,4 @@
+import { socketed } from './../jsons/socketed';
 import { rogueMarkers } from './../jsons/rogueMarkers';
 import { allflame } from './../jsons/allflame';
 import { elementalBow } from './../jsons/elementalBow';
@@ -32,10 +33,11 @@ export class AppRoot extends LitElement {
 
 	protected render(): TemplateResult {
 		return html`
+			<poe-item .item=${socketed}></poe-item>
+			<poe-item .item=${aTab.items!.find(i => i.baseType === 'Plated Maul')!}></poe-item>
 			<poe-item .item=${rogueMarkers}></poe-item>
 			<poe-item-info .item=${allflame}></poe-item-info>
 			${this.Tabs()}
-			<poe-item .item=${aTab.items!.find(i => i.baseType === 'Plated Maul')!}></poe-item>
 		`;
 	}
 

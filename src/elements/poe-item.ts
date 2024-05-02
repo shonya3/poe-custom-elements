@@ -1,6 +1,6 @@
 import { LitElement, html, css, TemplateResult, PropertyValueMap, nothing, render } from 'lit';
 import { customElement, property, query, state } from 'lit/decorators.js';
-import type { PoeItem } from '../poe.types';
+import type { PoeItem, SocketedItem } from '../poe.types';
 import './poe-socket-chain';
 import { classMap } from 'lit/directives/class-map.js';
 import { SimpleTooltip } from './simple-tooltip';
@@ -63,6 +63,15 @@ export class PoeItemElement extends LitElement {
 		}
 	}
 
+	get tooltipElement() {
+		const next = this.nextElementSibling;
+		if (next instanceof SimpleTooltip) {
+			return next;
+		} else {
+			return null;
+		}
+	}
+
 	protected render(): TemplateResult {
 		if (!this.item) {
 			return html`<p style="color: red">No Poe Api item data (.item)</p>`;
@@ -72,6 +81,7 @@ export class PoeItemElement extends LitElement {
 			<img alt=${this.item.baseType} .src=${this.item.icon} />
 			${this.item.socketedItems && this.item.sockets
 				? html`<poe-socket-chain
+						@hovered-socketed-item-changed=${this.onHoveredSocketedItemChanged}
 						class=${classMap({ hidden: !this.socketsVisible })}
 						.socketedItems=${this.item.socketedItems}
 						.sockets=${this.item.sockets}
@@ -93,10 +103,28 @@ export class PoeItemElement extends LitElement {
 		this.addEventListener('mouseleave', this.onMouseLeave);
 	}
 
+	onHoveredSocketedItemChanged(e: CustomEvent<SocketedItem>) {
+		console.log(this.tooltipElement);
+		if (this.tooltipElement) {
+			const socketedItemContainer = this.tooltipElement.querySelector('.socketed-item');
+			if (socketedItemContainer instanceof HTMLElement) {
+				socketedItemContainer.innerHTML = '';
+				const info = document.createElement('poe-item-info');
+				if (e.detail) {
+					info.item = e.detail as PoeItem;
+					socketedItemContainer.append(info);
+				}
+			}
+		}
+	}
+
 	protected firstUpdated(): void {
 		SimpleTooltip.lazy(this, tooltip => {
 			render(
-				html`<poe-item-info style="display: block; z-index:500" .item=${this.item}></poe-item-info>`,
+				html`<div style="display:flex;align-items:flex-start;gap:1.2rem;z-index:500;padding:0;margin:0">
+					<poe-item-info .item=${this.item}></poe-item-info>
+					<div class="socketed-item"></div>
+				</div>`,
 				tooltip
 			);
 		});

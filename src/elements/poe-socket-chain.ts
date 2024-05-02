@@ -1,8 +1,9 @@
 import { classMap } from 'lit/directives/class-map.js';
-import { LitElement, html, css, TemplateResult, nothing } from 'lit';
-import { customElement, property } from 'lit/decorators.js';
+import { LitElement, html, css, TemplateResult, nothing, PropertyValueMap } from 'lit';
+import { customElement, property, state } from 'lit/decorators.js';
 import type { Socket, SocketedItem } from '../poe.types';
 import './poe-item-socket';
+import { PoeItemSocketElement } from './poe-item-socket';
 
 declare global {
 	interface HTMLElementTagNameMap {
@@ -13,6 +14,7 @@ declare global {
 type SocketLinkDirection = 'left-to-right' | 'top-to-bottom' | 'right-to-left';
 
 /**
+ * @event hovered-socketed-item-changed CustomEvent<SocketedItem | null>
  * @cssprop --default-cell-size - Size of one tab cell in pixels.
  * @cssprop --cell-size - Size of one tab cell in pixels.
  */
@@ -41,7 +43,12 @@ export class PoeSocketChainElement extends LitElement {
 			).flatMap((sockets = []) => {
 				return sockets.map(
 					(socket, i) => html`<li style="grid-area: s${socket.socketNo}">
-						<poe-item-socket .socketedItem=${socket.socketedItem} .kind=${socket.sColour}></poe-item-socket>
+						<poe-item-socket
+							@pointerenter=${() => this.onSocketPointerEnter(socket.socketedItem ?? null)}
+							@pointerleave=${this.onSocketPointerLeave}
+							.socketedItem=${socket.socketedItem}
+							.kind=${socket.sColour}
+						></poe-item-socket>
 						${i === sockets.length - 1
 							? nothing
 							: html`<div
@@ -56,6 +63,13 @@ export class PoeSocketChainElement extends LitElement {
 				);
 			})}
 		</ul>`;
+	}
+
+	onSocketPointerEnter(socketedItem: SocketedItem | null) {
+		this.dispatchEvent(new CustomEvent('hovered-socketed-item-changed', { detail: socketedItem }));
+	}
+	onSocketPointerLeave() {
+		this.dispatchEvent(new CustomEvent('hovered-socketed-item-changed', { detail: null }));
 	}
 
 	socketLinkDirection(socketNo: number): SocketLinkDirection {
