@@ -34,13 +34,14 @@ export class PoeSocketChainElement extends LitElement {
 					this.sockets.map((socket, i) => ({
 						socketNo: i + 1,
 						...socket,
+						socketedItem: this.socketedItems.find(item => item.socket === i),
 					})),
 					socket => socket.group
 				)
 			).flatMap((sockets = []) => {
 				return sockets.map(
 					(socket, i) => html`<li style="grid-area: s${socket.socketNo}">
-						<poe-item-socket kind=${socket.sColour}></poe-item-socket>
+						<poe-item-socket .socketedItem=${socket.socketedItem} .kind=${socket.sColour}></poe-item-socket>
 						${i === sockets.length - 1
 							? nothing
 							: html`<div

@@ -1,6 +1,6 @@
 import { LitElement, html, css, TemplateResult } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import type { SocketKind, GemKind } from '../poe.types';
+import type { SocketKind, SocketedItem } from '../poe.types';
 
 declare global {
 	interface HTMLElementTagNameMap {
@@ -15,27 +15,25 @@ declare global {
 export class PoeItemSocketElement extends LitElement {
 	/** Socket color or Abyss */
 	@property({ reflect: true }) kind!: SocketKind;
-	/** Has socketed item or not. */
-	@property({ type: Boolean, reflect: true }) full!: boolean;
-	/** Active or Support */
-	@property({ reflect: true, attribute: 'gem-kind' }) gemKind!: GemKind;
+	@property({ type: Object }) socketedItem?: SocketedItem;
 
 	protected render(): TemplateResult {
-		return html`<img .src=${this.gemImageSrc()} />
-			<div class="highlight-ring"></div>`;
+		return html`<img .src=${this.gemImageSrc()} alt="" />
+			<div class="highlight-ring"></div>
+			<img class="socketed-item-image" src="" alt="" /> `;
 	}
 
 	gemImageSrc() {
 		const name = () => {
 			switch (this.kind) {
 				case 'A':
-					return this.full ? 'todoAbyss' : 'todoAbyssFull';
+					return this.socketedItem ? 'todoAbyss' : 'todoAbyssFull';
 				case 'B':
-					return this.full ? 'intFull' : 'int';
+					return this.socketedItem ? 'intFull' : 'int';
 				case 'G':
-					return this.full ? 'dexFull' : 'dex';
+					return this.socketedItem ? 'dexFull' : 'dex';
 				case 'R':
-					return this.full ? 'strFull' : 'str';
+					return this.socketedItem ? 'strFull' : 'str';
 			}
 		};
 
@@ -54,6 +52,9 @@ export class PoeItemSocketElement extends LitElement {
 			padding: 0;
 			margin: 0;
 			box-sizing: border-box;
+		}
+
+		.socketed-item-image {
 		}
 
 		.highlight-ring {

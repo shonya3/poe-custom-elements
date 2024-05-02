@@ -59,7 +59,6 @@ export interface Socket {
 
 export const SOCKET_KINDS = ['R', 'G', 'B', 'A', 'W'] as const;
 export type SocketKind = (typeof SOCKET_KINDS)[number];
-export type GemKind = 'support' | 'active';
 
 export interface ICategory {
 	gems: Array<string>;
