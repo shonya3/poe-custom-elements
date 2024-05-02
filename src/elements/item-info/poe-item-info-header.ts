@@ -32,8 +32,8 @@ export class ItemInfoHeader extends LitElement {
 		>
 			${size === 'double'
 				? html`
-						<div class="content">${this.item.name}</div>
-						<div class="content">${this.item.baseType}</div>
+						<div class="content mt-2">${this.item.name}</div>
+						<div class="content mb-4">${this.item.baseType}</div>
 				  `
 				: html`<div class="content">${this.item.baseType}</div>`}
 		</header>`;
@@ -79,6 +79,14 @@ export class ItemInfoHeader extends LitElement {
 			align-items: center;
 			justify-content: center;
 			height: 100%;
+		}
+
+		.mt-2 {
+			margin-top: 2px;
+		}
+
+		.mb-4 {
+			margin-bottom: 0.25rem;
 		}
 	`;
 }
