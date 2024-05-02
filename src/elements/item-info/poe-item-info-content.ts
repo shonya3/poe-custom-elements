@@ -48,7 +48,6 @@ export class PoeItemInfoContentElement extends LitElement {
 					: nothing,
 				this.item.identified ? nothing : html` <p class="unidentified">Unidentified</p>`,
 				this.item.corrupted ? html` <p class="corrupted">corrupted</p>` : nothing,
-				this.item.descrText ? html`<p class="description-text">${this.item.descrText}</p>` : nothing,
 				this.item.flavourText
 					? html`${this.item.flavourText.map((line, i, arr) => {
 							if (i === arr.length - 1 && line.includes('<default>')) {
@@ -58,6 +57,7 @@ export class PoeItemInfoContentElement extends LitElement {
 							}
 					  })}`
 					: nothing,
+				this.item.descrText ? html`<p class="description-text">${this.item.descrText}</p>` : nothing,
 			]
 				.filter(el => el !== nothing)
 				.flatMap((el, index, arr) =>
