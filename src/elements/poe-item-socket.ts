@@ -30,7 +30,7 @@ export class PoeItemSocketElement extends LitElement {
 			const skillOrSupport = this.socketedItem?.support ? 'Support' : 'Skill';
 			switch (this.kind) {
 				case 'A':
-					return this.socketedItem ? 'todoAbyss' : 'todoAbyssFull';
+					return this.socketedItem ? 'socketAbyss' : 'socketAbyssFull';
 				case 'B':
 					return this.socketedItem ? `intFull${skillOrSupport}` : 'int';
 				case 'G':
