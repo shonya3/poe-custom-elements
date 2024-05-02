@@ -17,35 +17,41 @@ export class PoeItemSocketElement extends LitElement {
 	@property({ reflect: true }) kind!: SocketKind;
 	@property({ type: Object }) socketedItem?: SocketedItem;
 
+	protected willUpdate(): void {
+		this.style.setProperty('--background-image', this.gemImageSrc());
+	}
+
 	protected render(): TemplateResult {
-		return html`<img .src=${this.gemImageSrc()} alt="" />
-			<div class="highlight-ring"></div>
-			<img class="socketed-item-image" src="" alt="" /> `;
+		return html` <div class="highlight-ring"></div> `;
 	}
 
 	gemImageSrc() {
 		const name = () => {
+			const skillOrSupport = this.socketedItem?.support ? 'Support' : 'Skill';
 			switch (this.kind) {
 				case 'A':
 					return this.socketedItem ? 'todoAbyss' : 'todoAbyssFull';
 				case 'B':
-					return this.socketedItem ? 'intFull' : 'int';
+					return this.socketedItem ? `intFull${skillOrSupport}` : 'int';
 				case 'G':
-					return this.socketedItem ? 'dexFull' : 'dex';
+					return this.socketedItem ? `dexFull${skillOrSupport}` : 'dex';
 				case 'R':
-					return this.socketedItem ? 'strFull' : 'str';
+					return this.socketedItem ? `strFull${skillOrSupport}` : 'str';
 			}
 		};
 
-		return `/poe-images/${name()}.png`;
+		return `url('/poe-images/${name()}.png')`;
 	}
 
 	static styles = css`
 		:host {
+			--background-image: '(computed) Image of empty or full socket';
 			display: inline-block;
 			width: var(--cell-size);
 			height: var(--cell-size);
 			position: relative;
+			background: var(--background-image);
+			background-size: 100%;
 		}
 
 		* {
@@ -78,6 +84,7 @@ export class PoeItemSocketElement extends LitElement {
 		img {
 			width: 100%;
 			display: block;
+			height: var(--cell-size);
 		}
 	`;
 }
