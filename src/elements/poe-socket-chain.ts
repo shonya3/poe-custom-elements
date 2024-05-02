@@ -1,9 +1,8 @@
 import { classMap } from 'lit/directives/class-map.js';
-import { LitElement, html, css, TemplateResult, nothing, PropertyValueMap } from 'lit';
-import { customElement, property, state } from 'lit/decorators.js';
+import { LitElement, html, css, TemplateResult, nothing } from 'lit';
+import { customElement, property } from 'lit/decorators.js';
 import type { Socket, SocketedItem } from '../poe.types';
 import './poe-item-socket';
-import { PoeItemSocketElement } from './poe-item-socket';
 
 declare global {
 	interface HTMLElementTagNameMap {
