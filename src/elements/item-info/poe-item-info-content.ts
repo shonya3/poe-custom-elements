@@ -49,6 +49,15 @@ export class PoeItemInfoContentElement extends LitElement {
 				this.item.identified ? nothing : html` <p class="unidentified">Unidentified</p>`,
 				this.item.corrupted ? html` <p class="corrupted">corrupted</p>` : nothing,
 				this.item.descrText ? html`<p class="description-text">${this.item.descrText}</p>` : nothing,
+				this.item.flavourText
+					? html`${this.item.flavourText.map((line, i, arr) => {
+							if (i === arr.length - 1 && line.includes('<default>')) {
+								return html`<p class="default mt-16">${line.match(/{(.*?)}/)?.[1] ?? ''}</p>`;
+							} else {
+								return html`<p class="flavour-text">${line}</p>`;
+							}
+					  })}`
+					: nothing,
 			]
 				.filter(el => el !== nothing)
 				.flatMap((el, index, arr) =>
@@ -133,6 +142,14 @@ export class PoeItemInfoContentElement extends LitElement {
 
 		.monster-level {
 			color: #fff;
+		}
+
+		.flavour-text {
+			color: #af6025;
+		}
+
+		.mt-16 {
+			margin-top: 1rem;
 		}
 
 		.description-text {
