@@ -179,3 +179,5 @@ export type Influence = (typeof INFLUENCE_VARIANTS)[number];
 
 export const RARITY_VARIANTS = ['Normal', 'Magic', 'Rare', 'Unique'] as const;
 export type ItemRarity = (typeof RARITY_VARIANTS)[number];
+
+export type FrameKind = 'normal' | 'magic' | 'rare' | 'unique' | 'gem' | 'currency' | 'necropolis';

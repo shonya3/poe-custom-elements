@@ -2,8 +2,9 @@ import { poeColorsCssVariables } from './../../styles/poe-colors-vars.style';
 import { styles as poeColorsStyles } from '../../styles/poe-colors.style';
 import { LitElement, html, css, TemplateResult } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import type { PoeItem } from '../../poe.types';
+import type { FrameKind, PoeItem } from '../../poe.types';
 import { classMap } from 'lit/directives/class-map.js';
+import { frameKind } from '../lib';
 
 declare global {
 	interface HTMLElementTagNameMap {
@@ -82,8 +83,6 @@ export class ItemInfoHeader extends LitElement {
 	`;
 }
 
-type FrameKind = 'normal' | 'magic' | 'rare' | 'unique' | 'gem' | 'currency' | 'necropolis';
-
 function headerBackgroundUrl(frameKind: FrameKind, identified: boolean): string {
 	const size = singleOrDouble(frameKind, identified);
 	const left = `url(${headerAssetUrl(frameKind, size, 'left')}) top left no-repeat`;
@@ -119,29 +118,5 @@ function singleOrDouble(frameKind: FrameKind, identified: boolean): 'single' | '
 			return 'single';
 		case 'necropolis':
 			return 'single';
-	}
-}
-
-/** https://www.pathofexile.com/developer/docs/reference#type-FrameType */
-function frameKind(frameType: number): FrameKind | null {
-	switch (frameType) {
-		case 0:
-			return 'normal';
-		case 1:
-			return 'magic';
-		case 2:
-			return 'rare';
-		case 3:
-			return 'unique';
-		case 4:
-			return 'gem';
-		case 5:
-			return 'currency';
-		// case 6:
-		// return 'divination card';
-		case 11:
-			return 'necropolis';
-		default:
-			return null;
 	}
 }

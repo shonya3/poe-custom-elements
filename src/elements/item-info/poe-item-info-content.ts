@@ -4,6 +4,7 @@ import type { ItemProperty, PoeItem, Requirement } from '../../poe.types';
 import './poe-separator';
 import './poe-item-property';
 import './poe-requirements';
+import { frameKind } from '../lib';
 
 declare global {
 	interface HTMLElementTagNameMap {
@@ -51,7 +52,9 @@ export class PoeItemInfoContentElement extends LitElement {
 			]
 				.filter(el => el !== nothing)
 				.flatMap((el, index, arr) =>
-					index === arr.length - 1 ? [el] : [el, html`<poe-separator></poe-separator>`]
+					index === arr.length - 1
+						? [el]
+						: [el, html`<poe-separator .kind=${frameKind(this.item.frameType) ?? 'rare'}></poe-separator>`]
 				)}
 		</div>`;
 	}
