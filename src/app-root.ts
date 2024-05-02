@@ -11,10 +11,10 @@ import './elements/item-info/poe-item-info-header';
 import { TabWithItems } from './poe.types';
 import quadJson from '../jsons/QuadStash.json';
 import premJson from '../jsons/PremiumStash.json';
-import aTabJson from '../jsons/a.json';
 import influenceJson from '../jsons/influence.json';
 import garbageJson from '../jsons/garbage.json';
 import { tabs } from '../jsons/tabs';
+import { a as aTab } from '../jsons/tabs/a';
 
 declare global {
 	interface HTMLElementTagNameMap {
@@ -26,7 +26,6 @@ declare global {
 export class AppRoot extends LitElement {
 	@state() quad = quadJson as TabWithItems;
 	@state() prem = premJson as TabWithItems;
-	@state() aTab = aTabJson as unknown as TabWithItems;
 	@state() item = item();
 	@state() influenceTab = influenceJson as TabWithItems;
 	@state() garbageTab = garbageJson as TabWithItems;
@@ -36,15 +35,15 @@ export class AppRoot extends LitElement {
 			<poe-item .item=${rogueMarkers}></poe-item>
 			<poe-item-info .item=${allflame}></poe-item-info>
 			${this.Tabs()}
-			<poe-item .item=${this.aTab.items!.find(i => i.baseType === 'Plated Maul')!}></poe-item>
+			<poe-item .item=${aTab.items!.find(i => i.baseType === 'Plated Maul')!}></poe-item>
 		`;
 	}
 
 	protected render2(): TemplateResult {
 		return html`
-			<poe-item .item=${this.aTab.items!.find(i => i.baseType === 'Plated Maul')!}></poe-item>
+			<poe-item .item=${aTab.items!.find(i => i.baseType === 'Plated Maul')!}></poe-item>
 			<poe-item-info .item=${elementalBow}></poe-item-info>
-			<poe-item-info .item=${this.aTab.items!.find(i => i.baseType === 'Plated Maul')!}></poe-item-info>
+			<poe-item-info .item=${aTab.items!.find(i => i.baseType === 'Plated Maul')!}></poe-item-info>
 		`;
 	}
 

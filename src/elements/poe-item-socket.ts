@@ -21,7 +21,8 @@ export class PoeItemSocketElement extends LitElement {
 	@property({ reflect: true, attribute: 'gem-kind' }) gemKind!: GemKind;
 
 	protected render(): TemplateResult {
-		return html`<img .src=${this.gemImageSrc()} />`;
+		return html`<img .src=${this.gemImageSrc()} />
+			<div class="highlight-ring"></div>`;
 	}
 
 	gemImageSrc() {
@@ -46,17 +47,36 @@ export class PoeItemSocketElement extends LitElement {
 			display: inline-block;
 			width: var(--cell-size);
 			height: var(--cell-size);
-		}
-
-		img {
-			width: 100%;
-			display: block;
+			position: relative;
 		}
 
 		* {
 			padding: 0;
 			margin: 0;
 			box-sizing: border-box;
+		}
+
+		.highlight-ring {
+			display: none;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			position: absolute;
+			content: '';
+			width: calc(var(--cell-size) / var(--default-cell-size) * 31);
+			height: calc(var(--cell-size) / var(--default-cell-size) * 31);
+			border-radius: 50%;
+
+			box-shadow: 0px 0px 4px 2px #fff;
+		}
+
+		:host(:hover) .highlight-ring {
+			display: initial;
+		}
+
+		img {
+			width: 100%;
+			display: block;
 		}
 	`;
 }
