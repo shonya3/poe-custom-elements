@@ -60,9 +60,6 @@ export class PoeItemSocketElement extends LitElement {
 			box-sizing: border-box;
 		}
 
-		.socketed-item-image {
-		}
-
 		.highlight-ring {
 			display: none;
 			top: 50%;
