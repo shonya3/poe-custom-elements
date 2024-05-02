@@ -51,7 +51,9 @@ export class PoeItemInfoContentElement extends LitElement {
 				this.item.flavourText
 					? html`${this.item.flavourText.map((line, i, arr) => {
 							if (i === arr.length - 1 && line.includes('<default>')) {
-								return html`<p class="default mt-16">${line.match(/{(.*?)}/)?.[1] ?? ''}</p>`;
+								return html`<p class="flavour-text_default mt-16">
+									${line.match(/{(.*?)}/)?.[1] ?? ''}
+								</p>`;
 							} else {
 								return html`<p class="flavour-text">${line}</p>`;
 							}
@@ -146,6 +148,11 @@ export class PoeItemInfoContentElement extends LitElement {
 
 		.flavour-text {
 			color: #af6025;
+			font-style: italic;
+		}
+		.flavour-text_default {
+			color: #7f7f7f;
+			font-style: italic;
 		}
 
 		.mt-16 {
