@@ -1,6 +1,7 @@
 import { LitElement, html, css, TemplateResult } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import type { SocketKind, SocketedItem } from '../poe.types';
+import { capitalize } from './lib';
 
 declare global {
 	interface HTMLElementTagNameMap {
@@ -26,9 +27,9 @@ export class PoeItemSocketElement extends LitElement {
 	}
 
 	gemImageSrc() {
-		const name = () => {
+		const name = (kind: SocketKind): string => {
 			const skillOrSupport = this.socketedItem?.support ? 'Support' : 'Skill';
-			switch (this.kind) {
+			switch (kind) {
 				case 'A':
 					return this.socketedItem ? 'socketAbyss' : 'socketAbyssFull';
 				case 'B':
@@ -37,10 +38,31 @@ export class PoeItemSocketElement extends LitElement {
 					return this.socketedItem ? `dexFull${skillOrSupport}` : 'dex';
 				case 'R':
 					return this.socketedItem ? `strFull${skillOrSupport}` : 'str';
+				case 'W': {
+					const color = this.socketedItem?.colour;
+					const whiteName = (gemColor: SocketKind) => {
+						return `gen${capitalize(name(gemColor))}`;
+					};
+
+					if (!this.socketedItem) {
+						return 'gen';
+					}
+					if (!color) {
+						return whiteName('B');
+					}
+					switch (color) {
+						case 'R':
+						case 'G':
+						case 'B':
+							return whiteName(color);
+						default:
+							return whiteName('B');
+					}
+				}
 			}
 		};
 
-		return `url('/poe-images/${name()}.png')`;
+		return `url('/poe-images/${name(this.kind)}.png')`;
 	}
 
 	static styles = css`

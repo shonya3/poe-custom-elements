@@ -23,3 +23,8 @@ export function frameKind(frameType: number): FrameKind | null {
 			return null;
 	}
 }
+
+export function capitalize(s: string): string {
+	const [first = '', ...rest] = s;
+	return `${first.toUpperCase()}${rest.join('')}`;
+}
