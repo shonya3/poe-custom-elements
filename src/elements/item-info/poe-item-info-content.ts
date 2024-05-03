@@ -40,8 +40,9 @@ export class PoeItemInfoContentElement extends LitElement {
 				this.implicits.length
 					? html` ${this.implicits.map(imp => html`<p class="augmented">${imp}</p>`)} `
 					: nothing,
-				this.explicits.length || this.crafts.length
+				this.explicits.length || this.crafts.length || this.fracturedMods
 					? html`
+							${this.fracturedMods.map(frac => html`<p class="fractured">${frac}</p>`)}
 							${this.explicits.map(exp => html`<p class="augmented">${exp}</p>`)}
 							${this.crafts.map(craft => html`<p class="craft">${craft}</p>`)}
 					  `
@@ -98,6 +99,10 @@ export class PoeItemInfoContentElement extends LitElement {
 		return this.item.craftedMods ?? [];
 	}
 
+	get fracturedMods(): Array<string> {
+		return this.item.fracturedMods ?? [];
+	}
+
 	static styles = css`
 		* {
 			padding: 0;
@@ -135,6 +140,10 @@ export class PoeItemInfoContentElement extends LitElement {
 		.craft,
 		.enchant {
 			color: #b4b4ff;
+		}
+
+		.fractured {
+			color: #a29162;
 		}
 
 		.unidentified,
