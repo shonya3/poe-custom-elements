@@ -104,7 +104,6 @@ export class PoeItemElement extends LitElement {
 	}
 
 	onHoveredSocketedItemChanged(e: CustomEvent<SocketedItem>) {
-		console.log(this.tooltipElement);
 		if (this.tooltipElement) {
 			const socketedItemContainer = this.tooltipElement.querySelector('.socketed-item');
 			if (socketedItemContainer instanceof HTMLElement) {
