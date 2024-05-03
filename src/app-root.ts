@@ -1,3 +1,4 @@
+import { influence } from './../jsons/influence';
 import { fracturedGloves } from '../jsons/fracturedGloves';
 import { socketed } from './../jsons/socketed';
 import { rogueMarkers } from './../jsons/rogueMarkers';
@@ -34,6 +35,7 @@ export class AppRoot extends LitElement {
 
 	protected render(): TemplateResult {
 		return html`
+			<poe-item-info .item=${influence}></poe-item-info>
 			<poe-item .item=${fracturedGloves}></poe-item>
 			${this.Tabs()}
 			<poe-item-info .item=${socketed}></poe-item-info>

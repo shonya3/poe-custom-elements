@@ -1,6 +1,6 @@
 import { poeColorsCssVariables } from './../../styles/poe-colors-vars.style';
 import { styles as poeColorsStyles } from '../../styles/poe-colors.style';
-import { LitElement, html, css, TemplateResult } from 'lit';
+import { LitElement, html, css, TemplateResult, PropertyValueMap } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import type { FrameKind, PoeItem } from '../../poe.types';
 import { classMap } from 'lit/directives/class-map.js';
@@ -16,6 +16,14 @@ declare global {
 export class ItemInfoHeader extends LitElement {
 	@property({ type: Object }) item!: PoeItem;
 
+	protected willUpdate(map: PropertyValueMap<this>): void {
+		if (map.has('item')) {
+			const [leftSymbolUrl, rightSymbolUrl] = headerSymbols(this.item);
+			this.style.setProperty('--left-symbol-bg-image-url', leftSymbolUrl);
+			this.style.setProperty('--right-symbol-bg-image-url', rightSymbolUrl);
+		}
+	}
+
 	protected render(): TemplateResult {
 		const frame = frameKind(this.item.frameType);
 		const size = frame ? singleOrDouble(frame, this.item.identified) : null;
@@ -30,6 +38,8 @@ export class ItemInfoHeader extends LitElement {
 			})}
 			style="background: ${headerBackgroundUrl(frame ?? 'normal', this.item.identified)}"
 		>
+			<div class="symbol left-symbol"></div>
+			<div class="symbol right-symbol"></div>
 			${size === 'double'
 				? html`
 						<div class="content mt-2">${this.item.name}</div>
@@ -49,6 +59,8 @@ export class ItemInfoHeader extends LitElement {
 		}
 
 		:host {
+			--left-symbol-bg-image-url: none;
+			--right-symbol-bg-image-url: none;
 			${poeColorsCssVariables}
 		}
 
@@ -58,18 +70,20 @@ export class ItemInfoHeader extends LitElement {
 			justify-content: center;
 			align-items: center;
 			flex-direction: column;
+			position: relative;
+			height: var(--height);
 		}
 
 		.header--single {
-			height: 33px;
+			--height: 33px;
 		}
 
 		.header--double {
-			height: 54px;
+			--height: 54px;
 		}
 
 		.header--necropolis {
-			height: 45px;
+			--height: 45px;
 		}
 
 		.content {
@@ -88,7 +102,54 @@ export class ItemInfoHeader extends LitElement {
 		.mb-4 {
 			margin-bottom: 0.25rem;
 		}
+
+		.symbol {
+			width: calc(var(--cell-size) / var(--default-cell-size) * 27);
+			height: var(--height, 33px);
+			background-size: 100%;
+			width: 27px;
+		}
+		.left-symbol {
+			background: var(--left-symbol-bg-image-url) center no-repeat;
+			position: absolute;
+			left: 0px;
+			z-index: 20000000000;
+		}
+		.right-symbol {
+			background: var(--right-symbol-bg-image-url) center no-repeat;
+			position: absolute;
+			right: 0px;
+			z-index: 20000000000;
+		}
 	`;
+}
+
+function headerSymbols(item: PoeItem): [string, string] {
+	const influenceNames = () => {
+		if (item.influences) {
+			const influences = Object.keys(item.influences);
+			switch (influences.length) {
+				case 0:
+					return ['', ''];
+				case 1:
+					return [influences[0], influences[0]];
+				case 2:
+					return [influences[0], influences[1]];
+			}
+		}
+
+		if (item.fractured) {
+			return ['fractured', 'fractured'];
+		}
+
+		if (item.synthesised) {
+			return ['synthesised', 'synthesised'];
+		}
+
+		return ['', ''];
+	};
+
+	return influenceNames().map(inf => `url(/poe-images/${inf}-symbol.png)`) as [string, string];
 }
 
 function headerBackgroundUrl(frameKind: FrameKind, identified: boolean): string {
