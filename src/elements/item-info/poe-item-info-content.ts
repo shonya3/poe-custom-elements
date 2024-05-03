@@ -38,12 +38,12 @@ export class PoeItemInfoContentElement extends LitElement {
 					  )}`
 					: nothing,
 				this.implicits.length
-					? html` ${this.implicits.map(imp => html`<p class="augmented">${imp}</p>`)} `
+					? html` ${this.implicits.map(imp => html`<p class="implicitMod">${imp}</p>`)} `
 					: nothing,
-				this.explicits.length || this.crafts.length || this.fracturedMods
+				this.explicits.length || this.crafts.length || this.fracturedMods.length
 					? html`
 							${this.fracturedMods.map(frac => html`<p class="fractured">${frac}</p>`)}
-							${this.explicits.map(exp => html`<p class="augmented">${exp}</p>`)}
+							${this.explicits.map(exp => html`<p class="explicitMod">${exp}</p>`)}
 							${this.crafts.map(craft => html`<p class="craft">${craft}</p>`)}
 					  `
 					: nothing,
@@ -133,7 +133,9 @@ export class PoeItemInfoContentElement extends LitElement {
 			gap: 0.05rem;
 		}
 
-		.augmented {
+		.augmented,
+		.implicitMod,
+		.explicitMod {
 			color: #88f;
 		}
 
