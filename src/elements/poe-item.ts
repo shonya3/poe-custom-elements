@@ -1,13 +1,13 @@
 import { LitElement, html, css, TemplateResult, PropertyValueMap, nothing, render } from 'lit';
 import { customElement, property, query, state } from 'lit/decorators.js';
-import type { Influence, PoeItem, SocketedItem } from '../poe.types';
+import type { Influence, ItemProperty, PoeItem, Requirement, Socket, SocketedItem } from '../poe.types';
 import './poe-socket-chain';
 import { classMap } from 'lit/directives/class-map.js';
 import { SimpleTooltip } from './simple-tooltip';
 import './simple-tooltip';
 import './tooltip-json-icon';
 import { JsonIconElement } from './tooltip-json-icon';
-import { capitalize } from './lib';
+import { capitalize, parseDisplayMode3 } from './lib';
 
 declare global {
 	interface HTMLElementTagNameMap {
@@ -20,6 +20,7 @@ declare global {
  */
 @customElement('poe-item')
 export class PoeItemElement extends LitElement {
+	itemIntoTextTransformer: ItemIntoTextTransformer | null = null;
 	/** PoE API item data https://www.pathofexile.com/developer/docs/reference#stashes-get */
 	@property({ type: Object }) item!: PoeItem;
 	/** Controls the visibility of sockets.
@@ -131,7 +132,7 @@ export class PoeItemElement extends LitElement {
 		});
 	}
 
-	onCtrlJClick = (e: KeyboardEvent) => {
+	onJClick = (e: KeyboardEvent) => {
 		if (this.hovered) {
 			if (e.code === 'KeyJ') {
 				const icon = this.iconJson ?? document.createElement('tooltip-json-icon');
@@ -144,6 +145,18 @@ export class PoeItemElement extends LitElement {
 				setTimeout(() => {
 					icon.showing = false;
 				}, 2000);
+			}
+		}
+	};
+
+	onHoverCtrlCClick = (e: KeyboardEvent) => {
+		if (this.hovered) {
+			if (e.ctrlKey && e.code === 'KeyC') {
+				console.log('ctrl c clicked!');
+				if (!this.itemIntoTextTransformer) {
+					this.itemIntoTextTransformer = new ItemIntoTextTransformer(this.item);
+				}
+				window.navigator.clipboard.writeText(this.itemIntoTextTransformer.transform());
 			}
 		}
 	};
@@ -167,13 +180,15 @@ export class PoeItemElement extends LitElement {
 		super.connectedCallback();
 		window.addEventListener('keydown', this.onAltPressed);
 		window.addEventListener('keyup', this.onAltReleased);
-		window.addEventListener('keydown', this.onCtrlJClick);
+		window.addEventListener('keydown', this.onJClick);
+		window.addEventListener('keydown', this.onHoverCtrlCClick);
 	}
 	disconnectedCallback(): void {
 		super.disconnectedCallback();
 		window.removeEventListener('keydown', this.onAltPressed);
 		window.removeEventListener('keyup', this.onAltReleased);
-		window.removeEventListener('keydown', this.onCtrlJClick);
+		window.removeEventListener('keydown', this.onJClick);
+		window.removeEventListener('keydown', this.onHoverCtrlCClick);
 	}
 
 	static styles = css`
@@ -268,4 +283,97 @@ function influencesBackgroundVar(item: PoeItem) {
 	}
 
 	return influences.map(influenceImageUrl).filter(Boolean).join(', ');
+}
+
+export class ItemIntoTextTransformer {
+	#separator = '\n--------\n' as const;
+	item: PoeItem;
+	constructor(item: PoeItem) {
+		this.item = item;
+	}
+
+	transform() {
+		return [
+			[this.item.rarity ?? '', this.item.name === this.item.baseType ? '' : this.item.name, this.item.baseType]
+				.filter(s => s.length > 0)
+				.join('\n'),
+			this.properties.length ? this.properties.map(parseProperty).join('\n') : '',
+			this.requirements.length
+				? `Requirements: \n${this.requirements
+						.map(({ name, values }) => `${name}: ${values[0][0]}`)
+						.join('\n')}`
+				: '',
+			this.sockets.length
+				? `Sockets: ${Object.values(Object.groupBy(this.sockets, socket => socket.group))
+						.flatMap((s = []) => s.map(({ sColour }) => sColour).join('-'))
+						.join(' ')}`
+				: '',
+			this.enchantments.length ? this.enchantments.join('\n') : '',
+			this.implicits.length ? this.implicits.join('\n') : '',
+			this.fracturedMods.length || this.explicits.length || this.crafts.length
+				? [...this.fracturedMods, ...this.explicits, ...this.crafts].join('\n')
+				: '',
+			this.item.identified ? '' : 'Unidentified',
+		]
+			.filter(el => el.length > 0)
+			.flatMap((el, index, arr) => (index === arr.length - 1 ? [el] : [el, this.#separator]))
+			.join('');
+	}
+
+	groupSockets() {
+		Object.values(Object.groupBy(this.sockets, socket => socket.group))
+			.flatMap((s = []) => s.map(({ sColour }) => sColour).join('-'))
+			.map(s => {
+				console.log(s);
+				return s;
+			})
+			.join(' ');
+	}
+
+	get sockets(): Array<Socket> {
+		return this.item.sockets ?? [];
+	}
+
+	get enchantments(): Array<string> {
+		return this.item.enchantMods ?? [];
+	}
+
+	get properties(): Array<ItemProperty> {
+		return this.item.properties ?? [];
+	}
+
+	get requirements(): Array<Requirement> {
+		return this.item.requirements ?? [];
+	}
+
+	get implicits(): Array<string> {
+		return this.item.implicitMods ?? [];
+	}
+
+	get explicits(): Array<string> {
+		return this.item.explicitMods ?? [];
+	}
+
+	get crafts(): Array<string> {
+		return this.item.craftedMods ?? [];
+	}
+
+	get fracturedMods(): Array<string> {
+		return this.item.fracturedMods ?? [];
+	}
+}
+
+function parseProperty(property: ItemProperty): string {
+	switch (property.displayMode) {
+		case 0: {
+			if (!property.values.length) {
+				return property.name;
+			}
+			return `${property.name}: ${property.values.map(value => value[0]).join(', ')}`;
+		}
+		case 3:
+			return parseDisplayMode3(property);
+		default:
+			return '';
+	}
 }

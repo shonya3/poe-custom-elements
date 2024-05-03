@@ -2,6 +2,7 @@ import { LitElement, html, css, TemplateResult, nothing } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import type { ItemProperty } from '../../poe.types';
 import { classMap } from 'lit/directives/class-map.js';
+import { parseDisplayMode3 } from '../lib';
 
 declare global {
 	interface HTMLElementTagNameMap {
@@ -87,41 +88,6 @@ function Values(property: ItemProperty) {
 
 	return nothing;
 }
-
-function parseDisplayMode3(property: ItemProperty): string;
-function parseDisplayMode3<T>(property: ItemProperty, mapFn: (val: string) => T): Array<T | string>;
-function parseDisplayMode3<T>(property: ItemProperty, mapFn?: (val: string) => T): Array<T | string> | string {
-	if (property.displayMode !== 3) {
-		throw new Error(`Expected displayMode 3, got ${property.displayMode}`);
-	}
-
-	const result = property.name.split(/\{(\d+)\}/g).map((part, index) => {
-		if (index % 2 === 0) {
-			return part;
-		}
-
-		const value = property.values[parseInt(part)]?.[0];
-		if (value == null) {
-			return part;
-		}
-
-		return mapFn ? mapFn(value) : value;
-	});
-
-	return mapFn ? result : result.join('');
-}
-
-console.log(
-	parseDisplayMode3(
-		{
-			displayMode: 3,
-			name: 'Weapon Range: {0}',
-			type: 14,
-			values: [['1.3', 0]],
-		},
-		value => html`<span class="value">${value}</span>`
-	)
-);
 
 // displayMode 0 - with. If value, with :, if no, nothing
 /* 

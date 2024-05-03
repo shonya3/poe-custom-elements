@@ -1,4 +1,4 @@
-import { FrameKind } from '../poe.types';
+import { FrameKind, ItemProperty } from '../poe.types';
 
 /** https://www.pathofexile.com/developer/docs/reference#type-FrameType */
 export function frameKind(frameType: number): FrameKind | null {
@@ -27,4 +27,27 @@ export function frameKind(frameType: number): FrameKind | null {
 export function capitalize(s: string): string {
 	const [first = '', ...rest] = s;
 	return `${first.toUpperCase()}${rest.join('')}`;
+}
+
+export function parseDisplayMode3(property: ItemProperty): string;
+export function parseDisplayMode3<T>(property: ItemProperty, mapFn: (val: string) => T): Array<T | string>;
+export function parseDisplayMode3<T>(property: ItemProperty, mapFn?: (val: string) => T): Array<T | string> | string {
+	if (property.displayMode !== 3) {
+		throw new Error(`Expected displayMode 3, got ${property.displayMode}`);
+	}
+
+	const result = property.name.split(/\{(\d+)\}/g).map((part, index) => {
+		if (index % 2 === 0) {
+			return part;
+		}
+
+		const value = property.values[parseInt(part)]?.[0];
+		if (value == null) {
+			return part;
+		}
+
+		return mapFn ? mapFn(value) : value;
+	});
+
+	return mapFn ? result : result.join('');
 }
