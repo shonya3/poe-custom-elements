@@ -294,7 +294,11 @@ export class ItemIntoTextTransformer {
 
 	transform() {
 		return [
-			[this.item.rarity ?? '', this.item.name === this.item.baseType ? '' : this.item.name, this.item.baseType]
+			[
+				this.item.rarity ?? '',
+				`Rarity: ${this.item.name === this.item.baseType}` ? '' : this.item.name,
+				this.item.baseType,
+			]
 				.filter(s => s.length > 0)
 				.join('\n'),
 			this.properties.length ? this.properties.map(parseProperty).join('\n') : '',
