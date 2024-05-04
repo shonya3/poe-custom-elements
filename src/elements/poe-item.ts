@@ -288,10 +288,6 @@ function influencesBackgroundVar(item: PoeItem) {
 		}
 	};
 
-	if (influences.includes('elder')) {
-		console.log('here');
-	}
-
 	return influences.map(influenceImageUrl).filter(Boolean).join(', ');
 }
 

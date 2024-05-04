@@ -45,7 +45,6 @@ export class PoeStashTabElement extends LitElement {
 		}
 
 		const sizeOfCellPixels = this.sizeOfCellPixels();
-		console.log(sizeOfCellPixels);
 
 		if (this.tab.type === 'EssenceStash' || this.tab.type === 'CurrencyStash') {
 			this.tabState!.items.forEach(item => {
