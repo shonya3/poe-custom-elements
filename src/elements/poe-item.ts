@@ -20,7 +20,7 @@ declare global {
  */
 @customElement('poe-item')
 export class PoeItemElement extends LitElement {
-	itemIntoTextTransformer: ItemIntoTextTransformer | null = null;
+	#itemIntoTextTransformer: ItemIntoTextTransformer | null = null;
 	/** PoE API item data https://www.pathofexile.com/developer/docs/reference#stashes-get */
 	@property({ type: Object }) item!: PoeItem;
 	/** Controls the visibility of sockets.
@@ -29,6 +29,8 @@ export class PoeItemElement extends LitElement {
 	 *  If set to false, sockets are only visible when the Alt key is pressed or when hovered over.
 	 */
 	@property({ type: Boolean, reflect: true, attribute: 'show-sockets' }) showSockets = false;
+	/** Whether an item is displayed in inventory or stash tab. It gets blue background, if yes */
+	@property({ type: Boolean }) placed = false;
 
 	/** Main visibility state for sockets */
 	@state() socketsVisible = false;
@@ -153,10 +155,10 @@ export class PoeItemElement extends LitElement {
 		if (this.hovered) {
 			if (e.ctrlKey && e.code === 'KeyC') {
 				console.log('ctrl c clicked!');
-				if (!this.itemIntoTextTransformer) {
-					this.itemIntoTextTransformer = new ItemIntoTextTransformer(this.item);
+				if (!this.#itemIntoTextTransformer) {
+					this.#itemIntoTextTransformer = new ItemIntoTextTransformer(this.item);
 				}
-				window.navigator.clipboard.writeText(this.itemIntoTextTransformer.transform());
+				window.navigator.clipboard.writeText(this.#itemIntoTextTransformer.transform());
 			}
 		}
 	};
@@ -214,6 +216,10 @@ export class PoeItemElement extends LitElement {
 			justify-content: center;
 			align-items: center;
 			font-family: fontin;
+		}
+
+		:host([placed]) {
+			background-color: rgba(25, 26, 150, 0.25);
 		}
 
 		:host([unidentified]) {
