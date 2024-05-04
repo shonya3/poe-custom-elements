@@ -50,7 +50,7 @@ export class PoeStashTabElement extends LitElement {
 							'grid-row': `${item.y + 1} / span ${item.h}`,
 						})}
 					>
-						<poe-item style="--cell-size: ${sizeOfCellPixels}" .item=${item}></poe-item>
+						<poe-item placed style="--cell-size: ${sizeOfCellPixels}" .item=${item}></poe-item>
 					</li>`
 				)}
 			</ul>
@@ -113,6 +113,9 @@ export class PoeStashTabElement extends LitElement {
 			grid-template-rows: repeat(var(--cells-side-count), 1fr);
 			grid-template-columns: repeat(var(--cells-side-count), 1fr);
 			gap: calc(var(--size-of-all-inner-borders) / var(--cells-side-count));
+		}
+
+		poe-item {
 		}
 	`;
 }

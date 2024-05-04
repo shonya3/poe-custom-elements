@@ -42,7 +42,7 @@ export class PoeItemElement extends LitElement {
 			this.style.setProperty('--w', this.item.w.toString());
 			this.style.setProperty('--h', this.item.h.toString());
 			if (!this.item.identified) {
-				this.style.setProperty('--background-color', 'rgba(210, 0, 0, .18)');
+				this.setAttribute('unidentified', '');
 			}
 			this.style.setProperty('--influence-background-image-url', influencesBackgroundVar(this.item));
 		}
@@ -214,6 +214,10 @@ export class PoeItemElement extends LitElement {
 			justify-content: center;
 			align-items: center;
 			font-family: fontin;
+		}
+
+		:host([unidentified]) {
+			background-color: rgba(210, 0, 0, 0.18) !important;
 		}
 
 		.stackSize {
