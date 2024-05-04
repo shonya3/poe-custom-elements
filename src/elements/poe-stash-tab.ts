@@ -1,5 +1,5 @@
 import { LitElement, html, css, TemplateResult, PropertyValueMap } from 'lit';
-import { customElement, property } from 'lit/decorators.js';
+import { customElement, property, state } from 'lit/decorators.js';
 import type { TabWithItems } from '../poe.types';
 import './poe-item';
 import { styleMap } from 'lit/directives/style-map.js';
@@ -15,8 +15,14 @@ export class PoeStashTabElement extends LitElement {
 	/** PoE API tab data https://www.pathofexile.com/developer/docs/reference#stashes-get */
 	@property({ type: Object }) tab!: TabWithItems;
 
+	@state() tabState?: TabWithItems;
+
 	protected willUpdate(map: PropertyValueMap<this>): void {
 		if (map.has('tab')) {
+			if (this.tab.type === 'EssenceStash' || this.tab.type === 'CurrencyStash') {
+				this.tabState = structuredClone(this.tab);
+			}
+
 			const cells = this.cellsSideCount();
 			if (cells) {
 				this.style.setProperty('--cells-side-count', cells.toString());
@@ -31,7 +37,7 @@ export class PoeStashTabElement extends LitElement {
 			return html`<p style="color: red">No Poe Api stash tab data (.tab)</p>`;
 		}
 
-		if (!['NormalStash', 'PremiumStash', 'QuadStash'].includes(this.tab.type)) {
+		if (!['NormalStash', 'PremiumStash', 'QuadStash', 'EssenceStash', 'CurrencyStash'].includes(this.tab.type)) {
 			this.style.setProperty('border', '2px solid red');
 			return html`<p style="color: red; font-size: 24px">
 				StashType ( ${this.tab.type} ) is not supported ( yet? ).
@@ -40,6 +46,31 @@ export class PoeStashTabElement extends LitElement {
 
 		const sizeOfCellPixels = this.sizeOfCellPixels();
 		console.log(sizeOfCellPixels);
+
+		if (this.tab.type === 'EssenceStash' || this.tab.type === 'CurrencyStash') {
+			this.tabState!.items.forEach(item => {
+				const newY = Math.floor(item.x / 12);
+				const newX = item.x % 12;
+
+				item.x = newX;
+				item.y = newY;
+			});
+
+			return html`
+				<ul>
+					${this.tabState!.items.map(
+						item => html`<li
+							style=${styleMap({
+								'grid-column': `${item.x + 1} / span ${item.w}`,
+								'grid-row': `${item.y + 1} / span ${item.h}`,
+							})}
+						>
+							<poe-item placed style="--cell-size: ${sizeOfCellPixels}" .item=${item}></poe-item>
+						</li>`
+					)}
+				</ul>
+			`;
+		}
 
 		return html`
 			<ul>
@@ -62,6 +93,8 @@ export class PoeStashTabElement extends LitElement {
 			case 'PremiumStash':
 				return '/poe-images/StashPanelGrid.png';
 			case 'NormalStash':
+			case 'EssenceStash':
+			case 'CurrencyStash':
 				return '/poe-images/StashPanelGrid.png';
 			case 'QuadStash':
 				return '/poe-images/QuadStashPanelGrid.png';
@@ -79,7 +112,7 @@ export class PoeStashTabElement extends LitElement {
 			case 'QuadStash':
 				return 24;
 			default:
-				return null;
+				return 12;
 		}
 	}
 

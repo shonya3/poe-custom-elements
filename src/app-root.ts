@@ -1,3 +1,4 @@
+import { essence } from './../jsons/tabs/essence';
 import { influence } from './../jsons/influence';
 import { fracturedGloves } from '../jsons/fracturedGloves';
 import { socketed } from './../jsons/socketed';
@@ -18,6 +19,7 @@ import influenceJson from '../jsons/influence.json';
 import garbageJson from '../jsons/garbage.json';
 import { a as aTab } from '../jsons/tabs/a';
 import { quadStd } from '../jsons/tabs/quadStd';
+import { currencyTab } from '../jsons/tabs/currencyTab';
 
 declare global {
 	interface HTMLElementTagNameMap {
@@ -35,6 +37,8 @@ export class AppRoot extends LitElement {
 
 	protected render(): TemplateResult {
 		return html`
+			<poe-stash-tab .tab=${essence}></poe-stash-tab>
+			<poe-stash-tab .tab=${currencyTab}></poe-stash-tab>
 			<poe-item-info .item=${influence}></poe-item-info>
 			<poe-item .item=${fracturedGloves}></poe-item>
 			${this.Tabs()}
