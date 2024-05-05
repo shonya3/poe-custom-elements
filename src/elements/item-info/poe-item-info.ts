@@ -2,6 +2,7 @@ import { LitElement, html, css, TemplateResult } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import type { PoeItem } from '../../poe.types';
 import './poe-item-info-content';
+import './poe-item-info-header';
 
 declare global {
 	interface HTMLElementTagNameMap {

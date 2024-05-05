@@ -6,6 +6,7 @@ import { classMap } from 'lit/directives/class-map.js';
 import { SimpleTooltip } from './simple-tooltip';
 import './simple-tooltip';
 import './tooltip-json-icon';
+import './item-info/poe-item-info';
 import { JsonIconElement } from './tooltip-json-icon';
 import { capitalize, parseDisplayMode3 } from './lib';
 
