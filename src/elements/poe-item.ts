@@ -8,7 +8,7 @@ import './simple-tooltip';
 import './tooltip-json-icon';
 import './item-info/poe-item-info';
 import { JsonIconElement } from './tooltip-json-icon';
-import { capitalize, parseDisplayMode3 } from './lib';
+import { appendFontinStyle, capitalize, parseDisplayMode3 } from './lib';
 
 declare global {
 	interface HTMLElementTagNameMap {
@@ -181,6 +181,7 @@ export class PoeItemElement extends LitElement {
 	}
 	connectedCallback(): void {
 		super.connectedCallback();
+		appendFontinStyle();
 		window.addEventListener('keydown', this.onAltPressed);
 		window.addEventListener('keyup', this.onAltReleased);
 		window.addEventListener('keydown', this.onJClick);

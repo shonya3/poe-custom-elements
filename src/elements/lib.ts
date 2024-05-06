@@ -51,3 +51,22 @@ export function parseDisplayMode3<T>(property: ItemProperty, mapFn?: (val: strin
 
 	return mapFn ? result : result.join('');
 }
+
+export function appendFontinStyle() {
+	const style = document.querySelector('style[data-description="poe-custom-elements-font"]');
+	if (!style) {
+		document.head.insertAdjacentHTML(
+			'beforeend',
+			`
+            <style data-description="poe-custom-elements-font">
+                @font-face {
+				    font-family: 'fontin';
+				    font-weight: normal;
+				    font-style: normal;
+				    src: url('/fontin.woff') format('woff');
+			    }
+            </style>
+        `
+		);
+	}
+}

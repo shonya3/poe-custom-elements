@@ -3,6 +3,7 @@ import { customElement, property, state } from 'lit/decorators.js';
 import type { TabWithItems } from '../poe.types';
 import './poe-item';
 import { styleMap } from 'lit/directives/style-map.js';
+import { appendFontinStyle } from './lib';
 
 declare global {
 	interface HTMLElementTagNameMap {
@@ -16,6 +17,11 @@ export class PoeStashTabElement extends LitElement {
 	@property({ type: Object }) tab!: TabWithItems;
 
 	@state() tabState?: TabWithItems;
+
+	connectedCallback(): void {
+		super.connectedCallback();
+		appendFontinStyle();
+	}
 
 	protected willUpdate(map: PropertyValueMap<this>): void {
 		if (map.has('tab')) {
@@ -135,6 +141,7 @@ export class PoeStashTabElement extends LitElement {
 			width: var(--size);
 			height: var(--size);
 			background-image: var(--background-image);
+			font-family: fontin;
 		}
 
 		ul {
