@@ -56,9 +56,9 @@ export class AppRoot extends LitElement {
             <poe-stash-tab .tab=${this.quad}></poe-stash-tab>
             <poe-stash-tab style="margin-top: 2px" .tab=${this.prem}></poe-stash-tab>
             <poe-stash-tab .tab=${this.garbageTab}></poe-stash-tab>
+            <poe-stash-tab .tab=${this.influenceTab}></poe-stash-tab>
             -->
 				<poe-stash-tab .tab=${quadStd}></poe-stash-tab>
-				<poe-stash-tab .tab=${this.influenceTab}></poe-stash-tab>
 			</div>
 		`;
 	}
