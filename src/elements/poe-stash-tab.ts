@@ -1,6 +1,6 @@
 import { LitElement, html, css, TemplateResult, PropertyValueMap } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
-import type { TabWithItems } from '../poe.types';
+import type { PoeItem, TabWithItems } from '../poe.types';
 import './poe-item';
 import { styleMap } from 'lit/directives/style-map.js';
 import { appendFontinStyle } from './lib';
@@ -16,7 +16,7 @@ export class PoeStashTabElement extends LitElement {
 	/** PoE API tab data https://www.pathofexile.com/developer/docs/reference#stashes-get */
 	@property({ type: Object }) tab!: TabWithItems;
 
-	@state() tabState?: TabWithItems;
+	@state() tabState!: TabWithItems;
 
 	connectedCallback(): void {
 		super.connectedCallback();
@@ -25,9 +25,17 @@ export class PoeStashTabElement extends LitElement {
 
 	protected willUpdate(map: PropertyValueMap<this>): void {
 		if (map.has('tab')) {
-			if (this.tab.type === 'EssenceStash' || this.tab.type === 'CurrencyStash') {
-				this.tabState = structuredClone(this.tab);
+			this.tabState = structuredClone(this.tab);
+			if (this.tabState.type === 'EssenceStash' || this.tabState.type === 'CurrencyStash') {
+				this.tabState!.items.forEach(item => {
+					const newY = Math.floor(item.x / 12);
+					const newX = item.x % 12;
+
+					item.x = newX;
+					item.y = newY;
+				});
 			}
+			this.tabState.items = orderItems(this.tabState.items);
 
 			const cells = this.cellsSideCount();
 			if (cells) {
@@ -52,41 +60,16 @@ export class PoeStashTabElement extends LitElement {
 
 		const sizeOfCellPixels = this.sizeOfCellPixels();
 
-		if (this.tab.type === 'EssenceStash' || this.tab.type === 'CurrencyStash') {
-			this.tabState!.items.forEach(item => {
-				const newY = Math.floor(item.x / 12);
-				const newX = item.x % 12;
-
-				item.x = newX;
-				item.y = newY;
-			});
-
-			return html`
-				<ul>
-					${this.tabState!.items.map(
-						item => html`<li
-							style=${styleMap({
-								'grid-column': `${item.x + 1} / span ${item.w}`,
-								'grid-row': `${item.y + 1} / span ${item.h}`,
-							})}
-						>
-							<poe-item placed style="--cell-size: ${sizeOfCellPixels}" .item=${item}></poe-item>
-						</li>`
-					)}
-				</ul>
-			`;
-		}
-
 		return html`
 			<ul>
-				${this.tab.items.map(
+				${this.tabState.items.map(
 					item => html`<li
 						style=${styleMap({
 							'grid-column': `${item.x + 1} / span ${item.w}`,
 							'grid-row': `${item.y + 1} / span ${item.h}`,
 						})}
 					>
-						<poe-item placed style="--cell-size: ${sizeOfCellPixels}" .item=${item}></poe-item>
+						<poe-item tabindex="0" placed style="--cell-size: ${sizeOfCellPixels}" .item=${item}></poe-item>
 					</li>`
 				)}
 			</ul>
@@ -94,7 +77,7 @@ export class PoeStashTabElement extends LitElement {
 	}
 
 	tabImageSrc(): string {
-		switch (this.tab.type) {
+		switch (this.tabState.type) {
 			case 'PremiumStash':
 				return '/poe-images/StashPanelGrid.png';
 			case 'NormalStash':
@@ -109,7 +92,7 @@ export class PoeStashTabElement extends LitElement {
 	}
 
 	cellsSideCount(): number | null {
-		switch (this.tab.type) {
+		switch (this.tabState.type) {
 			case 'PremiumStash':
 				return 12;
 			case 'NormalStash':
@@ -153,8 +136,12 @@ export class PoeStashTabElement extends LitElement {
 			grid-template-columns: repeat(var(--cells-side-count), 1fr);
 			gap: calc(var(--size-of-all-inner-borders) / var(--cells-side-count));
 		}
-
-		poe-item {
-		}
 	`;
+}
+
+function orderItems(items: Array<PoeItem>): Array<PoeItem> {
+	return Object.entries(Object.groupBy(items, ({ y }) => y)).flatMap(([_, itemsByRow = []]) => {
+		itemsByRow.sort((a, b) => a.x - b.x);
+		return itemsByRow;
+	});
 }

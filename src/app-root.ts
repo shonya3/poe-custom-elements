@@ -36,38 +36,39 @@ export class AppRoot extends LitElement {
 	@state() garbageTab = garbageJson as TabWithItems;
 
 	protected render(): TemplateResult {
-		return html`
-			<poe-stash-tab .tab=${essence}></poe-stash-tab>
-			<poe-stash-tab .tab=${currencyTab}></poe-stash-tab>
-			<poe-item-info .item=${influence}></poe-item-info>
-			<poe-item .item=${fracturedGloves}></poe-item>
-			${this.Tabs()}
-			<poe-item-info .item=${socketed}></poe-item-info>
-			<poe-item .item=${socketed}></poe-item>
-			<poe-item .item=${aTab.items!.find(i => i.baseType === 'Plated Maul')!}></poe-item>
-			<poe-item .item=${rogueMarkers}></poe-item>
-			<poe-item-info .item=${allflame}></poe-item-info>
-		`;
+		return html` ${this.Tabs()} `;
 	}
 
-	protected render2(): TemplateResult {
-		return html`
+	protected Items() {
+		return html` <poe-item .item=${aTab.items!.find(i => i.baseType === 'Plated Maul')!}></poe-item>
+			<poe-item .item=${socketed}></poe-item>
 			<poe-item .item=${aTab.items!.find(i => i.baseType === 'Plated Maul')!}></poe-item>
-			<poe-item-info .item=${elementalBow}></poe-item-info>
-			<poe-item-info .item=${aTab.items!.find(i => i.baseType === 'Plated Maul')!}></poe-item-info>
-		`;
+			<poe-item .item=${fracturedGloves}></poe-item>
+			<poe-item .item=${rogueMarkers}></poe-item>`;
 	}
 
 	protected Tabs(): TemplateResult {
 		return html`
 			<div style="display:flex; flex-wrap:wrap; gap:0.5rem">
+				<!--
+                			<poe-stash-tab .tab=${essence}></poe-stash-tab>
+			<poe-stash-tab .tab=${currencyTab}></poe-stash-tab>
+            <poe-stash-tab .tab=${this.quad}></poe-stash-tab>
+            <poe-stash-tab style="margin-top: 2px" .tab=${this.prem}></poe-stash-tab>
+            <poe-stash-tab .tab=${this.garbageTab}></poe-stash-tab>
+            -->
 				<poe-stash-tab .tab=${quadStd}></poe-stash-tab>
-				<poe-stash-tab .tab=${this.quad}></poe-stash-tab>
-				<poe-stash-tab style="margin-top: 2px" .tab=${this.prem}></poe-stash-tab>
 				<poe-stash-tab .tab=${this.influenceTab}></poe-stash-tab>
-				<poe-stash-tab .tab=${this.garbageTab}></poe-stash-tab>
 			</div>
 		`;
+	}
+
+	protected ItemInfos() {
+		return html`<poe-item-info .item=${influence}></poe-item-info>
+			<poe-item-info .item=${socketed}></poe-item-info>
+			<poe-item-info .item=${allflame}></poe-item-info>
+			<poe-item-info .item=${elementalBow}></poe-item-info>
+			<poe-item-info .item=${aTab.items!.find(i => i.baseType === 'Plated Maul')!}></poe-item-info>`;
 	}
 
 	static styles = css`
