@@ -38,7 +38,7 @@ export class PoeItemElement extends LitElement {
 	@state() hovered = false;
 	@state() altPressed = false;
 
-	@query('tooltip-json-icon') iconJson!: JsonIconElement;
+	@query('tooltip-json-icon') iconJson?: JsonIconElement;
 
 	protected async willUpdate(map: PropertyValueMap<this>): Promise<void> {
 		if (map.has('item')) {
@@ -94,7 +94,6 @@ export class PoeItemElement extends LitElement {
 						.w=${this.item.w}
 				  ></poe-socket-chain>`
 				: nothing}
-			<tooltip-json-icon></tooltip-json-icon>
 			${this.item.stackSize
 				? html`<p class="stackSize">${this.item.stackSizeText || this.item.stackSize}</p>`
 				: nothing}
@@ -252,25 +251,6 @@ export class PoeItemElement extends LitElement {
 
 		.hidden {
 			display: none !important;
-		}
-
-		#icon-json {
-			position: absolute;
-			top: 100px;
-			right: 0px;
-			color: yellow;
-			opacity: 0;
-			scale: 0.8;
-			transform: translate(10px, -10px);
-			transition: opacity, transform, top 0.2s ease-in;
-			z-index: 20;
-			pointer-events: none;
-		}
-
-		#icon-json.copied {
-			opacity: 1;
-			scale: 2;
-			top: 0px;
 		}
 	`;
 }
