@@ -222,11 +222,17 @@ async function findClosestItem({
 			return null;
 		}
 		while (!item) {
-			item = await itemElementFromXY({
-				tabElement,
-				items,
-				coordinates: { x: currentX, y: currentY },
-			});
+			for (let dx = 0; dx < activeItem.w; dx++) {
+				item = await itemElementFromXY({
+					tabElement,
+					items,
+					coordinates: { x: currentX + dx, y: currentY },
+				});
+
+				if (item) {
+					break;
+				}
+			}
 
 			if (currentY === tabCellsSideCount - 1 && currentX === tabCellsSideCount - 1) {
 				break;
@@ -250,11 +256,17 @@ async function findClosestItem({
 			return null;
 		}
 		while (!item) {
-			item = await itemElementFromXY({
-				tabElement,
-				items,
-				coordinates: { x: currentX, y: currentY },
-			});
+			for (let dy = 0; dy < activeItem.h; dy++) {
+				item = await itemElementFromXY({
+					tabElement,
+					items,
+					coordinates: { x: currentX, y: currentY + dy },
+				});
+
+				if (item) {
+					break;
+				}
+			}
 
 			if (currentY === tabCellsSideCount - 1 && currentX === tabCellsSideCount - 1) {
 				break;
@@ -278,11 +290,17 @@ async function findClosestItem({
 			return null;
 		}
 		while (!item) {
-			item = await itemElementFromXY({
-				tabElement,
-				items,
-				coordinates: { x: currentX, y: currentY },
-			});
+			for (let dx = 0; dx < activeItem.w; dx++) {
+				item = await itemElementFromXY({
+					tabElement,
+					items,
+					coordinates: { x: currentX + dx, y: currentY },
+				});
+
+				if (item) {
+					break;
+				}
+			}
 
 			if (currentY === 0 && currentX === tabCellsSideCount - 1) {
 				break;
@@ -306,11 +324,17 @@ async function findClosestItem({
 			return null;
 		}
 		while (!item) {
-			item = await itemElementFromXY({
-				tabElement,
-				items,
-				coordinates: { x: currentX, y: currentY },
-			});
+			for (let dy = 0; dy < activeItem.h; dy++) {
+				item = await itemElementFromXY({
+					tabElement,
+					items,
+					coordinates: { x: currentX, y: currentY + dy },
+				});
+
+				if (item) {
+					break;
+				}
+			}
 
 			if (currentX === 0 && currentY === tabCellsSideCount - 1) {
 				break;
