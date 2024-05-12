@@ -125,7 +125,9 @@ export class PoeItemElement extends LitElement {
 	protected firstUpdated(): void {
 		SimpleTooltip.lazy(this, tooltip => {
 			render(
-				html`<div style="display:flex;align-items:flex-start;gap:1.2rem;z-index:500;padding:0;margin:0">
+				html`<div
+					style="display:flex;align-items:flex-start;flex-wrap:wrap;gap:1.2rem;z-index:500;padding:0;margin:0"
+				>
 					<poe-item-info .item=${this.item}></poe-item-info>
 					<div class="socketed-item"></div>
 				</div>`,
@@ -225,6 +227,12 @@ export class PoeItemElement extends LitElement {
 
 		:host([unidentified]) {
 			background-color: rgba(210, 0, 0, 0.18) !important;
+		}
+
+		.socketed-item {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 2000px;
 		}
 
 		.stackSize {
