@@ -102,13 +102,11 @@ export class PoeItemElement extends LitElement {
 
 	constructor() {
 		super();
-		this.onAltPressed = this.onAltPressed.bind(this);
-		this.onAltReleased = this.onAltReleased.bind(this);
 		this.addEventListener('mouseenter', this.onMouseEnter);
 		this.addEventListener('mouseleave', this.onMouseLeave);
 	}
 
-	onHoveredSocketedItemChanged(e: CustomEvent<SocketedItem>) {
+	private onHoveredSocketedItemChanged(e: CustomEvent<SocketedItem>) {
 		if (this.tooltipElement) {
 			const socketedItemContainer = this.tooltipElement.querySelector('.socketed-item');
 			if (socketedItemContainer instanceof HTMLElement) {
@@ -136,7 +134,7 @@ export class PoeItemElement extends LitElement {
 		});
 	}
 
-	onJClick = (e: KeyboardEvent) => {
+	private onJClick = (e: KeyboardEvent) => {
 		if (this.hovered) {
 			if (e.code === 'KeyJ') {
 				const icon = this.iconJson ?? document.createElement('tooltip-json-icon');
@@ -153,7 +151,7 @@ export class PoeItemElement extends LitElement {
 		}
 	};
 
-	onHoverCtrlCClick = (e: KeyboardEvent) => {
+	private onHoverCtrlCClick = (e: KeyboardEvent) => {
 		if (this.hovered) {
 			if (e.ctrlKey && e.code === 'KeyC') {
 				console.log('ctrl c clicked!');
@@ -171,15 +169,16 @@ export class PoeItemElement extends LitElement {
 	private onMouseLeave() {
 		this.hovered = false;
 	}
-	private onAltPressed(e: KeyboardEvent) {
+	private onAltPressed = (e: KeyboardEvent) => {
 		if (e.key === 'Alt') {
 			e.preventDefault();
 			this.altPressed = true;
 		}
-	}
-	private onAltReleased() {
+	};
+	private onAltReleased = () => {
 		this.altPressed = false;
-	}
+	};
+
 	connectedCallback(): void {
 		super.connectedCallback();
 		appendFontinStyle();
