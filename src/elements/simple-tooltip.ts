@@ -14,7 +14,7 @@ import { computePosition, autoPlacement, offset, shift } from '@floating-ui/dom'
 
 // Events to turn on/off the tooltip
 const enterEvents = ['pointerenter', 'focus', 'click'];
-const leaveEvents = ['pointerleave', 'blur', 'keydown'];
+const leaveEvents = ['pointerleave', 'blur'];
 
 @customElement('simple-tooltip')
 export class SimpleTooltip extends LitElement {
