@@ -38,7 +38,7 @@ export class PoeStashTabElement extends LitElement {
 		return this.shadowRoot?.querySelector('poe-item:focus') ?? null;
 	}
 
-	protected async willUpdate(map: PropertyValueMap<this>): Promise<void> {
+	protected willUpdate(map: PropertyValueMap<this>): void {
 		if (map.has('tab')) {
 			this.tabState = structuredClone(this.tab);
 			const cells = cellsSideCount(this.tabState.type);
