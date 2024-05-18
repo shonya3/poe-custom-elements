@@ -13,6 +13,14 @@ declare global {
 }
 
 type Direction = 'down' | 'right' | 'up' | 'left';
+const SUPPORTED_STASH_TYPES = [
+	'NormalStash',
+	'PremiumStash',
+	'QuadStash',
+	'EssenceStash',
+	'CurrencyStash',
+	'FragmentStash',
+];
 
 @customElement('poe-stash-tab')
 export class PoeStashTabElement extends LitElement {
@@ -33,10 +41,15 @@ export class PoeStashTabElement extends LitElement {
 		if (map.has('tab')) {
 			this.tabState = structuredClone(this.tab);
 			const cells = cellsSideCount(this.tabState.type);
-			if (this.tabState.type === 'EssenceStash' || this.tabState.type === 'CurrencyStash') {
+			if (
+				(this.tabState.type === 'EssenceStash' ||
+					this.tabState.type === 'CurrencyStash' ||
+					this.tabState.type === 'FragmentStash') &&
+				cells
+			) {
 				this.tabState!.items.forEach(item => {
-					const newY = Math.floor(item.x / 12);
-					const newX = item.x % 12;
+					const newY = Math.floor(item.x / cells);
+					const newX = item.x % cells;
 
 					item.x = newX;
 					item.y = newY;
@@ -57,7 +70,7 @@ export class PoeStashTabElement extends LitElement {
 			return html`<p style="color: red">No Poe Api stash tab data (.tab)</p>`;
 		}
 
-		if (!['NormalStash', 'PremiumStash', 'QuadStash', 'EssenceStash', 'CurrencyStash'].includes(this.tab.type)) {
+		if (!SUPPORTED_STASH_TYPES.includes(this.tab.type)) {
 			this.style.setProperty('border', '2px solid red');
 			return html`<p style="color: red; font-size: 24px">
 				StashType ( ${this.tab.type} ) is not supported ( yet? ).
