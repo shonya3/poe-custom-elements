@@ -42,19 +42,41 @@ export class PoeStashTabElement extends LitElement {
 		if (map.has('tab')) {
 			this.tabState = structuredClone(this.tab);
 			const cells = cellsSideCount(this.tabState.type);
+
+			if (this.tabState.type === 'FragmentStash' && cells) {
+				let currentXForY1Group = 0;
+				this.tabState!.items.forEach(item => {
+					switch (item.y) {
+						case 0: {
+							item.y = Math.floor(item.x / cells);
+							item.x = item.x % cells;
+							break;
+						}
+						case 1: {
+							item.y = 12;
+							item.x = currentXForY1Group++;
+							break;
+						}
+						case 2: {
+							item.y += 13;
+							break;
+						}
+						default: {
+							console.warn(`Fragments stash unexpected item Y-coordinate. Expected 0|1|2, got ${item.y}`);
+						}
+					}
+				});
+			}
+
 			if (
 				(this.tabState.type === 'EssenceStash' ||
 					this.tabState.type === 'CurrencyStash' ||
-					this.tabState.type === 'FragmentStash' ||
 					this.tabState.type === 'BlightStash') &&
 				cells
 			) {
 				this.tabState!.items.forEach(item => {
-					const newY = Math.floor(item.x / cells);
-					const newX = item.x % cells;
-
-					item.x = newX;
-					item.y = newY;
+					item.y = Math.floor(item.x / cells);
+					item.x = item.x % cells;
 				});
 			}
 			this.tabState.items = orderItems(this.tabState.items);
