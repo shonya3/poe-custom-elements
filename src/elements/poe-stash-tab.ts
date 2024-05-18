@@ -44,10 +44,7 @@ export class PoeStashTabElement extends LitElement {
 			const cells = cellsSideCount(this.tabState.type);
 			adjustItemXYforCustomTab(this.tabState, cells);
 			this.tabState.items = orderItems(this.tabState.items);
-
-			if (cells) {
-				this.style.setProperty('--cells-side-count', cells.toString());
-			}
+			this.style.setProperty('--cells-side-count', cells.toString());
 			this.style.setProperty('--background-image', `url(${this.tabImageSrc()})`);
 		}
 	}
@@ -57,16 +54,13 @@ export class PoeStashTabElement extends LitElement {
 			this.style.setProperty('border', '2px solid red');
 			return html`<p style="color: red">No Poe Api stash tab data (.tab)</p>`;
 		}
-
 		if (!SUPPORTED_STASH_TYPES.includes(this.tab.type)) {
 			this.style.setProperty('border', '2px solid red');
 			return html`<p style="color: red; font-size: 24px">
 				StashType ( ${this.tab.type} ) is not supported ( yet? ).
 			</p>`;
 		}
-
 		const sizeOfCellPixels = this.sizeOfCellPixels();
-
 		return html`
 			<ul>
 				${this.tabState.items.map(
@@ -185,7 +179,7 @@ export class PoeStashTabElement extends LitElement {
 	`;
 }
 
-function adjustItemXYforCustomTab(tab: TabWithItems, cellsSideCount: number | null): void {
+function adjustItemXYforCustomTab(tab: TabWithItems, cellsSideCount: number): void {
 	if (!cellsSideCount) {
 		return;
 	}
@@ -224,7 +218,7 @@ function adjustItemXYforCustomTab(tab: TabWithItems, cellsSideCount: number | nu
 	}
 }
 
-function cellsSideCount(stashType: StashType): number | null {
+function cellsSideCount(stashType: StashType): number {
 	switch (stashType) {
 		case 'PremiumStash':
 		case 'NormalStash':
