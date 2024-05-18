@@ -45,7 +45,7 @@ export class PoeStashTabElement extends LitElement {
 			adjustItemXYforCustomTab(this.tabState, cells);
 			this.tabState.items = orderItems(this.tabState.items);
 			this.style.setProperty('--cells-side-count', cells.toString());
-			this.style.setProperty('--background-image', `url(${this.tabImageSrc()})`);
+			this.style.setProperty('--background-image', `url(${tabImageSrc(this.tabState.type)})`);
 		}
 	}
 
@@ -60,7 +60,6 @@ export class PoeStashTabElement extends LitElement {
 				StashType ( ${this.tab.type} ) is not supported ( yet? ).
 			</p>`;
 		}
-		const sizeOfCellPixels = this.sizeOfCellPixels();
 		return html`
 			<ul>
 				${this.tabState.items.map(
@@ -75,7 +74,7 @@ export class PoeStashTabElement extends LitElement {
 							data-y=${item.y}
 							tabindex="0"
 							placed
-							style="--cell-size: ${sizeOfCellPixels}"
+							style="--cell-size: ${sizeOfCellPixels(this.tabState.type)}"
 							.item=${item}
 						></poe-item>
 					</li>`
@@ -116,30 +115,6 @@ export class PoeStashTabElement extends LitElement {
 			}
 		}
 	};
-
-	tabImageSrc(): string {
-		switch (this.tabState.type) {
-			case 'PremiumStash':
-			case 'NormalStash':
-			case 'EssenceStash':
-			case 'CurrencyStash':
-			case 'BlightStash':
-				return '/poe-images/StashPanelGrid.png';
-			case 'QuadStash':
-			case 'FragmentStash':
-				return '/poe-images/QuadStashPanelGrid.png';
-			default:
-				return '/poe-images/StashPanelGrid.png';
-		}
-	}
-
-	sizeOfCellPixels(): `${string}px` | null {
-		if (!this.tabState) {
-			return null;
-		}
-		const cells = cellsSideCount(this.tabState.type);
-		return cells ? `${564 / cells}px` : null;
-	}
 
 	static styles = css`
 		* {
@@ -230,6 +205,26 @@ function cellsSideCount(stashType: StashType): number {
 		default:
 			return 12;
 	}
+}
+
+function tabImageSrc(stashType: StashType): string {
+	switch (stashType) {
+		case 'PremiumStash':
+		case 'NormalStash':
+		case 'EssenceStash':
+		case 'CurrencyStash':
+		case 'BlightStash':
+			return '/poe-images/StashPanelGrid.png';
+		case 'QuadStash':
+		case 'FragmentStash':
+			return '/poe-images/QuadStashPanelGrid.png';
+		default:
+			return '/poe-images/StashPanelGrid.png';
+	}
+}
+
+function sizeOfCellPixels(stashType: StashType): `${string}px` {
+	return `${564 / cellsSideCount(stashType)}px`;
 }
 
 function orderItems(items: Array<PoeItem>): Array<PoeItem> {
