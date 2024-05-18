@@ -45,6 +45,8 @@ export class PoeStashTabElement extends LitElement {
 
 			if (this.tabState.type === 'FragmentStash' && cells) {
 				let currentXForY1Group = 0;
+				const STARTING_Y_FOR_Y1_GROUP = 12;
+				const Y_OFFSET_FOR_Y2_GROUP = 13;
 				this.tabState!.items.forEach(item => {
 					switch (item.y) {
 						case 0: {
@@ -53,12 +55,13 @@ export class PoeStashTabElement extends LitElement {
 							break;
 						}
 						case 1: {
-							item.y = 12;
-							item.x = currentXForY1Group++;
+							item.y = STARTING_Y_FOR_Y1_GROUP + Math.floor(currentXForY1Group / cells);
+							item.x = currentXForY1Group % cells;
+							currentXForY1Group++;
 							break;
 						}
 						case 2: {
-							item.y += 13;
+							item.y += Y_OFFSET_FOR_Y2_GROUP;
 							break;
 						}
 						default: {
