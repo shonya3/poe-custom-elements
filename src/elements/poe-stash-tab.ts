@@ -1,6 +1,6 @@
 import { LitElement, html, css, TemplateResult, PropertyValueMap } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
-import type { PoeItem, TabWithItems } from '../poe.types';
+import type { PoeItem, StashType, TabWithItems } from '../poe.types';
 import './poe-item';
 import { styleMap } from 'lit/directives/style-map.js';
 import { appendFontinStyle } from './lib';
@@ -32,6 +32,7 @@ export class PoeStashTabElement extends LitElement {
 	protected async willUpdate(map: PropertyValueMap<this>): Promise<void> {
 		if (map.has('tab')) {
 			this.tabState = structuredClone(this.tab);
+			const cells = cellsSideCount(this.tabState.type);
 			if (this.tabState.type === 'EssenceStash' || this.tabState.type === 'CurrencyStash') {
 				this.tabState!.items.forEach(item => {
 					const newY = Math.floor(item.x / 12);
@@ -43,7 +44,6 @@ export class PoeStashTabElement extends LitElement {
 			}
 			this.tabState.items = orderItems(this.tabState.items);
 
-			const cells = this.cellsSideCount();
 			if (cells) {
 				this.style.setProperty('--cells-side-count', cells.toString());
 			}
@@ -131,27 +131,18 @@ export class PoeStashTabElement extends LitElement {
 			case 'CurrencyStash':
 				return '/poe-images/StashPanelGrid.png';
 			case 'QuadStash':
+			case 'FragmentStash':
 				return '/poe-images/QuadStashPanelGrid.png';
 			default:
 				return '';
 		}
 	}
 
-	cellsSideCount(): number | null {
-		switch (this.tabState.type) {
-			case 'PremiumStash':
-				return 12;
-			case 'NormalStash':
-				return 12;
-			case 'QuadStash':
-				return 24;
-			default:
-				return 12;
-		}
-	}
-
 	sizeOfCellPixels(): `${string}px` | null {
-		const cells = this.cellsSideCount();
+		if (!this.tabState) {
+			return null;
+		}
+		const cells = cellsSideCount(this.tabState.type);
 		return cells ? `${564 / cells}px` : null;
 	}
 
@@ -191,6 +182,21 @@ export class PoeStashTabElement extends LitElement {
 			outline: 3px solid rgb(39, 186, 253);
 		}
 	`;
+}
+
+function cellsSideCount(stashType: StashType): number | null {
+	switch (stashType) {
+		case 'PremiumStash':
+			return 12;
+		case 'NormalStash':
+			return 12;
+		case 'QuadStash':
+			return 24;
+		case 'FragmentStash':
+			return 24;
+		default:
+			return 12;
+	}
 }
 
 function orderItems(items: Array<PoeItem>): Array<PoeItem> {
