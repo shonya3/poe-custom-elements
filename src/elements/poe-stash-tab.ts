@@ -42,46 +42,7 @@ export class PoeStashTabElement extends LitElement {
 		if (map.has('tab')) {
 			this.tabState = structuredClone(this.tab);
 			const cells = cellsSideCount(this.tabState.type);
-
-			if (this.tabState.type === 'FragmentStash' && cells) {
-				let currentXForY1Group = 0;
-				const STARTING_Y_FOR_Y1_GROUP = 12;
-				const Y_OFFSET_FOR_Y2_GROUP = 13;
-				this.tabState!.items.forEach(item => {
-					switch (item.y) {
-						case 0: {
-							item.y = Math.floor(item.x / cells);
-							item.x = item.x % cells;
-							break;
-						}
-						case 1: {
-							item.y = STARTING_Y_FOR_Y1_GROUP + Math.floor(currentXForY1Group / cells);
-							item.x = currentXForY1Group % cells;
-							currentXForY1Group++;
-							break;
-						}
-						case 2: {
-							item.y += Y_OFFSET_FOR_Y2_GROUP;
-							break;
-						}
-						default: {
-							console.warn(`Fragments stash unexpected item Y-coordinate. Expected 0|1|2, got ${item.y}`);
-						}
-					}
-				});
-			}
-
-			if (
-				(this.tabState.type === 'EssenceStash' ||
-					this.tabState.type === 'CurrencyStash' ||
-					this.tabState.type === 'BlightStash') &&
-				cells
-			) {
-				this.tabState!.items.forEach(item => {
-					item.y = Math.floor(item.x / cells);
-					item.x = item.x % cells;
-				});
-			}
+			adjustItemXYforCustomTab(this.tabState, cells);
 			this.tabState.items = orderItems(this.tabState.items);
 
 			if (cells) {
@@ -222,6 +183,45 @@ export class PoeStashTabElement extends LitElement {
 			outline: 3px solid rgb(39, 186, 253);
 		}
 	`;
+}
+
+function adjustItemXYforCustomTab(tab: TabWithItems, cellsSideCount: number | null): void {
+	if (!cellsSideCount) {
+		return;
+	}
+	if (tab.type === 'FragmentStash') {
+		let currentXForY1Group = 0;
+		const STARTING_Y_FOR_Y1_GROUP = 12;
+		const Y_OFFSET_FOR_Y2_GROUP = 13;
+		tab!.items.forEach(item => {
+			switch (item.y) {
+				case 0: {
+					item.y = Math.floor(item.x / cellsSideCount);
+					item.x = item.x % cellsSideCount;
+					break;
+				}
+				case 1: {
+					item.y = STARTING_Y_FOR_Y1_GROUP + Math.floor(currentXForY1Group / cellsSideCount);
+					item.x = currentXForY1Group % cellsSideCount;
+					currentXForY1Group++;
+					break;
+				}
+				case 2: {
+					item.y += Y_OFFSET_FOR_Y2_GROUP;
+					break;
+				}
+				default: {
+					console.warn(`Fragments stash unexpected item Y-coordinate. Expected 0|1|2, got ${item.y}`);
+				}
+			}
+		});
+	}
+	if (tab.type === 'EssenceStash' || tab.type === 'CurrencyStash' || tab.type === 'BlightStash') {
+		tab!.items.forEach(item => {
+			item.y = Math.floor(item.x / cellsSideCount);
+			item.x = item.x % cellsSideCount;
+		});
+	}
 }
 
 function cellsSideCount(stashType: StashType): number | null {
