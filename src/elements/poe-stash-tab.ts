@@ -149,7 +149,7 @@ export class PoeStashTabElement extends LitElement {
 			case 'FragmentStash':
 				return '/poe-images/QuadStashPanelGrid.png';
 			default:
-				return '';
+				return '/poe-images/StashPanelGrid.png';
 		}
 	}
 
