@@ -20,6 +20,7 @@ const SUPPORTED_STASH_TYPES = [
 	'EssenceStash',
 	'CurrencyStash',
 	'FragmentStash',
+	'BlightStash',
 ];
 
 @customElement('poe-stash-tab')
@@ -44,7 +45,8 @@ export class PoeStashTabElement extends LitElement {
 			if (
 				(this.tabState.type === 'EssenceStash' ||
 					this.tabState.type === 'CurrencyStash' ||
-					this.tabState.type === 'FragmentStash') &&
+					this.tabState.type === 'FragmentStash' ||
+					this.tabState.type === 'BlightStash') &&
 				cells
 			) {
 				this.tabState!.items.forEach(item => {
@@ -200,11 +202,10 @@ export class PoeStashTabElement extends LitElement {
 function cellsSideCount(stashType: StashType): number | null {
 	switch (stashType) {
 		case 'PremiumStash':
-			return 12;
 		case 'NormalStash':
+		case 'BlightStash':
 			return 12;
 		case 'QuadStash':
-			return 24;
 		case 'FragmentStash':
 			return 24;
 		default:

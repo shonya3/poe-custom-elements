@@ -1,4 +1,4 @@
-import { myfragments } from './../jsons/tabs/myfragments';
+import { blight } from './../jsons/tabs/blight';
 import { essence } from './../jsons/tabs/essence';
 import { influence } from './../jsons/influence';
 import { fracturedGloves } from '../jsons/fracturedGloves';
@@ -59,7 +59,7 @@ export class AppRoot extends LitElement {
             <poe-stash-tab .tab=${this.garbageTab}></poe-stash-tab>
             <poe-stash-tab .tab=${this.influenceTab}></poe-stash-tab>
             -->
-				<poe-stash-tab .tab=${myfragments}></poe-stash-tab>
+				<poe-stash-tab .tab=${blight}></poe-stash-tab>
 				<poe-stash-tab .tab=${quadStd}></poe-stash-tab>
 			</div>
 		`;
