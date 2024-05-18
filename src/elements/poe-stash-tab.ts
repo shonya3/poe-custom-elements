@@ -27,13 +27,11 @@ const SUPPORTED_STASH_TYPES = [
 export class PoeStashTabElement extends LitElement {
 	/** PoE API tab data https://www.pathofexile.com/developer/docs/reference#stashes-get */
 	@property({ type: Object }) tab!: TabWithItems;
-
-	@state() tabState!: TabWithItems;
-
+	/** Mutable clone of tab */
+	@state() private tabState!: TabWithItems;
 	get focusWithin(): boolean {
 		return this.matches(':focus-within');
 	}
-
 	get activeItemElement(): PoeItemElement | null {
 		return this.shadowRoot?.querySelector('poe-item:focus') ?? null;
 	}
