@@ -140,10 +140,10 @@ export class PoeStashTabElement extends LitElement {
 	tabImageSrc(): string {
 		switch (this.tabState.type) {
 			case 'PremiumStash':
-				return '/poe-images/StashPanelGrid.png';
 			case 'NormalStash':
 			case 'EssenceStash':
 			case 'CurrencyStash':
+			case 'BlightStash':
 				return '/poe-images/StashPanelGrid.png';
 			case 'QuadStash':
 			case 'FragmentStash':
