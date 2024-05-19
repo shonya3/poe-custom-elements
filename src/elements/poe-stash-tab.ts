@@ -103,7 +103,7 @@ export class PoeStashTabElement extends LitElement {
 						direction,
 						items: this.tabState.items,
 						tabElement: this,
-						tabCellsSideCount: this.tab.type === 'QuadStash' ? 24 : 12,
+						tabCellsSideCount: cellsSideCount(this.tabState.type),
 					});
 
 					if (item) {
