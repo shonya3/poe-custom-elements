@@ -1,3 +1,4 @@
+import { divination } from './../jsons/tabs/divination';
 import { fragments } from './../jsons/tabs/myfragments';
 import { blight } from './../jsons/tabs/blight';
 import { essence } from './../jsons/tabs/essence';
@@ -60,6 +61,7 @@ export class AppRoot extends LitElement {
             <poe-stash-tab .tab=${this.garbageTab}></poe-stash-tab>
             <poe-stash-tab .tab=${this.influenceTab}></poe-stash-tab>
             -->
+				<poe-stash-tab .tab=${divination}></poe-stash-tab>
 				<poe-stash-tab .tab=${blight}></poe-stash-tab>
 				<poe-stash-tab .tab=${fragments}></poe-stash-tab>
 				<poe-stash-tab .tab=${quadStd}></poe-stash-tab>

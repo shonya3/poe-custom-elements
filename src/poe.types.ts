@@ -22,7 +22,8 @@ export type StashType =
 	| 'EssenceStash'
 	| 'BlightStash'
 	| 'Folder'
-	| 'NormalStash';
+	| 'NormalStash'
+	| 'DivinationCardStash';
 
 export interface Metadata {
 	colour?: string;
