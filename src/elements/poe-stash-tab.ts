@@ -21,6 +21,7 @@ const SUPPORTED_STASH_TYPES = [
 	'CurrencyStash',
 	'FragmentStash',
 	'BlightStash',
+	'DivinationCardStash',
 ];
 
 @customElement('poe-stash-tab')
@@ -183,7 +184,12 @@ function adjustItemXYforCustomTab(tab: TabWithItems, cellsSideCount: number): vo
 			}
 		});
 	}
-	if (tab.type === 'EssenceStash' || tab.type === 'CurrencyStash' || tab.type === 'BlightStash') {
+	if (
+		tab.type === 'EssenceStash' ||
+		tab.type === 'CurrencyStash' ||
+		tab.type === 'BlightStash' ||
+		tab.type === 'DivinationCardStash'
+	) {
 		tab!.items.forEach(item => {
 			item.y = Math.floor(item.x / cellsSideCount);
 			item.x = item.x % cellsSideCount;
@@ -199,6 +205,7 @@ function cellsSideCount(stashType: StashType): number {
 			return 12;
 		case 'QuadStash':
 		case 'FragmentStash':
+		case 'DivinationCardStash':
 			return 24;
 		default:
 			return 12;
@@ -215,6 +222,7 @@ function tabImageSrc(stashType: StashType): string {
 			return '/poe-images/StashPanelGrid.png';
 		case 'QuadStash':
 		case 'FragmentStash':
+		case 'DivinationCardStash':
 			return '/poe-images/QuadStashPanelGrid.png';
 		default:
 			return '/poe-images/StashPanelGrid.png';
