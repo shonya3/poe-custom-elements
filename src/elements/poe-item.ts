@@ -262,7 +262,7 @@ export class PoeItemElement extends LitElement {
 	`;
 }
 
-function influencesBackgroundVar(item: PoeItem) {
+function influencesBackgroundVar(item: PoeItem): string {
 	if (!item.influences) {
 		return '';
 	}
@@ -276,7 +276,6 @@ function influencesBackgroundVar(item: PoeItem) {
 				return '';
 		}
 	};
-
 	return influences.map(influenceImageUrl).filter(Boolean).join(', ');
 }
 
