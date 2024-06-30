@@ -29,3 +29,5 @@ const el = document.createElement('poe-stash-tab');
 el.tab = quad;
 document.body.append(el);
 ```
+
+Check [JS Example](https://github.com/shonya3/poe-custom-elements/tree/main/examples/js)
