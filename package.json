@@ -28,7 +28,7 @@
 	},
 	"scripts": {
 		"dev": "vite",
-		"build": "pnpm run tsup",
+		"build": "pnpm tsup",
 		"lint": "lit-analyzer --strict --rules.no-invalid-css off && tsc --noEmit",
 		"ci": "pnpm run lint && pnpm run build",
 		"release": "pnpm run lint && pnpm run build && changeset publish",
