@@ -8,8 +8,7 @@ npm install poe-custom-elements
 
 ## Usage
 
-The syntax is kept fairly simple. Here's a basic example of a regular
-conversation:
+Here is an example with a stash tab
 
 ```js
 import 'poe-custom-elements/stash-tab.js';
