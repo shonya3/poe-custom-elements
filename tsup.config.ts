@@ -14,4 +14,5 @@ export default defineConfig({
 	],
 	publicDir: true,
 	sourcemap: true,
+	clean: true,
 });

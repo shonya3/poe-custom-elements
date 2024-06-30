@@ -1,8 +1,9 @@
 {
 	"name": "poe-custom-elements",
-	"private": true,
+	"private": false,
 	"version": "0.0.0",
 	"type": "module",
+	"license": "MIT",
 	"exports": {
 		"./types.js": {
 			"types": "./dist/poe.types.d.ts",
@@ -45,6 +46,8 @@
 		"vite-plugin-dts": "^3.9.0"
 	},
 	"files": [
-		"./dist"
+		"./dist",
+		"CHANGELOG.md",
+		"LICENCE"
 	]
 }
