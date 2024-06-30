@@ -29,15 +29,17 @@
 	"scripts": {
 		"dev": "vite",
 		"build": "pnpm run tsup",
-		"preview": "vite preview",
 		"lint": "lit-analyzer --strict --rules.no-invalid-css off && tsc --noEmit",
-		"ci": "pnpm run lint && pnpm run build"
+		"ci": "pnpm run lint && pnpm run build",
+		"release": "pnpm run lint && pnpm run build && changeset publish",
+		"preview": "vite preview"
 	},
 	"dependencies": {
 		"@floating-ui/dom": "^1.6.3",
 		"lit": "^3.1.2"
 	},
 	"devDependencies": {
+		"@changesets/cli": "^2.27.6",
 		"@types/node": "^20.12.8",
 		"lit-analyzer": "^2.0.3",
 		"tsup": "^8.1.0",
