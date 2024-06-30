@@ -31,7 +31,7 @@
 		"build": "pnpm run tsup",
 		"preview": "vite preview",
 		"lint": "lit-analyzer --strict --rules.no-invalid-css off && tsc --noEmit",
-		"build:tsup": "tsup ./src/elements/poe-stash-tab.ts --dts --format esm"
+		"ci": "pnpm run lint && pnpm run build"
 	},
 	"dependencies": {
 		"@floating-ui/dom": "^1.6.3",
