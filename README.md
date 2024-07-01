@@ -21,7 +21,8 @@ import 'poe-custom-elements/stash-tab.js';
 /* 
  JS object of stash tab from Poe API
  https://www.pathofexile.com/developer/docs/reference#stashes-get
- Check TabWithItems, PoeItem .d.ts types file 
+ Check TabWithItems, PoeItem .d.ts types file
+(Keep in mind, that exact json importing is a Vite feature, not a real JS) 
 */
 import quad from './QuadStashStd.json';
 
