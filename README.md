@@ -14,6 +14,7 @@ First, you need to open node_modules/poe-custom-elements and copy
 
 -   poe-images folder
 -   fontin.woff
+-   divination-card folder
     to your public files. (public folder for vite)
 
 ```js
