@@ -1,3 +1,4 @@
+import { maxedStackSize } from '../jsons/maxedStackSize';
 import { divination } from './../jsons/tabs/divination';
 import { fragments } from './../jsons/tabs/myfragments';
 import { blight } from './../jsons/tabs/blight';
@@ -39,7 +40,7 @@ export class AppRoot extends LitElement {
 	@state() garbageTab = garbageJson as TabWithItems;
 
 	protected render(): TemplateResult {
-		return html` ${this.Tabs()} `;
+		return html`<poe-item .item=${maxedStackSize}></poe-item>`;
 	}
 
 	protected Items() {

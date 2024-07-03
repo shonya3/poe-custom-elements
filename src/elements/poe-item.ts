@@ -95,7 +95,14 @@ export class PoeItemElement extends LitElement {
 				  ></poe-socket-chain>`
 				: nothing}
 			${this.item.stackSize
-				? html`<p class="stackSize">${this.item.stackSizeText || this.item.stackSize}</p>`
+				? html`<p
+						class=${classMap({
+							stackSize: true,
+							maxed: this.item.stackSize === this.item.maxStackSize,
+						})}
+				  >
+						${this.item.stackSizeText || this.item.stackSize}
+				  </p>`
 				: nothing}
 		`;
 	}
@@ -245,6 +252,9 @@ export class PoeItemElement extends LitElement {
 				-1px 1px 0 #000, -1px 0 0 #000, -1px -1px 3px #000, 0 -1px 3px #000, 1px -1px 0 #000, 1px 0 3px #000,
 				1px 1px 3px #000, 0 1px 3px #000, -1px 1px 3px #000, -1px 0 3px #000;
 			pointer-events: none;
+		}
+		.maxed {
+			color: #00bafe;
 		}
 
 		img {
