@@ -187,5 +187,7 @@ function singleOrDouble(frameKind: FrameKind, identified: boolean): 'single' | '
 			return 'single';
 		case 'necropolis':
 			return 'single';
+		case 'divination':
+			return 'single';
 	}
 }

@@ -3,6 +3,7 @@ import { customElement, property } from 'lit/decorators.js';
 import type { PoeItem } from '../../poe.types';
 import './poe-item-info-content';
 import './poe-item-info-header';
+import '../divination-card/poe-divination-card';
 import { frameKind } from '../lib';
 
 declare global {
