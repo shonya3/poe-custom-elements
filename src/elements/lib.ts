@@ -15,8 +15,8 @@ export function frameKind(frameType: number): FrameKind | null {
 			return 'gem';
 		case 5:
 			return 'currency';
-		// case 6:
-		// return 'divination card';
+		case 6:
+			return 'divination';
 		case 11:
 			return 'necropolis';
 		default:
