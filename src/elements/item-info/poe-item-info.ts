@@ -3,6 +3,7 @@ import { customElement, property } from 'lit/decorators.js';
 import type { PoeItem } from '../../poe.types';
 import './poe-item-info-content';
 import './poe-item-info-header';
+import { frameKind } from '../lib';
 
 declare global {
 	interface HTMLElementTagNameMap {
@@ -18,6 +19,10 @@ export class PoeItemInfoElement extends LitElement {
 	protected render(): TemplateResult {
 		if (!this.item) {
 			return html`<p style="color: red">No Poe Api item data (.item)</p>`;
+		}
+
+		if (frameKind(this.item.frameType) === 'divination') {
+			return html`<poe-divination-card .name=${this.item.baseType}></poe-divination-card>`;
 		}
 
 		return html`<poe-item-info-header .item=${this.item}></poe-item-info-header>
