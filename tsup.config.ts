@@ -11,6 +11,7 @@ export default defineConfig({
 		'./src/elements/item-info/poe-item-info.ts',
 		'./src/poe.types.ts',
 		'./src/elements/poe-item.ts',
+		'./src/elements/divination-card/poe-divination-card.ts',
 	],
 	publicDir: true,
 	sourcemap: true,

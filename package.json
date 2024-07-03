@@ -1,7 +1,7 @@
 {
 	"name": "poe-custom-elements",
 	"private": false,
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"type": "module",
 	"license": "MIT",
 	"exports": {
@@ -20,6 +20,10 @@
 		"./item.js": {
 			"types": "./dist/elements/poe-item.d.ts",
 			"default": "./dist/elements/poe-item.js"
+		},
+		"./divination-card.js": {
+			"types": "./dist/elements/divination-card/poe-divination-card.d.ts",
+			"default": "./dist/elements/divination-card/poe-divination-card.js"
 		},
 		".": {
 			"types": "./dist/poe.types.d.ts",
