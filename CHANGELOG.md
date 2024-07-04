@@ -1,5 +1,11 @@
 # poe-custom-elements
 
+## 0.2.1
+
+### Patch Changes
+
+- 383b786: poe-item and poe-item-card: add css-props --poe-item-size and --stack-size-font-size
+
 ## 0.2.0
 
 ### Minor Changes
