@@ -1,5 +1,12 @@
 # poe-custom-elements
 
+## 0.2.0
+
+### Minor Changes
+
+- 6f0e7d5: Add poe-item-card element - Itemized divination card, that requires only a card name.
+  Copy item-card folder to your public dir
+
 ## 0.1.0
 
 ### Minor Changes
