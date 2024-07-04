@@ -17,7 +17,9 @@ declare global {
 }
 
 /**
- * @cssprop --cell-size - Size of one tab cell in pixels.
+ * @cssprop --cell-size            - Size of one tab cell in pixels.
+ * @cssprop --poe-item-size        - Size of item.
+ * @cssprop --stack-size-font-size - Font size of stack size.
  */
 @customElement('poe-item')
 export class PoeItemElement extends LitElement {
@@ -215,8 +217,8 @@ export class PoeItemElement extends LitElement {
 			--cell-size: 47px; /** css prop */
 			--w: '(computed) number of horizontal cells';
 			--h: '(computed) number of vertical cells';
-			width: calc(var(--cell-size) * var(--w));
-			height: calc(var(--cell-size) * var(--h));
+			width: var(--poe-item-size, calc(var(--cell-size) * var(--w)));
+			height: var(--poe-item-size, calc(var(--cell-size) * var(--h)));
 			background: var(--influence-background-image-url);
 			background-color: var(--background-color);
 
@@ -242,7 +244,7 @@ export class PoeItemElement extends LitElement {
 		}
 
 		.stackSize {
-			font-size: calc(var(--cell-size) / var(--default-cell-size) * 18);
+			font-size: var(--stack-size-font-size, calc(var(--cell-size) / var(--default-cell-size) * 18));
 			font-weight: bold;
 			color: #fff;
 			position: absolute;

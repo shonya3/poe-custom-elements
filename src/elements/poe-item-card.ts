@@ -12,7 +12,10 @@ declare global {
  * @summary Itemized divination card with divination card element on hover,
  *          that requires only a name of card.
  *
- * Copy item-card folder to your public dir
+ * @cssprop --poe-item-size        - Size of item.
+ * @cssprop --stack-size-font-size - Font size of stack size.
+ *
+ * Copy item-card and divination-card folders to your public dir.
  */
 @customElement('poe-item-card')
 export class PoeItemCardElement extends LitElement {
