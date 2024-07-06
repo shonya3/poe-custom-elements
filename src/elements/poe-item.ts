@@ -89,7 +89,7 @@ export class PoeItemElement extends LitElement {
 			<img alt=${this.item.baseType} .src=${this.item.icon} />
 			${this.item.socketedItems && this.item.sockets
 				? html`<poe-socket-chain
-						@hovered-socketed-item-changed=${this.onHoveredSocketedItemChanged}
+						@socketed-item-hover-change=${this.onHoveredSocketedItemChanged}
 						class=${classMap({ hidden: !this.socketsVisible })}
 						.socketedItems=${this.item.socketedItems}
 						.sockets=${this.item.sockets}

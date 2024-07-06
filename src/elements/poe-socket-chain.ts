@@ -13,7 +13,7 @@ declare global {
 type SocketLinkDirection = 'left-to-right' | 'top-to-bottom' | 'right-to-left';
 
 /**
- * @event hovered-socketed-item-changed CustomEvent<SocketedItem | null>
+ * @event socketed-item-hover-change CustomEvent<SocketedItem | null> - Emits when the user hovers over or away from a socketed item.
  * @cssprop --default-cell-size - Size of one tab cell in pixels.
  * @cssprop --cell-size - Size of one tab cell in pixels.
  */
@@ -65,10 +65,10 @@ export class PoeSocketChainElement extends LitElement {
 	}
 
 	onSocketPointerEnter(socketedItem: SocketedItem | null) {
-		this.dispatchEvent(new CustomEvent('hovered-socketed-item-changed', { detail: socketedItem }));
+		this.dispatchEvent(new CustomEvent('socketed-item-hover-change', { detail: socketedItem }));
 	}
 	onSocketPointerLeave() {
-		this.dispatchEvent(new CustomEvent('hovered-socketed-item-changed', { detail: null }));
+		this.dispatchEvent(new CustomEvent('socketed-item-hover-change', { detail: null }));
 	}
 
 	socketLinkDirection(socketNo: number): SocketLinkDirection {
