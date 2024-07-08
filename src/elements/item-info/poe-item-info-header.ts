@@ -6,12 +6,6 @@ import type { FrameKind, PoeItem } from '../../poe.types';
 import { classMap } from 'lit/directives/class-map.js';
 import { frameKind } from '../lib';
 
-declare global {
-	interface HTMLElementTagNameMap {
-		'poe-item-info-header': ItemInfoHeader;
-	}
-}
-
 @customElement('poe-item-info-header')
 export class ItemInfoHeader extends LitElement {
 	@property({ type: Object }) item!: PoeItem;
@@ -189,5 +183,11 @@ function singleOrDouble(frameKind: FrameKind, identified: boolean): 'single' | '
 			return 'single';
 		case 'divination':
 			return 'single';
+	}
+}
+
+declare global {
+	interface HTMLElementTagNameMap {
+		'poe-item-info-header': ItemInfoHeader;
 	}
 }

@@ -6,12 +6,6 @@ import './poe-item-info-header';
 import '../divination-card/poe-divination-card';
 import { frameKind } from '../lib';
 
-declare global {
-	interface HTMLElementTagNameMap {
-		'poe-item-info': PoeItemInfoElement;
-	}
-}
-
 @customElement('poe-item-info')
 export class PoeItemInfoElement extends LitElement {
 	/** PoE API item data https://www.pathofexile.com/developer/docs/reference#stashes-get */
@@ -46,4 +40,10 @@ export class PoeItemInfoElement extends LitElement {
 			padding-inline: 1rem;
 		}
 	`;
+}
+
+declare global {
+	interface HTMLElementTagNameMap {
+		'poe-item-info': PoeItemInfoElement;
+	}
 }

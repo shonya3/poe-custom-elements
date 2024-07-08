@@ -4,12 +4,6 @@ import { customElement, property } from 'lit/decorators.js';
 import type { Socket, SocketedItem } from '../poe.types';
 import './poe-item-socket';
 
-declare global {
-	interface HTMLElementTagNameMap {
-		'poe-socket-chain': PoeSocketChainElement;
-	}
-}
-
 type SocketLinkDirection = 'left-to-right' | 'top-to-bottom' | 'right-to-left';
 
 /**
@@ -174,4 +168,10 @@ export class PoeSocketChainElement extends LitElement {
 			translate: 2px 50%;
 		}
 	`;
+}
+
+declare global {
+	interface HTMLElementTagNameMap {
+		'poe-socket-chain': PoeSocketChainElement;
+	}
 }

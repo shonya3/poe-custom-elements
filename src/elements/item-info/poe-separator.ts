@@ -2,12 +2,6 @@ import { LitElement, PropertyValueMap, css } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import type { FrameKind } from '../../poe.types';
 
-declare global {
-	interface HTMLElementTagNameMap {
-		'poe-separator': PoeSeparatorElement;
-	}
-}
-
 @customElement('poe-separator')
 export class PoeSeparatorElement extends LitElement {
 	@property({ reflect: true }) kind: FrameKind = 'rare';
@@ -33,4 +27,10 @@ export class PoeSeparatorElement extends LitElement {
 			background: var(--separator-background-image) center no-repeat;
 		}
 	`;
+}
+
+declare global {
+	interface HTMLElementTagNameMap {
+		'poe-separator': PoeSeparatorElement;
+	}
 }

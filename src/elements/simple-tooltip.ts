@@ -3,12 +3,6 @@ import { customElement, property } from 'lit/decorators.js';
 import { Directive, DirectiveParameters, directive } from 'lit/directive.js';
 import { ElementPart, render } from 'lit';
 
-declare global {
-	interface HTMLElementTagNameMap {
-		'simple-tooltip': SimpleTooltip;
-	}
-}
-
 // Positioning library
 import { computePosition, autoPlacement, offset, shift } from '@floating-ui/dom';
 
@@ -159,3 +153,9 @@ class TooltipDirective extends Directive {
 }
 
 export const tooltip = directive(TooltipDirective);
+
+declare global {
+	interface HTMLElementTagNameMap {
+		'simple-tooltip': SimpleTooltip;
+	}
+}

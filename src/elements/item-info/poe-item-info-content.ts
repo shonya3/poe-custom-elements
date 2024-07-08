@@ -6,12 +6,6 @@ import './poe-item-property';
 import './poe-requirements';
 import { frameKind } from '../lib';
 
-declare global {
-	interface HTMLElementTagNameMap {
-		'poe-item-info-content': PoeItemInfoContentElement;
-	}
-}
-
 @customElement('poe-item-info-content')
 export class PoeItemInfoContentElement extends LitElement {
 	@property({ type: Object }) item!: PoeItem;
@@ -178,4 +172,10 @@ export class PoeItemInfoContentElement extends LitElement {
 			text-wrap: balance;
 		}
 	`;
+}
+
+declare global {
+	interface HTMLElementTagNameMap {
+		'poe-item-info-content': PoeItemInfoContentElement;
+	}
 }

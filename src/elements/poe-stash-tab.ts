@@ -6,12 +6,6 @@ import { styleMap } from 'lit/directives/style-map.js';
 import { appendFontinStyle } from './lib';
 import { PoeItemElement } from './poe-item';
 
-declare global {
-	interface HTMLElementTagNameMap {
-		'poe-stash-tab': PoeStashTabElement;
-	}
-}
-
 type Direction = 'down' | 'right' | 'up' | 'left';
 const SUPPORTED_STASH_TYPES = [
 	'NormalStash',
@@ -440,4 +434,10 @@ async function itemElementFromXY({
 	return (
 		tabElement.shadowRoot?.querySelector<PoeItemElement>(`poe-item[data-x="${item.x}"][data-y="${item.y}"]`) ?? null
 	);
+}
+
+declare global {
+	interface HTMLElementTagNameMap {
+		'poe-stash-tab': PoeStashTabElement;
+	}
 }

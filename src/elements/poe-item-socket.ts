@@ -3,12 +3,6 @@ import { customElement, property } from 'lit/decorators.js';
 import type { SocketKind, SocketedItem } from '../poe.types';
 import { capitalize } from './lib';
 
-declare global {
-	interface HTMLElementTagNameMap {
-		'poe-item-socket': PoeItemSocketElement;
-	}
-}
-
 /**
  * @cssprop --cell-size - Size of one tab cell in pixels.
  */
@@ -106,4 +100,10 @@ export class PoeItemSocketElement extends LitElement {
 			height: var(--cell-size);
 		}
 	`;
+}
+
+declare global {
+	interface HTMLElementTagNameMap {
+		'poe-item-socket': PoeItemSocketElement;
+	}
 }

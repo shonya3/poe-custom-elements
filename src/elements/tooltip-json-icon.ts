@@ -1,12 +1,6 @@
 import { LitElement, html, css, TemplateResult } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
-declare global {
-	interface HTMLElementTagNameMap {
-		'tooltip-json-icon': JsonIconElement;
-	}
-}
-
 @customElement('tooltip-json-icon')
 export class JsonIconElement extends LitElement {
 	@property({ type: Boolean, reflect: true }) showing = false;
@@ -55,4 +49,10 @@ export class JsonIconElement extends LitElement {
 			top: 0px;
 		}
 	`;
+}
+
+declare global {
+	interface HTMLElementTagNameMap {
+		'tooltip-json-icon': JsonIconElement;
+	}
 }

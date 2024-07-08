@@ -25,12 +25,6 @@ import { a as aTab } from '../jsons/tabs/a';
 import { quadStd } from '../jsons/tabs/quadStd';
 import { currencyTab } from '../jsons/tabs/currencyTab';
 
-declare global {
-	interface HTMLElementTagNameMap {
-		'app-root': AppRoot;
-	}
-}
-
 @customElement('app-root')
 export class AppRoot extends LitElement {
 	@state() quad = quadJson as TabWithItems;
@@ -168,4 +162,10 @@ function item(): PoeItem {
 		x: 22,
 		y: 12,
 	} as PoeItem;
+}
+
+declare global {
+	interface HTMLElementTagNameMap {
+		'app-root': AppRoot;
+	}
 }

@@ -10,12 +10,6 @@ import './item-info/poe-item-info';
 import { JsonIconElement } from './tooltip-json-icon';
 import { appendFontinStyle, capitalize, parseDisplayMode3 } from './lib';
 
-declare global {
-	interface HTMLElementTagNameMap {
-		'poe-item': PoeItemElement;
-	}
-}
-
 /**
  * @cssprop --cell-size            - Size of one tab cell in pixels.
  * @cssprop --poe-item-size        - Size of item.
@@ -385,5 +379,11 @@ function parseProperty(property: ItemProperty): string {
 			return parseDisplayMode3(property);
 		default:
 			return '';
+	}
+}
+
+declare global {
+	interface HTMLElementTagNameMap {
+		'poe-item': PoeItemElement;
 	}
 }

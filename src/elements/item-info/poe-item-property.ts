@@ -4,12 +4,6 @@ import type { ItemProperty } from '../../poe.types';
 import { classMap } from 'lit/directives/class-map.js';
 import { parseDisplayMode3 } from '../lib';
 
-declare global {
-	interface HTMLElementTagNameMap {
-		'poe-item-property': PoeItemPropertyElement;
-	}
-}
-
 @customElement('poe-item-property')
 export class PoeItemPropertyElement extends LitElement {
 	@property({ type: Object }) property!: ItemProperty;
@@ -178,3 +172,9 @@ Adds 3 to 47 Lightning Damage
 Note: ~b/o 2 chaos
 
 */
+
+declare global {
+	interface HTMLElementTagNameMap {
+		'poe-item-property': PoeItemPropertyElement;
+	}
+}

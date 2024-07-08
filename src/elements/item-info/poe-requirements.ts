@@ -2,12 +2,6 @@ import { LitElement, html, css, nothing } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import type { Requirement } from '../../poe.types';
 
-declare global {
-	interface HTMLElementTagNameMap {
-		'poe-requirements': PoeRequirementElement;
-	}
-}
-
 @customElement('poe-requirements')
 export class PoeRequirementElement extends LitElement {
 	@property({ type: Array }) requirements: Requirement[] = [];
@@ -55,4 +49,10 @@ export class PoeRequirementElement extends LitElement {
 			color: #fff;
 		}
 	`;
+}
+
+declare global {
+	interface HTMLElementTagNameMap {
+		'poe-requirements': PoeRequirementElement;
+	}
 }

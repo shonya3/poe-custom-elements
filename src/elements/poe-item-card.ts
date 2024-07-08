@@ -2,12 +2,6 @@ import { LitElement, html, css, TemplateResult } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import './poe-item';
 
-declare global {
-	interface HTMLElementTagNameMap {
-		'poe-item-card': PoeItemCardElement;
-	}
-}
-
 /**
  * @summary Itemized divination card with divination card element on hover,
  *          that requires only a name of card.
@@ -59,4 +53,10 @@ export class PoeItemCardElement extends LitElement {
 			width: fit-content;
 		}
 	`;
+}
+
+declare global {
+	interface HTMLElementTagNameMap {
+		'poe-item-card': PoeItemCardElement;
+	}
 }
