@@ -48,6 +48,7 @@
 	},
 	"devDependencies": {
 		"@changesets/cli": "^2.27.6",
+		"@custom-elements-manifest/analyzer": "^0.10.3",
 		"@types/node": "^20.12.8",
 		"lit-analyzer": "^2.0.3",
 		"tsup": "^8.1.0",
