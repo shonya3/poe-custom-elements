@@ -1,5 +1,5 @@
 import { LitElement, html, css, TemplateResult, PropertyValueMap } from 'lit';
-import { customElement, property, state } from 'lit/decorators.js';
+import { customElement, property } from 'lit/decorators.js';
 import type { PoeItem, StashType, TabWithItems } from '../poe.types';
 import './poe-item';
 import { styleMap } from 'lit/directives/style-map.js';
@@ -23,22 +23,22 @@ export class PoeStashTabElement extends LitElement {
 	/** PoE API tab data https://www.pathofexile.com/developer/docs/reference#stashes-get */
 	@property({ type: Object }) tab!: TabWithItems;
 	/** Mutable clone of tab */
-	@state() private tabState!: TabWithItems;
-	get focusWithin(): boolean {
+	#tab!: TabWithItems;
+	get #focusWithin(): boolean {
 		return this.matches(':focus-within');
 	}
-	get activeItemElement(): PoeItemElement | null {
+	get #activeItemElement(): PoeItemElement | null {
 		return this.shadowRoot?.querySelector('poe-item:focus') ?? null;
 	}
 
 	protected willUpdate(map: PropertyValueMap<this>): void {
-		if (map.has('tab')) {
-			this.tabState = structuredClone(this.tab);
-			const cells = cellsSideCount(this.tabState.type);
-			adjustItemXYforCustomTab(this.tabState, cells);
-			this.tabState.items = orderItems(this.tabState.items);
+		if (map.has('tab') && this.tab) {
+			this.#tab = structuredClone(this.tab);
+			const cells = cellsSideCount(this.#tab.type);
+			adjustItemXYforCustomTab(this.#tab, cells);
+			this.#tab.items = orderItems(this.#tab.items);
 			this.style.setProperty('--cells-side-count', cells.toString());
-			this.style.setProperty('--background-image', `url(${tabImageSrc(this.tabState.type)})`);
+			this.style.setProperty('--background-image', `url(${tabImageSrc(this.#tab.type)})`);
 		}
 	}
 
@@ -55,7 +55,7 @@ export class PoeStashTabElement extends LitElement {
 		}
 		return html`
 			<ul>
-				${this.tabState.items.map(
+				${this.#tab.items.map(
 					item => html`<li
 						style=${styleMap({
 							'grid-column': `${item.x + 1} / span ${item.w}`,
@@ -67,7 +67,7 @@ export class PoeStashTabElement extends LitElement {
 							data-y=${item.y}
 							tabindex="0"
 							placed
-							style="--cell-size: ${sizeOfCellPixels(this.tabState.type)}"
+							style="--cell-size: ${sizeOfCellPixels(this.#tab.type)}"
 							.item=${item}
 						></poe-item>
 					</li>`
@@ -79,26 +79,26 @@ export class PoeStashTabElement extends LitElement {
 	connectedCallback(): void {
 		super.connectedCallback();
 		appendFontinStyle();
-		window.addEventListener('keydown', this.onKeyDown);
+		window.addEventListener('keydown', this.#navigateItemsWithArrowKeys);
 	}
 
 	disconnectedCallback(): void {
 		super.disconnectedCallback();
-		window.removeEventListener('keydown', this.onKeyDown);
+		window.removeEventListener('keydown', this.#navigateItemsWithArrowKeys);
 	}
 
-	onKeyDown = async (e: KeyboardEvent): Promise<void> => {
-		if (this.focusWithin) {
+	#navigateItemsWithArrowKeys = async (e: KeyboardEvent): Promise<void> => {
+		if (this.#focusWithin) {
 			if (['ArrowDown', 'ArrowRight', 'ArrowUp', 'ArrowLeft'].includes(e.code)) {
 				const direction = e.code.slice(5).toLowerCase() as Direction;
-				const activeItemElement = this.activeItemElement;
+				const activeItemElement = this.#activeItemElement;
 				if (activeItemElement) {
 					const item = await findClosestItem({
 						activeItem: activeItemElement.item,
 						direction,
-						items: this.tabState.items,
+						items: this.#tab.items,
 						tabElement: this,
-						tabCellsSideCount: cellsSideCount(this.tabState.type),
+						tabCellsSideCount: cellsSideCount(this.#tab.type),
 					});
 
 					if (item) {
