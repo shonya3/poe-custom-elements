@@ -25,7 +25,7 @@ export class PoeItemElement extends LitElement {
 	 *  If set to true, sockets are always visible.
 	 *  If set to false, sockets are only visible when the Alt key is pressed or when hovered over.
 	 */
-	@property({ type: Boolean, reflect: true, attribute: 'show-sockets' }) showSockets = false;
+	@property({ type: Boolean, reflect: true, attribute: 'always-show-sockets' }) alwaysShowSockets = false;
 	/** Whether an item is displayed in inventory or stash tab. It gets blue background, if yes */
 	@property({ type: Boolean }) placed = false;
 
@@ -46,21 +46,21 @@ export class PoeItemElement extends LitElement {
 			this.style.setProperty('--influence-background-image-url', influencesBackgroundVar(this.item));
 		}
 
-		if (map.has('showSockets')) {
-			this.socketsVisible = this.showSockets;
+		if (map.has('alwaysShowSockets')) {
+			this.socketsVisible = this.alwaysShowSockets;
 		}
 		if (map.has('altPressed')) {
 			if (this.altPressed) {
 				this.socketsVisible = true;
 			} else {
-				this.socketsVisible = this.showSockets;
+				this.socketsVisible = this.alwaysShowSockets;
 			}
 		}
 		if (map.has('hovered')) {
 			if (this.hovered) {
 				this.socketsVisible = true;
 			} else {
-				this.socketsVisible = this.showSockets;
+				this.socketsVisible = this.alwaysShowSockets;
 			}
 		}
 	}
