@@ -8,7 +8,7 @@ import './simple-tooltip';
 import './tooltip-json-icon';
 import './item-info/poe-item-info';
 import { JsonIconElement } from './tooltip-json-icon';
-import { appendFontinStyle, capitalize, parseDisplayMode3 } from './lib';
+import { appendFontinStyle, capitalize, frameKind, parseDisplayMode3 } from './lib';
 
 /**
  * @cssprop --cell-size            - Size of one tab cell in pixels.
@@ -94,7 +94,9 @@ export class PoeItemElement extends LitElement {
 				? html`<p
 						class=${classMap({
 							stackSize: true,
-							maxed: this.item.stackSize === this.item.maxStackSize,
+							maxed:
+								frameKind(this.item.frameType) === 'divination' &&
+								this.item.stackSize === this.item.maxStackSize,
 						})}
 				  >
 						${this.item.stackSizeText || this.item.stackSize}
