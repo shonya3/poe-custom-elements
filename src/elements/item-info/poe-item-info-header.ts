@@ -12,9 +12,11 @@ export class ItemInfoHeader extends LitElement {
 
 	protected willUpdate(map: PropertyValueMap<this>): void {
 		if (map.has('item')) {
-			const [leftSymbolUrl, rightSymbolUrl] = headerSymbols(this.item);
-			this.style.setProperty('--left-symbol-bg-image-url', leftSymbolUrl);
-			this.style.setProperty('--right-symbol-bg-image-url', rightSymbolUrl);
+			const influenceUrls = influenceSymbolsUrls(this.item);
+			if (influenceUrls) {
+				this.style.setProperty('--left-symbol-bg-image-url', influenceUrls.left);
+				this.style.setProperty('--right-symbol-bg-image-url', influenceUrls.right);
+			}
 		}
 	}
 
@@ -38,7 +40,7 @@ export class ItemInfoHeader extends LitElement {
 				? html`
 						<div class="content mt-2">${this.item.name}</div>
 						<div class="content mb-4">${this.item.baseType}</div>
-				  `
+					`
 				: html`<div class="content">${this.item.baseType}</div>`}
 		</header>`;
 	}
@@ -118,13 +120,21 @@ export class ItemInfoHeader extends LitElement {
 	`;
 }
 
-function headerSymbols(item: PoeItem): [string, string] {
-	const influenceNames = () => {
+/**
+ * Get css urls for item header influences or null
+ * @param item Poe API item
+ * @returns tuple of css strings url(url-of-influence-symbol) or null
+ */
+function influenceSymbolsUrls(item: PoeItem): {
+	left: string;
+	right: string;
+} | null {
+	const influenceNames = (): [string, string] | null => {
 		if (item.influences) {
 			const influences = Object.keys(item.influences);
 			switch (influences.length) {
 				case 0:
-					return ['', ''];
+					return null;
 				case 1:
 					return [influences[0], influences[0]];
 				case 2:
@@ -140,10 +150,18 @@ function headerSymbols(item: PoeItem): [string, string] {
 			return ['synthesised', 'synthesised'];
 		}
 
-		return ['', ''];
+		return null;
 	};
 
-	return influenceNames().map(inf => `url(/poe-images/${inf}-symbol.png)`) as [string, string];
+	const influences = influenceNames();
+	if (!influences) {
+		return null;
+	}
+
+	return {
+		left: `url(/poe-images/${influences[0]}-symbol.png)`,
+		right: `url(/poe-images/${influences[1]}-symbol.png)`,
+	};
 }
 
 function headerBackgroundUrl(frameKind: FrameKind, identified: boolean): string {
