@@ -59,6 +59,7 @@
 		"@storybook/web-components": "^8.2.2",
 		"@storybook/web-components-vite": "^8.2.2",
 		"@types/node": "^20.14.10",
+		"chromatic": "^11.5.5",
 		"lit-analyzer": "^2.0.3",
 		"storybook": "^8.2.2",
 		"tsup": "^8.1.0",
