@@ -42,7 +42,8 @@
 		"release": "pnpm run lint && pnpm run build && changeset publish",
 		"preview": "vite preview",
 		"storybook": "storybook dev -p 6006",
-		"build-storybook": "storybook build"
+		"build-storybook": "storybook build",
+		"chromatic": "chromatic --exit-zero-on-changes"
 	},
 	"dependencies": {
 		"@floating-ui/dom": "^1.6.7",
