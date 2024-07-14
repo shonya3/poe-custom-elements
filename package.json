@@ -40,21 +40,31 @@
 		"lint": "lit-analyzer --strict --rules.no-invalid-css off && tsc --noEmit",
 		"ci": "pnpm run lint && pnpm run build",
 		"release": "pnpm run lint && pnpm run build && changeset publish",
-		"preview": "vite preview"
+		"preview": "vite preview",
+		"storybook": "storybook dev -p 6006",
+		"build-storybook": "storybook build"
 	},
 	"dependencies": {
-		"@floating-ui/dom": "^1.6.3",
-		"lit": "^3.1.2"
+		"@floating-ui/dom": "^1.6.7",
+		"lit": "^3.1.4"
 	},
 	"devDependencies": {
-		"@changesets/cli": "^2.27.6",
+		"@changesets/cli": "^2.27.7",
+		"@chromatic-com/storybook": "1.6.1",
 		"@custom-elements-manifest/analyzer": "^0.10.3",
-		"@types/node": "^20.12.8",
+		"@storybook/addon-essentials": "^8.2.2",
+		"@storybook/addon-links": "^8.2.2",
+		"@storybook/blocks": "^8.2.2",
+		"@storybook/test": "^8.2.2",
+		"@storybook/web-components": "^8.2.2",
+		"@storybook/web-components-vite": "^8.2.2",
+		"@types/node": "^20.14.10",
 		"lit-analyzer": "^2.0.3",
+		"storybook": "^8.2.2",
 		"tsup": "^8.1.0",
-		"typescript": "^5.2.2",
-		"vite": "^5.2.0",
-		"vite-plugin-dts": "^3.9.0"
+		"typescript": "^5.5.3",
+		"vite": "^5.3.3",
+		"wc-storybook-helpers": "^2.0.2"
 	},
 	"files": [
 		"./dist",

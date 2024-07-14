@@ -1,0 +1,2033 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "src/main.ts",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/poe.types.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "SOCKET_KINDS",
+          "type": {
+            "text": "['R', 'G', 'B', 'A', 'W']"
+          },
+          "default": "['R', 'G', 'B', 'A', 'W']"
+        },
+        {
+          "kind": "variable",
+          "name": "INFLUENCE_VARIANTS",
+          "type": {
+            "text": "array"
+          },
+          "default": "['shaper', 'elder', 'redeemer', 'warlord', 'hunter', 'crusader']"
+        },
+        {
+          "kind": "variable",
+          "name": "RARITY_VARIANTS",
+          "type": {
+            "text": "['Normal', 'Magic', 'Rare', 'Unique']"
+          },
+          "default": "['Normal', 'Magic', 'Rare', 'Unique']"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "SOCKET_KINDS",
+          "declaration": {
+            "name": "SOCKET_KINDS",
+            "module": "src/poe.types.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "INFLUENCE_VARIANTS",
+          "declaration": {
+            "name": "INFLUENCE_VARIANTS",
+            "module": "src/poe.types.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "RARITY_VARIANTS",
+          "declaration": {
+            "name": "RARITY_VARIANTS",
+            "module": "src/poe.types.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/elements/lib.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "frameKind",
+          "return": {
+            "type": {
+              "text": "FrameKind | null"
+            }
+          },
+          "parameters": [
+            {
+              "name": "frameType",
+              "type": {
+                "text": "number"
+              }
+            }
+          ],
+          "description": "https://www.pathofexile.com/developer/docs/reference#type-FrameType"
+        },
+        {
+          "kind": "function",
+          "name": "capitalize",
+          "return": {
+            "type": {
+              "text": "string"
+            }
+          },
+          "parameters": [
+            {
+              "name": "s",
+              "type": {
+                "text": "string"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "parseDisplayMode3",
+          "return": {
+            "type": {
+              "text": "string"
+            }
+          },
+          "parameters": [
+            {
+              "name": "property",
+              "type": {
+                "text": "ItemProperty"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "parseDisplayMode3",
+          "return": {
+            "type": {
+              "text": "Array<T | string>"
+            }
+          },
+          "parameters": [
+            {
+              "name": "property",
+              "type": {
+                "text": "ItemProperty"
+              }
+            },
+            {
+              "name": "mapFn",
+              "type": {
+                "text": "(val: string) => T"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "parseDisplayMode3",
+          "return": {
+            "type": {
+              "text": "Array<T | string> | string"
+            }
+          },
+          "parameters": [
+            {
+              "name": "property",
+              "type": {
+                "text": "ItemProperty"
+              }
+            },
+            {
+              "name": "mapFn",
+              "optional": true,
+              "type": {
+                "text": "(val: string) => T"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "appendFontinStyle"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "frameKind",
+          "declaration": {
+            "name": "frameKind",
+            "module": "src/elements/lib.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "capitalize",
+          "declaration": {
+            "name": "capitalize",
+            "module": "src/elements/lib.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "parseDisplayMode3",
+          "declaration": {
+            "name": "parseDisplayMode3",
+            "module": "src/elements/lib.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "parseDisplayMode3",
+          "declaration": {
+            "name": "parseDisplayMode3",
+            "module": "src/elements/lib.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "parseDisplayMode3",
+          "declaration": {
+            "name": "parseDisplayMode3",
+            "module": "src/elements/lib.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "appendFontinStyle",
+          "declaration": {
+            "name": "appendFontinStyle",
+            "module": "src/elements/lib.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/elements/poe-item-card.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "PoeItemCardElement",
+          "cssProperties": [
+            {
+              "description": "Size of item.",
+              "name": "--poe-item-size"
+            },
+            {
+              "description": "Font size of stack size. Copy item-card and divination-card folders to your public dir.",
+              "name": "--stack-size-font-size"
+            }
+          ],
+          "members": [
+            {
+              "kind": "field",
+              "name": "name",
+              "type": {
+                "text": "string"
+              },
+              "default": "'Rain of Chaos'",
+              "attribute": "name",
+              "reflects": true
+            },
+            {
+              "kind": "field",
+              "name": "stackSize",
+              "type": {
+                "text": "number | undefined"
+              },
+              "attribute": "stack-size"
+            },
+            {
+              "kind": "field",
+              "name": "maxStackSize",
+              "type": {
+                "text": "number | undefined"
+              },
+              "attribute": "max-stack-size"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "name",
+              "type": {
+                "text": "string"
+              },
+              "default": "'Rain of Chaos'",
+              "fieldName": "name"
+            },
+            {
+              "name": "stack-size",
+              "type": {
+                "text": "number | undefined"
+              },
+              "fieldName": "stackSize"
+            },
+            {
+              "name": "max-stack-size",
+              "type": {
+                "text": "number | undefined"
+              },
+              "fieldName": "maxStackSize"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "summary": "Itemized divination card with divination card element on hover,\r\nthat requires only a name of card.",
+          "tagName": "poe-item-card",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "PoeItemCardElement",
+          "declaration": {
+            "name": "PoeItemCardElement",
+            "module": "src/elements/poe-item-card.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "poe-item-card",
+          "declaration": {
+            "name": "PoeItemCardElement",
+            "module": "src/elements/poe-item-card.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/elements/poe-item-socket.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "PoeItemSocketElement",
+          "cssProperties": [
+            {
+              "description": "Size of one tab cell in pixels.",
+              "name": "--cell-size"
+            }
+          ],
+          "members": [
+            {
+              "kind": "field",
+              "name": "kind",
+              "type": {
+                "text": "SocketKind"
+              },
+              "description": "Socket color or Abyss",
+              "attribute": "kind",
+              "reflects": true
+            },
+            {
+              "kind": "field",
+              "name": "socketedItem",
+              "type": {
+                "text": "SocketedItem | undefined"
+              },
+              "attribute": "socketedItem"
+            },
+            {
+              "kind": "method",
+              "name": "gemImageSrc"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "kind",
+              "type": {
+                "text": "SocketKind"
+              },
+              "description": "Socket color or Abyss",
+              "fieldName": "kind"
+            },
+            {
+              "name": "socketedItem",
+              "type": {
+                "text": "SocketedItem | undefined"
+              },
+              "fieldName": "socketedItem"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "poe-item-socket",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "PoeItemSocketElement",
+          "declaration": {
+            "name": "PoeItemSocketElement",
+            "module": "src/elements/poe-item-socket.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "poe-item-socket",
+          "declaration": {
+            "name": "PoeItemSocketElement",
+            "module": "src/elements/poe-item-socket.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/elements/poe-item.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "PoeItemElement",
+          "cssProperties": [
+            {
+              "description": "Size of one tab cell in pixels.",
+              "name": "--cell-size"
+            },
+            {
+              "description": "Size of item.",
+              "name": "--poe-item-size"
+            },
+            {
+              "description": "Font size of stack size.",
+              "name": "--stack-size-font-size"
+            }
+          ],
+          "members": [
+            {
+              "kind": "field",
+              "name": "#itemIntoTextTransformer",
+              "privacy": "private",
+              "type": {
+                "text": "ItemIntoTextTransformer | null"
+              },
+              "default": "null"
+            },
+            {
+              "kind": "field",
+              "name": "item",
+              "type": {
+                "text": "PoeItem"
+              },
+              "description": "PoE API item data https://www.pathofexile.com/developer/docs/reference#stashes-get",
+              "attribute": "item"
+            },
+            {
+              "kind": "field",
+              "name": "alwaysShowSockets",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Controls the visibility of sockets.\r\n\r\nIf set to true, sockets are always visible.\r\nIf set to false, sockets are only visible when the Alt key is pressed or when hovered over.",
+              "attribute": "always-show-sockets",
+              "reflects": true
+            },
+            {
+              "kind": "field",
+              "name": "placed",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Whether an item is displayed in inventory or stash tab. It gets blue background, if yes",
+              "attribute": "placed"
+            },
+            {
+              "kind": "field",
+              "name": "socketsVisible",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Main visibility state for sockets"
+            },
+            {
+              "kind": "field",
+              "name": "hovered",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false"
+            },
+            {
+              "kind": "field",
+              "name": "altPressed",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false"
+            },
+            {
+              "kind": "field",
+              "name": "iconJson",
+              "type": {
+                "text": "JsonIconElement | undefined"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "tooltipElement",
+              "readonly": true
+            },
+            {
+              "kind": "method",
+              "name": "onHoveredSocketedItemChanged",
+              "privacy": "private",
+              "parameters": [
+                {
+                  "name": "e",
+                  "type": {
+                    "text": "CustomEvent<SocketedItem>"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "field",
+              "name": "onJClick",
+              "privacy": "private"
+            },
+            {
+              "kind": "field",
+              "name": "onHoverCtrlCClick",
+              "privacy": "private"
+            },
+            {
+              "kind": "method",
+              "name": "onMouseEnter",
+              "privacy": "private"
+            },
+            {
+              "kind": "method",
+              "name": "onMouseLeave",
+              "privacy": "private"
+            },
+            {
+              "kind": "field",
+              "name": "onAltPressed",
+              "privacy": "private"
+            },
+            {
+              "kind": "field",
+              "name": "onAltReleased",
+              "privacy": "private"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "item",
+              "type": {
+                "text": "PoeItem"
+              },
+              "description": "PoE API item data https://www.pathofexile.com/developer/docs/reference#stashes-get",
+              "fieldName": "item"
+            },
+            {
+              "name": "always-show-sockets",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Controls the visibility of sockets.\r\n\r\nIf set to true, sockets are always visible.\r\nIf set to false, sockets are only visible when the Alt key is pressed or when hovered over.",
+              "fieldName": "alwaysShowSockets"
+            },
+            {
+              "name": "placed",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Whether an item is displayed in inventory or stash tab. It gets blue background, if yes",
+              "fieldName": "placed"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "poe-item",
+          "customElement": true
+        },
+        {
+          "kind": "class",
+          "description": "",
+          "name": "ItemIntoTextTransformer",
+          "members": [
+            {
+              "kind": "field",
+              "name": "#separator",
+              "privacy": "private",
+              "default": "'\\n--------\\n'",
+              "type": {
+                "text": "'\\n--------\\n'"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "item",
+              "type": {
+                "text": "PoeItem"
+              },
+              "default": "item"
+            },
+            {
+              "kind": "method",
+              "name": "transform"
+            },
+            {
+              "kind": "method",
+              "name": "groupSockets"
+            },
+            {
+              "kind": "field",
+              "name": "sockets",
+              "type": {
+                "text": "Array<Socket>"
+              },
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "enchantments",
+              "type": {
+                "text": "Array<string>"
+              },
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "requirements",
+              "type": {
+                "text": "Array<Requirement>"
+              },
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "implicits",
+              "type": {
+                "text": "Array<string>"
+              },
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "explicits",
+              "type": {
+                "text": "Array<string>"
+              },
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "crafts",
+              "type": {
+                "text": "Array<string>"
+              },
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "fracturedMods",
+              "type": {
+                "text": "Array<string>"
+              },
+              "readonly": true
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "PoeItemElement",
+          "declaration": {
+            "name": "PoeItemElement",
+            "module": "src/elements/poe-item.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "poe-item",
+          "declaration": {
+            "name": "PoeItemElement",
+            "module": "src/elements/poe-item.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "ItemIntoTextTransformer",
+          "declaration": {
+            "name": "ItemIntoTextTransformer",
+            "module": "src/elements/poe-item.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/elements/poe-socket-chain.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "PoeSocketChainElement",
+          "cssProperties": [
+            {
+              "description": "Size of one tab cell in pixels.",
+              "name": "--default-cell-size"
+            },
+            {
+              "description": "Size of one tab cell in pixels.",
+              "name": "--cell-size"
+            }
+          ],
+          "members": [
+            {
+              "kind": "field",
+              "name": "socketedItems",
+              "type": {
+                "text": "Array<SocketedItem>"
+              },
+              "default": "[]",
+              "attribute": "socketedItems"
+            },
+            {
+              "kind": "field",
+              "name": "sockets",
+              "type": {
+                "text": "Array<Socket>"
+              },
+              "default": "[]",
+              "attribute": "sockets"
+            },
+            {
+              "kind": "field",
+              "name": "w",
+              "type": {
+                "text": "number"
+              },
+              "attribute": "w"
+            },
+            {
+              "kind": "method",
+              "name": "onSocketPointerEnter",
+              "parameters": [
+                {
+                  "name": "socketedItem",
+                  "type": {
+                    "text": "SocketedItem | null"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "onSocketPointerLeave"
+            },
+            {
+              "kind": "method",
+              "name": "socketLinkDirection",
+              "return": {
+                "type": {
+                  "text": "SocketLinkDirection"
+                }
+              },
+              "parameters": [
+                {
+                  "name": "socketNo",
+                  "type": {
+                    "text": "number"
+                  }
+                }
+              ]
+            }
+          ],
+          "events": [
+            {
+              "name": "socketed-item-hover-change",
+              "type": {
+                "text": "CustomEvent"
+              },
+              "description": "CustomEvent<SocketedItem | null> - Emits when the user hovers over or away from a socketed item."
+            }
+          ],
+          "attributes": [
+            {
+              "name": "socketedItems",
+              "type": {
+                "text": "Array<SocketedItem>"
+              },
+              "default": "[]",
+              "fieldName": "socketedItems"
+            },
+            {
+              "name": "sockets",
+              "type": {
+                "text": "Array<Socket>"
+              },
+              "default": "[]",
+              "fieldName": "sockets"
+            },
+            {
+              "name": "w",
+              "type": {
+                "text": "number"
+              },
+              "fieldName": "w"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "poe-socket-chain",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "PoeSocketChainElement",
+          "declaration": {
+            "name": "PoeSocketChainElement",
+            "module": "src/elements/poe-socket-chain.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "poe-socket-chain",
+          "declaration": {
+            "name": "PoeSocketChainElement",
+            "module": "src/elements/poe-socket-chain.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/elements/poe-stash-tab.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "PoE stash tab",
+          "name": "PoeStashTabElement",
+          "members": [
+            {
+              "kind": "field",
+              "name": "tab",
+              "type": {
+                "text": "TabWithItems"
+              },
+              "description": "PoE API tab data https://www.pathofexile.com/developer/docs/reference#stashes-get",
+              "attribute": "tab"
+            },
+            {
+              "kind": "field",
+              "name": "#tab",
+              "privacy": "private",
+              "type": {
+                "text": "TabWithItems"
+              },
+              "description": "Mutable clone of tab"
+            },
+            {
+              "kind": "field",
+              "name": "#focusWithin",
+              "privacy": "private",
+              "type": {
+                "text": "boolean"
+              },
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "#activeItemElement",
+              "privacy": "private",
+              "type": {
+                "text": "PoeItemElement | null"
+              },
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "#navigateItemsWithArrowKeys",
+              "privacy": "private"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "tab",
+              "type": {
+                "text": "TabWithItems"
+              },
+              "description": "PoE API tab data https://www.pathofexile.com/developer/docs/reference#stashes-get",
+              "fieldName": "tab"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "poe-stash-tab",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "PoeStashTabElement",
+          "declaration": {
+            "name": "PoeStashTabElement",
+            "module": "src/elements/poe-stash-tab.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "poe-stash-tab",
+          "declaration": {
+            "name": "PoeStashTabElement",
+            "module": "src/elements/poe-stash-tab.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/elements/simple-tooltip.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "SimpleTooltip",
+          "members": [
+            {
+              "kind": "method",
+              "name": "lazy",
+              "static": true,
+              "parameters": [
+                {
+                  "name": "target",
+                  "type": {
+                    "text": "Element"
+                  }
+                },
+                {
+                  "name": "callback",
+                  "type": {
+                    "text": "(target: SimpleTooltip) => void"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "field",
+              "name": "showing",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "showing",
+              "reflects": true
+            },
+            {
+              "kind": "field",
+              "name": "offset",
+              "type": {
+                "text": "number"
+              },
+              "default": "4",
+              "attribute": "offset"
+            },
+            {
+              "kind": "field",
+              "name": "_target",
+              "type": {
+                "text": "Element | null"
+              },
+              "default": "null"
+            },
+            {
+              "kind": "field",
+              "name": "target"
+            },
+            {
+              "kind": "field",
+              "name": "show"
+            },
+            {
+              "kind": "field",
+              "name": "hide"
+            },
+            {
+              "kind": "field",
+              "name": "finishHide"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "showing",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "showing"
+            },
+            {
+              "name": "offset",
+              "type": {
+                "text": "number"
+              },
+              "default": "4",
+              "fieldName": "offset"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "simple-tooltip",
+          "customElement": true
+        },
+        {
+          "kind": "variable",
+          "name": "tooltip",
+          "default": "document.createElement('simple-tooltip')"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "SimpleTooltip",
+          "declaration": {
+            "name": "SimpleTooltip",
+            "module": "src/elements/simple-tooltip.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "simple-tooltip",
+          "declaration": {
+            "name": "SimpleTooltip",
+            "module": "src/elements/simple-tooltip.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "tooltip",
+          "declaration": {
+            "name": "tooltip",
+            "module": "src/elements/simple-tooltip.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/elements/tooltip-json-icon.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "JsonIconElement",
+          "members": [
+            {
+              "kind": "field",
+              "name": "showing",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "showing",
+              "reflects": true
+            },
+            {
+              "kind": "method",
+              "name": "showWithAutohide"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "showing",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "showing"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "tooltip-json-icon",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "JsonIconElement",
+          "declaration": {
+            "name": "JsonIconElement",
+            "module": "src/elements/tooltip-json-icon.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "tooltip-json-icon",
+          "declaration": {
+            "name": "JsonIconElement",
+            "module": "src/elements/tooltip-json-icon.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/stories/Button.stories.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "meta",
+          "default": "{ title: 'Example/Button', tags: ['autodocs'], render: (args) => Button(args), argTypes: { backgroundColor: { control: 'color' }, size: { control: { type: 'select' }, options: ['small', 'medium', 'large'], }, }, args: { onClick: fn() }, } satisfies Meta<ButtonProps>"
+        },
+        {
+          "kind": "variable",
+          "name": "Primary",
+          "type": {
+            "text": "Story"
+          },
+          "default": "{ args: { primary: true, label: 'Button', }, }"
+        },
+        {
+          "kind": "variable",
+          "name": "Secondary",
+          "type": {
+            "text": "Story"
+          },
+          "default": "{ args: { label: 'Button', }, }"
+        },
+        {
+          "kind": "variable",
+          "name": "Large",
+          "type": {
+            "text": "Story"
+          },
+          "default": "{ args: { size: 'large', label: 'Button', }, }"
+        },
+        {
+          "kind": "variable",
+          "name": "Small",
+          "type": {
+            "text": "Story"
+          },
+          "default": "{ args: { size: 'small', label: 'Button', }, }"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "name": "meta",
+            "module": "src/stories/Button.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Primary",
+          "declaration": {
+            "name": "Primary",
+            "module": "src/stories/Button.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Secondary",
+          "declaration": {
+            "name": "Secondary",
+            "module": "src/stories/Button.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Large",
+          "declaration": {
+            "name": "Large",
+            "module": "src/stories/Button.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Small",
+          "declaration": {
+            "name": "Small",
+            "module": "src/stories/Button.stories.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/stories/Button.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "Button",
+          "parameters": [
+            {
+              "name": "{ primary, backgroundColor, size, label, onClick }",
+              "type": {
+                "text": "ButtonProps"
+              }
+            }
+          ],
+          "description": "Primary UI component for user interaction"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "Button",
+          "declaration": {
+            "name": "Button",
+            "module": "src/stories/Button.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/stories/Header.stories.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "meta",
+          "default": "{ title: 'Example/Header', // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs tags: ['autodocs'], render: (args: HeaderProps) => Header(args), args: { onLogin: fn(), onLogout: fn(), onCreateAccount: fn(), }, } satisfies Meta<HeaderProps>"
+        },
+        {
+          "kind": "variable",
+          "name": "LoggedIn",
+          "type": {
+            "text": "Story"
+          },
+          "default": "{ args: { user: { name: 'Jane Doe', }, }, }"
+        },
+        {
+          "kind": "variable",
+          "name": "LoggedOut",
+          "type": {
+            "text": "Story"
+          },
+          "default": "{}"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "name": "meta",
+            "module": "src/stories/Header.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "LoggedIn",
+          "declaration": {
+            "name": "LoggedIn",
+            "module": "src/stories/Header.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "LoggedOut",
+          "declaration": {
+            "name": "LoggedOut",
+            "module": "src/stories/Header.stories.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/stories/Header.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "Header",
+          "parameters": [
+            {
+              "name": "{ user, onLogin, onLogout, onCreateAccount }",
+              "type": {
+                "text": "HeaderProps"
+              }
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "Header",
+          "declaration": {
+            "name": "Header",
+            "module": "src/stories/Header.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/stories/Page.stories.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "meta",
+          "default": "{ title: 'Example/Page', render: (args: PageProps) => Page(args), } satisfies Meta<PageProps>"
+        },
+        {
+          "kind": "variable",
+          "name": "LoggedIn",
+          "type": {
+            "text": "Story"
+          },
+          "default": "{ args: { // More on composing args: https://storybook.js.org/docs/writing-stories/args#args-composition ...HeaderStories.LoggedIn.args, }, }"
+        },
+        {
+          "kind": "variable",
+          "name": "LoggedOut",
+          "type": {
+            "text": "Story"
+          },
+          "default": "{ args: { ...HeaderStories.LoggedOut.args, }, }"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "name": "meta",
+            "module": "src/stories/Page.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "LoggedIn",
+          "declaration": {
+            "name": "LoggedIn",
+            "module": "src/stories/Page.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "LoggedOut",
+          "declaration": {
+            "name": "LoggedOut",
+            "module": "src/stories/Page.stories.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/stories/Page.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "Page",
+          "parameters": [
+            {
+              "name": "{ user, onLogin, onLogout, onCreateAccount }",
+              "type": {
+                "text": "PageProps"
+              }
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "Page",
+          "declaration": {
+            "name": "Page",
+            "module": "src/stories/Page.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/stories/stash-tab.stories.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "Default",
+          "type": {
+            "text": "Story"
+          },
+          "default": "{ render(args) { // console.log(template); return html`<poe-stash-tab .tab=${quadStd}></poe-stash-tab>`; // console.log(args); // console.log(args); // return template(args); }, }"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/stories/stash-tab.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Default",
+          "declaration": {
+            "name": "Default",
+            "module": "src/stories/stash-tab.stories.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/styles/poe-colors-vars.style.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "poeColorsCssVariables",
+          "default": "css` --flavour-text-color: rgba(167, 90, 27, 1); --item-normal: 0, 0%, 78%; --item-rare: 60, 100%, 73%; --item-magic: 240, 100%, 77%; --item-unique-contrast: 25, 63%, 48%; --item-unique: 26, 65%, 42%; --item-gem: 177, 72%, 37%; --item-relic: 0, 0%, 78%; --item-currency: 42, 19%, 59%; --item-prophecy: 275, 100%, 65%; --item-divination: 0, 0%, 50%; --item-keystone: 46, 52%, 74%; --item-explicit: 240, 100%, 77%; --item-implicit: var(--item-explicit); --item-crafted: 240, 100%, 85%; --item-enchanted: var(--item-crafted); --item-fractured: 44, 26%, 51%; --item-corrupted: 0, 100%, 41%; --item-scourge: 20, 100%, 57%; --item-physical: 0, 0%, 58%; --item-fire: 0, 100%, 29%; --item-cold: 210, 46%, 39%; --item-lightning: 51, 100%, 50%; --item-chaos: 322, 73%, 47%; --item-augmented: rgb(138, 138, 255); --coolgrey-1000: 206, 24%, 7%; --item-necropolis: 44.35, 39%, 76.86%; `"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "poeColorsCssVariables",
+          "declaration": {
+            "name": "poeColorsCssVariables",
+            "module": "src/styles/poe-colors-vars.style.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/styles/poe-colors.style.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "styles",
+          "default": "css` .default { color: #7f7f7f; } .fractured { color: hsla(var(--item-fractured)); } .enchanted { color: hsla(var(--item-enchanted)); } .normal, .normalItem { color: hsla(var(--item-normal)); } .magic, .magicItem { color: hsla(var(--item-magic)); } .rare, .rareItem { color: hsla(var(--item-rare)); } .unique, .uniqueItem { color: hsla(var(--item-unique)); } .gem, .gemItem { color: hsla(var(--item-gem)); } .currency, .currencyItem { color: hsla(var(--item-currency)); } .necropolis, .necropolisItem { color: hsla(var(--item-necropolis)); } .corrupted { color: hsla(var(--item-corrupted)); } .divination { color: #0ebaff; } .augmented { color: var(--item-augmented); } `"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "styles",
+          "declaration": {
+            "name": "styles",
+            "module": "src/styles/poe-colors.style.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/elements/divination-card/cardElementData.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "cardElementData",
+          "type": {
+            "text": "CardElementData[]"
+          },
+          "default": "json"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "cardElementData",
+          "declaration": {
+            "name": "cardElementData",
+            "module": "src/elements/divination-card/cardElementData.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/elements/divination-card/poe-divination-card.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "DivinationCardElement",
+          "cssProperties": [
+            {
+              "description": "The inline padding to use for for element.",
+              "name": "--padding-inline"
+            },
+            {
+              "description": "The block padding to use for for element.",
+              "name": "--padding-block"
+            }
+          ],
+          "members": [
+            {
+              "kind": "field",
+              "name": "name",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "attribute": "name",
+              "reflects": true
+            },
+            {
+              "kind": "field",
+              "name": "size",
+              "type": {
+                "text": "CardSize"
+              },
+              "default": "'medium'",
+              "attribute": "size",
+              "reflects": true
+            },
+            {
+              "kind": "field",
+              "name": "boss",
+              "type": {
+                "text": "string | undefined"
+              },
+              "attribute": "boss",
+              "reflects": true
+            },
+            {
+              "kind": "field",
+              "name": "baseUrl",
+              "type": {
+                "text": "string"
+              },
+              "default": "'https://divicards-site.pages.dev'",
+              "attribute": "base-url"
+            },
+            {
+              "kind": "field",
+              "name": "stackSize",
+              "type": {
+                "text": "number"
+              },
+              "default": "0"
+            },
+            {
+              "kind": "field",
+              "name": "flavourText",
+              "default": "``"
+            },
+            {
+              "kind": "field",
+              "name": "artFilename",
+              "type": {
+                "text": "string"
+              },
+              "default": "''"
+            },
+            {
+              "kind": "field",
+              "name": "rewardHtml",
+              "type": {
+                "text": "string"
+              },
+              "default": "''"
+            },
+            {
+              "kind": "field",
+              "name": "dropLevel",
+              "type": {
+                "text": "string"
+              },
+              "default": "''"
+            },
+            {
+              "kind": "method",
+              "name": "#onNavigation",
+              "privacy": "private"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "name",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "fieldName": "name"
+            },
+            {
+              "name": "size",
+              "type": {
+                "text": "CardSize"
+              },
+              "default": "'medium'",
+              "fieldName": "size"
+            },
+            {
+              "name": "boss",
+              "type": {
+                "text": "string | undefined"
+              },
+              "fieldName": "boss"
+            },
+            {
+              "name": "base-url",
+              "type": {
+                "text": "string"
+              },
+              "default": "'https://divicards-site.pages.dev'",
+              "fieldName": "baseUrl"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "summary": "Divination Card",
+          "tagName": "poe-divination-card",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "DivinationCardElement",
+          "declaration": {
+            "name": "DivinationCardElement",
+            "module": "src/elements/divination-card/poe-divination-card.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "poe-divination-card",
+          "declaration": {
+            "name": "DivinationCardElement",
+            "module": "src/elements/divination-card/poe-divination-card.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/elements/item-info/poe-item-info-content.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "PoeItemInfoContentElement",
+          "members": [
+            {
+              "kind": "field",
+              "name": "item",
+              "type": {
+                "text": "PoeItem"
+              },
+              "attribute": "item"
+            },
+            {
+              "kind": "field",
+              "name": "enchantments",
+              "type": {
+                "text": "Array<string>"
+              },
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "requirements",
+              "type": {
+                "text": "Array<Requirement>"
+              },
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "implicits",
+              "type": {
+                "text": "Array<string>"
+              },
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "explicits",
+              "type": {
+                "text": "Array<string>"
+              },
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "crafts",
+              "type": {
+                "text": "Array<string>"
+              },
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "fracturedMods",
+              "type": {
+                "text": "Array<string>"
+              },
+              "readonly": true
+            }
+          ],
+          "attributes": [
+            {
+              "name": "item",
+              "type": {
+                "text": "PoeItem"
+              },
+              "fieldName": "item"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "poe-item-info-content",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "PoeItemInfoContentElement",
+          "declaration": {
+            "name": "PoeItemInfoContentElement",
+            "module": "src/elements/item-info/poe-item-info-content.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "poe-item-info-content",
+          "declaration": {
+            "name": "PoeItemInfoContentElement",
+            "module": "src/elements/item-info/poe-item-info-content.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/elements/item-info/poe-item-info-header.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "ItemInfoHeader",
+          "members": [
+            {
+              "kind": "field",
+              "name": "item",
+              "type": {
+                "text": "PoeItem"
+              },
+              "attribute": "item"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "item",
+              "type": {
+                "text": "PoeItem"
+              },
+              "fieldName": "item"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "poe-item-info-header",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "ItemInfoHeader",
+          "declaration": {
+            "name": "ItemInfoHeader",
+            "module": "src/elements/item-info/poe-item-info-header.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "poe-item-info-header",
+          "declaration": {
+            "name": "ItemInfoHeader",
+            "module": "src/elements/item-info/poe-item-info-header.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/elements/item-info/poe-item-info.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "PoeItemInfoElement",
+          "members": [
+            {
+              "kind": "field",
+              "name": "item",
+              "type": {
+                "text": "PoeItem"
+              },
+              "description": "PoE API item data https://www.pathofexile.com/developer/docs/reference#stashes-get",
+              "attribute": "item"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "item",
+              "type": {
+                "text": "PoeItem"
+              },
+              "description": "PoE API item data https://www.pathofexile.com/developer/docs/reference#stashes-get",
+              "fieldName": "item"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "poe-item-info",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "PoeItemInfoElement",
+          "declaration": {
+            "name": "PoeItemInfoElement",
+            "module": "src/elements/item-info/poe-item-info.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "poe-item-info",
+          "declaration": {
+            "name": "PoeItemInfoElement",
+            "module": "src/elements/item-info/poe-item-info.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/elements/item-info/poe-item-property.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "PoeItemPropertyElement",
+          "members": [
+            {
+              "kind": "field",
+              "name": "property",
+              "type": {
+                "text": "ItemProperty"
+              },
+              "attribute": "property"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "property",
+              "type": {
+                "text": "ItemProperty"
+              },
+              "fieldName": "property"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "poe-item-property",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "PoeItemPropertyElement",
+          "declaration": {
+            "name": "PoeItemPropertyElement",
+            "module": "src/elements/item-info/poe-item-property.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "poe-item-property",
+          "declaration": {
+            "name": "PoeItemPropertyElement",
+            "module": "src/elements/item-info/poe-item-property.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/elements/item-info/poe-requirements.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "PoeRequirementElement",
+          "members": [
+            {
+              "kind": "field",
+              "name": "requirements",
+              "type": {
+                "text": "Requirement[]"
+              },
+              "default": "[]",
+              "attribute": "requirements"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "requirements",
+              "type": {
+                "text": "Requirement[]"
+              },
+              "default": "[]",
+              "fieldName": "requirements"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "poe-requirements",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "PoeRequirementElement",
+          "declaration": {
+            "name": "PoeRequirementElement",
+            "module": "src/elements/item-info/poe-requirements.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "poe-requirements",
+          "declaration": {
+            "name": "PoeRequirementElement",
+            "module": "src/elements/item-info/poe-requirements.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/elements/item-info/poe-separator.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "PoeSeparatorElement",
+          "members": [
+            {
+              "kind": "field",
+              "name": "kind",
+              "type": {
+                "text": "FrameKind"
+              },
+              "default": "'rare'",
+              "attribute": "kind",
+              "reflects": true
+            }
+          ],
+          "attributes": [
+            {
+              "name": "kind",
+              "type": {
+                "text": "FrameKind"
+              },
+              "default": "'rare'",
+              "fieldName": "kind"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "poe-separator",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "PoeSeparatorElement",
+          "declaration": {
+            "name": "PoeSeparatorElement",
+            "module": "src/elements/item-info/poe-separator.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "poe-separator",
+          "declaration": {
+            "name": "PoeSeparatorElement",
+            "module": "src/elements/item-info/poe-separator.ts"
+          }
+        }
+      ]
+    }
+  ]
+}

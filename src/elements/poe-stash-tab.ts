@@ -18,13 +18,16 @@ const SUPPORTED_STASH_TYPES = [
 	'DivinationCardStash',
 ];
 
+/**
+ * PoE stash tab
+ */
 @customElement('poe-stash-tab')
 export class PoeStashTabElement extends LitElement {
 	/** PoE API tab data https://www.pathofexile.com/developer/docs/reference#stashes-get */
 	@property({ type: Object }) tab!: TabWithItems;
 	/** Mutable clone of tab */
 	#tab!: TabWithItems;
-	get #focusWithin(): boolean {
+	get #hasFocusWithin(): boolean {
 		return this.matches(':focus-within');
 	}
 	get #activeItemElement(): PoeItemElement | null {
@@ -56,21 +59,22 @@ export class PoeStashTabElement extends LitElement {
 		return html`
 			<ul>
 				${this.#tab.items.map(
-					item => html`<li
-						style=${styleMap({
-							'grid-column': `${item.x + 1} / span ${item.w}`,
-							'grid-row': `${item.y + 1} / span ${item.h}`,
-						})}
-					>
-						<poe-item
-							data-x=${item.x}
-							data-y=${item.y}
-							tabindex="0"
-							placed
-							style="--cell-size: ${sizeOfCellPixels(this.#tab.type)}"
-							.item=${item}
-						></poe-item>
-					</li>`
+					item =>
+						html`<li
+							style=${styleMap({
+								'grid-column': `${item.x + 1} / span ${item.w}`,
+								'grid-row': `${item.y + 1} / span ${item.h}`,
+							})}
+						>
+							<poe-item
+								data-x=${item.x}
+								data-y=${item.y}
+								tabindex="0"
+								placed
+								style="--cell-size: ${sizeOfCellPixels(this.#tab.type)}"
+								.item=${item}
+							></poe-item>
+						</li>`
 				)}
 			</ul>
 		`;
@@ -88,7 +92,7 @@ export class PoeStashTabElement extends LitElement {
 	}
 
 	#navigateItemsWithArrowKeys = async (e: KeyboardEvent): Promise<void> => {
-		if (this.#focusWithin) {
+		if (this.#hasFocusWithin) {
 			if (['ArrowDown', 'ArrowRight', 'ArrowUp', 'ArrowLeft'].includes(e.code)) {
 				const direction = e.code.slice(5).toLowerCase() as Direction;
 				const activeItemElement = this.#activeItemElement;
