@@ -28,3 +28,11 @@ document.body.append(el);
 ```
 
 Check [JS Example](https://github.com/shonya3/poe-custom-elements/tree/main/examples/js)
+
+#### Customizing base path for assets
+By default, you need to copy assets folder from `node_modules/dist/poe-ce-assets` to your `public` folder.
+So that your public folder has poe-ce-assets folder. You can customize this path.
+```js
+import { setBasePath } from 'poe-custom-elements/lib/base_path.js';
+setBasePath('/poe');
+```
