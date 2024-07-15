@@ -10,12 +10,7 @@ npm install poe-custom-elements
 
 Here is an example with a stash tab
 
-First, you need to open node_modules/poe-custom-elements and copy
-
--   poe-images folder
--   fontin.woff
--   divination-card folder
-    to your public files. (public folder for vite)
+First, you need to open node_modules/poe-custom-elements and copy `poe-ce-assets` dir to your `public` folder.
 
 ```js
 import 'poe-custom-elements/stash-tab.js';

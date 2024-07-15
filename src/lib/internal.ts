@@ -1,4 +1,5 @@
 import { FrameKind, ItemProperty } from '../poe.types';
+import { basePath } from './base_path';
 
 /** https://www.pathofexile.com/developer/docs/reference#type-FrameType */
 export function frameKind(frameType: number): FrameKind | null {
@@ -63,7 +64,7 @@ export function appendFontinStyle() {
 				    font-family: 'fontin';
 				    font-weight: normal;
 				    font-style: normal;
-				    src: url('/fontin.woff') format('woff');
+				    src: url('${basePath()}/fontin.woff') format('woff');
 			    }
             </style>
         `

@@ -3,8 +3,9 @@ import { customElement, property } from 'lit/decorators.js';
 import type { PoeItem, StashType, TabWithItems } from '../poe.types';
 import './poe-item';
 import { styleMap } from 'lit/directives/style-map.js';
-import { appendFontinStyle } from './lib';
+import { appendFontinStyle } from '../lib/internal';
 import { PoeItemElement } from './poe-item';
+import { basePath } from '../lib/base_path';
 
 type Direction = 'down' | 'right' | 'up' | 'left';
 const SUPPORTED_STASH_TYPES = [
@@ -217,13 +218,13 @@ function tabImageSrc(stashType: StashType): string {
 		case 'EssenceStash':
 		case 'CurrencyStash':
 		case 'BlightStash':
-			return '/poe-images/StashPanelGrid.png';
+			return `${basePath()}/poe-images/StashPanelGrid.png`;
 		case 'QuadStash':
 		case 'FragmentStash':
 		case 'DivinationCardStash':
-			return '/poe-images/QuadStashPanelGrid.png';
+			return `${basePath()}/poe-images/QuadStashPanelGrid.png`;
 		default:
-			return '/poe-images/StashPanelGrid.png';
+			return `${basePath()}/poe-images/StashPanelGrid.png`;
 	}
 }
 

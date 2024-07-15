@@ -12,6 +12,6 @@
 		"vite": "^5"
 	},
 	"dependencies": {
-		"poe-custom-elements": "^0.0.1"
+		"poe-custom-elements": "0.3.0"
 	}
 }

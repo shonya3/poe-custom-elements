@@ -2,7 +2,7 @@ import { LitElement, html, css, TemplateResult, nothing } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import type { ItemProperty } from '../../poe.types';
 import { classMap } from 'lit/directives/class-map.js';
-import { parseDisplayMode3 } from '../lib';
+import { parseDisplayMode3 } from '../../lib/internal';
 
 @customElement('poe-item-property')
 export class PoeItemPropertyElement extends LitElement {

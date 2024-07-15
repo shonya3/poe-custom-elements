@@ -4,7 +4,7 @@ import type { PoeItem } from '../../poe.types';
 import './poe-item-info-content';
 import './poe-item-info-header';
 import '../divination-card/poe-divination-card';
-import { frameKind } from '../lib';
+import { frameKind } from '../../lib/internal';
 
 @customElement('poe-item-info')
 export class PoeItemInfoElement extends LitElement {

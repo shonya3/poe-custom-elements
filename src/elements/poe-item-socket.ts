@@ -1,7 +1,8 @@
 import { LitElement, html, css, TemplateResult } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import type { SocketKind, SocketedItem } from '../poe.types';
-import { capitalize } from './lib';
+import { basePath } from '../lib/base_path';
+import { capitalize } from '../lib/internal';
 
 /**
  * @cssprop --cell-size - Size of one tab cell in pixels.
@@ -56,7 +57,7 @@ export class PoeItemSocketElement extends LitElement {
 			}
 		};
 
-		return `url('/poe-images/${name(this.kind)}.png')`;
+		return `url('${basePath()}/poe-images/${name(this.kind)}.png')`;
 	}
 
 	static styles = css`

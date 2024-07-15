@@ -4,7 +4,7 @@ import type { ItemProperty, PoeItem, Requirement } from '../../poe.types';
 import './poe-separator';
 import './poe-item-property';
 import './poe-requirements';
-import { frameKind } from '../lib';
+import { frameKind } from '../../lib/internal';
 
 @customElement('poe-item-info-content')
 export class PoeItemInfoContentElement extends LitElement {
@@ -18,7 +18,7 @@ export class PoeItemInfoContentElement extends LitElement {
 							${this.properties.map(property => {
 								return html`<li><poe-item-property .property=${property}></poe-item-property></li>`;
 							})}
-					  </ul> `
+						</ul> `
 					: nothing,
 				this.item.itemLevel
 					? html`<p>Monster Level: <span class="monster-level">${this.item.itemLevel}</span></p>`
@@ -29,7 +29,7 @@ export class PoeItemInfoContentElement extends LitElement {
 				this.enchantments.length
 					? html`${this.enchantments.map(enc =>
 							enc.split('\n').map(enc => html`<p class="enchant">${enc}</p>`)
-					  )}`
+						)}`
 					: nothing,
 				this.implicits.length
 					? html` ${this.implicits.map(imp => html`<p class="implicitMod">${imp}</p>`)} `
@@ -39,7 +39,7 @@ export class PoeItemInfoContentElement extends LitElement {
 							${this.fracturedMods.map(frac => html`<p class="fractured">${frac}</p>`)}
 							${this.explicits.map(exp => html`<p class="explicitMod">${exp}</p>`)}
 							${this.crafts.map(craft => html`<p class="craft">${craft}</p>`)}
-					  `
+						`
 					: nothing,
 				this.item.identified ? nothing : html` <p class="unidentified">Unidentified</p>`,
 				this.item.corrupted ? html` <p class="corrupted">corrupted</p>` : nothing,
@@ -52,7 +52,7 @@ export class PoeItemInfoContentElement extends LitElement {
 							} else {
 								return html`<p class="flavour-text">${line}</p>`;
 							}
-					  })}`
+						})}`
 					: nothing,
 				this.item.descrText ? html`<p class="description-text">${this.item.descrText}</p>` : nothing,
 			]

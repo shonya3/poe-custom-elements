@@ -4,7 +4,8 @@ import { LitElement, html, css, TemplateResult, PropertyValueMap } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import type { FrameKind, PoeItem } from '../../poe.types';
 import { classMap } from 'lit/directives/class-map.js';
-import { frameKind } from '../lib';
+import { basePath } from '../../lib/base_path';
+import { frameKind } from '../../lib/internal';
 
 @customElement('poe-item-info-header')
 export class ItemInfoHeader extends LitElement {
@@ -158,9 +159,10 @@ function influenceSymbolsUrls(item: PoeItem): {
 		return null;
 	}
 
+	const _basePath = basePath();
 	return {
-		left: `url(/poe-images/${influences[0]}-symbol.png)`,
-		right: `url(/poe-images/${influences[1]}-symbol.png)`,
+		left: `url(${_basePath}/poe-images/${influences[0]}-symbol.png)`,
+		right: `url(${_basePath}/poe-images/${influences[1]}-symbol.png)`,
 	};
 }
 
@@ -176,7 +178,7 @@ function headerAssetUrl(
 	frameKind: FrameKind,
 	size: 'single' | 'double',
 	side: 'left' | 'middle' | 'right',
-	url = '/poe-images/'
+	url = `${basePath()}/poe-images/`
 ): string {
 	return `${url}${['header', size === 'double' ? 'double' : '', frameKind, side]
 		.filter(s => s.length > 0)

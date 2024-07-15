@@ -4,6 +4,7 @@ import { html as staticHtml, unsafeStatic } from 'lit/static-html.js';
 import { customElement, property, state } from 'lit/decorators.js';
 import { cardElementData } from './cardElementData';
 import { styles } from './divination-card.styles';
+import { basePath } from '../../lib/base_path';
 
 /**
  * @summary Divination Card
@@ -25,6 +26,10 @@ export class DivinationCardElement extends LitElement {
 	@state() dropLevel = '';
 
 	protected willUpdate(changedProperties: PropertyValues<this>): void {
+		this.style.setProperty(
+			'--divination-card-background-url',
+			`url(${basePath()}/divination-card/cards/avif/divination-card.avif)`
+		);
 		if (changedProperties.has('name')) {
 			const name = this.name === 'Fire of Unknown Origin' ? 'Fire Of Unknown Origin' : this.name;
 			const cardData = cardElementData.find(card => card.name === name);
@@ -104,7 +109,7 @@ function imageurl(artFilename?: string): string {
 		// console.warn(`Divination Card. No artFilename ${this.name}`);
 		return '';
 	}
-	return `/divination-card/cards/avif/${artFilename}.avif`;
+	return `${basePath()}/divination-card/cards/avif/${artFilename}.avif`;
 	// return `https://web.poecdn.com/image/divination-card/${artFilename}.png`;
 }
 

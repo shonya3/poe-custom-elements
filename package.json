@@ -32,6 +32,10 @@
 		".": {
 			"types": "./dist/poe.types.d.ts",
 			"default": "./dist/poe.types.js"
+		},
+		"./lib/base_path.js": {
+			"types": "./dist/lib/base_path.d.ts",
+			"default": "./dist/lib/base_path.js"
 		}
 	},
 	"scripts": {

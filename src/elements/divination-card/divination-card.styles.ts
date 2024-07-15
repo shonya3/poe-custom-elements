@@ -4,6 +4,7 @@ export const styles = css`
 	:host {
 		display: block;
 
+		--divination-card-background-url: computed;
 		--source-color: hsl(240 7.3% 84%);
 
 		--card-width-small: 168px;
@@ -151,7 +152,7 @@ export const styles = css`
 	}
 
 	.skeleton {
-		background: rgba(0, 0, 0, 0) url(/divination-card/cards/avif/divination-card.avif) no-repeat center;
+		background: rgba(0, 0, 0, 0) var(--divination-card-background-url) no-repeat center;
 		background-size: 105%;
 		z-index: 3;
 		position: absolute;

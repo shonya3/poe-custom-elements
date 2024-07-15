@@ -3,6 +3,7 @@ import { LitElement, html, css, TemplateResult, nothing } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import type { Socket, SocketedItem } from '../poe.types';
 import './poe-item-socket';
+import { basePath } from '../lib/base_path';
 
 type SocketLinkDirection = 'left-to-right' | 'top-to-bottom' | 'right-to-left';
 
@@ -35,24 +36,28 @@ export class PoeSocketChainElement extends LitElement {
 				)
 			).flatMap((sockets = []) => {
 				return sockets.map(
-					(socket, i) => html`<li style="grid-area: s${socket.socketNo}">
-						<poe-item-socket
-							@pointerenter=${() => this.onSocketPointerEnter(socket.socketedItem ?? null)}
-							@pointerleave=${this.onSocketPointerLeave}
-							.socketedItem=${socket.socketedItem}
-							.kind=${socket.sColour}
-						></poe-item-socket>
-						${i === sockets.length - 1
-							? nothing
-							: html`<div
-									class=${classMap({
-										'socket-link': true,
-										[`socket-link--${this.socketLinkDirection(socket.socketNo)}`]: true,
-									})}
-							  >
-									<img class="socket-link-img" src="/poe-images/Socket_Link_Horizontal.png" />
-							  </div>`}
-					</li>`
+					(socket, i) =>
+						html`<li style="grid-area: s${socket.socketNo}">
+							<poe-item-socket
+								@pointerenter=${() => this.onSocketPointerEnter(socket.socketedItem ?? null)}
+								@pointerleave=${this.onSocketPointerLeave}
+								.socketedItem=${socket.socketedItem}
+								.kind=${socket.sColour}
+							></poe-item-socket>
+							${i === sockets.length - 1
+								? nothing
+								: html`<div
+										class=${classMap({
+											'socket-link': true,
+											[`socket-link--${this.socketLinkDirection(socket.socketNo)}`]: true,
+										})}
+									>
+										<img
+											class="socket-link-img"
+											src="${basePath()}/poe-images/Socket_Link_Horizontal.png"
+										/>
+									</div>`}
+						</li>`
 				);
 			})}
 		</ul>`;
