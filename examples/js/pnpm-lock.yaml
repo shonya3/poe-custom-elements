@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       poe-custom-elements:
-        specifier: 0.2.1
-        version: 0.2.1
+        specifier: 0.3.0
+        version: 0.3.0
     devDependencies:
       vite:
         specifier: ^5
@@ -284,8 +284,8 @@ packages:
   picocolors@1.0.1:
     resolution: {integrity: sha512-anP1Z8qwhkbmu7MFP5iTt+wQKXgwzf7zTyGlcdzabySa9vd0Xt392U0rVmz9poOaBj0uHJKyyo9/upk0HrEQew==}
 
-  poe-custom-elements@0.2.1:
-    resolution: {integrity: sha512-0pXp9VniTxQIRsIPTz6dW+3BCktfHFlNHr0XihVrpSr7M/5HRVPrmtNZQVo/Bs18wHxJ7Rbmb9pr/hKzDlDrYw==}
+  poe-custom-elements@0.3.0:
+    resolution: {integrity: sha512-1PCbrcHmoxkX+AuVhRqxDMAoQULOogppoClDzMx3o58Wc0U8v+2Wl18/gmSN1bIJQiQ0MOhq47/S6OhJzZw+GQ==}
 
   postcss@8.4.39:
     resolution: {integrity: sha512-0vzE+lAiG7hZl1/9I8yzKLx3aR9Xbof3fBHKunvMfOCYAtMhrsnccJY2iTURb9EZd5+pLuiNV9/c/GZJOHsgIw==}
@@ -517,7 +517,7 @@ snapshots:
 
   picocolors@1.0.1: {}
 
-  poe-custom-elements@0.2.1:
+  poe-custom-elements@0.3.0:
     dependencies:
       '@floating-ui/dom': 1.6.7
       lit: 3.1.4

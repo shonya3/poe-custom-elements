@@ -189,6 +189,13 @@ function adjustItemXYforCustomTab(tab: TabWithItems, cellsSideCount: number): vo
 		tab.type === 'BlightStash' ||
 		tab.type === 'DivinationCardStash'
 	) {
+		if (tab.type === 'DivinationCardStash') {
+			let x = 0;
+			tab!.items.forEach(item => {
+				item.x = x++;
+			});
+		}
+
 		tab!.items.forEach(item => {
 			item.y = Math.floor(item.x / cellsSideCount);
 			item.x = item.x % cellsSideCount;
