@@ -1,11 +1,12 @@
 import { LitElement, html, css, TemplateResult, PropertyValueMap } from 'lit';
-import { customElement, property } from 'lit/decorators.js';
+import { customElement, property, state } from 'lit/decorators.js';
 import type { PoeItem, StashType, TabWithItems } from '../poe.types';
 import './poe-item';
 import { styleMap } from 'lit/directives/style-map.js';
 import { appendFontinStyle } from '../lib/internal';
 import { PoeItemElement } from './poe-item';
 import { basePath } from '../lib/base_path';
+import { classMap } from 'lit/directives/class-map.js';
 
 type Direction = 'down' | 'right' | 'up' | 'left';
 const SUPPORTED_STASH_TYPES = [
@@ -26,6 +27,8 @@ const SUPPORTED_STASH_TYPES = [
 export class PoeStashTabElement extends LitElement {
 	/** PoE API tab data https://www.pathofexile.com/developer/docs/reference#stashes-get */
 	@property({ type: Object }) tab!: TabWithItems;
+	/** The state of search input for DivinationStashType */
+	@state() searchDivinationCardsQuery = '';
 	/** Mutable clone of tab */
 	#tab!: TabWithItems;
 	get #hasFocusWithin(): boolean {
@@ -43,6 +46,9 @@ export class PoeStashTabElement extends LitElement {
 			this.#tab.items = orderItems(this.#tab.items);
 			this.style.setProperty('--cells-side-count', cells.toString());
 			this.style.setProperty('--background-image', `url(${tabImageSrc(this.#tab.type)})`);
+		}
+
+		if (this.#tab && this.#tab.type === 'DivinationCardStash' && map.has('searchDivinationCardsQuery')) {
 		}
 	}
 
@@ -74,11 +80,32 @@ export class PoeStashTabElement extends LitElement {
 								placed
 								style="--cell-size: ${sizeOfCellPixels(this.#tab.type)}"
 								.item=${item}
+								class=${classMap({
+									'item--visible': item.baseType
+										.toLowerCase()
+										.includes(this.searchDivinationCardsQuery),
+								})}
 							></poe-item>
 						</li>`
 				)}
 			</ul>
+			${this.#tab.type === 'DivinationCardStash'
+				? html`<input
+						placeholder="Search cards"
+						autocomplete="off"
+						id="search-divination-stash-tab"
+						type="text"
+						.value=${this.searchDivinationCardsQuery}
+						@input=${this.#handleDivinationCardsQueryInput}
+					/>`
+				: null}
 		`;
+	}
+
+	#handleDivinationCardsQueryInput(e: InputEvent) {
+		if (e.target instanceof HTMLInputElement) {
+			this.searchDivinationCardsQuery = e.target.value.trim().toLowerCase();
+		}
 	}
 
 	connectedCallback(): void {
@@ -130,6 +157,7 @@ export class PoeStashTabElement extends LitElement {
 			height: var(--size);
 			background-image: var(--background-image);
 			font-family: fontin;
+			position: relative;
 		}
 
 		ul {
@@ -148,6 +176,28 @@ export class PoeStashTabElement extends LitElement {
 		}
 		:host(:focus-within) {
 			outline: 3px solid rgb(39, 186, 253);
+		}
+
+		poe-item {
+			visibility: hidden;
+		}
+
+		.item--visible {
+			visibility: visible;
+		}
+
+		#search-divination-stash-tab {
+			position: absolute;
+			bottom: 1.2rem;
+			right: 1.2rem;
+			font: inherit;
+			border: 1px solid currentColor;
+			color: #e2e2e2;
+			transition: border 0.1s ease;
+			background-color: transparent;
+			border-radius: 2px;
+			padding: 3px 7px;
+			width: 30ch;
 		}
 	`;
 }
