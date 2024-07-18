@@ -47,9 +47,6 @@ export class PoeStashTabElement extends LitElement {
 			this.style.setProperty('--cells-side-count', cells.toString());
 			this.style.setProperty('--background-image', `url(${tabImageSrc(this.#tab.type)})`);
 		}
-
-		if (this.#tab && this.#tab.type === 'DivinationCardStash' && map.has('searchDivinationCardsQuery')) {
-		}
 	}
 
 	protected render(): TemplateResult {

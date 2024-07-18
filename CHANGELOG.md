@@ -1,5 +1,12 @@
 # poe-custom-elements
 
+## 0.3.1
+
+### Patch Changes
+
+- 7a3adf0: DivinationStashTab: add search bar for cards
+- 952acea: DivinationStashTab: manually update reset item x to prevent cards collision inside quad tab
+
 ## 0.3.0
 
 ### Minor Changes
