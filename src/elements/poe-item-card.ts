@@ -1,6 +1,7 @@
 import { LitElement, html, css, TemplateResult } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import './poe-item';
+import { basePath } from '../lib/base_path';
 
 /**
  * @summary Itemized divination card with divination card element on hover,
@@ -23,7 +24,7 @@ export class PoeItemCardElement extends LitElement {
 				baseType: this.name,
 				stackSize: this.stackSize,
 				maxStackSize: this.maxStackSize,
-				icon: '/item-card/InventoryIcon.png',
+				icon: `${basePath()}/item-card/InventoryIcon.png`,
 				w: 1,
 				h: 1,
 				identified: true,
