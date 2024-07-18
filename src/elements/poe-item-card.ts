@@ -4,6 +4,7 @@ import './poe-item';
 import { basePath } from '../lib/base_path';
 
 /**
+ * Itemized divination card with divination card element on hover, that requires only a name of card.
  * @summary Itemized divination card with divination card element on hover,
  *          that requires only a name of card.
  *
