@@ -12,23 +12,13 @@ export default {
 	args: {
 		name: 'Rain of Chaos',
 	},
-	render: args =>
-		html`<poe-item-card
-			name=${args.name}
-			stack-size=${ifDefined(args.stackSize)}
-			max-stack-size=${ifDefined(args.maxStackSize)}
-		></poe-item-card>`,
+	render: args => html`<poe-item-card name=${args.name} stack-size=${ifDefined(args.stackSize)}></poe-item-card>`,
 } satisfies Meta<PoeItemCardElement>;
 type Story = StoryObj<PoeItemCardElement>;
 
-/**
- * You need to manually set max-stack-size -
- * element does not know about it.
- */
 export const StackMaxed = {
 	args: {
 		stackSize: 8,
-		maxStackSize: 8,
 	},
 } satisfies Story;
 export const Default = {};

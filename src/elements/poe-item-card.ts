@@ -2,6 +2,7 @@ import { LitElement, html, css, TemplateResult } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import './poe-item';
 import { basePath } from '../lib/base_path';
+import { cardElementData } from './divination-card/cardElementData';
 
 /**
  * Itemized divination card with divination card element on hover, that requires only a name of card.
@@ -17,14 +18,13 @@ import { basePath } from '../lib/base_path';
 export class PoeItemCardElement extends LitElement {
 	@property({ reflect: true }) name = 'Rain of Chaos';
 	@property({ type: Number, attribute: 'stack-size' }) stackSize?: number;
-	@property({ type: Number, attribute: 'max-stack-size' }) maxStackSize?: number;
 
 	protected render(): TemplateResult {
 		return html`<poe-item
 			.item=${{
 				baseType: this.name,
 				stackSize: this.stackSize,
-				maxStackSize: this.maxStackSize,
+				maxStackSize: cardElementData.find(card => card.name === this.name)?.stackSize ?? undefined,
 				icon: `${basePath()}/item-card/InventoryIcon.png`,
 				w: 1,
 				h: 1,

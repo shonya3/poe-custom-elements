@@ -100,14 +100,6 @@
                 "text": "number | undefined"
               },
               "attribute": "stack-size"
-            },
-            {
-              "kind": "field",
-              "name": "maxStackSize",
-              "type": {
-                "text": "number | undefined"
-              },
-              "attribute": "max-stack-size"
             }
           ],
           "attributes": [
@@ -125,13 +117,6 @@
                 "text": "number | undefined"
               },
               "fieldName": "stackSize"
-            },
-            {
-              "name": "max-stack-size",
-              "type": {
-                "text": "number | undefined"
-              },
-              "fieldName": "maxStackSize"
             }
           ],
           "superclass": {
@@ -1407,27 +1392,21 @@
       "declarations": [
         {
           "kind": "variable",
+          "name": "StackMaxed",
+          "default": "{ args: { stackSize: 8, }, } satisfies Story"
+        },
+        {
+          "kind": "variable",
           "name": "Default",
           "type": {
-            "text": "StoryObj"
+            "text": "object"
           },
-          "default": "{ render() { return html`<poe-item-card name=\"Rain of Chaos\"></poe-item-card> `; }, }"
+          "default": "{}"
         },
         {
           "kind": "variable",
           "name": "Stacksize",
-          "type": {
-            "text": "StoryObj"
-          },
-          "default": "{ render() { return html`<poe-item-card stack-size=\"4\"></poe-item-card>`; }, }"
-        },
-        {
-          "kind": "variable",
-          "name": "StackMaxed",
-          "type": {
-            "text": "StoryObj"
-          },
-          "default": "{ render() { return html`<poe-item-card stack-size=\"8\" max-stack-size=\"8\"></poe-item-card>`; }, }"
+          "default": "{ args: { stackSize: 4, }, } satisfies Story"
         }
       ],
       "exports": [
@@ -1435,6 +1414,14 @@
           "kind": "js",
           "name": "default",
           "declaration": {
+            "module": "src/stories/item-card.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "StackMaxed",
+          "declaration": {
+            "name": "StackMaxed",
             "module": "src/stories/item-card.stories.ts"
           }
         },
@@ -1451,14 +1438,6 @@
           "name": "Stacksize",
           "declaration": {
             "name": "Stacksize",
-            "module": "src/stories/item-card.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "StackMaxed",
-          "declaration": {
-            "name": "StackMaxed",
             "module": "src/stories/item-card.stories.ts"
           }
         }
