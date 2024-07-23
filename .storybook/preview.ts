@@ -1,6 +1,7 @@
 import type { Preview } from '@storybook/web-components';
 import { setCustomElementsManifest } from '@storybook/web-components';
 import customElementsManifest from '../custom-elements.json';
+import { appendFontinStyle } from '../src/lib/internal';
 
 /**
  * https://github.com/storybookjs/storybook/issues/15436
@@ -32,6 +33,7 @@ export const setCustomElementsManifestWithOptions = (
 setCustomElementsManifestWithOptions(customElementsManifest, {
 	privateFields: true,
 });
+appendFontinStyle();
 
 const preview: Preview = {
 	parameters: {
