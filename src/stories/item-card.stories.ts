@@ -5,7 +5,6 @@ import { PoeItemCardElement } from '../elements/poe-item-card';
 import { ifDefined } from 'lit/directives/if-defined.js';
 
 export default {
-	tags: ['autodocs'],
 	title: 'Components/poe-item-card',
 	component: 'poe-item-card',
 	decorators: [story => html`<div style="height: 30rem">${story()}</div>`],

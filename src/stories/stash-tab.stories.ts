@@ -12,7 +12,6 @@ import { blight } from '../../jsons/tabs/blight';
 import { fragments } from '../../jsons/tabs/myfragments';
 
 export default {
-	tags: ['autodocs'],
 	title: 'Components/poe-stash-tab',
 	component: 'poe-stash-tab',
 	render: (args: { tab: TabWithItems }) => html`<poe-stash-tab .tab=${args.tab}></poe-stash-tab>`,
