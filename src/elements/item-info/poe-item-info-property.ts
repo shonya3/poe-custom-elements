@@ -4,8 +4,8 @@ import type { ItemProperty } from '../../poe.types';
 import { classMap } from 'lit/directives/class-map.js';
 import { parseDisplayMode3 } from '../../lib/internal';
 
-@customElement('poe-item-property')
-export class PoeItemPropertyElement extends LitElement {
+@customElement('poe-item-info-property')
+export class PoeItemInfoPropertyElement extends LitElement {
 	@property({ type: Object }) property!: ItemProperty;
 
 	protected render(): TemplateResult {
@@ -175,6 +175,6 @@ Note: ~b/o 2 chaos
 
 declare global {
 	interface HTMLElementTagNameMap {
-		'poe-item-property': PoeItemPropertyElement;
+		'poe-item-info-property': PoeItemInfoPropertyElement;
 	}
 }

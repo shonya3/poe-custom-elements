@@ -2,7 +2,7 @@ import { LitElement, html, css, TemplateResult, nothing } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import type { ItemProperty, PoeItem, Requirement } from '../../poe.types';
 import './poe-separator';
-import './poe-item-property';
+import './poe-item-info-property';
 import './poe-requirements';
 import { frameKind } from '../../lib/internal';
 
@@ -16,7 +16,9 @@ export class PoeItemInfoContentElement extends LitElement {
 				this.properties.length
 					? html`<ul>
 							${this.properties.map(property => {
-								return html`<li><poe-item-property .property=${property}></poe-item-property></li>`;
+								return html`<li>
+									<poe-item-info-property .property=${property}></poe-item-info-property>
+								</li>`;
 							})}
 						</ul> `
 					: nothing,
