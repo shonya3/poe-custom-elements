@@ -180,4 +180,15 @@ export const RARITY_VARIANTS = ['Normal', 'Magic', 'Rare', 'Unique'] as const;
 export type ItemRarity = (typeof RARITY_VARIANTS)[number];
 
 /** https://www.pathofexile.com/developer/docs/reference#type-FrameType */
-export type FrameKind = 'normal' | 'magic' | 'rare' | 'unique' | 'gem' | 'currency' | 'necropolis' | 'divination';
+export type FrameKind = (typeof FRAME_KIND_VARIANTS)[number];
+
+export const FRAME_KIND_VARIANTS = [
+	'normal',
+	'magic',
+	'rare',
+	'unique',
+	'gem',
+	'currency',
+	'necropolis',
+	'divination',
+] as const;
