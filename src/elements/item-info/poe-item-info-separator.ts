@@ -3,8 +3,8 @@ import { customElement, property } from 'lit/decorators.js';
 import type { FrameKind } from '../../poe.types';
 import { basePath } from '../../lib/base_path';
 
-@customElement('poe-separator')
-export class PoeSeparatorElement extends LitElement {
+@customElement('poe-item-info-separator')
+export class PoeItemInfoSeparatorElement extends LitElement {
 	@property({ reflect: true }) kind: FrameKind = 'rare';
 
 	protected willUpdate(map: PropertyValueMap<this>): void {
@@ -36,6 +36,6 @@ export class PoeSeparatorElement extends LitElement {
 
 declare global {
 	interface HTMLElementTagNameMap {
-		'poe-separator': PoeSeparatorElement;
+		'poe-item-info-separator': PoeItemInfoSeparatorElement;
 	}
 }

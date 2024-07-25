@@ -1,7 +1,7 @@
 import { LitElement, html, css, TemplateResult, nothing } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import type { ItemProperty, PoeItem, Requirement } from '../../poe.types';
-import './poe-separator';
+import './poe-item-info-separator';
 import './poe-item-info-property';
 import './poe-item-info-requirements';
 import { frameKind } from '../../lib/internal';
@@ -64,7 +64,12 @@ export class PoeItemInfoContentElement extends LitElement {
 				.flatMap((el, index, arr) =>
 					index === arr.length - 1
 						? [el]
-						: [el, html`<poe-separator .kind=${frameKind(this.item.frameType) ?? 'rare'}></poe-separator>`]
+						: [
+								el,
+								html`<poe-item-info-separator
+									.kind=${frameKind(this.item.frameType) ?? 'rare'}
+								></poe-item-info-separator>`,
+							]
 				)}
 		</div>`;
 	}
