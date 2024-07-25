@@ -8,7 +8,7 @@ import { basePath } from '../../lib/base_path';
 import { frameKind } from '../../lib/internal';
 
 @customElement('poe-item-info-header')
-export class ItemInfoHeader extends LitElement {
+export class PoeItemInfoHeaderElement extends LitElement {
 	@property({ type: Object }) item!: PoeItem;
 
 	protected willUpdate(map: PropertyValueMap<this>): void {
@@ -208,6 +208,6 @@ function singleOrDouble(frameKind: FrameKind, identified: boolean): 'single' | '
 
 declare global {
 	interface HTMLElementTagNameMap {
-		'poe-item-info-header': ItemInfoHeader;
+		'poe-item-info-header': PoeItemInfoHeaderElement;
 	}
 }
