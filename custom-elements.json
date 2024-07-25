@@ -66,6 +66,233 @@
     },
     {
       "kind": "javascript-module",
+      "path": "src/lib/base_path.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "BASE_PATH",
+          "type": {
+            "text": "string"
+          },
+          "default": "'/poe-ce-assets'",
+          "description": "Default base path of icons and images folders."
+        },
+        {
+          "kind": "function",
+          "name": "setBasePath",
+          "return": {
+            "type": {
+              "text": "void"
+            }
+          },
+          "parameters": [
+            {
+              "name": "path",
+              "type": {
+                "text": "string"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "basePath",
+          "description": "Gets the library's base path.\r\nThe base path is used to load assets such as icons and images.",
+          "return": {
+            "type": {
+              "text": ""
+            }
+          }
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "BASE_PATH",
+          "declaration": {
+            "name": "BASE_PATH",
+            "module": "src/lib/base_path.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "setBasePath",
+          "declaration": {
+            "name": "setBasePath",
+            "module": "src/lib/base_path.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "basePath",
+          "declaration": {
+            "name": "basePath",
+            "module": "src/lib/base_path.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/lib/internal.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "frameKind",
+          "return": {
+            "type": {
+              "text": "FrameKind | null"
+            }
+          },
+          "parameters": [
+            {
+              "name": "frameType",
+              "type": {
+                "text": "number"
+              }
+            }
+          ],
+          "description": "https://www.pathofexile.com/developer/docs/reference#type-FrameType"
+        },
+        {
+          "kind": "function",
+          "name": "capitalize",
+          "return": {
+            "type": {
+              "text": "string"
+            }
+          },
+          "parameters": [
+            {
+              "name": "s",
+              "type": {
+                "text": "string"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "parseDisplayMode3",
+          "return": {
+            "type": {
+              "text": "string"
+            }
+          },
+          "parameters": [
+            {
+              "name": "property",
+              "type": {
+                "text": "ItemProperty"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "parseDisplayMode3",
+          "return": {
+            "type": {
+              "text": "Array<T | string>"
+            }
+          },
+          "parameters": [
+            {
+              "name": "property",
+              "type": {
+                "text": "ItemProperty"
+              }
+            },
+            {
+              "name": "mapFn",
+              "type": {
+                "text": "(val: string) => T"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "parseDisplayMode3",
+          "return": {
+            "type": {
+              "text": "Array<T | string> | string"
+            }
+          },
+          "parameters": [
+            {
+              "name": "property",
+              "type": {
+                "text": "ItemProperty"
+              }
+            },
+            {
+              "name": "mapFn",
+              "optional": true,
+              "type": {
+                "text": "(val: string) => T"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "appendFontinStyle"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "frameKind",
+          "declaration": {
+            "name": "frameKind",
+            "module": "src/lib/internal.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "capitalize",
+          "declaration": {
+            "name": "capitalize",
+            "module": "src/lib/internal.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "parseDisplayMode3",
+          "declaration": {
+            "name": "parseDisplayMode3",
+            "module": "src/lib/internal.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "parseDisplayMode3",
+          "declaration": {
+            "name": "parseDisplayMode3",
+            "module": "src/lib/internal.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "parseDisplayMode3",
+          "declaration": {
+            "name": "parseDisplayMode3",
+            "module": "src/lib/internal.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "appendFontinStyle",
+          "declaration": {
+            "name": "appendFontinStyle",
+            "module": "src/lib/internal.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
       "path": "src/elements/poe-item-card.ts",
       "declarations": [
         {
@@ -966,233 +1193,6 @@
     },
     {
       "kind": "javascript-module",
-      "path": "src/lib/base_path.ts",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "BASE_PATH",
-          "type": {
-            "text": "string"
-          },
-          "default": "'/poe-ce-assets'",
-          "description": "Default base path of icons and images folders."
-        },
-        {
-          "kind": "function",
-          "name": "setBasePath",
-          "return": {
-            "type": {
-              "text": "void"
-            }
-          },
-          "parameters": [
-            {
-              "name": "path",
-              "type": {
-                "text": "string"
-              }
-            }
-          ]
-        },
-        {
-          "kind": "function",
-          "name": "basePath",
-          "description": "Gets the library's base path.\r\nThe base path is used to load assets such as icons and images.",
-          "return": {
-            "type": {
-              "text": ""
-            }
-          }
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "BASE_PATH",
-          "declaration": {
-            "name": "BASE_PATH",
-            "module": "src/lib/base_path.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "setBasePath",
-          "declaration": {
-            "name": "setBasePath",
-            "module": "src/lib/base_path.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "basePath",
-          "declaration": {
-            "name": "basePath",
-            "module": "src/lib/base_path.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/lib/internal.ts",
-      "declarations": [
-        {
-          "kind": "function",
-          "name": "frameKind",
-          "return": {
-            "type": {
-              "text": "FrameKind | null"
-            }
-          },
-          "parameters": [
-            {
-              "name": "frameType",
-              "type": {
-                "text": "number"
-              }
-            }
-          ],
-          "description": "https://www.pathofexile.com/developer/docs/reference#type-FrameType"
-        },
-        {
-          "kind": "function",
-          "name": "capitalize",
-          "return": {
-            "type": {
-              "text": "string"
-            }
-          },
-          "parameters": [
-            {
-              "name": "s",
-              "type": {
-                "text": "string"
-              }
-            }
-          ]
-        },
-        {
-          "kind": "function",
-          "name": "parseDisplayMode3",
-          "return": {
-            "type": {
-              "text": "string"
-            }
-          },
-          "parameters": [
-            {
-              "name": "property",
-              "type": {
-                "text": "ItemProperty"
-              }
-            }
-          ]
-        },
-        {
-          "kind": "function",
-          "name": "parseDisplayMode3",
-          "return": {
-            "type": {
-              "text": "Array<T | string>"
-            }
-          },
-          "parameters": [
-            {
-              "name": "property",
-              "type": {
-                "text": "ItemProperty"
-              }
-            },
-            {
-              "name": "mapFn",
-              "type": {
-                "text": "(val: string) => T"
-              }
-            }
-          ]
-        },
-        {
-          "kind": "function",
-          "name": "parseDisplayMode3",
-          "return": {
-            "type": {
-              "text": "Array<T | string> | string"
-            }
-          },
-          "parameters": [
-            {
-              "name": "property",
-              "type": {
-                "text": "ItemProperty"
-              }
-            },
-            {
-              "name": "mapFn",
-              "optional": true,
-              "type": {
-                "text": "(val: string) => T"
-              }
-            }
-          ]
-        },
-        {
-          "kind": "function",
-          "name": "appendFontinStyle"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "frameKind",
-          "declaration": {
-            "name": "frameKind",
-            "module": "src/lib/internal.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "capitalize",
-          "declaration": {
-            "name": "capitalize",
-            "module": "src/lib/internal.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "parseDisplayMode3",
-          "declaration": {
-            "name": "parseDisplayMode3",
-            "module": "src/lib/internal.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "parseDisplayMode3",
-          "declaration": {
-            "name": "parseDisplayMode3",
-            "module": "src/lib/internal.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "parseDisplayMode3",
-          "declaration": {
-            "name": "parseDisplayMode3",
-            "module": "src/lib/internal.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "appendFontinStyle",
-          "declaration": {
-            "name": "appendFontinStyle",
-            "module": "src/lib/internal.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
       "path": "src/stories/Button.stories.ts",
       "declarations": [
         {
@@ -1534,7 +1534,47 @@
           "type": {
             "text": "object"
           },
-          "default": "{ render() { return html`<poe-stash-tab .tab=${quadStd}></poe-stash-tab>`; }, }"
+          "default": "{ args: { tab: quadStd }, }"
+        },
+        {
+          "kind": "variable",
+          "name": "Premium",
+          "type": {
+            "text": "object"
+          },
+          "default": "{ args: { tab: premium }, }"
+        },
+        {
+          "kind": "variable",
+          "name": "Essence",
+          "type": {
+            "text": "object"
+          },
+          "default": "{ args: { tab: essence }, }"
+        },
+        {
+          "kind": "variable",
+          "name": "Currency",
+          "type": {
+            "text": "object"
+          },
+          "default": "{ args: { tab: currencyTab }, }"
+        },
+        {
+          "kind": "variable",
+          "name": "Blight",
+          "type": {
+            "text": "object"
+          },
+          "default": "{ args: { tab: blight }, }"
+        },
+        {
+          "kind": "variable",
+          "name": "Fragment",
+          "type": {
+            "text": "object"
+          },
+          "default": "{ args: { tab: fragments }, }"
         },
         {
           "kind": "variable",
@@ -1542,7 +1582,15 @@
           "type": {
             "text": "object"
           },
-          "default": "{ render() { return html`<poe-stash-tab .tab=${divination}></poe-stash-tab>`; }, }"
+          "default": "{ args: { tab: divination }, }"
+        },
+        {
+          "kind": "variable",
+          "name": "Normal",
+          "type": {
+            "text": "object"
+          },
+          "default": "{ args: { tab: premium }, }"
         }
       ],
       "exports": [
@@ -1563,9 +1611,57 @@
         },
         {
           "kind": "js",
+          "name": "Premium",
+          "declaration": {
+            "name": "Premium",
+            "module": "src/stories/stash-tab.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Essence",
+          "declaration": {
+            "name": "Essence",
+            "module": "src/stories/stash-tab.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Currency",
+          "declaration": {
+            "name": "Currency",
+            "module": "src/stories/stash-tab.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Blight",
+          "declaration": {
+            "name": "Blight",
+            "module": "src/stories/stash-tab.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Fragment",
+          "declaration": {
+            "name": "Fragment",
+            "module": "src/stories/stash-tab.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
           "name": "Divination",
           "declaration": {
             "name": "Divination",
+            "module": "src/stories/stash-tab.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Normal",
+          "declaration": {
+            "name": "Normal",
             "module": "src/stories/stash-tab.stories.ts"
           }
         }
@@ -1907,7 +2003,7 @@
         {
           "kind": "class",
           "description": "",
-          "name": "ItemInfoHeader",
+          "name": "PoeItemInfoHeaderElement",
           "members": [
             {
               "kind": "field",
@@ -1938,9 +2034,9 @@
       "exports": [
         {
           "kind": "js",
-          "name": "ItemInfoHeader",
+          "name": "PoeItemInfoHeaderElement",
           "declaration": {
-            "name": "ItemInfoHeader",
+            "name": "PoeItemInfoHeaderElement",
             "module": "src/elements/item-info/poe-item-info-header.ts"
           }
         },
@@ -1948,8 +2044,118 @@
           "kind": "custom-element-definition",
           "name": "poe-item-info-header",
           "declaration": {
-            "name": "ItemInfoHeader",
+            "name": "PoeItemInfoHeaderElement",
             "module": "src/elements/item-info/poe-item-info-header.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/elements/item-info/poe-item-info-property.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "PoeItemInfoPropertyElement",
+          "members": [
+            {
+              "kind": "field",
+              "name": "property",
+              "type": {
+                "text": "ItemProperty"
+              },
+              "attribute": "property"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "property",
+              "type": {
+                "text": "ItemProperty"
+              },
+              "fieldName": "property"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "poe-item-info-property",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "PoeItemInfoPropertyElement",
+          "declaration": {
+            "name": "PoeItemInfoPropertyElement",
+            "module": "src/elements/item-info/poe-item-info-property.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "poe-item-info-property",
+          "declaration": {
+            "name": "PoeItemInfoPropertyElement",
+            "module": "src/elements/item-info/poe-item-info-property.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/elements/item-info/poe-item-info-requirements.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "PoeItemInfoRequirementsElement",
+          "members": [
+            {
+              "kind": "field",
+              "name": "requirements",
+              "type": {
+                "text": "Requirement[]"
+              },
+              "default": "[]",
+              "attribute": "requirements"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "requirements",
+              "type": {
+                "text": "Requirement[]"
+              },
+              "default": "[]",
+              "fieldName": "requirements"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "poe-item-info-requirements",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "PoeItemInfoRequirementsElement",
+          "declaration": {
+            "name": "PoeItemInfoRequirementsElement",
+            "module": "src/elements/item-info/poe-item-info-requirements.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "poe-item-info-requirements",
+          "declaration": {
+            "name": "PoeItemInfoRequirementsElement",
+            "module": "src/elements/item-info/poe-item-info-requirements.ts"
           }
         }
       ]
@@ -2012,116 +2218,6 @@
     },
     {
       "kind": "javascript-module",
-      "path": "src/elements/item-info/poe-item-property.ts",
-      "declarations": [
-        {
-          "kind": "class",
-          "description": "",
-          "name": "PoeItemPropertyElement",
-          "members": [
-            {
-              "kind": "field",
-              "name": "property",
-              "type": {
-                "text": "ItemProperty"
-              },
-              "attribute": "property"
-            }
-          ],
-          "attributes": [
-            {
-              "name": "property",
-              "type": {
-                "text": "ItemProperty"
-              },
-              "fieldName": "property"
-            }
-          ],
-          "superclass": {
-            "name": "LitElement",
-            "package": "lit"
-          },
-          "tagName": "poe-item-property",
-          "customElement": true
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "PoeItemPropertyElement",
-          "declaration": {
-            "name": "PoeItemPropertyElement",
-            "module": "src/elements/item-info/poe-item-property.ts"
-          }
-        },
-        {
-          "kind": "custom-element-definition",
-          "name": "poe-item-property",
-          "declaration": {
-            "name": "PoeItemPropertyElement",
-            "module": "src/elements/item-info/poe-item-property.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/elements/item-info/poe-requirements.ts",
-      "declarations": [
-        {
-          "kind": "class",
-          "description": "",
-          "name": "PoeRequirementElement",
-          "members": [
-            {
-              "kind": "field",
-              "name": "requirements",
-              "type": {
-                "text": "Requirement[]"
-              },
-              "default": "[]",
-              "attribute": "requirements"
-            }
-          ],
-          "attributes": [
-            {
-              "name": "requirements",
-              "type": {
-                "text": "Requirement[]"
-              },
-              "default": "[]",
-              "fieldName": "requirements"
-            }
-          ],
-          "superclass": {
-            "name": "LitElement",
-            "package": "lit"
-          },
-          "tagName": "poe-requirements",
-          "customElement": true
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "PoeRequirementElement",
-          "declaration": {
-            "name": "PoeRequirementElement",
-            "module": "src/elements/item-info/poe-requirements.ts"
-          }
-        },
-        {
-          "kind": "custom-element-definition",
-          "name": "poe-requirements",
-          "declaration": {
-            "name": "PoeRequirementElement",
-            "module": "src/elements/item-info/poe-requirements.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
       "path": "src/elements/item-info/poe-separator.ts",
       "declarations": [
         {
@@ -2173,6 +2269,144 @@
           "declaration": {
             "name": "PoeSeparatorElement",
             "module": "src/elements/item-info/poe-separator.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/stories/item-info/item-info-header.stories.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "Influence",
+          "type": {
+            "text": "object"
+          },
+          "default": "{ args: { item: influence }, }"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/stories/item-info/item-info-header.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Influence",
+          "declaration": {
+            "name": "Influence",
+            "module": "src/stories/item-info/item-info-header.stories.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/stories/item-info/item-info.stories.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "Default",
+          "type": {
+            "text": "object"
+          },
+          "default": "{ args: { item: influence }, }"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/stories/item-info/item-info.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Default",
+          "declaration": {
+            "name": "Default",
+            "module": "src/stories/item-info/item-info.stories.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/stories/item-info/poe-item-info-content.stories.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "Default",
+          "type": {
+            "text": "object"
+          },
+          "default": "{ args: { item: influence }, }"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/stories/item-info/poe-item-info-content.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Default",
+          "declaration": {
+            "name": "Default",
+            "module": "src/stories/item-info/poe-item-info-content.stories.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/stories/item-info/poe-item-info-property.stories.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/stories/item-info/poe-item-info-property.stories.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/stories/item-info/poe-item-info-requirements.stories.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "Default",
+          "type": {
+            "text": "object"
+          },
+          "default": "{ args: { requirements: [ { displayMode: 0, name: 'Level', suffix: '(gem)', type: 62, values: [['68', 0]], }, { displayMode: 1, name: 'Str', suffix: '(gem)', type: 63, values: [['151', 0]], }, { displayMode: 1, name: 'Dex', type: 64, values: [['68', 0]], }, { displayMode: 1, name: 'Int', suffix: '(gem)', type: 65, values: [['39', 0]], }, ], }, }"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/stories/item-info/poe-item-info-requirements.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Default",
+          "declaration": {
+            "name": "Default",
+            "module": "src/stories/item-info/poe-item-info-requirements.stories.ts"
           }
         }
       ]
