@@ -3,7 +3,7 @@ import { customElement, property } from 'lit/decorators.js';
 import type { ItemProperty, PoeItem, Requirement } from '../../poe.types';
 import './poe-separator';
 import './poe-item-info-property';
-import './poe-requirements';
+import './poe-item-info-requirements';
 import { frameKind } from '../../lib/internal';
 
 @customElement('poe-item-info-content')
@@ -26,7 +26,9 @@ export class PoeItemInfoContentElement extends LitElement {
 					? html`<p>Monster Level: <span class="monster-level">${this.item.itemLevel}</span></p>`
 					: nothing,
 				this.requirements.length
-					? html` <poe-requirements .requirements=${this.requirements}></poe-requirements>`
+					? html` <poe-item-info-requirements
+							.requirements=${this.requirements}
+						></poe-item-info-requirements>`
 					: nothing,
 				this.enchantments.length
 					? html`${this.enchantments.map(enc =>
