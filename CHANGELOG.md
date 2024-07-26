@@ -1,5 +1,12 @@
 # poe-custom-elements
 
+## 0.3.2
+
+### Patch Changes
+
+- 41b4127: poe-item-card: automatically derive maxStackSize
+- ecc4298: item-card: fix icon url
+
 ## 0.3.1
 
 ### Patch Changes
