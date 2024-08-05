@@ -5,6 +5,7 @@ export const cardElementData: CardElementData[] = json;
  * https://github.com/shonya3/divicards/tree/main/card_element
  */
 export type CardElementData = {
+	slug: string;
 	name: string;
 	artFilename: string;
 	flavourText: string;

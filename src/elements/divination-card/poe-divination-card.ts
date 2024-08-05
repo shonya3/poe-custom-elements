@@ -18,12 +18,27 @@ export class DivinationCardElement extends LitElement {
 	@property({ reflect: true }) size: CardSize = 'medium';
 	@property({ reflect: true }) boss?: string;
 	@property({ attribute: 'base-url' }) baseUrl = 'https://divicards-site.pages.dev';
+	@property({ reflect: true }) href = '';
+	@property({ reflect: true, attribute: 'href-pattern' }) hrefPattern = '{{base}}/card/{{slug}}';
 
 	@state() stackSize: number = 0;
 	@state() flavourText = ``;
 	@state() artFilename = '';
 	@state() rewardHtml = '';
 	@state() dropLevel = '';
+	@state() slug = '';
+
+	#parseHrefPattern() {
+		return this.hrefPattern.replaceAll('{{base}}', this.baseUrl).replaceAll('{{slug}}', this.slug);
+	}
+
+	#getHref() {
+		if (this.href) {
+			return this.href;
+		}
+
+		return this.#parseHrefPattern();
+	}
 
 	protected willUpdate(changedProperties: PropertyValues<this>): void {
 		this.style.setProperty(
@@ -39,11 +54,13 @@ export class DivinationCardElement extends LitElement {
 				this.artFilename = cardData.artFilename;
 				this.rewardHtml = cardData.rewardHtml;
 				this.dropLevel = cardData.dropLevel.label;
+				this.slug = cardData.slug;
 			}
 		}
 	}
 
 	protected render(): TemplateResult {
+		const href = this.#getHref();
 		return html`<div class="element">
 			<div
 				class=${classMap({
@@ -51,7 +68,7 @@ export class DivinationCardElement extends LitElement {
 					[`divination-card--${this.size}`]: true,
 				})}
 			>
-				<a class="link" @click=${this.#onNavigation} href="${this.baseUrl}/card/${this.name}"></a>
+				<a class="link" @click=${this.#onNavigation} href=${href}></a>
 				<div class="skeleton"></div>
 				<header
 					class=${classMap({
@@ -59,10 +76,10 @@ export class DivinationCardElement extends LitElement {
 						[`name--${this.size}`]: true,
 					})}
 				>
-					<a @click=${this.#onNavigation} href="${this.baseUrl}/card/${this.name}"> ${this.name} </a>
+					<a @click=${this.#onNavigation} href=${href}> ${this.name} </a>
 				</header>
 				<div class="imageWrapper">
-					<a @click=${this.#onNavigation} href="${this.baseUrl}/card/${this.name}">
+					<a @click=${this.#onNavigation} href=${href}>
 						<img
 							loading="lazy"
 							class="image"
@@ -97,12 +114,13 @@ export class DivinationCardElement extends LitElement {
 	}
 
 	#onNavigation() {
-		this.style.setProperty('view-transition-name', 'card');
+		this.style.setProperty('view-transition-name', this.slug);
 	}
 	static override styles = styles;
 }
 
-export type CardSize = '50' | '75' | 'small' | 'medium' | 'large';
+export type CardSize = (typeof CARD_SIZE_VARIANTS)[number];
+export const CARD_SIZE_VARIANTS = ['50', '75', 'small', 'medium', 'large'] as const;
 
 function imageurl(artFilename?: string): string {
 	if (!artFilename) {
