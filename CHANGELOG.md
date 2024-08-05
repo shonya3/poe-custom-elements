@@ -1,5 +1,11 @@
 # poe-custom-elements
 
+## 0.3.3
+
+### Patch Changes
+
+- 8dc1b60: use slugs for divination card url
+
 ## 0.3.2
 
 ### Patch Changes
