@@ -1,5 +1,11 @@
 # poe-custom-elements
 
+## 0.3.4
+
+### Patch Changes
+
+- 2dea13e: Expose divination card data /divination-card/data.js
+
 ## 0.3.3
 
 ### Patch Changes
