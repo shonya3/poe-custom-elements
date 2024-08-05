@@ -2,7 +2,7 @@ import { LitElement, html, css, TemplateResult } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import './poe-item';
 import { basePath } from '../lib/base_path';
-import { cardElementData } from './divination-card/cardElementData';
+import { cardElementData } from './divination-card/data';
 
 /**
  * Itemized divination card with divination card element on hover, that requires only a name of card.

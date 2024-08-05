@@ -2,7 +2,7 @@ import { classMap } from 'lit/directives/class-map.js';
 import { html, PropertyValues, nothing, LitElement, TemplateResult } from 'lit';
 import { html as staticHtml, unsafeStatic } from 'lit/static-html.js';
 import { customElement, property, state } from 'lit/decorators.js';
-import { cardElementData } from './cardElementData';
+import { cardElementData } from './data';
 import { styles } from './divination-card.styles';
 import { basePath } from '../../lib/base_path';
 

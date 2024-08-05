@@ -18,3 +18,7 @@ export type DropLevel = {
 	level: { min: number | null; max: number | null };
 	label: string;
 };
+
+export function findCardBySlug(slug: string): CardElementData | null {
+	return cardElementData.find(card => card.slug === slug) ?? null;
+}

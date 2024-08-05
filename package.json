@@ -25,6 +25,10 @@
 			"types": "./dist/elements/divination-card/poe-divination-card.d.ts",
 			"default": "./dist/elements/divination-card/poe-divination-card.js"
 		},
+		"./divination-card/data.js": {
+			"types": "./dist/elements/divination-card/data.d.ts",
+			"default": "./dist/elements/divination-card/data.js"
+		},
 		"./item-card.js": {
 			"types": "./dist/elements/poe-item-card.d.ts",
 			"default": "./dist/elements/poe-item-card.js"
