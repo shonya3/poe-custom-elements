@@ -1,5 +1,11 @@
 # poe-custom-elements
 
+## 0.3.5
+
+### Patch Changes
+
+- 8bc8e8f: Divination card: Do not set view-transition-name on any link element clicked. Dispatch navigate event instead.
+
 ## 0.3.4
 
 ### Patch Changes
