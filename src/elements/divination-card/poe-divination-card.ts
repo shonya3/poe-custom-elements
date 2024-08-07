@@ -10,7 +10,8 @@ import { basePath } from '../../lib/base_path';
  * @summary Divination Card
 
  * @cssproperty --padding-inline - The inline padding to use for for element.
- * @cssproperty --padding-block - The block padding to use for for element.
+ * @cssproperty --padding-block  - The block padding to use for for element.
+ * @event       navigate Event   - Emits when on click of one of link elements.
  */
 @customElement('poe-divination-card')
 export class DivinationCardElement extends LitElement {
@@ -68,7 +69,7 @@ export class DivinationCardElement extends LitElement {
 					[`divination-card--${this.size}`]: true,
 				})}
 			>
-				<a class="link" @click=${this.#onNavigation} href=${href}></a>
+				<a class="link" @click=${this.#dispatchNavigate} href=${href}></a>
 				<div class="skeleton"></div>
 				<header
 					class=${classMap({
@@ -76,10 +77,10 @@ export class DivinationCardElement extends LitElement {
 						[`name--${this.size}`]: true,
 					})}
 				>
-					<a @click=${this.#onNavigation} href=${href}> ${this.name} </a>
+					<a @click=${this.#dispatchNavigate} href=${href}> ${this.name} </a>
 				</header>
 				<div class="imageWrapper">
-					<a @click=${this.#onNavigation} href=${href}>
+					<a @click=${this.#dispatchNavigate} href=${href}>
 						<img
 							loading="lazy"
 							class="image"
@@ -113,8 +114,8 @@ export class DivinationCardElement extends LitElement {
 		</div>`;
 	}
 
-	#onNavigation() {
-		this.style.setProperty('view-transition-name', this.slug);
+	#dispatchNavigate() {
+		this.dispatchEvent(new Event('navigate'));
 	}
 	static override styles = styles;
 }
