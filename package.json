@@ -1,7 +1,7 @@
 {
 	"name": "poe-custom-elements",
 	"private": false,
-	"version": "0.3.5",
+	"version": "0.3.6",
 	"type": "module",
 	"license": "MIT",
 	"exports": {

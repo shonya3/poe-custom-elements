@@ -1,5 +1,11 @@
 # poe-custom-elements
 
+## 0.3.6
+
+### Patch Changes
+
+- b1a953b: Card element: Add 3.25 card images
+
 ## 0.3.5
 
 ### Patch Changes
