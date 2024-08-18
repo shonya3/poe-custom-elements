@@ -1,5 +1,11 @@
 # poe-custom-elements
 
+## 0.3.7
+
+### Patch Changes
+
+- bc67908: Add Father's Love card image
+
 ## 0.3.6
 
 ### Patch Changes
