@@ -29,6 +29,9 @@ async function fetch_poeninja_cards_data(): Promise<Array<CardData>> {
 	const response = await fetch(url);
 	const obj: { lines: Array<CardData> } = await response.json();
 	const cards = obj.lines;
+	if (!cards.some(c => c.name === `Father's Love`)) {
+		cards.push({ name: `Father's Love`, artFilename: 'FathersLove' });
+	}
 
 	return cards;
 }
