@@ -1,5 +1,11 @@
 # poe-custom-elements
 
+## 0.3.8
+
+### Patch Changes
+
+- 44ff493: bump cards data
+
 ## 0.3.7
 
 ### Patch Changes
