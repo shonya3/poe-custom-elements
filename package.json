@@ -1,9 +1,16 @@
 {
 	"name": "poe-custom-elements",
+	"description": "Path of Exile custom elements",
 	"private": false,
 	"version": "0.3.8",
 	"type": "module",
 	"license": "MIT",
+	"keywords": [
+		"web component",
+		"custom element",
+		"path of exile",
+		"poe"
+	],
 	"exports": {
 		"./types.js": {
 			"types": "./dist/poe.types.d.ts",
@@ -77,6 +84,7 @@
 		"wc-storybook-helpers": "^2.0.2"
 	},
 	"files": [
+		"./custom-elements.json",
 		"./dist",
 		"CHANGELOG.md",
 		"LICENCE"
