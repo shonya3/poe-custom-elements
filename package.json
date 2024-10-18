@@ -6,8 +6,8 @@
 	"type": "module",
 	"license": "MIT",
 	"keywords": [
-		"web component",
-		"custom element",
+		"web components",
+		"custom elements",
 		"path of exile",
 		"poe"
 	],
@@ -91,5 +91,6 @@
 	],
 	"publishConfig": {
 		"access": "public"
-	}
+	},
+	"customElements": "./custom-elements.json"
 }
