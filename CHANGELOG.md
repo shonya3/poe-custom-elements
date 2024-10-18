@@ -1,5 +1,11 @@
 # poe-custom-elements
 
+## 0.3.9
+
+### Patch Changes
+
+- f254d11: update custom-elements.json and add package.json missing fields
+
 ## 0.3.8
 
 ### Patch Changes
