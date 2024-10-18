@@ -1,5 +1,11 @@
 # poe-custom-elements
 
+## 0.3.10
+
+### Patch Changes
+
+- 8295551: Add customElements field to package.json
+
 ## 0.3.9
 
 ### Patch Changes
