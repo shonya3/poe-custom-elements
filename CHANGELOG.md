@@ -1,5 +1,11 @@
 # poe-custom-elements
 
+## 0.3.11
+
+### Patch Changes
+
+- 897848f: tooltip: remove animation, improve behaviour
+
 ## 0.3.10
 
 ### Patch Changes
