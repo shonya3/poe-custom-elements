@@ -39,16 +39,11 @@ export class SimpleTooltip extends LitElement {
 			pointer-events: none;
 			z-index: 900;
 
-			/* Animate in */
 			opacity: 0;
-			transform: scale(0.75);
-			transition: opacity, transform;
-			transition-duration: 0.33s;
 		}
 
 		:host([showing]) {
 			opacity: 1;
-			transform: scale(1);
 		}
 	`;
 
@@ -93,15 +88,12 @@ export class SimpleTooltip extends LitElement {
 		this._target = target;
 	}
 
-	show = () => {
+	show = async () => {
+		await new Promise(resolve => setTimeout(resolve));
 		this.style.cssText = '';
 		computePosition(this.target!, this, {
 			strategy: 'fixed',
-			middleware: [
-				offset(this.offset),
-				shift(),
-				autoPlacement({ allowedPlacements: ['bottom', 'top', 'top-start', 'left-start'] }),
-			],
+			middleware: [offset(this.offset), shift(), autoPlacement({ allowedPlacements: ['top', 'bottom'] })],
 		}).then(({ x, y }: { x: number; y: number }) => {
 			this.style.left = `${x}px`;
 			this.style.top = `${y}px`;
@@ -109,7 +101,8 @@ export class SimpleTooltip extends LitElement {
 		this.showing = true;
 	};
 
-	hide = () => {
+	hide = async () => {
+		await new Promise(resolve => setTimeout(resolve));
 		this.showing = false;
 	};
 
