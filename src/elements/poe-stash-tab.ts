@@ -31,10 +31,7 @@ export class PoeStashTabElement extends LitElement {
 	@state() search_query_for_divination_stash = '';
 	/** Mutable clone of tab */
 	#tab!: TabWithItems;
-	get #has_focus_within(): boolean {
-		return this.matches(':focus-within');
-	}
-	get #active_item_element(): PoeItemElement | null {
+	get #focused_item_element(): PoeItemElement | null {
 		return this.shadowRoot?.querySelector('poe-item:focus') ?? null;
 	}
 
@@ -117,22 +114,18 @@ export class PoeStashTabElement extends LitElement {
 	}
 
 	#navigate_items_with_arrow_keys = async (e: KeyboardEvent): Promise<void> => {
-		if (!this.#has_focus_within) {
-			return;
-		}
-
 		if (!['ArrowDown', 'ArrowRight', 'ArrowUp', 'ArrowLeft'].includes(e.code)) {
 			return;
 		}
 
-		const active_item_element = this.#active_item_element;
-		if (!active_item_element) {
+		const active_item = this.#focused_item_element?.item;
+		if (!active_item) {
 			return;
 		}
 
 		const direction = e.code.slice(5).toLowerCase() as Direction;
 		const item = await find_closest_item_element({
-			active_item: active_item_element.item,
+			active_item,
 			direction,
 			items: this.#tab.items,
 			stash_tab_element: this,
