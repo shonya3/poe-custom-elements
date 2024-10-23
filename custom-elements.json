@@ -24,7 +24,7 @@
           "kind": "variable",
           "name": "INFLUENCE_VARIANTS",
           "type": {
-            "text": "array"
+            "text": "['shaper', 'elder', 'redeemer', 'warlord', 'hunter', 'crusader']"
           },
           "default": "['shaper', 'elder', 'redeemer', 'warlord', 'hunter', 'crusader']"
         },
@@ -342,6 +342,9 @@
             {
               "kind": "field",
               "name": "tooltipElement",
+              "type": {
+                "text": "SimpleTooltip | null"
+              },
               "readonly": true
             },
             {
@@ -447,11 +450,21 @@
             },
             {
               "kind": "method",
-              "name": "transform"
+              "name": "transform",
+              "return": {
+                "type": {
+                  "text": "string"
+                }
+              }
             },
             {
               "kind": "method",
-              "name": "groupSockets"
+              "name": "groupSockets",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              }
             },
             {
               "kind": "field",
@@ -587,6 +600,11 @@
             {
               "kind": "method",
               "name": "onSocketPointerEnter",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              },
               "parameters": [
                 {
                   "name": "socketedItem",
@@ -598,7 +616,12 @@
             },
             {
               "kind": "method",
-              "name": "onSocketPointerLeave"
+              "name": "onSocketPointerLeave",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              }
             },
             {
               "kind": "method",
@@ -717,16 +740,7 @@
             },
             {
               "kind": "field",
-              "name": "#has_focus_within",
-              "privacy": "private",
-              "type": {
-                "text": "boolean"
-              },
-              "readonly": true
-            },
-            {
-              "kind": "field",
-              "name": "#active_item_element",
+              "name": "#focused_item_element",
               "privacy": "private",
               "type": {
                 "text": "PoeItemElement | null"
@@ -802,6 +816,11 @@
               "kind": "method",
               "name": "lazy",
               "static": true,
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              },
               "parameters": [
                 {
                   "name": "target",
@@ -940,7 +959,12 @@
             },
             {
               "kind": "method",
-              "name": "showWithAutohide"
+              "name": "showWithAutohide",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              }
             }
           ],
           "attributes": [
@@ -1013,12 +1037,12 @@
         {
           "kind": "function",
           "name": "basePath",
-          "description": "Gets the library's base path.\r\nThe base path is used to load assets such as icons and images.",
           "return": {
             "type": {
               "text": ""
             }
-          }
+          },
+          "description": "Gets the library's base path.\r\nThe base path is used to load assets such as icons and images."
         }
       ],
       "exports": [
@@ -1153,7 +1177,12 @@
         },
         {
           "kind": "function",
-          "name": "appendFontinStyle"
+          "name": "appendFontinStyle",
+          "return": {
+            "type": {
+              "text": "void"
+            }
+          }
         }
       ],
       "exports": [
@@ -1209,85 +1238,48 @@
     },
     {
       "kind": "javascript-module",
-      "path": "src/stories/Button.stories.ts",
+      "path": "src/styles/poe-colors-vars.style.ts",
       "declarations": [
         {
           "kind": "variable",
-          "name": "meta",
-          "default": "{ title: 'Example/Button', tags: ['autodocs'], render: (args) => Button(args), argTypes: { backgroundColor: { control: 'color' }, size: { control: { type: 'select' }, options: ['small', 'medium', 'large'], }, }, args: { onClick: fn() }, } satisfies Meta<ButtonProps>"
-        },
-        {
-          "kind": "variable",
-          "name": "Primary",
+          "name": "poeColorsCssVariables",
           "type": {
-            "text": "Story"
+            "text": "CSSResult"
           },
-          "default": "{ args: { primary: true, label: 'Button', }, }"
-        },
-        {
-          "kind": "variable",
-          "name": "Secondary",
-          "type": {
-            "text": "Story"
-          },
-          "default": "{ args: { label: 'Button', }, }"
-        },
-        {
-          "kind": "variable",
-          "name": "Large",
-          "type": {
-            "text": "Story"
-          },
-          "default": "{ args: { size: 'large', label: 'Button', }, }"
-        },
-        {
-          "kind": "variable",
-          "name": "Small",
-          "type": {
-            "text": "Story"
-          },
-          "default": "{ args: { size: 'small', label: 'Button', }, }"
+          "default": "css` --flavour-text-color: rgba(167, 90, 27, 1); --item-normal: 0, 0%, 78%; --item-rare: 60, 100%, 73%; --item-magic: 240, 100%, 77%; --item-unique-contrast: 25, 63%, 48%; --item-unique: 26, 65%, 42%; --item-gem: 177, 72%, 37%; --item-relic: 0, 0%, 78%; --item-currency: 42, 19%, 59%; --item-prophecy: 275, 100%, 65%; --item-divination: 0, 0%, 50%; --item-keystone: 46, 52%, 74%; --item-explicit: 240, 100%, 77%; --item-implicit: var(--item-explicit); --item-crafted: 240, 100%, 85%; --item-enchanted: var(--item-crafted); --item-fractured: 44, 26%, 51%; --item-corrupted: 0, 100%, 41%; --item-scourge: 20, 100%, 57%; --item-physical: 0, 0%, 58%; --item-fire: 0, 100%, 29%; --item-cold: 210, 46%, 39%; --item-lightning: 51, 100%, 50%; --item-chaos: 322, 73%, 47%; --item-augmented: rgb(138, 138, 255); --coolgrey-1000: 206, 24%, 7%; --item-necropolis: 44.35, 39%, 76.86%; `"
         }
       ],
       "exports": [
         {
           "kind": "js",
-          "name": "default",
+          "name": "poeColorsCssVariables",
           "declaration": {
-            "name": "meta",
-            "module": "src/stories/Button.stories.ts"
+            "name": "poeColorsCssVariables",
+            "module": "src/styles/poe-colors-vars.style.ts"
           }
-        },
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/styles/poe-colors.style.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "styles",
+          "type": {
+            "text": "CSSResult"
+          },
+          "default": "css` .default { color: #7f7f7f; } .fractured { color: hsla(var(--item-fractured)); } .enchanted { color: hsla(var(--item-enchanted)); } .normal, .normalItem { color: hsla(var(--item-normal)); } .magic, .magicItem { color: hsla(var(--item-magic)); } .rare, .rareItem { color: hsla(var(--item-rare)); } .unique, .uniqueItem { color: hsla(var(--item-unique)); } .gem, .gemItem { color: hsla(var(--item-gem)); } .currency, .currencyItem { color: hsla(var(--item-currency)); } .necropolis, .necropolisItem { color: hsla(var(--item-necropolis)); } .corrupted { color: hsla(var(--item-corrupted)); } .divination { color: #0ebaff; } .augmented { color: var(--item-augmented); } `"
+        }
+      ],
+      "exports": [
         {
           "kind": "js",
-          "name": "Primary",
+          "name": "styles",
           "declaration": {
-            "name": "Primary",
-            "module": "src/stories/Button.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Secondary",
-          "declaration": {
-            "name": "Secondary",
-            "module": "src/stories/Button.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Large",
-          "declaration": {
-            "name": "Large",
-            "module": "src/stories/Button.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Small",
-          "declaration": {
-            "name": "Small",
-            "module": "src/stories/Button.stories.ts"
+            "name": "styles",
+            "module": "src/styles/poe-colors.style.ts"
           }
         }
       ]
@@ -1299,6 +1291,11 @@
         {
           "kind": "function",
           "name": "Button",
+          "return": {
+            "type": {
+              "text": "TemplateResult"
+            }
+          },
           "parameters": [
             {
               "name": "{ primary, backgroundColor, size, label, onClick }",
@@ -1323,95 +1320,16 @@
     },
     {
       "kind": "javascript-module",
-      "path": "src/stories/divination-card.stories.ts",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "Default",
-          "type": {
-            "text": "object"
-          },
-          "default": "{}"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/stories/divination-card.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Default",
-          "declaration": {
-            "name": "Default",
-            "module": "src/stories/divination-card.stories.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/stories/Header.stories.ts",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "meta",
-          "default": "{ title: 'Example/Header', // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs tags: ['autodocs'], render: (args: HeaderProps) => Header(args), args: { onLogin: fn(), onLogout: fn(), onCreateAccount: fn(), }, } satisfies Meta<HeaderProps>"
-        },
-        {
-          "kind": "variable",
-          "name": "LoggedIn",
-          "type": {
-            "text": "Story"
-          },
-          "default": "{ args: { user: { name: 'Jane Doe', }, }, }"
-        },
-        {
-          "kind": "variable",
-          "name": "LoggedOut",
-          "type": {
-            "text": "Story"
-          },
-          "default": "{}"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "name": "meta",
-            "module": "src/stories/Header.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "LoggedIn",
-          "declaration": {
-            "name": "LoggedIn",
-            "module": "src/stories/Header.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "LoggedOut",
-          "declaration": {
-            "name": "LoggedOut",
-            "module": "src/stories/Header.stories.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
       "path": "src/stories/Header.ts",
       "declarations": [
         {
           "kind": "function",
           "name": "Header",
+          "return": {
+            "type": {
+              "text": "TemplateResult"
+            }
+          },
           "parameters": [
             {
               "name": "{ user, onLogin, onLogout, onCreateAccount }",
@@ -1435,121 +1353,16 @@
     },
     {
       "kind": "javascript-module",
-      "path": "src/stories/item-card.stories.ts",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "StackMaxed",
-          "default": "{ args: { stackSize: 8, }, } satisfies Story"
-        },
-        {
-          "kind": "variable",
-          "name": "Default",
-          "type": {
-            "text": "object"
-          },
-          "default": "{}"
-        },
-        {
-          "kind": "variable",
-          "name": "Stacksize",
-          "default": "{ args: { stackSize: 4, }, } satisfies Story"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/stories/item-card.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "StackMaxed",
-          "declaration": {
-            "name": "StackMaxed",
-            "module": "src/stories/item-card.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Default",
-          "declaration": {
-            "name": "Default",
-            "module": "src/stories/item-card.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Stacksize",
-          "declaration": {
-            "name": "Stacksize",
-            "module": "src/stories/item-card.stories.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/stories/Page.stories.ts",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "meta",
-          "default": "{ title: 'Example/Page', render: (args: PageProps) => Page(args), } satisfies Meta<PageProps>"
-        },
-        {
-          "kind": "variable",
-          "name": "LoggedIn",
-          "type": {
-            "text": "Story"
-          },
-          "default": "{ args: { // More on composing args: https://storybook.js.org/docs/writing-stories/args#args-composition ...HeaderStories.LoggedIn.args, }, }"
-        },
-        {
-          "kind": "variable",
-          "name": "LoggedOut",
-          "type": {
-            "text": "Story"
-          },
-          "default": "{ args: { ...HeaderStories.LoggedOut.args, }, }"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "name": "meta",
-            "module": "src/stories/Page.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "LoggedIn",
-          "declaration": {
-            "name": "LoggedIn",
-            "module": "src/stories/Page.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "LoggedOut",
-          "declaration": {
-            "name": "LoggedOut",
-            "module": "src/stories/Page.stories.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
       "path": "src/stories/Page.ts",
       "declarations": [
         {
           "kind": "function",
           "name": "Page",
+          "return": {
+            "type": {
+              "text": "TemplateResult"
+            }
+          },
           "parameters": [
             {
               "name": "{ user, onLogin, onLogout, onCreateAccount }",
@@ -1567,191 +1380,6 @@
           "declaration": {
             "name": "Page",
             "module": "src/stories/Page.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/stories/stash-tab.stories.ts",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "Quad",
-          "type": {
-            "text": "object"
-          },
-          "default": "{ args: { tab: quadStd }, }"
-        },
-        {
-          "kind": "variable",
-          "name": "Premium",
-          "type": {
-            "text": "object"
-          },
-          "default": "{ args: { tab: premium }, }"
-        },
-        {
-          "kind": "variable",
-          "name": "Essence",
-          "type": {
-            "text": "object"
-          },
-          "default": "{ args: { tab: essence }, }"
-        },
-        {
-          "kind": "variable",
-          "name": "Currency",
-          "type": {
-            "text": "object"
-          },
-          "default": "{ args: { tab: currencyTab }, }"
-        },
-        {
-          "kind": "variable",
-          "name": "Blight",
-          "type": {
-            "text": "object"
-          },
-          "default": "{ args: { tab: blight }, }"
-        },
-        {
-          "kind": "variable",
-          "name": "Fragment",
-          "type": {
-            "text": "object"
-          },
-          "default": "{ args: { tab: fragments }, }"
-        },
-        {
-          "kind": "variable",
-          "name": "Divination",
-          "type": {
-            "text": "object"
-          },
-          "default": "{ args: { tab: divination }, }"
-        },
-        {
-          "kind": "variable",
-          "name": "Normal",
-          "type": {
-            "text": "object"
-          },
-          "default": "{ args: { tab: premium }, }"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/stories/stash-tab.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Quad",
-          "declaration": {
-            "name": "Quad",
-            "module": "src/stories/stash-tab.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Premium",
-          "declaration": {
-            "name": "Premium",
-            "module": "src/stories/stash-tab.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Essence",
-          "declaration": {
-            "name": "Essence",
-            "module": "src/stories/stash-tab.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Currency",
-          "declaration": {
-            "name": "Currency",
-            "module": "src/stories/stash-tab.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Blight",
-          "declaration": {
-            "name": "Blight",
-            "module": "src/stories/stash-tab.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Fragment",
-          "declaration": {
-            "name": "Fragment",
-            "module": "src/stories/stash-tab.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Divination",
-          "declaration": {
-            "name": "Divination",
-            "module": "src/stories/stash-tab.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Normal",
-          "declaration": {
-            "name": "Normal",
-            "module": "src/stories/stash-tab.stories.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/styles/poe-colors-vars.style.ts",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "poeColorsCssVariables",
-          "default": "css` --flavour-text-color: rgba(167, 90, 27, 1); --item-normal: 0, 0%, 78%; --item-rare: 60, 100%, 73%; --item-magic: 240, 100%, 77%; --item-unique-contrast: 25, 63%, 48%; --item-unique: 26, 65%, 42%; --item-gem: 177, 72%, 37%; --item-relic: 0, 0%, 78%; --item-currency: 42, 19%, 59%; --item-prophecy: 275, 100%, 65%; --item-divination: 0, 0%, 50%; --item-keystone: 46, 52%, 74%; --item-explicit: 240, 100%, 77%; --item-implicit: var(--item-explicit); --item-crafted: 240, 100%, 85%; --item-enchanted: var(--item-crafted); --item-fractured: 44, 26%, 51%; --item-corrupted: 0, 100%, 41%; --item-scourge: 20, 100%, 57%; --item-physical: 0, 0%, 58%; --item-fire: 0, 100%, 29%; --item-cold: 210, 46%, 39%; --item-lightning: 51, 100%, 50%; --item-chaos: 322, 73%, 47%; --item-augmented: rgb(138, 138, 255); --coolgrey-1000: 206, 24%, 7%; --item-necropolis: 44.35, 39%, 76.86%; `"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "poeColorsCssVariables",
-          "declaration": {
-            "name": "poeColorsCssVariables",
-            "module": "src/styles/poe-colors-vars.style.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/styles/poe-colors.style.ts",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "styles",
-          "default": "css` .default { color: #7f7f7f; } .fractured { color: hsla(var(--item-fractured)); } .enchanted { color: hsla(var(--item-enchanted)); } .normal, .normalItem { color: hsla(var(--item-normal)); } .magic, .magicItem { color: hsla(var(--item-magic)); } .rare, .rareItem { color: hsla(var(--item-rare)); } .unique, .uniqueItem { color: hsla(var(--item-unique)); } .gem, .gemItem { color: hsla(var(--item-gem)); } .currency, .currencyItem { color: hsla(var(--item-currency)); } .necropolis, .necropolisItem { color: hsla(var(--item-necropolis)); } .corrupted { color: hsla(var(--item-corrupted)); } .divination { color: #0ebaff; } .augmented { color: var(--item-augmented); } `"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "styles",
-          "declaration": {
-            "name": "styles",
-            "module": "src/styles/poe-colors.style.ts"
           }
         }
       ]
@@ -2420,175 +2048,6 @@
           "declaration": {
             "name": "PoeItemInfoElement",
             "module": "src/elements/item-info/poe-item-info.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/stories/item-info/item-info-header.stories.ts",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "Influence",
-          "type": {
-            "text": "object"
-          },
-          "default": "{ args: { item: influence }, }"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/stories/item-info/item-info-header.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Influence",
-          "declaration": {
-            "name": "Influence",
-            "module": "src/stories/item-info/item-info-header.stories.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/stories/item-info/poe-item-info-content.stories.ts",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "Default",
-          "type": {
-            "text": "object"
-          },
-          "default": "{ args: { item: influence }, }"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/stories/item-info/poe-item-info-content.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Default",
-          "declaration": {
-            "name": "Default",
-            "module": "src/stories/item-info/poe-item-info-content.stories.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/stories/item-info/poe-item-info-property.stories.ts",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/stories/item-info/poe-item-info-property.stories.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/stories/item-info/poe-item-info-requirements.stories.ts",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "Default",
-          "type": {
-            "text": "object"
-          },
-          "default": "{ args: { requirements: [ { displayMode: 0, name: 'Level', suffix: '(gem)', type: 62, values: [['68', 0]], }, { displayMode: 1, name: 'Str', suffix: '(gem)', type: 63, values: [['151', 0]], }, { displayMode: 1, name: 'Dex', type: 64, values: [['68', 0]], }, { displayMode: 1, name: 'Int', suffix: '(gem)', type: 65, values: [['39', 0]], }, ], }, }"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/stories/item-info/poe-item-info-requirements.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Default",
-          "declaration": {
-            "name": "Default",
-            "module": "src/stories/item-info/poe-item-info-requirements.stories.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/stories/item-info/poe-item-info-separator.stories.ts",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "Default",
-          "type": {
-            "text": "object"
-          },
-          "default": "{}"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/stories/item-info/poe-item-info-separator.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Default",
-          "declaration": {
-            "name": "Default",
-            "module": "src/stories/item-info/poe-item-info-separator.stories.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/stories/item-info/poe-item-info.stories.ts",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "Default",
-          "type": {
-            "text": "object"
-          },
-          "default": "{ args: { item: influence }, }"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/stories/item-info/poe-item-info.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Default",
-          "declaration": {
-            "name": "Default",
-            "module": "src/stories/item-info/poe-item-info.stories.ts"
           }
         }
       ]
