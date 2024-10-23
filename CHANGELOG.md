@@ -1,5 +1,12 @@
 # poe-custom-elements
 
+## 0.3.12
+
+### Patch Changes
+
+- 3d026b1: Build with tsc. Update tsconfig: (+NodeNext, +isolatedDeclarations, +declarationMap)
+- bac70cb: Prevent outer scrolling when the arrow keys are pressed while focus is inside the stash tab.
+
 ## 0.3.11
 
 ### Patch Changes
