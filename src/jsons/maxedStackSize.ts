@@ -1,8 +1,8 @@
-import { PoeItem } from '../src/poe.types';
+import { PoeItem } from '../poe.types.js';
 /**
  * Divination card with maxed stacksize
  */
-export const maxedStackSize = {
+export const maxedStackSize: PoeItem = {
 	artFilename: 'TheEncroachingDarkness',
 	baseType: 'The Encroaching Darkness',
 	explicitMods: ['<uniqueitem>{Map}\r\n<corrupted>{Corrupted}'],

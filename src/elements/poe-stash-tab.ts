@@ -1,11 +1,11 @@
-import { LitElement, html, css, TemplateResult, PropertyValueMap } from 'lit';
+import { LitElement, html, css, TemplateResult, PropertyValueMap, CSSResult } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
-import type { PoeItem, StashType, TabWithItems } from '../poe.types';
+import type { PoeItem, StashType, TabWithItems } from '../poe.types.js';
 import './poe-item';
 import { styleMap } from 'lit/directives/style-map.js';
-import { appendFontinStyle } from '../lib/internal';
-import { PoeItemElement } from './poe-item';
-import { basePath } from '../lib/base_path';
+import { appendFontinStyle } from '../lib/internal.js';
+import { PoeItemElement } from './poe-item.js';
+import { basePath } from '../lib/base_path.js';
 import { classMap } from 'lit/directives/class-map.js';
 
 type Direction = 'down' | 'right' | 'up' | 'left';
@@ -140,7 +140,7 @@ export class PoeStashTabElement extends LitElement {
 		e.preventDefault();
 	};
 
-	static styles = css`
+	static styles: CSSResult = css`
 		* {
 			padding: 0;
 			margin: 0;

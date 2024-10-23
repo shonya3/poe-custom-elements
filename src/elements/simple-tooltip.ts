@@ -1,6 +1,6 @@
-import { html, css, LitElement } from 'lit';
+import { html, css, LitElement, TemplateResult, CSSResult } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import { Directive, DirectiveParameters, directive } from 'lit/directive.js';
+import { Directive, DirectiveParameters, DirectiveResult, directive } from 'lit/directive.js';
 import { ElementPart, render } from 'lit';
 
 // Positioning library
@@ -13,7 +13,7 @@ const leaveEvents = ['pointerleave', 'blur'];
 @customElement('simple-tooltip')
 export class SimpleTooltip extends LitElement {
 	// Lazy creation
-	static lazy(target: Element, callback: (target: SimpleTooltip) => void) {
+	static lazy(target: Element, callback: (target: SimpleTooltip) => void): void {
 		const createTooltip = () => {
 			const tooltip = document.createElement('simple-tooltip') as SimpleTooltip;
 			callback(tooltip);
@@ -25,7 +25,7 @@ export class SimpleTooltip extends LitElement {
 		enterEvents.forEach(eventName => target.addEventListener(eventName, createTooltip));
 	}
 
-	static styles = css`
+	static styles: CSSResult = css`
 		:host {
 			/* Position fixed to help ensure the tooltip is "on top" */
 			position: fixed;
@@ -61,7 +61,7 @@ export class SimpleTooltip extends LitElement {
 		this.addEventListener('transitionend', this.finishHide);
 	}
 
-	connectedCallback() {
+	connectedCallback(): void {
 		super.connectedCallback();
 		// Setup target if needed
 		this.target ??= this.previousElementSibling;
@@ -88,7 +88,7 @@ export class SimpleTooltip extends LitElement {
 		this._target = target;
 	}
 
-	show = async () => {
+	show = async (): Promise<void> => {
 		await new Promise(resolve => setTimeout(resolve));
 		this.style.cssText = '';
 		computePosition(this.target!, this, {
@@ -101,18 +101,18 @@ export class SimpleTooltip extends LitElement {
 		this.showing = true;
 	};
 
-	hide = async () => {
+	hide = async (): Promise<void> => {
 		await new Promise(resolve => setTimeout(resolve));
 		this.showing = false;
 	};
 
-	finishHide = () => {
+	finishHide = (): void => {
 		if (!this.showing) {
 			this.style.display = 'none';
 		}
 	};
 
-	render() {
+	render(): TemplateResult {
 		return html`<slot></slot>`;
 	}
 }
@@ -122,8 +122,8 @@ class TooltipDirective extends Directive {
 	tooltipContent?: unknown;
 	part?: ElementPart;
 	tooltip?: SimpleTooltip;
-	render(_: unknown = '') {}
-	update(part: ElementPart, [tooltipContent]: DirectiveParameters<this>) {
+	render(_: unknown = ''): void {}
+	update(part: ElementPart, [tooltipContent]: DirectiveParameters<this>): void {
 		this.tooltipContent = tooltipContent;
 		this.part = part;
 		if (!this.didSetupLazy) {
@@ -133,19 +133,19 @@ class TooltipDirective extends Directive {
 			this.renderTooltipContent();
 		}
 	}
-	setupLazy() {
+	setupLazy(): void {
 		this.didSetupLazy = true;
 		SimpleTooltip.lazy(this.part!.element, (tooltip: SimpleTooltip) => {
 			this.tooltip = tooltip;
 			this.renderTooltipContent();
 		});
 	}
-	renderTooltipContent() {
+	renderTooltipContent(): void {
 		render(this.tooltipContent, this.tooltip!, this.part!.options);
 	}
 }
 
-export const tooltip = directive(TooltipDirective);
+export const tooltip: () => DirectiveResult<typeof TooltipDirective> = directive(TooltipDirective);
 
 declare global {
 	interface HTMLElementTagNameMap {

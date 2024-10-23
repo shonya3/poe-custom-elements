@@ -1,10 +1,10 @@
-import { LitElement, html, css, TemplateResult } from 'lit';
+import { LitElement, html, css, TemplateResult, CSSResult } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import type { PoeItem } from '../../poe.types';
-import './poe-item-info-content';
-import './poe-item-info-header';
-import '../divination-card/poe-divination-card';
-import { frameKind } from '../../lib/internal';
+import type { PoeItem } from '../../poe.types.js';
+import './poe-item-info-content.js';
+import './poe-item-info-header.js';
+import '../divination-card/poe-divination-card.js';
+import { frameKind } from '../../lib/internal.js';
 
 @customElement('poe-item-info')
 export class PoeItemInfoElement extends LitElement {
@@ -24,7 +24,7 @@ export class PoeItemInfoElement extends LitElement {
 			<poe-item-info-content .item=${this.item}></poe-item-info-content> `;
 	}
 
-	static styles = css`
+	static styles: CSSResult = css`
 		* {
 			padding: 0;
 			margin: 0;

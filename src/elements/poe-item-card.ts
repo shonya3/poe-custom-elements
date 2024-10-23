@@ -1,8 +1,8 @@
-import { LitElement, html, css, TemplateResult } from 'lit';
+import { LitElement, html, css, TemplateResult, CSSResult } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import './poe-item';
-import { basePath } from '../lib/base_path';
-import { cardElementData } from './divination-card/data';
+import './poe-item.js';
+import { basePath } from '../lib/base_path.js';
+import { cardElementData } from './divination-card/data.js';
 
 /**
  * Itemized divination card with divination card element on hover, that requires only a name of card.
@@ -43,7 +43,7 @@ export class PoeItemCardElement extends LitElement {
 		></poe-item>`;
 	}
 
-	static styles = css`
+	static styles: CSSResult = css`
 		* {
 			padding: 0;
 			margin: 0;

@@ -173,7 +173,7 @@ export type HybridGem = {
 	isVaalGem?: boolean;
 };
 
-export const INFLUENCE_VARIANTS = ['shaper', 'elder', 'redeemer', 'warlord', 'hunter', 'crusader'];
+export const INFLUENCE_VARIANTS = ['shaper', 'elder', 'redeemer', 'warlord', 'hunter', 'crusader'] as const;
 export type Influence = (typeof INFLUENCE_VARIANTS)[number];
 
 export const RARITY_VARIANTS = ['Normal', 'Magic', 'Rare', 'Unique'] as const;

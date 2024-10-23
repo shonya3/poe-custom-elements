@@ -1,4 +1,4 @@
-import { TabWithItems } from '../src/poe.types';
+import { TabWithItems } from '../poe.types.js';
 export const tabs = {
 	quadStd: {
 		id: '5a19ef992a',
@@ -12666,4 +12666,4 @@ export const tabs = {
 		name: 'Q',
 		type: 'QuadStash',
 	},
-} as const satisfies Record<string, TabWithItems>;
+} as unknown as TabWithItems;

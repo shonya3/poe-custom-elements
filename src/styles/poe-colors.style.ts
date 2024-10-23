@@ -1,6 +1,6 @@
-import { css } from 'lit';
+import { css, CSSResult } from 'lit';
 
-export const styles = css`
+export const styles: CSSResult = css`
 	.default {
 		color: #7f7f7f;
 	}

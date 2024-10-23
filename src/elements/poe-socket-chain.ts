@@ -1,9 +1,9 @@
 import { classMap } from 'lit/directives/class-map.js';
-import { LitElement, html, css, TemplateResult, nothing } from 'lit';
+import { LitElement, html, css, TemplateResult, nothing, CSSResult } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import type { Socket, SocketedItem } from '../poe.types';
-import './poe-item-socket';
-import { basePath } from '../lib/base_path';
+import type { Socket, SocketedItem } from '../poe.types.js';
+import './poe-item-socket.js';
+import { basePath } from '../lib/base_path.js';
 
 type SocketLinkDirection = 'left-to-right' | 'top-to-bottom' | 'right-to-left';
 
@@ -63,10 +63,10 @@ export class PoeSocketChainElement extends LitElement {
 		</ul>`;
 	}
 
-	onSocketPointerEnter(socketedItem: SocketedItem | null) {
+	onSocketPointerEnter(socketedItem: SocketedItem | null): void {
 		this.dispatchEvent(new CustomEvent('socketed-item-hover-change', { detail: socketedItem }));
 	}
-	onSocketPointerLeave() {
+	onSocketPointerLeave(): void {
 		this.dispatchEvent(new CustomEvent('socketed-item-hover-change', { detail: null }));
 	}
 
@@ -100,7 +100,7 @@ export class PoeSocketChainElement extends LitElement {
 		}
 	}
 
-	static styles = css`
+	static styles: CSSResult = css`
 		* {
 			padding: 0;
 			margin: 0;

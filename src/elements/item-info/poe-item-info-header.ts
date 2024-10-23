@@ -1,11 +1,11 @@
-import { poeColorsCssVariables } from './../../styles/poe-colors-vars.style';
-import { styles as poeColorsStyles } from '../../styles/poe-colors.style';
-import { LitElement, html, css, TemplateResult, PropertyValueMap } from 'lit';
+import { poeColorsCssVariables } from './../../styles/poe-colors-vars.style.js';
+import { styles as poeColorsStyles } from '../../styles/poe-colors.style.js';
+import { LitElement, html, css, TemplateResult, PropertyValueMap, CSSResult } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import type { FrameKind, PoeItem } from '../../poe.types';
+import type { FrameKind, PoeItem } from '../../poe.types.js';
 import { classMap } from 'lit/directives/class-map.js';
-import { basePath } from '../../lib/base_path';
-import { frameKind } from '../../lib/internal';
+import { basePath } from '../../lib/base_path.js';
+import { frameKind } from '../../lib/internal.js';
 
 @customElement('poe-item-info-header')
 export class PoeItemInfoHeaderElement extends LitElement {
@@ -46,7 +46,7 @@ export class PoeItemInfoHeaderElement extends LitElement {
 		</header>`;
 	}
 
-	static styles = css`
+	static styles: CSSResult = css`
 		${poeColorsStyles}
 
 		* {

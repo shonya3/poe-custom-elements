@@ -1,12 +1,12 @@
-import { LitElement, html, css, nothing } from 'lit';
+import { LitElement, html, css, nothing, CSSResult, TemplateResult } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import type { Requirement } from '../../poe.types';
+import type { Requirement } from '../../poe.types.js';
 
 @customElement('poe-item-info-requirements')
 export class PoeItemInfoRequirementsElement extends LitElement {
 	@property({ type: Array }) requirements: Requirement[] = [];
 
-	protected render() {
+	protected render(): TemplateResult {
 		return html`Requires
 		${this.requirements.map((requirement, index) => {
 			switch (requirement.displayMode) {
@@ -34,7 +34,7 @@ export class PoeItemInfoRequirementsElement extends LitElement {
 		})}`;
 	}
 
-	static styles = css`
+	static styles: CSSResult = css`
 		* {
 			padding: 0;
 			margin: 0;

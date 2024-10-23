@@ -1,6 +1,6 @@
-import { PoeItem } from '../src/poe.types';
+import { PoeItem } from '../poe.types.js';
 
-export const influence = {
+export const influence: PoeItem = {
 	baseType: 'Agate Amulet',
 	explicitMods: [
 		'Grants Level 22 Determination Skill',

@@ -1,5 +1,5 @@
-import { TabWithItems } from '../../src/poe.types';
-export const blight = {
+import { TabWithItems } from '../../poe.types.js';
+export const blight: TabWithItems = {
 	id: 'a7e78f8a20',
 	index: 91,
 	items: [

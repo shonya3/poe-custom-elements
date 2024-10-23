@@ -1,4 +1,4 @@
-import { PoeItem } from '../src/poe.types';
+import { PoeItem } from '../poe.types.js';
 
 export const rogueMarkers = {
 	baseType: "Rogue's Marker",

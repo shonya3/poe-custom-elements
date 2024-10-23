@@ -1,3 +1,2 @@
-import { findCardBySlug } from './elements/divination-card/data';
-
-console.log(findCardBySlug('love-through-ice'));
+import './app-root.js';
+document.body.innerHTML = '<app-root></app-root>';

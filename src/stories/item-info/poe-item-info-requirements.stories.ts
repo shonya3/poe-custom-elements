@@ -1,18 +1,21 @@
-import { Meta } from '@storybook/web-components';
-import { PoeItemInfoRequirementsElement } from '../../elements/item-info/poe-item-info-requirements';
-import { Requirement } from '../../poe.types';
+import { Meta, StoryObj } from '@storybook/web-components';
+import { PoeItemInfoRequirementsElement } from '../../elements/item-info/poe-item-info-requirements.js';
+import { Requirement } from '../../poe.types.js';
 import { html } from 'lit';
 import '../../elements/item-info/poe-item-info-requirements';
 
-export default {
+type Args = { requirements: Array<Requirement> };
+
+const meta: Meta<PoeItemInfoRequirementsElement> = {
 	title: 'Components/item-info/poe-item-info-requirements',
 	component: 'poe-item-info-requirements',
 	decorators: [story => html`<div style="padding:2rem;background-color: black">${story()}</div>`],
-	render: (args: { requirements: Array<Requirement> }) =>
+	render: (args: Args) =>
 		html`<poe-item-info-requirements .requirements=${args.requirements}></poe-item-info-requirements>`,
-} satisfies Meta<PoeItemInfoRequirementsElement>;
+};
+export default meta;
 
-export const Default = {
+export const Default: StoryObj<Args> = {
 	args: {
 		requirements: [
 			{

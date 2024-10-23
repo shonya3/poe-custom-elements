@@ -1,5 +1,5 @@
-import { TabWithItems } from '../../src/poe.types';
-export const quadStd = {
+import { TabWithItems } from '../../poe.types.js';
+export const quadStd: TabWithItems = {
 	id: '5a19ef992a',
 	index: 1,
 	items: [
@@ -12538,4 +12538,4 @@ export const quadStd = {
 	metadata: { colour: 'bf0000' },
 	name: 'Q',
 	type: 'QuadStash',
-} as const satisfies TabWithItems;
+} as unknown as TabWithItems;

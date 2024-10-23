@@ -1,8 +1,8 @@
-import { LitElement, html, css, TemplateResult } from 'lit';
+import { LitElement, html, css, TemplateResult, CSSResult } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import type { SocketKind, SocketedItem } from '../poe.types';
-import { basePath } from '../lib/base_path';
-import { capitalize } from '../lib/internal';
+import type { SocketKind, SocketedItem } from '../poe.types.js';
+import { basePath } from '../lib/base_path.js';
+import { capitalize } from '../lib/internal.js';
 
 /**
  * @cssprop --cell-size - Size of one tab cell in pixels.
@@ -60,7 +60,7 @@ export class PoeItemSocketElement extends LitElement {
 		return `url('${basePath()}/poe-images/${name(this.kind)}.png')`;
 	}
 
-	static styles = css`
+	static styles: CSSResult = css`
 		:host {
 			--background-image: '(computed) Image of empty or full socket';
 			display: inline-block;

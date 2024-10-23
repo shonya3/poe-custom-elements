@@ -1,7 +1,7 @@
-import { LitElement, PropertyValueMap, css } from 'lit';
+import { CSSResult, LitElement, PropertyValueMap, css } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import type { FrameKind } from '../../poe.types';
-import { basePath } from '../../lib/base_path';
+import type { FrameKind } from '../../poe.types.js';
+import { basePath } from '../../lib/base_path.js';
 
 @customElement('poe-item-info-separator')
 export class PoeItemInfoSeparatorElement extends LitElement {
@@ -17,7 +17,7 @@ export class PoeItemInfoSeparatorElement extends LitElement {
 		}
 	}
 
-	static styles = css`
+	static styles: CSSResult = css`
 		* {
 			padding: 0;
 			margin: 0;

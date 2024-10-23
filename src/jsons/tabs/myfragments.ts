@@ -1,5 +1,5 @@
-import { TabWithItems } from '../../src/poe.types';
-export const fragments = {
+import { TabWithItems } from '../../poe.types.js';
+export const fragments: TabWithItems = {
 	id: 'de18d4e8fc',
 	index: 7,
 	items: [

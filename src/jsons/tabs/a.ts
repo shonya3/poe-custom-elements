@@ -1,4 +1,4 @@
-import { TabWithItems } from '../../src/poe.types';
+import { TabWithItems } from '../../poe.types.js';
 export const a = {
 	id: 'b6ffb9167c',
 	index: 0,

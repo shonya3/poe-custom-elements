@@ -1,10 +1,10 @@
 import { classMap } from 'lit/directives/class-map.js';
-import { html, PropertyValues, nothing, LitElement, TemplateResult } from 'lit';
+import { html, PropertyValues, nothing, LitElement, TemplateResult, CSSResult } from 'lit';
 import { html as staticHtml, unsafeStatic } from 'lit/static-html.js';
 import { customElement, property, state } from 'lit/decorators.js';
-import { cardElementData } from './data';
-import { styles } from './divination-card.styles';
-import { basePath } from '../../lib/base_path';
+import { cardElementData } from './data.js';
+import { styles } from './divination-card.styles.js';
+import { basePath } from '../../lib/base_path.js';
 
 /**
  * @summary Divination Card
@@ -117,7 +117,7 @@ export class DivinationCardElement extends LitElement {
 	#dispatchNavigate() {
 		this.dispatchEvent(new Event('navigate'));
 	}
-	static override styles = styles;
+	static override styles: CSSResult = styles;
 }
 
 export type CardSize = (typeof CARD_SIZE_VARIANTS)[number];

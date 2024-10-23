@@ -1,6 +1,6 @@
-import { css } from 'lit';
+import { css, CSSResult } from 'lit';
 
-export const poeColorsCssVariables = css`
+export const poeColorsCssVariables: CSSResult = css`
 	--flavour-text-color: rgba(167, 90, 27, 1);
 	--item-normal: 0, 0%, 78%;
 	--item-rare: 60, 100%, 73%;

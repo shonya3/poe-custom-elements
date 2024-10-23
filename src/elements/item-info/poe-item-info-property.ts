@@ -1,8 +1,8 @@
-import { LitElement, html, css, TemplateResult, nothing } from 'lit';
+import { LitElement, html, css, TemplateResult, nothing, CSSResult } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import type { ItemProperty } from '../../poe.types';
+import type { ItemProperty } from '../../poe.types.js';
 import { classMap } from 'lit/directives/class-map.js';
-import { parseDisplayMode3 } from '../../lib/internal';
+import { parseDisplayMode3 } from '../../lib/internal.js';
 
 @customElement('poe-item-info-property')
 export class PoeItemInfoPropertyElement extends LitElement {
@@ -16,7 +16,7 @@ export class PoeItemInfoPropertyElement extends LitElement {
 		return html`<div class="property">${Values(this.property)}</div>`;
 	}
 
-	static styles = css`
+	static styles: CSSResult = css`
 		* {
 			padding: 0;
 			margin: 0;

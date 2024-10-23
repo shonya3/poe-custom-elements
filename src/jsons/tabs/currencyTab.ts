@@ -1,5 +1,5 @@
-import { TabWithItems } from '../../src/poe.types';
-export const currencyTab = {
+import { TabWithItems } from '../../poe.types.js';
+export const currencyTab: TabWithItems = {
 	id: '822656b9c8',
 	index: 4,
 	items: [

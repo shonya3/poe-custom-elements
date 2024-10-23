@@ -1,5 +1,5 @@
-import { FrameKind, ItemProperty } from '../poe.types';
-import { basePath } from './base_path';
+import { FrameKind, ItemProperty } from '../poe.types.js';
+import { basePath } from './base_path.js';
 
 /** https://www.pathofexile.com/developer/docs/reference#type-FrameType */
 export function frameKind(frameType: number): FrameKind | null {
@@ -53,7 +53,7 @@ export function parseDisplayMode3<T>(property: ItemProperty, mapFn?: (val: strin
 	return mapFn ? result : result.join('');
 }
 
-export function appendFontinStyle() {
+export function appendFontinStyle(): void {
 	const style = document.querySelector('style[data-description="poe-custom-elements-font"]');
 	if (!style) {
 		document.head.insertAdjacentHTML(

@@ -11,6 +11,6 @@ export function setBasePath(path: string): void {
  * The base path is used to load assets such as icons and images.
  * @returns Base path. For example, '/poe-ce-assets'
  */
-export function basePath() {
+export function basePath(): string {
 	return _basePath;
 }

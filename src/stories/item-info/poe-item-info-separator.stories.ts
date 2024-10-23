@@ -1,10 +1,10 @@
 import { Meta } from '@storybook/web-components';
-import { PoeItemInfoSeparatorElement } from '../../elements/item-info/poe-item-info-separator';
+import { PoeItemInfoSeparatorElement } from '../../elements/item-info/poe-item-info-separator.js';
 import { html } from 'lit';
-import { FRAME_KIND_VARIANTS, FrameKind } from '../../poe.types';
+import { FRAME_KIND_VARIANTS, FrameKind } from '../../poe.types.js';
 import '../../elements/item-info/poe-item-info-separator';
 
-export default {
+const meta: Meta<PoeItemInfoSeparatorElement> = {
 	title: 'Components/item-info/poe-item-info-separator',
 	component: 'poe-item-info-separator',
 	args: {
@@ -17,6 +17,7 @@ export default {
 		},
 	},
 	render: (args: { kind: FrameKind }) => html`<poe-item-info-separator kind=${args.kind}></poe-item-info-separator>`,
-} satisfies Meta<PoeItemInfoSeparatorElement>;
+};
+export default meta;
 
 export const Default = {};

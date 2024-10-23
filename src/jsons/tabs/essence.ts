@@ -1,6 +1,6 @@
-import { TabWithItems } from '../../src/poe.types';
+import { TabWithItems } from '../../poe.types.js';
 
-export const essence = {
+export const essence: TabWithItems = {
 	id: '8f493e641b',
 	index: 12,
 	items: [

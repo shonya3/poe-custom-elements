@@ -1,35 +1,35 @@
-import { maxedStackSize } from '../jsons/maxedStackSize';
-import { divination } from './../jsons/tabs/divination';
-import { fragments } from './../jsons/tabs/myfragments';
-import { blight } from './../jsons/tabs/blight';
-import { essence } from './../jsons/tabs/essence';
-import { influence } from './../jsons/influence';
-import { fracturedGloves } from '../jsons/fracturedGloves';
-import { socketed } from './../jsons/socketed';
-import { rogueMarkers } from './../jsons/rogueMarkers';
-import { allflame } from './../jsons/allflame';
-import { elementalBow } from './../jsons/elementalBow';
-import { LitElement, html, css, TemplateResult } from 'lit';
+import { maxedStackSize } from './jsons/maxedStackSize.js';
+import { divination } from './jsons/tabs/divination.js';
+import { fragments } from './jsons/tabs/myfragments.js';
+import { blight } from './jsons/tabs/blight.js';
+import { essence } from './jsons/tabs/essence.js';
+import { influence } from './jsons/influence.js';
+import { fracturedGloves } from './jsons/fracturedGloves.js';
+import { socketed } from './jsons/socketed.js';
+import { rogueMarkers } from './jsons/rogueMarkers.js';
+import { allflame } from './jsons/allflame.js';
+import { elementalBow } from './jsons/elementalBow.js';
+import { LitElement, html, css, TemplateResult, CSSResult } from 'lit';
 import { customElement, state } from 'lit/decorators.js';
-import type { PoeItem } from './poe.types';
-import './elements/poe-item';
-import './elements/poe-stash-tab';
-import './elements/item-info/poe-item-info';
-import './elements/item-info/poe-item-info-header';
-import { TabWithItems } from './poe.types';
-import quadJson from '../jsons/QuadStash.json';
-import premJson from '../jsons/PremiumStash.json';
-import influenceJson from '../jsons/influence.json';
-import garbageJson from '../jsons/garbage.json';
-import { a as aTab } from '../jsons/tabs/a';
-import { quadStd } from '../jsons/tabs/quadStd';
-import { currencyTab } from '../jsons/tabs/currencyTab';
+import type { PoeItem } from './poe.types.js';
+import './elements/poe-item.js';
+import './elements/poe-stash-tab.js';
+import './elements/item-info/poe-item-info.js';
+import './elements/item-info/poe-item-info-header.js';
+import { TabWithItems } from './poe.types.js';
+import quadJson from './jsons/QuadStash.json';
+import premJson from './jsons/PremiumStash.json';
+import influenceJson from './jsons/influence.json';
+import garbageJson from './jsons/garbage.json';
+import { a as aTab } from './jsons/tabs/a.js';
+import { quadStd } from './jsons/tabs/quadStd.js';
+import { currencyTab } from './jsons/tabs/currencyTab.js';
 
 @customElement('app-root')
 export class AppRoot extends LitElement {
 	@state() quad = quadJson as TabWithItems;
 	@state() prem = premJson as TabWithItems;
-	@state() item = item();
+	@state() item: PoeItem = item();
 	@state() influenceTab = influenceJson as TabWithItems;
 	@state() garbageTab = garbageJson as TabWithItems;
 
@@ -37,7 +37,7 @@ export class AppRoot extends LitElement {
 		return html`<poe-item .item=${maxedStackSize}></poe-item>`;
 	}
 
-	protected Items() {
+	protected Items(): TemplateResult {
 		return html` <poe-item .item=${aTab.items!.find(i => i.baseType === 'Plated Maul')!}></poe-item>
 			<poe-item .item=${socketed}></poe-item>
 			<poe-item .item=${aTab.items!.find(i => i.baseType === 'Plated Maul')!}></poe-item>
@@ -64,7 +64,7 @@ export class AppRoot extends LitElement {
 		`;
 	}
 
-	protected ItemInfos() {
+	protected ItemInfos(): TemplateResult {
 		return html`<poe-item-info .item=${influence}></poe-item-info>
 			<poe-item-info .item=${socketed}></poe-item-info>
 			<poe-item-info .item=${allflame}></poe-item-info>
@@ -72,7 +72,7 @@ export class AppRoot extends LitElement {
 			<poe-item-info .item=${aTab.items!.find(i => i.baseType === 'Plated Maul')!}></poe-item-info>`;
 	}
 
-	static styles = css`
+	static styles: CSSResult = css`
 		* {
 			padding: 0;
 			margin: 0;

@@ -1,6 +1,7 @@
 import { Meta } from '@storybook/web-components';
-import { PoeItemInfoPropertyElement } from '../../elements/item-info/poe-item-info-property';
+import { PoeItemInfoPropertyElement } from '../../elements/item-info/poe-item-info-property.js';
 
-export default {
+const meta: Meta<PoeItemInfoPropertyElement> = {
 	component: 'poe-item-property',
-} satisfies Meta<PoeItemInfoPropertyElement>;
+};
+export default meta;

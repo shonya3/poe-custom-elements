@@ -1,11 +1,11 @@
-import { LitElement, html, css, TemplateResult } from 'lit';
+import { LitElement, html, css, TemplateResult, CSSResult } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
 @customElement('tooltip-json-icon')
 export class JsonIconElement extends LitElement {
 	@property({ type: Boolean, reflect: true }) showing = false;
 
-	showWithAutohide() {
+	showWithAutohide(): void {
 		this.showing = true;
 		setTimeout(() => {
 			this.showing = false;
@@ -23,7 +23,7 @@ export class JsonIconElement extends LitElement {
 		`;
 	}
 
-	static styles = css`
+	static styles: CSSResult = css`
 		* {
 			padding: 0;
 			margin: 0;

@@ -51,7 +51,7 @@
 	},
 	"scripts": {
 		"dev": "vite",
-		"build": "pnpm tsup",
+		"build": "tsc",
 		"lint": "lit-analyzer --strict --rules.no-invalid-css off && tsc --noEmit",
 		"ci": "pnpm run lint && pnpm run build",
 		"release": "pnpm run lint && pnpm run build && changeset publish",
@@ -78,7 +78,6 @@
 		"chromatic": "^11.5.5",
 		"lit-analyzer": "^2.0.3",
 		"storybook": "^8.2.2",
-		"tsup": "^8.1.0",
 		"typescript": "^5.5.3",
 		"vite": "^5.3.3",
 		"wc-storybook-helpers": "^2.0.2"

@@ -1,10 +1,10 @@
-import { LitElement, html, css, TemplateResult, nothing } from 'lit';
+import { LitElement, html, css, TemplateResult, nothing, CSSResult } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import type { ItemProperty, PoeItem, Requirement } from '../../poe.types';
-import './poe-item-info-separator';
-import './poe-item-info-property';
-import './poe-item-info-requirements';
-import { frameKind } from '../../lib/internal';
+import type { ItemProperty, PoeItem, Requirement } from '../../poe.types.js';
+import './poe-item-info-separator.js';
+import './poe-item-info-property.js';
+import './poe-item-info-requirements.js';
+import { frameKind } from '../../lib/internal.js';
 
 @customElement('poe-item-info-content')
 export class PoeItemInfoContentElement extends LitElement {
@@ -106,7 +106,7 @@ export class PoeItemInfoContentElement extends LitElement {
 		return this.item.fracturedMods ?? [];
 	}
 
-	static styles = css`
+	static styles: CSSResult = css`
 		* {
 			padding: 0;
 			margin: 0;

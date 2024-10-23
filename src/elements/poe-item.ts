@@ -1,15 +1,15 @@
-import { LitElement, html, css, TemplateResult, PropertyValueMap, nothing, render } from 'lit';
+import { LitElement, html, css, TemplateResult, PropertyValueMap, nothing, render, CSSResult } from 'lit';
 import { customElement, property, query, state } from 'lit/decorators.js';
-import type { Influence, ItemProperty, PoeItem, Requirement, Socket, SocketedItem } from '../poe.types';
-import './poe-socket-chain';
+import type { Influence, ItemProperty, PoeItem, Requirement, Socket, SocketedItem } from '../poe.types.js';
+import './poe-socket-chain.js';
 import { classMap } from 'lit/directives/class-map.js';
-import { SimpleTooltip } from './simple-tooltip';
-import './simple-tooltip';
-import './tooltip-json-icon';
-import './item-info/poe-item-info';
-import { JsonIconElement } from './tooltip-json-icon';
-import { appendFontinStyle, capitalize, frameKind, parseDisplayMode3 } from '../lib/internal';
-import { basePath } from '../lib/base_path';
+import { SimpleTooltip } from './simple-tooltip.js';
+import './simple-tooltip.js';
+import './tooltip-json-icon.js';
+import './item-info/poe-item-info.js';
+import { JsonIconElement } from './tooltip-json-icon.js';
+import { appendFontinStyle, capitalize, frameKind, parseDisplayMode3 } from '../lib/internal.js';
+import { basePath } from '../lib/base_path.js';
 
 /**
  * @cssprop --cell-size            - Size of one tab cell in pixels.
@@ -66,7 +66,7 @@ export class PoeItemElement extends LitElement {
 		}
 	}
 
-	get tooltipElement() {
+	get tooltipElement(): SimpleTooltip | null {
 		const next = this.nextElementSibling;
 		if (next instanceof SimpleTooltip) {
 			return next;
@@ -201,7 +201,7 @@ export class PoeItemElement extends LitElement {
 		window.removeEventListener('keydown', this.onHoverCtrlCClick);
 	}
 
-	static styles = css`
+	static styles: CSSResult = css`
 		* {
 			padding: 0;
 			margin: 0;
@@ -289,7 +289,7 @@ function influencesBackgroundVar(item: PoeItem): string {
 	if (!item.influences) {
 		return '';
 	}
-	const influences = Object.keys(item.influences);
+	const influences = Object.keys(item.influences) as Array<Influence>;
 	const influenceImageUrl = (influence: Influence) => {
 		switch (influence) {
 			case 'shaper':
@@ -309,7 +309,7 @@ export class ItemIntoTextTransformer {
 		this.item = item;
 	}
 
-	transform() {
+	transform(): string {
 		return [
 			[
 				this.item.rarity ? `Rarity: ${this.item.rarity}` : '',
@@ -341,7 +341,7 @@ export class ItemIntoTextTransformer {
 			.join('');
 	}
 
-	groupSockets() {
+	groupSockets(): void {
 		Object.values(Object.groupBy(this.sockets, socket => socket.group))
 			.flatMap((s = []) => s.map(({ sColour }) => sColour).join('-'))
 			.map(s => {
