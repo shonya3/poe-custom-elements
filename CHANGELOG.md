@@ -1,5 +1,11 @@
 # poe-custom-elements
 
+## 0.3.13
+
+### Patch Changes
+
+- 8e18ad6: update lit to 3.2.1
+
 ## 0.3.12
 
 ### Patch Changes
