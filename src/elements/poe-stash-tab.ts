@@ -91,7 +91,7 @@ export class PoeStashTabElement extends LitElement {
 						type="text"
 						.value=${this.search_query_for_divination_stash}
 						@input=${this.#handleDivinationCardsQueryInput}
-					/>`
+				  />`
 				: null}
 		`;
 	}
@@ -123,6 +123,9 @@ export class PoeStashTabElement extends LitElement {
 			return;
 		}
 
+		// Prevent outer scrolling when the arrow keys are pressed while focus is inside the stash tab.
+		e.preventDefault();
+
 		const direction = e.code.slice(5).toLowerCase() as Direction;
 		const item = await find_closest_item_element({
 			active_item,
@@ -136,8 +139,6 @@ export class PoeStashTabElement extends LitElement {
 		}
 
 		item.focus();
-		// Prevent outer scrolling when the arrow keys are pressed while focus is inside the stash tab.
-		e.preventDefault();
 	};
 
 	static styles: CSSResult = css`
