@@ -2,7 +2,7 @@
 	"name": "poe-custom-elements",
 	"description": "Path of Exile custom elements",
 	"private": false,
-	"version": "0.3.13",
+	"version": "0.3.14",
 	"type": "module",
 	"license": "MIT",
 	"keywords": [
