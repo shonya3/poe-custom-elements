@@ -1,5 +1,11 @@
 # poe-custom-elements
 
+## 0.3.14
+
+### Patch Changes
+
+- b2e0b7d: stash-tab: prevent outer scrolling before next item check.
+
 ## 0.3.13
 
 ### Patch Changes
