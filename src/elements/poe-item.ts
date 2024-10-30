@@ -27,7 +27,7 @@ export class PoeItemElement extends LitElement {
 	 *  If set to false, sockets are only visible when the Alt key is pressed or when hovered over.
 	 */
 	@property({ type: Boolean, reflect: true, attribute: 'always-show-sockets' }) alwaysShowSockets = false;
-	/** Whether an item is displayed in inventory or stash tab. It gets blue background, if yes */
+	/** Whether an item is displayed in inventory(or stash tab) or not. It gets blue background, if yes */
 	@property({ type: Boolean }) placed = false;
 
 	/** Main visibility state for sockets */
@@ -89,7 +89,7 @@ export class PoeItemElement extends LitElement {
 						.socketedItems=${this.item.socketedItems}
 						.sockets=${this.item.sockets}
 						.w=${this.item.w}
-					></poe-socket-chain>`
+				  ></poe-socket-chain>`
 				: nothing}
 			${this.item.stackSize
 				? html`<p
@@ -99,9 +99,9 @@ export class PoeItemElement extends LitElement {
 								frameKind(this.item.frameType) === 'divination' &&
 								this.item.stackSize === this.item.maxStackSize,
 						})}
-					>
+				  >
 						${this.item.stackSizeText || this.item.stackSize}
-					</p>`
+				  </p>`
 				: nothing}
 		`;
 	}
@@ -247,23 +247,9 @@ export class PoeItemElement extends LitElement {
 			position: absolute;
 			top: -1px;
 			left: 5%;
-			text-shadow:
-				-1px -1px 0 #000,
-				0 -1px 0 #000,
-				1px -1px 0 #000,
-				1px 0 0 #000,
-				1px 1px 0 #000,
-				0 1px 0 #000,
-				-1px 1px 0 #000,
-				-1px 0 0 #000,
-				-1px -1px 3px #000,
-				0 -1px 3px #000,
-				1px -1px 0 #000,
-				1px 0 3px #000,
-				1px 1px 3px #000,
-				0 1px 3px #000,
-				-1px 1px 3px #000,
-				-1px 0 3px #000;
+			text-shadow: -1px -1px 0 #000, 0 -1px 0 #000, 1px -1px 0 #000, 1px 0 0 #000, 1px 1px 0 #000, 0 1px 0 #000,
+				-1px 1px 0 #000, -1px 0 0 #000, -1px -1px 3px #000, 0 -1px 3px #000, 1px -1px 0 #000, 1px 0 3px #000,
+				1px 1px 3px #000, 0 1px 3px #000, -1px 1px 3px #000, -1px 0 3px #000;
 			pointer-events: none;
 		}
 		.maxed {
@@ -294,7 +280,9 @@ function influencesBackgroundVar(item: PoeItem): string {
 		switch (influence) {
 			case 'shaper':
 			case 'elder':
-				return `url(${basePath()}/poe-images/${capitalize(influence)}Backgroundw${item.w}h${item.h}.png) no-repeat`;
+				return `url(${basePath()}/poe-images/${capitalize(influence)}Backgroundw${item.w}h${
+					item.h
+				}.png) no-repeat`;
 			default:
 				return '';
 		}
