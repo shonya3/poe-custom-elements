@@ -3,7 +3,7 @@
 Path of Exile custom elements
 
 
-[Demo](https://66814e0dfc8ca03582714c6c--sparkling-sunburst-2dd5be.netlify.app/)
+[Demo](https://sparkling-sunburst-2dd5be.netlify.app/)
 
 ```bash
 npm install poe-custom-elements
