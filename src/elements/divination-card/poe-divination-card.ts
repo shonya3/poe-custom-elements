@@ -69,7 +69,7 @@ export class DivinationCardElement extends LitElement {
 					[`divination-card--${this.size}`]: true,
 				})}
 			>
-				<a class="link" @click=${this.#dispatchNavigate} href=${href}></a>
+				<a .ariaLabel=${this.name} class="link" @click=${this.#dispatchNavigate} href=${href}></a>
 				<div class="skeleton"></div>
 				<header
 					class=${classMap({
@@ -80,7 +80,7 @@ export class DivinationCardElement extends LitElement {
 					<a @click=${this.#dispatchNavigate} href=${href}> ${this.name} </a>
 				</header>
 				<div class="imageWrapper">
-					<a @click=${this.#dispatchNavigate} href=${href}>
+					<a .ariaLabel=${this.name} @click=${this.#dispatchNavigate} href=${href}>
 						<img
 							loading="lazy"
 							class="image"
