@@ -5,7 +5,7 @@ import '../elements/poe-stash-tab';
 import { quadStd } from '../jsons/tabs/quadStd.js';
 import { divination } from '../jsons/tabs/divination.js';
 import { TabWithItems } from '../poe.types.js';
-import premiumJson from '../jsons/PremiumStash.json';
+import premiumJson from '../jsons/PremiumStash.json' with {type: 'json'};
 import { essence } from '../jsons/tabs/essence.js';
 import { currencyTab } from '../jsons/tabs/currencyTab.js';
 import { blight } from '../jsons/tabs/blight.js';

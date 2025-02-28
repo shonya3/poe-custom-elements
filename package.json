@@ -2,7 +2,7 @@
 	"name": "poe-custom-elements",
 	"description": "Path of Exile custom elements",
 	"private": false,
-	"version": "0.3.14",
+	"version": "0.3.15",
 	"type": "module",
 	"license": "MIT",
 	"keywords": [
@@ -37,25 +37,25 @@
 		"chromatic": "chromatic --exit-zero-on-changes"
 	},
 	"dependencies": {
-		"@floating-ui/dom": "^1.6.12",
+		"@floating-ui/dom": "^1.6.13",
 		"lit": "^3.2.1"
 	},
 	"devDependencies": {
-		"@changesets/cli": "^2.27.9",
-		"@chromatic-com/storybook": "3.2.2",
-		"@custom-elements-manifest/analyzer": "^0.10.3",
-		"@storybook/addon-essentials": "8.4.3",
-		"@storybook/addon-links": "8.4.3",
-		"@storybook/blocks": "8.4.3",
-		"@storybook/test": "8.4.3",
-		"@storybook/web-components": "8.4.3",
-		"@storybook/web-components-vite": "8.4.3",
-		"@types/node": "^22.9.0",
-		"chromatic": "^11.18.1",
+		"@changesets/cli": "^2.28.1",
+		"@chromatic-com/storybook": "3.2.5",
+		"@custom-elements-manifest/analyzer": "^0.10.4",
+		"@storybook/addon-essentials": "8.6.2",
+		"@storybook/addon-links": "8.6.2",
+		"@storybook/blocks": "8.6.2",
+		"@storybook/test": "8.6.2",
+		"@storybook/web-components": "8.6.2",
+		"@storybook/web-components-vite": "8.6.2",
+		"@types/node": "^22.13.5",
+		"chromatic": "^11.26.1",
 		"lit-analyzer": "^2.0.3",
-		"storybook": "8.4.3",
-		"typescript": "^5.6.3",
-		"vite": "^5.4.11"
+		"storybook": "8.6.2",
+		"typescript": "^5.7.3",
+		"vite": "^6.2.0"
 	},
 	"files": [
 		"./custom-elements.json",

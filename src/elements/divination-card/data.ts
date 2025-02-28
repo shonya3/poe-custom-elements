@@ -1,4 +1,4 @@
-import json from './cardElementData.json';
+import json from './cardElementData.json' with {type: 'json'};;
 export const cardElementData: CardElementData[] = json;
 
 /**
