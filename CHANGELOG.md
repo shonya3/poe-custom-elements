@@ -1,5 +1,11 @@
 # poe-custom-elements
 
+## 0.3.15
+
+### Patch Changes
+
+- 3281bc6: Improve accessibility
+
 ## 0.3.14
 
 ### Patch Changes
