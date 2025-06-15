@@ -1,5 +1,11 @@
 # poe-custom-elements
 
+## 0.3.16
+
+### Patch Changes
+
+- ff5b885: 3.26: Add 5 new cards
+
 ## 0.3.15
 
 ### Patch Changes
