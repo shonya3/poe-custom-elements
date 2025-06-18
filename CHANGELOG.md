@@ -1,5 +1,11 @@
 # poe-custom-elements
 
+## 0.3.17
+
+### Patch Changes
+
+- 9b14c07: update cards data
+
 ## 0.3.16
 
 ### Patch Changes
