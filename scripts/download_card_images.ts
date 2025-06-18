@@ -25,7 +25,7 @@ type CardData = {
 };
 
 async function fetch_poeninja_cards_data(): Promise<Array<CardData>> {
-	const league = 'Standard'; // Update to latest challenge league if not new cards are present
+	const league = 'Mercenaries'; // Update to latest challenge league if not new cards are present
 	const url = `https://poe.ninja/api/data/itemoverview?league=${league}&type=DivinationCard&language=en`;
 	const response = await fetch(url);
 	const obj: { lines: Array<CardData> } = await response.json();
