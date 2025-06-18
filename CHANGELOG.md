@@ -1,5 +1,11 @@
 # poe-custom-elements
 
+## 0.3.18
+
+### Patch Changes
+
+- 89ddb36: add public folder
+
 ## 0.3.17
 
 ### Patch Changes
