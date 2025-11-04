@@ -10,11 +10,12 @@ const IMAGES_DIR_0 = path.join(import.meta.dirname, 'public/images');
 const IMAGES_DIR = path.join(ROOT_DIR, 'public/poe-ce-assets/divination-card/cards/avif');
 
 async function main() {
+	const CURRENT_LEAGUE = 'Keepers'; // Update this to latest league
 	if (!fs.existsSync(IMAGES_DIR)) {
 		await fsPromises.mkdir(IMAGES_DIR, { recursive: true });
 	}
 
-	const poeninja_cards = await fetch_poeninja_cards_data();
+	const poeninja_cards = await fetch_poeninja_cards_data(CURRENT_LEAGUE);
 	poeninja_cards.forEach(download_poecdn_image);
 }
 main();
@@ -24,8 +25,7 @@ type CardData = {
 	artFilename: string;
 };
 
-async function fetch_poeninja_cards_data(): Promise<Array<CardData>> {
-	const league = 'Mercenaries'; // Update to latest challenge league if not new cards are present
+async function fetch_poeninja_cards_data(league: string): Promise<Array<CardData>> {
 	const url = `https://poe.ninja/api/data/itemoverview?league=${league}&type=DivinationCard&language=en`;
 	const response = await fetch(url);
 	const obj: { lines: Array<CardData> } = await response.json();
