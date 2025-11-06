@@ -2,7 +2,7 @@ import json from './cardElementData.json' with {type: 'json'};;
 export const cardElementData: CardElementData[] = json;
 
 /**
- * https://github.com/shonya3/divicards/tree/main/card_element
+ * https://github.com/shonya3/divicards/tree/main/crates/card_element
  */
 export type CardElementData = {
 	slug: string;
