@@ -1,5 +1,11 @@
 # poe-custom-elements
 
+## 0.3.20
+
+### Patch Changes
+
+- 8550684: add Outfoxed card image
+
 ## 0.3.19
 
 ### Patch Changes
