@@ -41,7 +41,8 @@
 		"lit": "3.3.2"
 	},
   "repository": {
-    "url": "https://github.com/shonya3/poe-custom-elements"
+    "type": "git",
+    "url": "https://github.com/shonya3/poe-custom-elements.git"
   },
 	"devDependencies": {
 		"@changesets/cli": "2.30",
