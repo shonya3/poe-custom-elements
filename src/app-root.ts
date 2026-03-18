@@ -1,4 +1,4 @@
-import { maxedStackSize } from './jsons/maxedStackSize.js';
+// import { maxedStackSize } from './jsons/maxedStackSize.js';
 import { divination } from './jsons/tabs/divination.js';
 import { fragments } from './jsons/tabs/myfragments.js';
 import { blight } from './jsons/tabs/blight.js';
@@ -17,10 +17,10 @@ import './elements/poe-stash-tab.js';
 import './elements/item-info/poe-item-info.js';
 import './elements/item-info/poe-item-info-header.js';
 import { TabWithItems } from './poe.types.js';
-import quadJson from './jsons/QuadStash.json' with {type: 'json'};
-import premJson from './jsons/PremiumStash.json' with {type: 'json'};
-import influenceJson from './jsons/influence.json' with {type: 'json'};
-import garbageJson from './jsons/garbage.json' with {type: 'json'};
+import quadJson from './jsons/QuadStash.json' with { type: 'json' };
+import premJson from './jsons/PremiumStash.json' with { type: 'json' };
+import influenceJson from './jsons/influence.json' with { type: 'json' };
+import garbageJson from './jsons/garbage.json' with { type: 'json' };
 import { a as aTab } from './jsons/tabs/a.js';
 import { quadStd } from './jsons/tabs/quadStd.js';
 import { currencyTab } from './jsons/tabs/currencyTab.js';
@@ -34,7 +34,8 @@ export class AppRoot extends LitElement {
 	@state() garbageTab = garbageJson as TabWithItems;
 
 	protected render(): TemplateResult {
-		return html`<poe-item .item=${maxedStackSize}></poe-item>`;
+		return html`<poe-divination-card name="The Silly Boy"></poe-divination-card>`;
+		// return html`<poe-item .item=${maxedStackSize}></poe-item>`;
 	}
 
 	protected Items(): TemplateResult {

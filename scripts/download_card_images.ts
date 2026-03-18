@@ -10,7 +10,7 @@ const IMAGES_DIR_0 = path.join(import.meta.dirname, 'public/images');
 const IMAGES_DIR = path.join(ROOT_DIR, 'public/poe-ce-assets/divination-card/cards/avif');
 
 async function main() {
-	const CURRENT_LEAGUE = 'Keepers'; // Update this to latest league
+	const CURRENT_LEAGUE = 'Mirage'; // Update this to latest league
 	if (!fs.existsSync(IMAGES_DIR)) {
 		await fsPromises.mkdir(IMAGES_DIR, { recursive: true });
 	}
