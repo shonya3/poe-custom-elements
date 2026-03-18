@@ -1,5 +1,11 @@
 # poe-custom-elements
 
+## 0.4.0
+
+### Minor Changes
+
+- 79b6dcb: Add 3.28 cards
+
 ## 0.3.20
 
 ### Patch Changes
