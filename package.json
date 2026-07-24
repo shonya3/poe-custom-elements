@@ -40,10 +40,10 @@
 		"@floating-ui/dom": "1.7.6",
 		"lit": "3.3.2"
 	},
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/shonya3/poe-custom-elements.git"
-  },
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/shonya3/poe-custom-elements.git"
+	},
 	"devDependencies": {
 		"@changesets/cli": "2.30",
 		"@chromatic-com/storybook": "3.2.6",
