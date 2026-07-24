@@ -71,5 +71,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "customElements": "./custom-elements.json",
+  "customElements": "./custom-elements.json"
 }
