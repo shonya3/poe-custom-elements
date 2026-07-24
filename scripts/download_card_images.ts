@@ -19,7 +19,7 @@ const CONCURRENCY = 16;
 process.env.UV_THREADPOOL_SIZE = CONCURRENCY.toString();
 const ROOT_DIR = path.resolve(import.meta.dirname, '..');
 const POE_CDN_CARDS = 'https://web.poecdn.com/image/divination-card';
-const IMAGES_DIR = path.join(ROOT_DIR, 'testimages');
+const IMAGES_DIR = path.join(ROOT_DIR, 'public/poe-ce-assets/divination-card/cards/avif');
 const CARD_DATA_PATH = path.resolve(ROOT_DIR, '../dump/out/cardElementData.json');
 
 type CardElement = v.InferOutput<typeof CardElementSchema>[number];

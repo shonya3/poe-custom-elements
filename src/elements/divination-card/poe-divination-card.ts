@@ -54,7 +54,7 @@ export class DivinationCardElement extends LitElement {
 				this.flavourText = cardData.flavourText;
 				this.artFilename = cardData.artFilename;
 				this.rewardHtml = cardData.rewardHtml;
-				this.dropLevel = cardData.dropLevel.label;
+				this.dropLevel = `${cardData.minLevel}+`;
 				this.slug = cardData.slug;
 			}
 		}
