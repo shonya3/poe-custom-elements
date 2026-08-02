@@ -34,7 +34,7 @@ export class AppRoot extends LitElement {
 	@state() garbageTab = garbageJson as TabWithItems;
 
 	protected render(): TemplateResult {
-		return html`<poe-divination-card name="The Silly Boy"></poe-divination-card>`;
+		return html`<poe-divination-card name="Energy Sword"></poe-divination-card>`;
 		// return html`<poe-item .item=${maxedStackSize}></poe-item>`;
 	}
 
