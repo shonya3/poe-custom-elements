@@ -1,5 +1,11 @@
 # poe-custom-elements
 
+## 0.5.0
+
+### Minor Changes
+
+- 3a2a58a: 3.29
+
 ## 0.4.0
 
 ### Minor Changes
