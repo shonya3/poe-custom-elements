@@ -1,5 +1,11 @@
 # poe-custom-elements
 
+## 0.6.0
+
+### Minor Changes
+
+- 2c23de6: Update implicitMods/explicitMods types from string[] to ItemMod[] to match PoE API 3.29.0. Fix tooltip rendering for mod descriptions.
+
 ## 0.5.0
 
 ### Minor Changes
