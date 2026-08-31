@@ -1,6 +1,6 @@
 import { LitElement, html, css, TemplateResult, PropertyValueMap, nothing, render, CSSResult } from 'lit';
 import { customElement, property, query, state } from 'lit/decorators.js';
-import type { Influence, ItemProperty, PoeItem, Requirement, Socket, SocketedItem } from '../poe.types.js';
+import type { Influence, ItemMod, ItemProperty, PoeItem, Requirement, Socket, SocketedItem } from '../poe.types.js';
 import './poe-socket-chain.js';
 import { classMap } from 'lit/directives/class-map.js';
 import { SimpleTooltip } from './simple-tooltip.js';
@@ -318,9 +318,9 @@ export class ItemIntoTextTransformer {
 						.join(' ')}`
 				: '',
 			this.enchantments.length ? this.enchantments.join('\n') : '',
-			this.implicits.length ? this.implicits.join('\n') : '',
+			this.implicits.length ? this.implicits.map(imp => imp.description).join('\n') : '',
 			this.fracturedMods.length || this.explicits.length || this.crafts.length
-				? [...this.fracturedMods, ...this.explicits, ...this.crafts].join('\n')
+				? [...this.fracturedMods, ...this.explicits.map(exp => exp.description), ...this.crafts].join('\n')
 				: '',
 			this.item.identified ? '' : 'Unidentified',
 		]
@@ -355,11 +355,11 @@ export class ItemIntoTextTransformer {
 		return this.item.requirements ?? [];
 	}
 
-	get implicits(): Array<string> {
+	get implicits(): Array<ItemMod> {
 		return this.item.implicitMods ?? [];
 	}
 
-	get explicits(): Array<string> {
+	get explicits(): Array<ItemMod> {
 		return this.item.explicitMods ?? [];
 	}
 

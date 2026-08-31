@@ -6,7 +6,7 @@ export const currencyTab: TabWithItems = {
 		{
 			baseType: 'Orb of Alteration',
 			descrText: 'Right click this item then left click a magic item to apply it.',
-			explicitMods: ['Reforges a magic item with new random modifiers'],
+			explicitMods: [{ description: 'Reforges a magic item with new random modifiers' }],
 			frameType: 5,
 			h: 1,
 			icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lSZXJvbGxNYWdpYyIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/28212545fd/CurrencyRerollMagic.png',
@@ -29,7 +29,7 @@ export const currencyTab: TabWithItems = {
 			baseType: "Jeweller's Orb",
 			descrText:
 				"Right click this item then left click a socketed item to apply it. The item's quality increases the chances of obtaining more sockets.",
-			explicitMods: ['Reforges the number of sockets on an item'],
+			explicitMods: [{ description: 'Reforges the number of sockets on an item' }],
 			frameType: 5,
 			h: 1,
 			icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lSZXJvbGxTb2NrZXROdW1iZXJzIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/685633cb14/CurrencyRerollSocketNumbers.png',
@@ -51,7 +51,7 @@ export const currencyTab: TabWithItems = {
 		{
 			baseType: 'Portal Scroll',
 			descrText: 'Right click on this item to use it.',
-			explicitMods: ['Creates a portal to town'],
+			explicitMods: [{ description: 'Creates a portal to town' }],
 			frameType: 5,
 			h: 1,
 			icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lQb3J0YWwiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/a55c72f398/CurrencyPortal.png',
@@ -73,7 +73,7 @@ export const currencyTab: TabWithItems = {
 		{
 			baseType: 'Orb of Transmutation',
 			descrText: 'Right click this item then left click a normal item to apply it.',
-			explicitMods: ['Upgrades a normal item to a magic item'],
+			explicitMods: [{ description: 'Upgrades a normal item to a magic item' }],
 			frameType: 5,
 			h: 1,
 			icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lVcGdyYWRlVG9NYWdpYyIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/130762c82d/CurrencyUpgradeToMagic.png',
@@ -95,7 +95,7 @@ export const currencyTab: TabWithItems = {
 		{
 			baseType: 'Scroll of Wisdom',
 			descrText: 'Right click this item then left click an unidentified item to apply it.',
-			explicitMods: ['Identifies an item'],
+			explicitMods: [{ description: 'Identifies an item' }],
 			frameType: 5,
 			h: 1,
 			icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lJZGVudGlmaWNhdGlvbiIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/3a1e615322/CurrencyIdentification.png',
@@ -117,8 +117,7 @@ export const currencyTab: TabWithItems = {
 		{
 			baseType: "Rogue's Marker",
 			descrText: 'Right click on this item while in a Town or Hideout to use it.',
-			explicitMods: [
-				'Creates a portal to the Rogue Harbour from a Town or Hideout\nUsed as Currency for services in the Rogue Harbour',
+			explicitMods: [{ description: 'Creates a portal to the Rogue Harbour from a Town or Hideout\\nUsed as Currency for services in the Rogue Harbour' },
 			],
 			frameType: 5,
 			h: 1,
@@ -142,7 +141,7 @@ export const currencyTab: TabWithItems = {
 			baseType: 'Orb of Augmentation',
 			descrText:
 				'Right click this item then left click a magic item to apply it. Magic items can have up to two random modifiers.',
-			explicitMods: ['Augments a magic item with a new random modifier'],
+			explicitMods: [{ description: 'Augments a magic item with a new random modifier' }],
 			frameType: 5,
 			h: 1,
 			icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lBZGRNb2RUb01hZ2ljIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/1a6cb2ad17/CurrencyAddModToMagic.png',
@@ -165,7 +164,7 @@ export const currencyTab: TabWithItems = {
 			baseType: "Armourer's Scrap",
 			descrText:
 				'Right click this item then left click an armour to apply it. Has greater effect on lower-rarity armours. The maximum quality is 20%.',
-			explicitMods: ['Improves the quality of an armour'],
+			explicitMods: [{ description: 'Improves the quality of an armour' }],
 			frameType: 5,
 			h: 1,
 			icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lBcm1vdXJRdWFsaXR5IiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/0b964e9b9e/CurrencyArmourQuality.png',
@@ -208,7 +207,7 @@ export const currencyTab: TabWithItems = {
 		{
 			baseType: 'Chromatic Orb',
 			descrText: 'Right click this item then left click a socketed item to apply it.',
-			explicitMods: ['Reforges the colour of sockets on an item'],
+			explicitMods: [{ description: 'Reforges the colour of sockets on an item' }],
 			frameType: 5,
 			h: 1,
 			icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lSZXJvbGxTb2NrZXRDb2xvdXJzIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/136314c10a/CurrencyRerollSocketColours.png',
@@ -231,7 +230,7 @@ export const currencyTab: TabWithItems = {
 			baseType: "Blacksmith's Whetstone",
 			descrText:
 				'Right click this item then left click a weapon to apply it. Has greater effect on lower-rarity weapons. The maximum quality is 20%.',
-			explicitMods: ['Improves the quality of a weapon'],
+			explicitMods: [{ description: 'Improves the quality of a weapon' }],
 			frameType: 5,
 			h: 1,
 			icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lXZWFwb25RdWFsaXR5IiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/c874e03eb7/CurrencyWeaponQuality.png',
@@ -253,7 +252,7 @@ export const currencyTab: TabWithItems = {
 		{
 			baseType: 'Orb of Chance',
 			descrText: 'Right click this item then left click a normal item to apply it.',
-			explicitMods: ['Upgrades a normal item to a random rarity'],
+			explicitMods: [{ description: 'Upgrades a normal item to a random rarity' }],
 			frameType: 5,
 			h: 1,
 			icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lVcGdyYWRlUmFuZG9tbHkiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/eaeece27be/CurrencyUpgradeRandomly.png',
@@ -276,7 +275,7 @@ export const currencyTab: TabWithItems = {
 			baseType: 'Orb of Fusing',
 			descrText:
 				"Right click this item then left click a socketed item to apply it. The item's quality increases the chances of obtaining more links.",
-			explicitMods: ['Reforges the links between sockets on an item'],
+			explicitMods: [{ description: 'Reforges the links between sockets on an item' }],
 			frameType: 5,
 			h: 1,
 			icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lSZXJvbGxTb2NrZXRMaW5rcyIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/f38529edfc/CurrencyRerollSocketLinks.png',
@@ -298,7 +297,7 @@ export const currencyTab: TabWithItems = {
 		{
 			baseType: 'Orb of Alchemy',
 			descrText: 'Right click this item then left click a normal item to apply it.',
-			explicitMods: ['Upgrades a normal item to a rare item'],
+			explicitMods: [{ description: 'Upgrades a normal item to a rare item' }],
 			frameType: 5,
 			h: 1,
 			icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lVcGdyYWRlVG9SYXJlIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f0dc27cd7c/CurrencyUpgradeToRare.png',
@@ -341,7 +340,7 @@ export const currencyTab: TabWithItems = {
 		{
 			baseType: 'Orb of Binding',
 			descrText: 'Right click this item then left click a normal item to apply it.',
-			explicitMods: ['Upgrades a normal item to a rare item with up to four linked sockets'],
+			explicitMods: [{ description: 'Upgrades a normal item to a rare item with up to four linked sockets' }],
 			frameType: 5,
 			h: 1,
 			icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQmluZGluZ09yYiIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/66ef64410c/BindingOrb.png',
@@ -364,7 +363,7 @@ export const currencyTab: TabWithItems = {
 			baseType: "Cartographer's Chisel",
 			descrText:
 				'Right click this item then left click a map to apply it. Has greater effect on lower-rarity maps. The maximum quality is 20%.',
-			explicitMods: ['Improves the quality of a map'],
+			explicitMods: [{ description: 'Improves the quality of a map' }],
 			frameType: 5,
 			h: 1,
 			icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lNYXBRdWFsaXR5IiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/c83c35bed5/CurrencyMapQuality.png',
@@ -386,7 +385,7 @@ export const currencyTab: TabWithItems = {
 		{
 			baseType: 'Orb of Regret',
 			descrText: 'Right click on this item to use it.',
-			explicitMods: ['Grants a passive skill refund point'],
+			explicitMods: [{ description: 'Grants a passive skill refund point' }],
 			frameType: 5,
 			h: 1,
 			icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lQYXNzaXZlU2tpbGxSZWZ1bmQiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/6b8ab3ff07/CurrencyPassiveSkillRefund.png',
@@ -408,8 +407,7 @@ export const currencyTab: TabWithItems = {
 		{
 			baseType: 'Instilling Orb',
 			descrText: 'Right click this item then left click a flask to apply it.',
-			explicitMods: [
-				'Adds an enchantment to a utility flask that will cause\r\nit to be used when certain conditions are met\r\nReplaces any existing enchantment',
+			explicitMods: [{ description: 'Adds an enchantment to a utility flask that will cause\\r\\nit to be used when certain conditions are met\\r\\nReplaces any existing enchantment' },
 			],
 			frameType: 5,
 			h: 1,
@@ -432,7 +430,7 @@ export const currencyTab: TabWithItems = {
 		{
 			baseType: 'Orb of Scouring',
 			descrText: 'Right click this item then left click on a magic or rare item to apply it.',
-			explicitMods: ['Removes all modifiers from an item'],
+			explicitMods: [{ description: 'Removes all modifiers from an item' }],
 			frameType: 5,
 			h: 1,
 			icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lDb252ZXJ0VG9Ob3JtYWwiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/6953e90545/CurrencyConvertToNormal.png',
@@ -454,7 +452,7 @@ export const currencyTab: TabWithItems = {
 		{
 			baseType: 'Orb of Unmaking',
 			descrText: 'Right click on this item to use it.',
-			explicitMods: ['Grants an atlas passive skill refund point'],
+			explicitMods: [{ description: 'Grants an atlas passive skill refund point' }],
 			frameType: 5,
 			h: 1,
 			icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvUmVncmV0T3JiIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/a2ebb4b5a3/RegretOrb.png',
@@ -476,7 +474,7 @@ export const currencyTab: TabWithItems = {
 		{
 			baseType: "Gemcutter's Prism",
 			descrText: 'Right click this item then left click a gem to apply it. The maximum quality is 20%.',
-			explicitMods: ['Improves the quality of a gem'],
+			explicitMods: [{ description: 'Improves the quality of a gem' }],
 			frameType: 5,
 			h: 1,
 			icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lHZW1RdWFsaXR5IiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/1be1273b91/CurrencyGemQuality.png',
@@ -540,7 +538,7 @@ export const currencyTab: TabWithItems = {
 		{
 			baseType: 'Chaos Orb',
 			descrText: 'Right click this item then left click a rare item to apply it.',
-			explicitMods: ['Reforges a rare item with new random modifiers'],
+			explicitMods: [{ description: 'Reforges a rare item with new random modifiers' }],
 			frameType: 5,
 			h: 1,
 			icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lSZXJvbGxSYXJlIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/d119a0d734/CurrencyRerollRare.png',
@@ -584,8 +582,7 @@ export const currencyTab: TabWithItems = {
 			baseType: 'Lesser Eldritch Ichor',
 			descrText:
 				'Right click this item then left click a normal, magic or rare item to apply it. Cannot be used on Shaper, Elder or Elderslayer influenced items.',
-			explicitMods: [
-				'Adds a Lesser Eater of Worlds implicit modifier to\r\na Body Armour, Boots, Gloves or Helmet\r\nThis replaces any existing implicit modifiers other than Searing Exarch implicit modifiers',
+			explicitMods: [{ description: 'Adds a Lesser Eater of Worlds implicit modifier to\\r\\na Body Armour, Boots, Gloves or Helmet\\r\\nThis replaces any existing implicit modifiers other than Searing Exarch implicit modifiers' },
 			],
 			frameType: 5,
 			h: 1,
@@ -630,7 +627,7 @@ export const currencyTab: TabWithItems = {
 			baseType: 'Regal Orb',
 			descrText:
 				'Right click this item then left click a magic item to apply it. Current modifiers are retained and a new one is added.',
-			explicitMods: ['Upgrades a magic item to a rare item'],
+			explicitMods: [{ description: 'Upgrades a magic item to a rare item' }],
 			frameType: 5,
 			h: 1,
 			icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lVcGdyYWRlTWFnaWNUb1JhcmUiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/898378b439/CurrencyUpgradeMagicToRare.png',
@@ -652,7 +649,7 @@ export const currencyTab: TabWithItems = {
 		{
 			baseType: 'Orb of Horizons',
 			descrText: 'Right click this item then left click a map to apply it.',
-			explicitMods: ['Reforges a map item as another of the same tier'],
+			explicitMods: [{ description: 'Reforges a map item as another of the same tier' }],
 			frameType: 5,
 			h: 1,
 			icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvSG9yaXpvbk9yYiIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/a48e326c68/HorizonOrb.png',
@@ -674,8 +671,7 @@ export const currencyTab: TabWithItems = {
 		{
 			baseType: 'Enkindling Orb',
 			descrText: 'Right click this item then left click a flask to apply it.',
-			explicitMods: [
-				'Adds an enchantment to a utility flask that will improve it\r\nbut prevent it from gaining charges during its effect\r\nReplaces any existing enchantment',
+			explicitMods: [{ description: 'Adds an enchantment to a utility flask that will improve it\\r\\nbut prevent it from gaining charges during its effect\\r\\nReplaces any existing enchantment' },
 			],
 			frameType: 5,
 			h: 1,
@@ -699,7 +695,7 @@ export const currencyTab: TabWithItems = {
 			baseType: "Glassblower's Bauble",
 			descrText:
 				'Right click this item then left click a flask to apply it. Has greater effect on lower-rarity flasks. The maximum quality is 20%.',
-			explicitMods: ['Improves the quality of a flask'],
+			explicitMods: [{ description: 'Improves the quality of a flask' }],
 			frameType: 5,
 			h: 1,
 			icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lGbGFza1F1YWxpdHkiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/8a36dffe11/CurrencyFlaskQuality.png',
@@ -742,7 +738,7 @@ export const currencyTab: TabWithItems = {
 		{
 			baseType: 'Blessed Orb',
 			descrText: 'Right click this item then left click another item to apply it.',
-			explicitMods: ['Randomises the values of the implicit modifiers of an item'],
+			explicitMods: [{ description: 'Randomises the values of the implicit modifiers of an item' }],
 			frameType: 5,
 			h: 1,
 			icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lJbXBsaWNpdE1vZCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/c3cbf3e5ab/CurrencyImplicitMod.png',
@@ -765,8 +761,7 @@ export const currencyTab: TabWithItems = {
 			baseType: 'Lesser Eldritch Ember',
 			descrText:
 				'Right click this item then left click a normal, magic or rare item to apply it. Cannot be used on Shaper, Elder or Elderslayer influenced items.',
-			explicitMods: [
-				'Adds a Lesser Searing Exarch implicit modifier to\r\na Body Armour, Boots, Gloves or Helmet\r\nThis replaces any existing implicit modifiers other than Eater of Worlds implicit modifiers',
+			explicitMods: [{ description: 'Adds a Lesser Searing Exarch implicit modifier to\\r\\na Body Armour, Boots, Gloves or Helmet\\r\\nThis replaces any existing implicit modifiers other than Eater of Worlds implicit modifiers' },
 			],
 			frameType: 5,
 			h: 1,
@@ -831,7 +826,7 @@ export const currencyTab: TabWithItems = {
 		{
 			baseType: 'Veiled Scarab',
 			descrText: 'Right Click to reveal a random Scarab',
-			explicitMods: ['A collection of unknown Scarabs'],
+			explicitMods: [{ description: 'A collection of unknown Scarabs' }],
 			frameType: 5,
 			h: 1,
 			icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9TdGFja2VkU2NhcmFiIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/617beab72c/StackedScarab.png',
@@ -896,7 +891,7 @@ export const currencyTab: TabWithItems = {
 			baseType: "Engineer's Orb",
 			descrText:
 				'Right click this item then left click a Strongbox to apply it. Has greater effect on lower rarity Strongboxes. The maximum quality is 20%.',
-			explicitMods: ['Improves the quality of a Strongbox'],
+			explicitMods: [{ description: 'Improves the quality of a Strongbox' }],
 			frameType: 5,
 			h: 1,
 			icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvRW5naW5lZXJzT3JiIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/56b41a5ee5/EngineersOrb.png',
@@ -919,7 +914,7 @@ export const currencyTab: TabWithItems = {
 			baseType: 'Vaal Orb',
 			descrText:
 				'Right click this item then left click an item to corrupt it. Corrupted items cannot be modified again.',
-			explicitMods: ['Corrupts an item, modifying it unpredictably'],
+			explicitMods: [{ description: 'Corrupts an item, modifying it unpredictably' }],
 			frameType: 5,
 			h: 1,
 			icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lWYWFsIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/304f775089/CurrencyVaal.png',
@@ -983,7 +978,7 @@ export const currencyTab: TabWithItems = {
 		{
 			baseType: 'Orb of Annulment',
 			descrText: 'Right click this item then left click on a magic or rare item to apply it.',
-			explicitMods: ['Removes a random modifier from an item'],
+			explicitMods: [{ description: 'Removes a random modifier from an item' }],
 			frameType: 5,
 			h: 1,
 			icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQW5udWxsT3JiIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/88cfdbe1e5/AnnullOrb.png',
@@ -1006,7 +1001,7 @@ export const currencyTab: TabWithItems = {
 			baseType: "Tainted Armourer's Scrap",
 			descrText:
 				'Right click this item then left click a corrupted armour to apply it. The maximum random quality is 29%.',
-			explicitMods: ['Randomises the quality of a corrupted armour'],
+			explicitMods: [{ description: 'Randomises the quality of a corrupted armour' }],
 			frameType: 5,
 			h: 1,
 			icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvSGVsbHNjYXBlL0hlbGxzY2FwZUFybW91cmVyc1NjcmFwIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/05e0065a80/HellscapeArmourersScrap.png',
@@ -1029,8 +1024,7 @@ export const currencyTab: TabWithItems = {
 			baseType: 'Greater Eldritch Ichor',
 			descrText:
 				'Right click this item then left click a normal, magic or rare item to apply it. Cannot be used on Shaper, Elder or Elderslayer influenced items.',
-			explicitMods: [
-				'Adds a Greater Eater of Worlds implicit modifier to\r\na Body Armour, Boots, Gloves or Helmet\r\nThis replaces any existing implicit modifiers other than Searing Exarch implicit modifiers',
+			explicitMods: [{ description: 'Adds a Greater Eater of Worlds implicit modifier to\\r\\na Body Armour, Boots, Gloves or Helmet\\r\\nThis replaces any existing implicit modifiers other than Searing Exarch implicit modifiers' },
 			],
 			frameType: 5,
 			h: 1,
@@ -1075,7 +1069,7 @@ export const currencyTab: TabWithItems = {
 			baseType: "Tainted Blacksmith's Whetstone",
 			descrText:
 				'Right click this item then left click a corrupted weapon to apply it. The maximum random quality is 29%.',
-			explicitMods: ['Randomises the quality of a corrupted weapon'],
+			explicitMods: [{ description: 'Randomises the quality of a corrupted weapon' }],
 			frameType: 5,
 			h: 1,
 			icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvSGVsbHNjYXBlL0hlbGxzY2FwZUJsYWNrc21pdGhXaGV0c3RvbmUiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/c1551a2a62/HellscapeBlacksmithWhetstone.png',
@@ -1098,7 +1092,7 @@ export const currencyTab: TabWithItems = {
 			baseType: 'Exalted Orb',
 			descrText:
 				'Right click this item then left click a rare item to apply it. Rare items can have up to six random modifiers.',
-			explicitMods: ['Augments a rare item with a new random modifier'],
+			explicitMods: [{ description: 'Augments a rare item with a new random modifier' }],
 			frameType: 5,
 			h: 1,
 			icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lBZGRNb2RUb1JhcmUiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/b102771c23/CurrencyAddModToRare.png',
@@ -1121,4 +1115,4 @@ export const currencyTab: TabWithItems = {
 	metadata: { colour: 'bf5e00' },
 	name: '1 (Remove-only)',
 	type: 'CurrencyStash',
-} satisfies TabWithItems;
+} as TabWithItems;

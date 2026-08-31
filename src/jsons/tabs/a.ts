@@ -6,13 +6,7 @@ export const a = {
 		{
 			baseType: 'Plated Maul',
 			craftedMods: ['70% increased Physical Damage'],
-			explicitMods: [
-				'+17 to Strength',
-				'53% increased Physical Damage',
-				'Adds 92 to 187 Fire Damage',
-				'22% increased Attack Speed',
-				'27% increased Stun Duration on Enemies',
-				'+104 to Accuracy Rating',
+			explicitMods: [{ description: '+17 to Strength' }, { description: '53% increased Physical Damage' }, { description: 'Adds 92 to 187 Fire Damage' }, { description: '22% increased Attack Speed' }, { description: '27% increased Stun Duration on Enemies' }, { description: '+104 to Accuracy Rating' },
 			],
 			frameType: 2,
 			h: 4,
@@ -20,7 +14,7 @@ export const a = {
 			id: '152ae699ec8c3e108689709c5aee6e36df7889533811335a921d8f5d3565ed2e',
 			identified: true,
 			ilvl: 58,
-			implicitMods: ['30% increased Stun Duration on Enemies'],
+			implicitMods: [{ description: '30% increased Stun Duration on Enemies' }],
 			inventoryId: 'Stash1',
 			league: 'Hardcore Necropolis',
 			name: 'Honour Mangler',
@@ -53,12 +47,7 @@ export const a = {
 					colour: 'S',
 					descrText:
 						'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-					explicitMods: [
-						'Totem lasts 12 seconds',
-						'Summons a Totem which uses this Skill',
-						'16% more Melee Damage while Totem is Active',
-						'50% increased Totem Placement speed',
-						'+1 metre to Melee Strike Range',
+					explicitMods: [{ description: 'Totem lasts 12 seconds' }, { description: 'Summons a Totem which uses this Skill' }, { description: '16% more Melee Damage while Totem is Active' }, { description: '50% increased Totem Placement speed' }, { description: '+1 metre to Melee Strike Range' },
 					],
 					frameType: 4,
 					h: 1,
@@ -102,10 +91,7 @@ export const a = {
 					colour: 'S',
 					descrText:
 						'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-					explicitMods: [
-						'Supported Skills have +2 to maximum number of Summoned Totems',
-						'Supported Skills Summon two Totems instead of one',
-						'Supported Skills deal 25% less Damage',
+					explicitMods: [{ description: 'Supported Skills have +2 to maximum number of Summoned Totems' }, { description: 'Supported Skills Summon two Totems instead of one' }, { description: 'Supported Skills deal 25% less Damage' },
 					],
 					frameType: 4,
 					h: 1,
@@ -146,14 +132,7 @@ export const a = {
 					colour: 'S',
 					descrText:
 						'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-					explicitMods: [
-						'Base duration is 4.80 seconds',
-						'32% increased Warcry Speed',
-						'Enemies Taunted by this Warcry are Intimidated',
-						'Counts total Power of Enemies in Range',
-						'Buff causes your Hits to Overwhelm 5% Physical Damage Reduction per 5 Power, up to 30%',
-						'Exerts the next 2 Melee Attacks you perform',
-						'Exerted Attacks deal Double Damage',
+					explicitMods: [{ description: 'Base duration is 4.80 seconds' }, { description: '32% increased Warcry Speed' }, { description: 'Enemies Taunted by this Warcry are Intimidated' }, { description: 'Counts total Power of Enemies in Range' }, { description: 'Buff causes your Hits to Overwhelm 5% Physical Damage Reduction per 5 Power, up to 30%' }, { description: 'Exerts the next 2 Melee Attacks you perform' }, { description: 'Exerted Attacks deal Double Damage' },
 					],
 					frameType: 4,
 					h: 1,
@@ -196,10 +175,7 @@ export const a = {
 					colour: 'S',
 					descrText:
 						'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-					explicitMods: [
-						'Supported Skills deal 46% more Melee Physical Damage',
-						'Supported Skills deal 46% more Damage with Bleeding and Poison caused by Melee Hits',
-						'Supported Skills have 10% less Attack Speed',
+					explicitMods: [{ description: 'Supported Skills deal 46% more Melee Physical Damage' }, { description: 'Supported Skills deal 46% more Damage with Bleeding and Poison caused by Melee Hits' }, { description: 'Supported Skills have 10% less Attack Speed' },
 					],
 					frameType: 4,
 					h: 1,

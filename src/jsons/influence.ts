@@ -2,11 +2,7 @@ import { PoeItem } from '../poe.types.js';
 
 export const influence: PoeItem = {
 	baseType: 'Agate Amulet',
-	explicitMods: [
-		'Grants Level 22 Determination Skill',
-		'+23 to Strength',
-		'12% increased Dexterity',
-		'11% increased maximum Energy Shield',
+	explicitMods: [{ description: 'Grants Level 22 Determination Skill' }, { description: '+23 to Strength' }, { description: '12% increased Dexterity' }, { description: '11% increased maximum Energy Shield' },
 	],
 	frameType: 2,
 	h: 1,
@@ -14,7 +10,7 @@ export const influence: PoeItem = {
 	id: 'df3caa57ed265cb237174dab64d8522d2bd782a9147ed834c42afbfc8fc1561c',
 	identified: true,
 	ilvl: 86,
-	implicitMods: ['+18 to Strength and Intelligence'],
+	implicitMods: [{ description: '+18 to Strength and Intelligence' }],
 	influences: {
 		redeemer: true,
 		shaper: true,

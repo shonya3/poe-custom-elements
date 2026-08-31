@@ -6,8 +6,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Harvest Scarab of Doubling',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: [
-				'Lifeforce dropped by Harvest Monsters in Area is duplicated\nHarvest Monsters in Area have 100% more Life',
+			explicitMods: [{ description: 'Lifeforce dropped by Harvest Monsters in Area is duplicated\\nHarvest Monsters in Area have 100% more Life' },
 			],
 			flavourText: ['A good season brings bounty.'],
 			frameType: 0,
@@ -34,7 +33,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Ambush Scarab',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Area contains 5 additional Strongboxes'],
+			explicitMods: [{ description: 'Area contains 5 additional Strongboxes' }],
 			flavourText: ["Is it still an ambush if you're expecting it?"],
 			frameType: 0,
 			h: 1,
@@ -61,7 +60,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Scarab of Monstrous Lineage',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['40% increased Magic Pack Size'],
+			explicitMods: [{ description: '40% increased Magic Pack Size' }],
 			flavourText: ['The bloodlines evolve faster than they can be culled.'],
 			frameType: 0,
 			h: 1,
@@ -108,7 +107,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Cartography Scarab of Singularity',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['A Unique Map will drop from the Final Map Boss'],
+			explicitMods: [{ description: 'A Unique Map will drop from the Final Map Boss' }],
 			flavourText: ['Some regions of the Atlas never change.'],
 			frameType: 0,
 			h: 1,
@@ -176,7 +175,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Blight Scarab of Oils',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Blight Oils found in Area are 1 tier higher'],
+			explicitMods: [{ description: 'Blight Oils found in Area are 1 tier higher' }],
 			flavourText: ['Strike deep into the pulse of the fungus.'],
 			frameType: 0,
 			h: 1,
@@ -266,7 +265,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Ambush Scarab of Hidden Compartments',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['15% Chance for Strongboxes in Area to be openable again'],
+			explicitMods: [{ description: '15% Chance for Strongboxes in Area to be openable again' }],
 			flavourText: ['Beneath the obvious lies the real treasure...'],
 			frameType: 0,
 			h: 1,
@@ -293,7 +292,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Anarchy Scarab',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Area contains 4 additional Rogue Exiles'],
+			explicitMods: [{ description: 'Area contains 4 additional Rogue Exiles' }],
 			flavourText: ["On Wraeclast, it's kill or be killed."],
 			frameType: 0,
 			h: 1,
@@ -340,7 +339,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Breach Scarab',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Area contains 2 additional Breaches'],
+			explicitMods: [{ description: 'Area contains 2 additional Breaches' }],
 			flavourText: ['They are never far.'],
 			frameType: 0,
 			h: 1,
@@ -388,8 +387,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Ritual Scarab of Selectiveness',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: [
-				'Rerolling Favours at Ritual Altars in Area has no cost the first 2 times\nRitual Altars in Area allow rerolling Favours 1 additional time',
+			explicitMods: [{ description: 'Rerolling Favours at Ritual Altars in Area has no cost the first 2 times\\nRitual Altars in Area allow rerolling Favours 1 additional time' },
 			],
 			flavourText: ['Pick and choose which sacred tenets you prefer...'],
 			frameType: 0,
@@ -437,7 +435,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Domination Scarab',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Area contains 2 additional Shrines'],
+			explicitMods: [{ description: 'Area contains 2 additional Shrines' }],
 			flavourText: ['A simple exchange. Blood for power.'],
 			frameType: 0,
 			h: 1,
@@ -463,8 +461,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Expedition Scarab of Verisium Powder',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: [
-				'Expedition Encounters in Area have 20% increased number of Explosives\n80% increased Explosive Radius',
+			explicitMods: [{ description: 'Expedition Encounters in Area have 20% increased number of Explosives\\n80% increased Explosive Radius' },
 			],
 			flavourText: ['A properly refined pinch makes all the difference.'],
 			frameType: 0,
@@ -491,8 +488,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Essence Scarab of Stability',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: [
-				'Using a Remnant of Corruption in Area can only result in\nupgrading or transforming Essences',
+			explicitMods: [{ description: 'Using a Remnant of Corruption in Area can only result in\\nupgrading or transforming Essences' },
 			],
 			flavourText: [
 				'With the right tools and a precise hand, the manipulation of the crystals',
@@ -522,7 +518,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Harvest Scarab',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Area contains the Sacred Grove'],
+			explicitMods: [{ description: 'Area contains the Sacred Grove' }],
 			flavourText: ['Hidden routes lead to vales of shadow and light...'],
 			frameType: 0,
 			h: 1,
@@ -569,7 +565,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Delirium Scarab of Paranoia',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Delirium Encounters in Area generate 2 additional Reward types'],
+			explicitMods: [{ description: 'Delirium Encounters in Area generate 2 additional Reward types' }],
 			flavourText: ['If it seems too good to be true...'],
 			frameType: 0,
 			h: 1,
@@ -595,7 +591,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Expedition Scarab of Runefinding',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Expedition Encounters in Area have 100% increased\nnumber of Runic Monster Markers'],
+			explicitMods: [{ description: 'Expedition Encounters in Area have 100% increased\\nnumber of Runic Monster Markers' }],
 			flavourText: ['That which came from the stars longs to return.'],
 			frameType: 0,
 			h: 1,
@@ -621,7 +617,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Incursion Scarab of Invasion',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Area contains 12-16 additional packs of Incursion Monsters'],
+			explicitMods: [{ description: 'Area contains 12-16 additional packs of Incursion Monsters' }],
 			flavourText: ['A gate, once opened, may swing in either direction.'],
 			frameType: 0,
 			h: 1,
@@ -669,7 +665,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Scarab of Hunted Traitors',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Area contains Hunted Traitors'],
+			explicitMods: [{ description: 'Area contains Hunted Traitors' }],
 			flavourText: ['Nothing is as unforgiveable.'],
 			frameType: 0,
 			h: 1,
@@ -717,7 +713,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Incursion Scarab',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Area contains Alva'],
+			explicitMods: [{ description: 'Area contains Alva' }],
 			flavourText: ['Uncover the secrets of the Vaal one incursion at a time.'],
 			frameType: 0,
 			h: 1,
@@ -808,7 +804,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Betrayal Scarab of Intelligence',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['150% Increased Intelligence gained from\nImmortal Syndicate targets encountered in Area'],
+			explicitMods: [{ description: '150% Increased Intelligence gained from\\nImmortal Syndicate targets encountered in Area' }],
 			flavourText: ['Those that can never die fear only pain.'],
 			frameType: 0,
 			h: 1,
@@ -834,7 +830,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Delirium Scarab of Mania',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Delirium Reward Meters fill 100% faster in Area'],
+			explicitMods: [{ description: 'Delirium Reward Meters fill 100% faster in Area' }],
 			flavourText: ["They're so loud! Why are they so loud?!\r", 'All you can do is scream!'],
 			frameType: 0,
 			h: 1,
@@ -860,7 +856,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Blight Scarab',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Area contains a Blight Encounter'],
+			explicitMods: [{ description: 'Area contains a Blight Encounter' }],
 			flavourText: ['The tendrils creep and grow...'],
 			frameType: 0,
 			h: 1,
@@ -908,8 +904,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Betrayal Scarab of Reinforcements',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: [
-				'Immortal Syndicate Members in Area have 50% increased chance to be accompanied by reinforcements',
+			explicitMods: [{ description: 'Immortal Syndicate Members in Area have 50% increased chance to be accompanied by reinforcements' },
 			],
 			flavourText: ['Move and countermove.'],
 			frameType: 0,
@@ -936,7 +931,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Ritual Scarab of Recognition',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Unique enemies slain at Ritual Altars in Area grant 200% more Tribute'],
+			explicitMods: [{ description: 'Unique enemies slain at Ritual Altars in Area grant 200% more Tribute' }],
 			flavourText: ['Names carry meaning. Meaning carries power.'],
 			frameType: 0,
 			h: 1,
@@ -962,7 +957,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Anarchy Scarab of Gigantification',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Rogue Exiles in Area have a 30% chance to be replaced with a Rogue Giant'],
+			explicitMods: [{ description: 'Rogue Exiles in Area have a 30% chance to be replaced with a Rogue Giant' }],
 			flavourText: ['The consumption of sulphite can cause strange growth.'],
 			frameType: 0,
 			h: 1,
@@ -988,7 +983,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Essence Scarab of Ascent',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Essences found in Area are a tier higher'],
+			explicitMods: [{ description: 'Essences found in Area are a tier higher' }],
 			flavourText: ['A more perfect facet cannot be achieved.'],
 			frameType: 0,
 			h: 1,
@@ -1014,7 +1009,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Cartography Scarab of Ascension',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Maps found in Area are a tier higher, up to Tier 16'],
+			explicitMods: [{ description: 'Maps found in Area are a tier higher, up to Tier 16' }],
 			flavourText: ['Climb ever higher in the search for truth.'],
 			frameType: 0,
 			h: 1,
@@ -1040,8 +1035,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Ultimatum Scarab of Inscription',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: [
-				'Ultimatum Encounter rewards in Area offering Catalysts\nwill offer Inscribed Ultimatums to the Map Owner instead',
+			explicitMods: [{ description: 'Ultimatum Encounter rewards in Area offering Catalysts\\nwill offer Inscribed Ultimatums to the Map Owner instead' },
 			],
 			flavourText: ['There is always a wager to be made... if you can afford it.'],
 			frameType: 0,
@@ -1068,7 +1062,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Influencing Scarab of the Shaper',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Adds Shaper Influence outcome to Area'],
+			explicitMods: [{ description: 'Adds Shaper Influence outcome to Area' }],
 			flavourText: ['A sea of stars awaits those who dare imagine.'],
 			frameType: 0,
 			h: 1,
@@ -1094,7 +1088,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Beyond Scarab of the Invasion',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Unique Monsters slain in Area create 8 to 12 additional Beyond Portals'],
+			explicitMods: [{ description: 'Unique Monsters slain in Area create 8 to 12 additional Beyond Portals' }],
 			flavourText: ['The fated hour is almost nigh.'],
 			frameType: 0,
 			h: 1,
@@ -1120,7 +1114,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Delirium Scarab',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Area contains a Mirror of Delirium'],
+			explicitMods: [{ description: 'Area contains a Mirror of Delirium' }],
 			flavourText: ['A perfectly innocuous Scarab that does nothing at all.'],
 			frameType: 0,
 			h: 1,
@@ -1146,7 +1140,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Ultimatum Scarab',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Area contains an Ultimatum Encounter'],
+			explicitMods: [{ description: 'Area contains an Ultimatum Encounter' }],
 			flavourText: ['A challenge may be requested at any time.'],
 			frameType: 0,
 			h: 1,
@@ -1172,8 +1166,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Incursion Scarab of Champions',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: [
-				'Incursions in Area have a 35% chance for all Monsters to be at least Magic\nIncursions in Area have 15% increased Pack Size',
+			explicitMods: [{ description: 'Incursions in Area have a 35% chance for all Monsters to be at least Magic\\nIncursions in Area have 15% increased Pack Size' },
 			],
 			flavourText: ['Only the best served in Atzoatl.'],
 			frameType: 0,
@@ -1200,7 +1193,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Anarchy Scarab of Partnership',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Rogue Exiles in Area have a 50% chance to appear in pairs'],
+			explicitMods: [{ description: 'Rogue Exiles in Area have a 50% chance to appear in pairs' }],
 			flavourText: ['Among exiles, alliances shift and change constantly.'],
 			frameType: 0,
 			h: 1,
@@ -1226,7 +1219,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Expedition Scarab',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Area contains an Expedition Encounter'],
+			explicitMods: [{ description: 'Area contains an Expedition Encounter' }],
 			flavourText: ['They come from across the sea in search of ancient truth.'],
 			frameType: 0,
 			h: 1,
@@ -1252,8 +1245,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Influencing Scarab of Conversion',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: [
-				'Tier 14+ Maps found in Area have a chance to drop as Shaper Guardian, Elder Guardian, Conqueror or Unique Synthesised Maps instead',
+			explicitMods: [{ description: 'Tier 14+ Maps found in Area have a chance to drop as Shaper Guardian, Elder Guardian, Conqueror or Unique Synthesised Maps instead' },
 			],
 			flavourText: ['Memories resound in the Atlas, echoing forever.'],
 			frameType: 0,
@@ -1280,7 +1272,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Sulphite Scarab of Greed',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Map owner gains 150% more Sulphite'],
+			explicitMods: [{ description: 'Map owner gains 150% more Sulphite' }],
 			flavourText: ["There is no such thing as 'enough'."],
 			frameType: 0,
 			h: 1,
@@ -1306,7 +1298,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Influencing Scarab of the Elder',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Adds Elder Influence outcome to Area'],
+			explicitMods: [{ description: 'Adds Elder Influence outcome to Area' }],
 			flavourText: ['Beyond the light lies only the void.'],
 			frameType: 0,
 			h: 1,
@@ -1332,7 +1324,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Abyss Scarab of Multitudes',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Abysses in Area spawn 75% increased Monsters'],
+			explicitMods: [{ description: 'Abysses in Area spawn 75% increased Monsters' }],
 			flavourText: ['They ceaselessly sprout from the murderous earth.'],
 			frameType: 0,
 			h: 1,
@@ -1358,8 +1350,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Delirium Scarab of Neuroses',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: [
-				'Delirium Encounters in Area contain all Unique Delirium Bosses\nCan only be used with Tier 11+ Maps',
+			explicitMods: [{ description: 'Delirium Encounters in Area contain all Unique Delirium Bosses\\nCan only be used with Tier 11+ Maps' },
 			],
 			flavourText: ['Toothy grins shine in the dark.'],
 			frameType: 0,
@@ -1386,7 +1377,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Bestiary Scarab of Duplicating',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Create a copy of Beasts captured in Area'],
+			explicitMods: [{ description: 'Create a copy of Beasts captured in Area' }],
 			flavourText: ['"What\'s better than one captured beast, exile?"'],
 			frameType: 0,
 			h: 1,
@@ -1412,8 +1403,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Abyss Scarab of Edifice',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: [
-				'Abysses in Area that do not lead to an Abyssal Depths lead to a Stygian Spire\nAbysses in Area spawn Hoards as they travel',
+			explicitMods: [{ description: 'Abysses in Area that do not lead to an Abyssal Depths lead to a Stygian Spire\\nAbysses in Area spawn Hoards as they travel' },
 			],
 			flavourText: ['Their empires ghastly and gaunt glitter with gold.'],
 			frameType: 0,
@@ -1440,7 +1430,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Legion Scarab of Officers',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Legion Factions in Area have 5 additional Sergeants'],
+			explicitMods: [{ description: 'Legion Factions in Area have 5 additional Sergeants' }],
 			flavourText: ['Even a battlefield has middle management.'],
 			frameType: 0,
 			h: 1,
@@ -1466,7 +1456,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Influencing Scarab of Hordes',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Influenced Monster Packs in Area have 40% increased Pack Size'],
+			explicitMods: [{ description: 'Influenced Monster Packs in Area have 40% increased Pack Size' }],
 			flavourText: ['Ideas cannot be contained.'],
 			frameType: 0,
 			h: 1,
@@ -1492,7 +1482,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Harbinger Scarab of Regency',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Harbingers in Area have a 50% chance to be replaced by a powerful Harbinger Boss'],
+			explicitMods: [{ description: 'Harbingers in Area have a 50% chance to be replaced by a powerful Harbinger Boss' }],
 			flavourText: ['The truly noble wage war from the front.'],
 			frameType: 0,
 			h: 1,
@@ -1518,7 +1508,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Legion Scarab of Command',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Legion Factions in Area are accompanied by a General'],
+			explicitMods: [{ description: 'Legion Factions in Area are accompanied by a General' }],
 			flavourText: ['Cut off the head and the snake will perish.'],
 			frameType: 0,
 			h: 1,
@@ -1566,7 +1556,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Blight Scarab of Bounty',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Blight Chests in Area have a 20% chance to be openable again'],
+			explicitMods: [{ description: 'Blight Chests in Area have a 20% chance to be openable again' }],
 			flavourText: ['A ghastly fruit, but twice as sweet.'],
 			frameType: 0,
 			h: 1,
@@ -1592,7 +1582,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Ritual Scarab of Abundance',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Rituals in Area offer 100% increased Favours'],
+			explicitMods: [{ description: 'Rituals in Area offer 100% increased Favours' }],
 			flavourText: ['He draws ever closer...'],
 			frameType: 0,
 			h: 1,
@@ -1618,7 +1608,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Beyond Scarab of Haemophilia',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Beyond Portals in Area have 30% increased Merging Radius'],
+			explicitMods: [{ description: 'Beyond Portals in Area have 30% increased Merging Radius' }],
 			flavourText: ['Reality itself begins to bleed.'],
 			frameType: 0,
 			h: 1,
@@ -1644,7 +1634,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Delirium Scarab of Delusions',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Maps found in Area have layers of Delirium'],
+			explicitMods: [{ description: 'Maps found in Area have layers of Delirium' }],
 			flavourText: ['What are you talking about?\r', 'The Atlas was always like this.'],
 			frameType: 0,
 			h: 1,
@@ -1670,7 +1660,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Expedition Scarab of Archaeology',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Remnants in Expedition Encounters in Area have 2 additional Suffixes and Prefixes'],
+			explicitMods: [{ description: 'Remnants in Expedition Encounters in Area have 2 additional Suffixes and Prefixes' }],
 			flavourText: ['Curiosity leads to wisdom. Wisdom leads to power.'],
 			frameType: 0,
 			h: 1,
@@ -1696,7 +1686,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Cartography Scarab of Duplication',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Maps found in Area have a 30% chance to be Duplicated'],
+			explicitMods: [{ description: 'Maps found in Area have a 30% chance to be Duplicated' }],
 			flavourText: ['Where you have been, there shall you be again.'],
 			frameType: 0,
 			h: 1,
@@ -1722,8 +1712,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Beyond Scarab of Resurgence',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: [
-				'Beyond Bosses in Area are enraged on low life\nBeyond Bosses in Area drop 100% increased Tainted Currency\nBeyond Portals in Area have 30% increased chance to spawn a Unique Boss',
+			explicitMods: [{ description: 'Beyond Bosses in Area are enraged on low life\\nBeyond Bosses in Area drop 100% increased Tainted Currency\\nBeyond Portals in Area have 30% increased chance to spawn a Unique Boss' },
 			],
 			flavourText: ['They hunger.'],
 			frameType: 0,
@@ -1750,7 +1739,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Sulphite Scarab',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Area contains Niko'],
+			explicitMods: [{ description: 'Area contains Niko' }],
 			flavourText: ['Delve into darkness in search of the truth...'],
 			frameType: 0,
 			h: 1,
@@ -1776,8 +1765,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Ultimatum Scarab of Bribing',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: [
-				'Ultimatum Monsters grant 150% increased Experience\nUltimatum Encounters grant rewards as though you completed 2 additional Rounds',
+			explicitMods: [{ description: 'Ultimatum Monsters grant 150% increased Experience\\nUltimatum Encounters grant rewards as though you completed 2 additional Rounds' },
 			],
 			flavourText: ['A trial is only as incorruptible as its judge.'],
 			frameType: 0,
@@ -1804,7 +1792,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Harbinger Scarab',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Area contains 3 additional Harbingers'],
+			explicitMods: [{ description: 'Area contains 3 additional Harbingers' }],
 			flavourText: ['Their troops came in numbers uncountable and from lands unknown.'],
 			frameType: 0,
 			h: 1,
@@ -1874,7 +1862,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Abyss Scarab',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Area contains an additional Abyss'],
+			explicitMods: [{ description: 'Area contains an additional Abyss' }],
 			flavourText: ['They search forever for more souls to drag to the dark.'],
 			frameType: 0,
 			h: 1,
@@ -1900,7 +1888,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Scarab of Stability',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Portals to Area have a 50% chance to not be consumed on use'],
+			explicitMods: [{ description: 'Portals to Area have a 50% chance to not be consumed on use' }],
 			flavourText: ['Astonishing! A means to sustain the connection...'],
 			frameType: 0,
 			h: 1,
@@ -1926,7 +1914,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Domination Scarab of Abnormality',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Area contains an additional Unusual Shrine'],
+			explicitMods: [{ description: 'Area contains an additional Unusual Shrine' }],
 			flavourText: ['What could possibly have been sacrificed to achieve... this?'],
 			frameType: 0,
 			h: 1,
@@ -1952,8 +1940,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Torment Scarab of Release',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: [
-				'Tormented Spirits in Area have a 25% chance to\nbe set free when Possessed Monsters are slain',
+			explicitMods: [{ description: 'Tormented Spirits in Area have a 25% chance to\\nbe set free when Possessed Monsters are slain' },
 			],
 			flavourText: ["If it could end, it wouldn't really be damnation."],
 			frameType: 0,
@@ -1980,7 +1967,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Scarab of Adversaries',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Area contains 4 additional Packs with Mirrored Rare Monsters'],
+			explicitMods: [{ description: 'Area contains 4 additional Packs with Mirrored Rare Monsters' }],
 			flavourText: ['They stand against you with equal enmity.'],
 			frameType: 0,
 			h: 1,
@@ -2007,7 +1994,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Domination Scarab of Teachings',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Shrine buffs in Area also grant 30% increased Experience gained'],
+			explicitMods: [{ description: 'Shrine buffs in Area also grant 30% increased Experience gained' }],
 			flavourText: ['Whatever the prize, learn from it.'],
 			frameType: 0,
 			h: 1,
@@ -2033,7 +2020,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Breach Scarab of Lordship',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Breaches in Area each contain a Breachlord'],
+			explicitMods: [{ description: 'Breaches in Area each contain a Breachlord' }],
 			flavourText: ['Their kingdoms always seek expansion.'],
 			frameType: 0,
 			h: 1,
@@ -2059,8 +2046,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Betrayal Scarab of Perpetuation',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: [
-				'Defeated Immortal Syndicate targets in Area have a 50% chance\nto drop an additional Scarab',
+			explicitMods: [{ description: 'Defeated Immortal Syndicate targets in Area have a 50% chance\\nto drop an additional Scarab' },
 			],
 			flavourText: ['The Syndicate has learned how to make their own scarabs...'],
 			frameType: 0,
@@ -2087,7 +2073,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Essence Scarab',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Area contains 2 additional Essences'],
+			explicitMods: [{ description: 'Area contains 2 additional Essences' }],
 			flavourText: ["It is perfectly safe, the creatures trapped inside couldn't possibly still be living."],
 			frameType: 0,
 			h: 1,
@@ -2113,7 +2099,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Ambush Scarab of Potency',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['75% Increased effect of Explicit Modifiers on Strongboxes in Area'],
+			explicitMods: [{ description: '75% Increased effect of Explicit Modifiers on Strongboxes in Area' }],
 			flavourText: ['The locksmith dreams of building a better box.'],
 			frameType: 0,
 			h: 1,
@@ -2140,7 +2126,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Betrayal Scarab',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Area contains Jun'],
+			explicitMods: [{ description: 'Area contains Jun' }],
 			flavourText: ['The Syndicate must pay for what they have done.'],
 			frameType: 0,
 			h: 1,
@@ -2166,7 +2152,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Beyond Scarab',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Slaying enemies close together in Area can attract monsters from Beyond this realm'],
+			explicitMods: [{ description: 'Slaying enemies close together in Area can attract monsters from Beyond this realm' }],
 			flavourText: ['The silent wall and the raging storm oppose the endless swarm.'],
 			frameType: 0,
 			h: 1,
@@ -2192,7 +2178,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Reliquary Scarab',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['100% increased Unique Items found in Area'],
+			explicitMods: [{ description: '100% increased Unique Items found in Area' }],
 			flavourText: ['Build for yourself a hoard a Dragon would envy.', 'If they were real.'],
 			frameType: 0,
 			h: 1,
@@ -2218,7 +2204,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Legion Scarab',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Area contains an additional Legion Encounter'],
+			explicitMods: [{ description: 'Area contains an additional Legion Encounter' }],
 			flavourText: ['What good is peace to a warrior?'],
 			frameType: 0,
 			h: 1,
@@ -2245,8 +2231,7 @@ export const fragments: TabWithItems = {
 			baseType: 'Divine Vessel',
 			descrText:
 				"Can be used in a personal Map Device, allowing you to capture the Soul of the Map's Boss. The Vessel containing the captured Soul can be retrieved from the Map Device. You must be in the Map when the boss is defeated.",
-			explicitMods: [
-				'Unique Boss deals 10% increased Damage\r\nUnique Boss has 10% increased Attack and Cast Speed\r\nUnique Boss has 10% increased Life\r\nUnique Boss has 20% increased Area of Effect',
+			explicitMods: [{ description: 'Unique Boss deals 10% increased Damage\\r\\nUnique Boss has 10% increased Attack and Cast Speed\\r\\nUnique Boss has 10% increased Life\\r\\nUnique Boss has 20% increased Area of Effect' },
 			],
 			flavourText: [
 				'Power is a curious thing. \r',
@@ -2273,7 +2258,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Bestiary Scarab',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Area contains Einhar'],
+			explicitMods: [{ description: 'Area contains Einhar' }],
 			flavourText: ['The Beastmaster answers the call.'],
 			frameType: 0,
 			h: 1,
@@ -2323,7 +2308,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Legion Scarab of The Sekhema',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Legion Encounters in Area always contain the Maraketh Faction'],
+			explicitMods: [{ description: 'Legion Encounters in Area always contain the Maraketh Faction' }],
 			flavourText: ['Storms of blood-stained sand will drown the enemies of the Maraketh.'],
 			frameType: 0,
 			h: 1,
@@ -2349,7 +2334,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Torment Scarab',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Area is haunted by 5 additional Tormented Spirits'],
+			explicitMods: [{ description: 'Area is haunted by 5 additional Tormented Spirits' }],
 			flavourText: ['Their crimes in life haunt you in death.'],
 			frameType: 0,
 			h: 1,
@@ -2375,8 +2360,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Abyss Scarab of Emptiness',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: [
-				'Rare Abyss Monsters in Area have a 50% chance to drop\nan additional Rare item with an Abyssal socket',
+			explicitMods: [{ description: 'Rare Abyss Monsters in Area have a 50% chance to drop\\nan additional Rare item with an Abyssal socket' },
 			],
 			flavourText: ['They stare back, with hollow hypnotising eyes.'],
 			frameType: 0,
@@ -2403,7 +2387,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Divination Scarab',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['150% increased Divination Cards found in Area'],
+			explicitMods: [{ description: '150% increased Divination Cards found in Area' }],
 			flavourText: ['Fate can be... encouraged.'],
 			frameType: 0,
 			h: 1,
@@ -2474,8 +2458,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Breach Scarab of Splintering',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: [
-				'Breach Monsters in Area drop 50% more Breach Splinters\nClasped Hands in Area drop 50% more Breach Splinters',
+			explicitMods: [{ description: 'Breach Monsters in Area drop 50% more Breach Splinters\\nClasped Hands in Area drop 50% more Breach Splinters' },
 			],
 			flavourText: ['Bit by bit.'],
 			frameType: 0,
@@ -2502,7 +2485,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Cartography Scarab of Corruption',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Non-Unique Maps found in Area are Corrupted with 8 Modifiers'],
+			explicitMods: [{ description: 'Non-Unique Maps found in Area are Corrupted with 8 Modifiers' }],
 			flavourText: ['Corruption bleeds between realities.'],
 			frameType: 0,
 			h: 1,
@@ -2550,7 +2533,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Mysterious Scarab',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Area contains 40-60 additional Clusters of Mysterious Barrels'],
+			explicitMods: [{ description: 'Area contains 40-60 additional Clusters of Mysterious Barrels' }],
 			flavourText: ['They chitter, they crawl, they bite... and they swarm.'],
 			frameType: 0,
 			h: 1,
@@ -2576,7 +2559,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Cartography Scarab',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['50% increased Maps found in Area'],
+			explicitMods: [{ description: '50% increased Maps found in Area' }],
 			flavourText: ['The Atlas holds endless secrets...'],
 			frameType: 0,
 			h: 1,
@@ -2624,8 +2607,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Harbinger Scarab of Discernment',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: [
-				'Harbingers in Area drop rarer currency shards\nHarbingers in Area drop a single type of currency shard',
+			explicitMods: [{ description: 'Harbingers in Area drop rarer currency shards\\nHarbingers in Area drop a single type of currency shard' },
 			],
 			flavourText: ["There's no accounting for what some will hoard."],
 			frameType: 0,
@@ -2652,7 +2634,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Torment Scarab of Peculiarity',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Tormented Spirits in Area are replaced with unusual variants'],
+			explicitMods: [{ description: 'Tormented Spirits in Area are replaced with unusual variants' }],
 			flavourText: ["Now there's a blood-curdling wail I haven't heard before!"],
 			frameType: 0,
 			h: 1,
@@ -2700,8 +2682,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Sulphite Scarab of Fumes',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: [
-				'Sulphite found in Map Area releases Enraging Fumes\nMonsters affected by Enraging Fumes have 500% increased Item Quantity\nSulphite in your maps is guarded by Monsters from the Azurite Mine',
+			explicitMods: [{ description: 'Sulphite found in Map Area releases Enraging Fumes\\nMonsters affected by Enraging Fumes have 500% increased Item Quantity\\nSulphite in your maps is guarded by Monsters from the Azurite Mine' },
 			],
 			flavourText: ['When the land itself is sick, even the very ground rots and spills forth.'],
 			frameType: 0,
@@ -2750,7 +2731,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Bestiary Scarab of the Herd',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Area contains 5 additional Red Beasts if it contains Einhar'],
+			explicitMods: [{ description: 'Area contains 5 additional Red Beasts if it contains Einhar' }],
 			flavourText: ['The First Ones ran rampant and free in the forests of old.'],
 			frameType: 0,
 			h: 1,
@@ -2776,7 +2757,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Essence Scarab of Calcification',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Rare monsters that are natural inhabitants of the Area are imprisoned by Essences'],
+			explicitMods: [{ description: 'Rare monsters that are natural inhabitants of the Area are imprisoned by Essences' }],
 			flavourText: ['The crystals... can spread?'],
 			frameType: 0,
 			h: 1,
@@ -2802,7 +2783,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Dedication to the Goddess',
 			descrText: "Travel to the Aspirants' Plaza and spend this item to open the Eternal Labyrinth of Potential.",
-			explicitMods: ['The Divine Font will offer additional Corrupted Gem crafting options.'],
+			explicitMods: [{ description: 'The Divine Font will offer additional Corrupted Gem crafting options.' }],
 			flavourText: [
 				'Before the Goddess, nothing remains hidden.\r',
 				'Adversity reveals old flaws and new strengths.',
@@ -2852,8 +2833,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Legion Scarab of Eternal Conflict',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: [
-				'Legion Monsters in Area can be broken out of Stasis multiple times\nLegion Monsters in Area gain increased Difficulty and Reward for each time they are broken out',
+			explicitMods: [{ description: 'Legion Monsters in Area can be broken out of Stasis multiple times\\nLegion Monsters in Area gain increased Difficulty and Reward for each time they are broken out' },
 			],
 			flavourText: ['An eternity of blood. Glorious.'],
 			frameType: 0,
@@ -2880,7 +2860,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Expedition Scarab of the Skald',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Expedition Encounters in Area are lead by Dannig'],
+			explicitMods: [{ description: 'Expedition Encounters in Area are lead by Dannig' }],
 			flavourText: ['Lead from the front, and your men will follow you anywhere.'],
 			frameType: 0,
 			h: 1,
@@ -2906,7 +2886,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Beyond Scarab of Corruption',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Items dropped by Beyond Demons in Area are Corrupted'],
+			explicitMods: [{ description: 'Items dropped by Beyond Demons in Area are Corrupted' }],
 			flavourText: ['Their very flesh exudes Corruption.'],
 			frameType: 0,
 			h: 1,
@@ -2954,7 +2934,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Ultimatum Scarab of Catalysing',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Ultimatum Encounters in Area will only offer Catalysts\nas Rewards to the Map Owner'],
+			explicitMods: [{ description: 'Ultimatum Encounters in Area will only offer Catalysts\\nas Rewards to the Map Owner' }],
 			flavourText: ['Most regret finding out how the powder is made.'],
 			frameType: 0,
 			h: 1,
@@ -2980,8 +2960,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Horned Scarab of Tradition',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: [
-				'All Rare Monsters in Area have at least one Reward Modifier\nPlayer Modifiers to Item Rarity and Item Quantity do not apply in Area',
+			explicitMods: [{ description: 'All Rare Monsters in Area have at least one Reward Modifier\\nPlayer Modifiers to Item Rarity and Item Quantity do not apply in Area' },
 			],
 			flavourText: ['To the strongest, prosperity be thine.'],
 			frameType: 0,
@@ -3009,7 +2988,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Harbinger Scarab of Warhoards',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Currency shards dropped by Harbingers in Area are duplicated'],
+			explicitMods: [{ description: 'Currency shards dropped by Harbingers in Area are duplicated' }],
 			flavourText: ['For those who can leverage it, war can be as much a machine of profit as it is death.'],
 			frameType: 0,
 			h: 1,
@@ -3035,8 +3014,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Horned Scarab of Glittering',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: [
-				'Players in Area gain increased Item Rarity and Item Quantity for each Monster slain recently, up to 200% and 100% respectively',
+			explicitMods: [{ description: 'Players in Area gain increased Item Rarity and Item Quantity for each Monster slain recently, up to 200% and 100% respectively' },
 			],
 			flavourText: ['Wealth flows to those that shine brightest.'],
 			frameType: 0,
@@ -3063,8 +3041,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Incursion Scarab of Timelines',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: [
-				'Final Architect slain in Area will drop an Itemised Temple\n Itemised Temples dropped in Area are generated based on current Temple layout, but with randomised room tiers',
+			explicitMods: [{ description: 'Final Architect slain in Area will drop an Itemised Temple\\n Itemised Temples dropped in Area are generated based on current Temple layout, but with randomised room tiers' },
 			],
 			flavourText: ['They say if you go far enough, you will meet yourself...'],
 			frameType: 0,
@@ -3091,8 +3068,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Harvest Scarab of Cornucopia',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: [
-				'If Area contains the Sacred Grove, it will contain up to 1 additional Tier 4 seed of each type, if possible',
+			explicitMods: [{ description: 'If Area contains the Sacred Grove, it will contain up to 1 additional Tier 4 seed of each type, if possible' },
 			],
 			flavourText: ['The taller the tree, the better the fruit.'],
 			frameType: 0,
@@ -3141,7 +3117,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Ambush Scarab of Discernment',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Strongboxes in Area are more likely to be rarer varieties'],
+			explicitMods: [{ description: 'Strongboxes in Area are more likely to be rarer varieties' }],
 			flavourText: ['A keen eye sorts the worthy from the chaff.'],
 			frameType: 0,
 			h: 1,
@@ -3167,7 +3143,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Horned Scarab of Nemeses',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Rare Monsters in Area have 2 additional Modifiers'],
+			explicitMods: [{ description: 'Rare Monsters in Area have 2 additional Modifiers' }],
 			flavourText: ['Glory draws ever tighter its own doom.'],
 			frameType: 0,
 			h: 1,
@@ -3193,7 +3169,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Bestiary Scarab of the Shadowed Crow',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Area contains The Black Mórrigan if it contains Einhar'],
+			explicitMods: [{ description: 'Area contains The Black Mórrigan if it contains Einhar' }],
 			flavourText: ['The Nameless begin to slip their bonds of nonexistence...'],
 			frameType: 0,
 			h: 1,
@@ -3219,7 +3195,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Breach Scarab of the Dreamer',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Breaches in Area will always belong to Chayula'],
+			explicitMods: [{ description: 'Breaches in Area will always belong to Chayula' }],
 			flavourText: ['Dreams quickly sour into Nightmare.'],
 			frameType: 0,
 			h: 1,
@@ -3311,8 +3287,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Blight Scarab of Blooming',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: [
-				'Blight Encounters in Area have up to 3 additional Unique Bosses\nUnique enemies in Blight Encounters have 100% increased life\nTier 14+ Blighted Maps found in Area drop as Blight-Ravaged Maps instead',
+			explicitMods: [{ description: 'Blight Encounters in Area have up to 3 additional Unique Bosses\\nUnique enemies in Blight Encounters have 100% increased life\\nTier 14+ Blighted Maps found in Area drop as Blight-Ravaged Maps instead' },
 			],
 			flavourText: ['Once a century, the Blight spills forth...'],
 			frameType: 0,
@@ -3339,8 +3314,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Horned Scarab of Pandemonium',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: [
-				'Monster packs in Area have a 15% chance to be replaced by a random Atlas Boss\nModifiers to the Final Map Boss also apply to these Atlas Bosses',
+			explicitMods: [{ description: 'Monster packs in Area have a 15% chance to be replaced by a random Atlas Boss\\nModifiers to the Final Map Boss also apply to these Atlas Bosses' },
 			],
 			flavourText: ['Punctured dreams bleed into the mind.'],
 			frameType: 0,
@@ -3368,7 +3342,7 @@ export const fragments: TabWithItems = {
 			baseType: 'Synthesising Fragment',
 			descrText:
 				'Use five of these in a personal Map Device to open Portals to The Cortex. Can only be used once.',
-			explicitMods: ["The Cortex is level 85\r\nVenarius' full power is unleashed in the Cortex"],
+			explicitMods: [{ description: "The Cortex is level 85\r\nVenarius' full power is unleashed in the Cortex" }],
 			flavourText: [
 				'When memories become twisted by a corrupted mind,\r',
 				' history is rewritten, time after time.',
@@ -3415,8 +3389,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Domination Scarab of Terrors',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: [
-				'Shrines in Area are guarded by an Atlas Boss\nModifiers to the Final Map Boss also apply to these Atlas Bosses',
+			explicitMods: [{ description: 'Shrines in Area are guarded by an Atlas Boss\\nModifiers to the Final Map Boss also apply to these Atlas Bosses' },
 			],
 			flavourText: ['Whatever the prize, fight for it.'],
 			frameType: 0,
@@ -3443,7 +3416,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Scarab of Radiant Storms',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Area contains a Resplendent Tempest'],
+			explicitMods: [{ description: 'Area contains a Resplendent Tempest' }],
 			flavourText: ['The great cacophony of life roars to a crescendo.'],
 			frameType: 0,
 			h: 1,
@@ -3469,7 +3442,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Torment Scarab of Possession',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Rare Monsters in Area have a quarter chance to be Possessed by up to 1 Tormented Spirit'],
+			explicitMods: [{ description: 'Rare Monsters in Area have a quarter chance to be Possessed by up to 1 Tormented Spirit' }],
 			flavourText: ['The strong are never truly alone.'],
 			frameType: 0,
 			h: 1,
@@ -3496,7 +3469,7 @@ export const fragments: TabWithItems = {
 			baseType: 'Gift to the Goddess',
 			descrText:
 				"Travel to the Aspirants' Plaza and spend this item to open the Eternal Labyrinth of Opportunity.",
-			explicitMods: ['The Divine Font can be used additional times.'],
+			explicitMods: [{ description: 'The Divine Font can be used additional times.' }],
 			flavourText: ['The Goddess abides a kingdom beyond compare,\r', 'should you meet her challenge.'],
 			frameType: 0,
 			h: 1,
@@ -3518,7 +3491,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Ultimatum Scarab of Dueling',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Ultimatum Encounters in Area will always lead to a Unique Boss if possible'],
+			explicitMods: [{ description: 'Ultimatum Encounters in Area will always lead to a Unique Boss if possible' }],
 			flavourText: ['Victory is meaningless, failure will be mocked.'],
 			frameType: 0,
 			h: 1,
@@ -3544,7 +3517,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Reliquary Scarab of Overlords',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Unique Monsters in Area drop an additional Unique Item'],
+			explicitMods: [{ description: 'Unique Monsters in Area drop an additional Unique Item' }],
 			flavourText: ['Pry it from their cold dead hands.'],
 			frameType: 0,
 			h: 1,
@@ -3591,7 +3564,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Reliquary Scarab of Vision',
 			descrText: 'Can be used in a personal Map Device to add modifiers to a Map.',
-			explicitMods: ['Area contains The Nameless Seer'],
+			explicitMods: [{ description: 'Area contains The Nameless Seer' }],
 			flavourText: ['He foresees great wealth in your future.'],
 			frameType: 0,
 			h: 1,
@@ -3617,7 +3590,7 @@ export const fragments: TabWithItems = {
 		{
 			baseType: 'Tribute to the Goddess',
 			descrText: "Travel to the Aspirants' Plaza and spend this item to open the Eternal Labyrinth of Fortune.",
-			explicitMods: ["The Labyrinth's rewards have been enriched."],
+			explicitMods: [{ description: "The Labyrinth's rewards have been enriched." }],
 			flavourText: [
 				'You may appeal to the Goddess for another verdict,\r',
 				'but justice favours only the truly worthy.',
@@ -3673,7 +3646,7 @@ export const fragments: TabWithItems = {
 			id: '15e4a9d626144b0e0629a3edba93206dac6a2ec38dc7707b36d03cb44c3eab0e',
 			identified: true,
 			ilvl: 83,
-			implicitMods: ['Modifiers to Item Quantity affect the amount of rewards dropped by the boss'],
+			implicitMods: [{ description: 'Modifiers to Item Quantity affect the amount of rewards dropped by the boss' }],
 			inventoryId: 'Stash1',
 			league: 'Necropolis',
 			name: '',
@@ -3697,7 +3670,7 @@ export const fragments: TabWithItems = {
 			id: '12602de64b8ab2b3b8038ca5916e70f3700500ddc3a7e478f16137567f02f50f',
 			identified: true,
 			ilvl: 83,
-			implicitMods: ['Modifiers to Item Quantity affect the amount of rewards dropped by the boss'],
+			implicitMods: [{ description: 'Modifiers to Item Quantity affect the amount of rewards dropped by the boss' }],
 			inventoryId: 'Stash1',
 			league: 'Necropolis',
 			name: '',
@@ -3712,4 +3685,4 @@ export const fragments: TabWithItems = {
 	metadata: { colour: '638000', public: true },
 	name: '11',
 	type: 'FragmentStash',
-} satisfies TabWithItems;
+} as TabWithItems;

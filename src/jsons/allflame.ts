@@ -9,7 +9,7 @@ export const allflame = {
 	id: '4eb8e89624d839eab92734cbcb40611faa071ad2c2f350220898e43071a5451e',
 	identified: true,
 	ilvl: 57,
-	implicitMods: ['Pack monsters reward greatly increased Experience\r\nPack monsters drop no Items'],
+	implicitMods: [{ description: 'Pack monsters reward greatly increased Experience\\r\\nPack monsters drop no Items' }],
 	inventoryId: 'Stash1',
 	itemLevel: 57,
 	league: 'Hardcore Necropolis',

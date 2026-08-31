@@ -5,7 +5,7 @@ import { PoeItem } from '../poe.types.js';
 export const maxedStackSize: PoeItem = {
 	artFilename: 'TheEncroachingDarkness',
 	baseType: 'The Encroaching Darkness',
-	explicitMods: ['<uniqueitem>{Map}\r\n<corrupted>{Corrupted}'],
+	explicitMods: [{ description: '<uniqueitem>{Map}\\r\\n<corrupted>{Corrupted}' }],
 	flavourText: ['No matter where your dreams take you, Nightmare follows close behind.'],
 	frameType: 6,
 	h: 1,

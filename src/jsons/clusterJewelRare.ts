@@ -9,10 +9,7 @@ export const clusterJewelRare = {
 		'2 Added Passive Skills are Jewel Sockets',
 		'Added Small Passive Skills grant: Claw Attacks deal 12% increased Damage with Hits and Ailments\nAdded Small Passive Skills grant: Dagger Attacks deal 12% increased Damage with Hits and Ailments',
 	],
-	explicitMods: [
-		'Added Small Passive Skills also grant: +3 to Maximum Life',
-		'1 Added Passive Skill is Calamitous',
-		'1 Added Passive Skill is Smite the Weak',
+	explicitMods: [{ description: 'Added Small Passive Skills also grant: +3 to Maximum Life' }, { description: '1 Added Passive Skill is Calamitous' }, { description: '1 Added Passive Skill is Smite the Weak' },
 	],
 	frameType: 2,
 	h: 1,

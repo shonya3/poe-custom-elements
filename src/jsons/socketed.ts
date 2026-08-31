@@ -1,12 +1,7 @@
 import { PoeItem } from '../poe.types.js';
 export const socketed = {
 	baseType: "Assassin's Garb",
-	explicitMods: [
-		'131% increased Evasion Rating',
-		'+25% to Chaos Resistance',
-		'You can apply an additional Curse',
-		'Your Hexes can affect Hexproof Enemies',
-		'Poison Cursed Enemies on hit',
+	explicitMods: [{ description: '131% increased Evasion Rating' }, { description: '+25% to Chaos Resistance' }, { description: 'You can apply an additional Curse' }, { description: 'Your Hexes can affect Hexproof Enemies' }, { description: 'Poison Cursed Enemies on hit' },
 	],
 	flavourText: [
 		'Curse their vile Council,\r',
@@ -19,7 +14,7 @@ export const socketed = {
 	id: '138b9f17f038b306c48cd7b667b5307d496f9ce5d7c5162d1ad09ad6a7b4dd02',
 	identified: true,
 	ilvl: 73,
-	implicitMods: ['3% increased Movement Speed'],
+	implicitMods: [{ description: '3% increased Movement Speed' }],
 	inventoryId: 'Stash1',
 	league: 'Standard',
 	name: "Cospri's Will",
@@ -74,9 +69,7 @@ export const socketed = {
 			colour: 'I',
 			descrText:
 				'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-			explicitMods: [
-				'Supported Skills have 111% increased Critical Strike Chance',
-				'Supported Skills have +2% to Critical Strike Chance',
+			explicitMods: [{ description: 'Supported Skills have 111% increased Critical Strike Chance' }, { description: 'Supported Skills have +2% to Critical Strike Chance' },
 			],
 			frameType: 4,
 			h: 1,
@@ -139,7 +132,7 @@ export const socketed = {
 			colour: 'D',
 			descrText:
 				'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-			explicitMods: ['Supported Skills deal 32% more Chaos Damage', 'Supported Skills deal no Elemental Damage'],
+			explicitMods: [{ description: 'Supported Skills deal 32% more Chaos Damage' }, { description: 'Supported Skills deal no Elemental Damage' }],
 			frameType: 4,
 			h: 1,
 			icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9TdXBwb3J0L1ZvaWRNYW5pcHVsYXRpb24iLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/d43a79f597/VoidManipulation.png',
@@ -207,9 +200,7 @@ export const socketed = {
 			colour: 'D',
 			descrText:
 				'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-			explicitMods: [
-				'Projectiles from Supported Skills Pierce 4 additional Targets',
-				'Supported Skills deal 17% more Projectile Damage',
+			explicitMods: [{ description: 'Projectiles from Supported Skills Pierce 4 additional Targets' }, { description: 'Supported Skills deal 17% more Projectile Damage' },
 			],
 			frameType: 4,
 			h: 1,
@@ -272,10 +263,7 @@ export const socketed = {
 			colour: 'D',
 			descrText:
 				'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-			explicitMods: [
-				'Deals 1327.6 Base Chaos Damage per second',
-				'Base duration is 2.00 seconds',
-				'60% of Physical Damage Converted to Chaos Damage',
+			explicitMods: [{ description: 'Deals 1327.6 Base Chaos Damage per second' }, { description: 'Base duration is 2.00 seconds' }, { description: '60% of Physical Damage Converted to Chaos Damage' },
 				"Modifiers to Projectile Damage apply to this Skill's Damage Over Time effect",
 				'+0.5 metres to radius',
 			],
@@ -351,11 +339,7 @@ export const socketed = {
 			colour: 'D',
 			descrText:
 				'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-			explicitMods: [
-				'Supported Skills deal 46% more Chaos Damage over Time',
-				'Supported Skills deal 46% more Physical Damage over Time',
-				'Supported Skills deal 46% more Physical Projectile Attack Damage',
-				'Supported Skills have 10% less Projectile Attack Speed',
+			explicitMods: [{ description: 'Supported Skills deal 46% more Chaos Damage over Time' }, { description: 'Supported Skills deal 46% more Physical Damage over Time' }, { description: 'Supported Skills deal 46% more Physical Projectile Attack Damage' }, { description: 'Supported Skills have 10% less Projectile Attack Speed' },
 			],
 			frameType: 4,
 			h: 1,
@@ -418,11 +402,7 @@ export const socketed = {
 			colour: 'I',
 			descrText:
 				'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-			explicitMods: [
-				'Supported Curse Skills apply their Curses as Auras\nSupported Curse Skills also count as Aura Skills',
-				'Using Supported Skills is Instant',
-				'25% less Effect of Supported Curses',
-				'64% increased Area of Effect of Supported Curse Skills',
+			explicitMods: [{ description: 'Supported Curse Skills apply their Curses as Auras\\nSupported Curse Skills also count as Aura Skills' }, { description: 'Using Supported Skills is Instant' }, { description: '25% less Effect of Supported Curses' }, { description: '64% increased Area of Effect of Supported Curse Skills' },
 			],
 			frameType: 4,
 			h: 1,

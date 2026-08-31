@@ -3,8 +3,7 @@ import { PoeItem } from '../poe.types.js';
 export const rogueMarkers = {
 	baseType: "Rogue's Marker",
 	descrText: 'Right click on this item while in a Town or Hideout to use it.',
-	explicitMods: [
-		'Creates a portal to the Rogue Harbour from a Town or Hideout\nUsed as Currency for services in the Rogue Harbour',
+	explicitMods: [{ description: 'Creates a portal to the Rogue Harbour from a Town or Hideout\\nUsed as Currency for services in the Rogue Harbour' },
 	],
 	frameType: 5,
 	h: 1,

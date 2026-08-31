@@ -8,7 +8,7 @@ export const breachRing = {
 	id: '7788388f29e96638ff676b29f2cc4c37843e8218f010da07d310a3c8fe511be6',
 	identified: false,
 	ilvl: 66,
-	implicitMods: ['Properties are doubled while in a Breach'],
+	implicitMods: [{ description: 'Properties are doubled while in a Breach' }],
 	inventoryId: 'Stash1',
 	league: 'Hardcore Necropolis',
 	name: '',

@@ -51,6 +51,18 @@ export type Requirement = {
 	suffix?: string;
 };
 
+/** PoE API ItemMod https://www.pathofexile.com/developer/docs/reference#type-ItemMod */
+export type ItemMod = {
+	description: string;
+	flags?: {
+		fractured?: boolean;
+		mutated?: boolean;
+		crafted?: boolean;
+		desecrated?: boolean;
+		vestigial?: boolean;
+	};
+};
+
 export interface Socket {
 	group: number;
 	attr: string;
@@ -93,8 +105,8 @@ export type PoeItem = {
 	corrupted?: boolean;
 	lockedToCharacter?: boolean;
 	requirements?: Array<Requirement>;
-	implicitMods?: Array<string>;
-	explicitMods?: Array<string>;
+	implicitMods?: Array<ItemMod>;
+	explicitMods?: Array<ItemMod>;
 	fracturedMods?: Array<string>;
 	socketedItems?: Array<SocketedItem>;
 	properties?: Array<ItemProperty>;
@@ -141,7 +153,7 @@ export interface SocketedItem {
 	category?: ICategory;
 	requirements: Array<Requirement>;
 	nextLevelRequirements?: Array<Requirement>;
-	explicitMods: Array<string>;
+	explicitMods: Array<ItemMod>;
 	frameType: number;
 	x?: number;
 	y?: number;

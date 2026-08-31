@@ -86,11 +86,11 @@ function item(): PoeItem {
 	return {
 		baseType: 'Glorious Leather',
 		explicitMods: [
-			'+13% chance to Suppress Spell Damage',
-			'+100 to Evasion Rating',
-			'+77 to maximum Life',
-			'+28% to Fire Resistance',
-			'+39% to Lightning Resistance',
+			{ description: '+13% chance to Suppress Spell Damage' },
+			{ description: '+100 to Evasion Rating' },
+			{ description: '+77 to maximum Life' },
+			{ description: '+28% to Fire Resistance' },
+			{ description: '+39% to Lightning Resistance' },
 		],
 		frameType: 2,
 		h: 3,

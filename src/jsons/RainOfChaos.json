@@ -1,7 +1,11 @@
 {
 	"artFilename": "RainOfChaos",
 	"baseType": "Rain of Chaos",
-	"explicitMods": ["<currencyitem>{Chaos Orb}"],
+	"explicitMods": [
+		{
+			"description": "<currencyitem>{Chaos Orb}"
+		}
+	],
 	"flavourText": [
 		"<size:27>{Fire filled the sky that night \r",
 		"Chaos reigned \r",
@@ -24,7 +28,12 @@
 			"displayMode": 0,
 			"name": "Stack Size",
 			"type": 32,
-			"values": [["8/8", 0]]
+			"values": [
+				[
+					"8/8",
+					0
+				]
+			]
 		}
 	],
 	"stackSize": 8,

@@ -85,16 +85,9 @@ export const fracturedGloves = {
 			suffix: '(gem)',
 		},
 	],
-	implicitMods: [
-		'Inflict Lightning Exposure on Hit, applying -12% to Lightning Resistance',
-		'20% chance to Intimidate Enemies for 4 seconds on Hit',
+	implicitMods: [{ description: 'Inflict Lightning Exposure on Hit, applying -12% to Lightning Resistance' }, { description: '20% chance to Intimidate Enemies for 4 seconds on Hit' },
 	],
-	explicitMods: [
-		'16% increased Attack Speed',
-		'24% increased Evasion and Energy Shield',
-		'+80 to maximum Life',
-		'+46% to Lightning Resistance',
-		'11% increased Stun and Block Recovery',
+	explicitMods: [{ description: '16% increased Attack Speed' }, { description: '24% increased Evasion and Energy Shield' }, { description: '+80 to maximum Life' }, { description: '+46% to Lightning Resistance' }, { description: '11% increased Stun and Block Recovery' },
 	],
 	craftedMods: ['28% increased Damage during any Flask Effect'],
 	fracturedMods: ['+12% chance to Suppress Spell Damage'],
@@ -160,9 +153,7 @@ export const fracturedGloves = {
 				},
 			],
 			secDescrText: 'Supports mark curse skills.',
-			explicitMods: [
-				'16% reduced Effect of Marks from Supported Skills',
-				'Trigger Supported Skill when you Hit a Rare or Unique Enemy with an Attack',
+			explicitMods: [{ description: '16% reduced Effect of Marks from Supported Skills' }, { description: 'Trigger Supported Skill when you Hit a Rare or Unique Enemy with an Attack' },
 			],
 			descrText:
 				'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
@@ -235,13 +226,7 @@ export const fracturedGloves = {
 			],
 			secDescrText:
 				'Curses a single enemy, making them more vulnerable to Critical Strikes. Killing the cursed enemy will grant life and mana, and a power charge. You can only have one Mark at a time.',
-			explicitMods: [
-				'Cursed enemies have a 100% chance to grant a Power Charge when slain',
-				'Hits against Cursed Enemies have +1.5% to Critical Strike Chance',
-				'Hits against Cursed Enemies have +50% to Critical Strike Multiplier',
-				'Cursed enemies grant 623 Life when Killed',
-				'Cursed enemies grant 82 Mana when Killed',
-				'Cursed Enemies have a 5% chance to grant a Power Charge when Hit',
+			explicitMods: [{ description: 'Cursed enemies have a 100% chance to grant a Power Charge when slain' }, { description: 'Hits against Cursed Enemies have +1.5% to Critical Strike Chance' }, { description: 'Hits against Cursed Enemies have +50% to Critical Strike Multiplier' }, { description: 'Cursed enemies grant 623 Life when Killed' }, { description: 'Cursed enemies grant 82 Mana when Killed' }, { description: 'Cursed Enemies have a 5% chance to grant a Power Charge when Hit' },
 			],
 			descrText:
 				'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
@@ -313,10 +298,7 @@ export const fracturedGloves = {
 			],
 			secDescrText:
 				'Grants a buff which significantly lowers your maximum Energy Shield to transform your equipped weapons into Swords formed from that energy. Casting the spell again removes the buff. Requires a Non-Bow weapon. This skill cannot be triggered.',
-			explicitMods: [
-				'Energy Blades have minimum Lightning Damage equal to 2% of Energy Shield, plus 13\nEnergy Blades have maximum Lightning Damage equal to 40% of Energy Shield, plus 250',
-				'Two Handed Energy Blades have 70% more Lightning Damage',
-				'Buff grants 45% less Maximum Energy Shield',
+			explicitMods: [{ description: 'Energy Blades have minimum Lightning Damage equal to 2% of Energy Shield, plus 13\\nEnergy Blades have maximum Lightning Damage equal to 40% of Energy Shield, plus 250' }, { description: 'Two Handed Energy Blades have 70% more Lightning Damage' }, { description: 'Buff grants 45% less Maximum Energy Shield' },
 			],
 			descrText:
 				'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
@@ -372,7 +354,7 @@ export const fracturedGloves = {
 			],
 			secDescrText:
 				"Supports any skill gem. Once this gem reaches level 2 or above, will raise the quality of supported gems. Cannot support skills that don't come from gems.",
-			explicitMods: ['+24% to Quality of Supported Skill Gems'],
+			explicitMods: [{ description: '+24% to Quality of Supported Skill Gems' }],
 			descrText:
 				'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
 			frameType: 4,

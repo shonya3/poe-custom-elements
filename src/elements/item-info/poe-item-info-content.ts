@@ -1,6 +1,6 @@
 import { LitElement, html, css, TemplateResult, nothing, CSSResult } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import type { ItemProperty, PoeItem, Requirement } from '../../poe.types.js';
+import type { ItemMod, ItemProperty, PoeItem, Requirement } from '../../poe.types.js';
 import './poe-item-info-separator.js';
 import './poe-item-info-property.js';
 import './poe-item-info-requirements.js';
@@ -35,16 +35,16 @@ export class PoeItemInfoContentElement extends LitElement {
 							enc.split('\n').map(enc => html`<p class="enchant">${enc}</p>`)
 						)}`
 					: nothing,
-				this.implicits.length
-					? html` ${this.implicits.map(imp => html`<p class="implicitMod">${imp}</p>`)} `
-					: nothing,
-				this.explicits.length || this.crafts.length || this.fracturedMods.length
-					? html`
-							${this.fracturedMods.map(frac => html`<p class="fractured">${frac}</p>`)}
-							${this.explicits.map(exp => html`<p class="explicitMod">${exp}</p>`)}
-							${this.crafts.map(craft => html`<p class="craft">${craft}</p>`)}
-						`
-					: nothing,
+			this.implicits.length
+				? html` ${this.implicits.map(imp => html`<p class="implicitMod">${imp.description}</p>`)} `
+				: nothing,
+			this.explicits.length || this.crafts.length || this.fracturedMods.length
+				? html`
+						${this.fracturedMods.map(frac => html`<p class="fractured">${frac}</p>`)}
+						${this.explicits.map(exp => html`<p class="explicitMod">${exp.description}</p>`)}
+						${this.crafts.map(craft => html`<p class="craft">${craft}</p>`)}
+					`
+				: nothing,
 				this.item.identified ? nothing : html` <p class="unidentified">Unidentified</p>`,
 				this.item.corrupted ? html` <p class="corrupted">corrupted</p>` : nothing,
 				this.item.flavourText
@@ -90,11 +90,11 @@ export class PoeItemInfoContentElement extends LitElement {
 		return this.item.requirements ?? [];
 	}
 
-	get implicits(): Array<string> {
+	get implicits(): Array<ItemMod> {
 		return this.item.implicitMods ?? [];
 	}
 
-	get explicits(): Array<string> {
+	get explicits(): Array<ItemMod> {
 		return this.item.explicitMods ?? [];
 	}
 

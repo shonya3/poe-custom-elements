@@ -5,8 +5,14 @@
 		{
 			"artFilename": "TheEncroachingDarkness",
 			"baseType": "The Encroaching Darkness",
-			"explicitMods": ["<uniqueitem>{Map}\r\n<corrupted>{Corrupted}"],
-			"flavourText": ["No matter where your dreams take you, Nightmare follows close behind."],
+			"explicitMods": [
+				{
+					"description": "<uniqueitem>{Map}\r\n<corrupted>{Corrupted}"
+				}
+			],
+			"flavourText": [
+				"No matter where your dreams take you, Nightmare follows close behind."
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -17,7 +23,19 @@
 			"league": "Standard",
 			"maxStackSize": 8,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["8/8", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"8/8",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 8,
 			"typeLine": "The Encroaching Darkness",
 			"verified": false,
@@ -28,7 +46,11 @@
 		{
 			"artFilename": "RainOfChaos",
 			"baseType": "Rain of Chaos",
-			"explicitMods": ["<currencyitem>{Chaos Orb}"],
+			"explicitMods": [
+				{
+					"description": "<currencyitem>{Chaos Orb}"
+				}
+			],
 			"flavourText": [
 				"<size:27>{Fire filled the sky that night \r",
 				"Chaos reigned \r",
@@ -46,7 +68,19 @@
 			"league": "Standard",
 			"maxStackSize": 8,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["8/8", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"8/8",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 8,
 			"typeLine": "Rain of Chaos",
 			"verified": false,
@@ -57,7 +91,11 @@
 		{
 			"artFilename": "LantadorsLostLove",
 			"baseType": "Lantador's Lost Love",
-			"explicitMods": ["<rareitem>{Two-Stone Ring}"],
+			"explicitMods": [
+				{
+					"description": "<rareitem>{Two-Stone Ring}"
+				}
+			],
 			"flavourText": [
 				"<smaller>{They fought the storm together as one, \r",
 				"Until the longest of days was done. \r",
@@ -75,7 +113,19 @@
 			"league": "Standard",
 			"maxStackSize": 7,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["6/7", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"6/7",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 6,
 			"typeLine": "Lantador's Lost Love",
 			"verified": false,
@@ -86,8 +136,15 @@
 		{
 			"artFilename": "Loyalty",
 			"baseType": "Loyalty",
-			"explicitMods": ["<currencyitem>{3x Orb of Fusing}"],
-			"flavourText": ["Bound by fate,\r", "inseparable by choice."],
+			"explicitMods": [
+				{
+					"description": "<currencyitem>{3x Orb of Fusing}"
+				}
+			],
+			"flavourText": [
+				"Bound by fate,\r",
+				"inseparable by choice."
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -98,7 +155,19 @@
 			"league": "Standard",
 			"maxStackSize": 5,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["5/5", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"5/5",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 5,
 			"typeLine": "Loyalty",
 			"verified": false,
@@ -109,8 +178,14 @@
 		{
 			"artFilename": "TheGambler",
 			"baseType": "The Gambler",
-			"explicitMods": ["<divination>{Divination Card}"],
-			"flavourText": ["\"I don't believe in karma. If it were real, I would never win.\""],
+			"explicitMods": [
+				{
+					"description": "<divination>{Divination Card}"
+				}
+			],
+			"flavourText": [
+				"\"I don't believe in karma. If it were real, I would never win.\""
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -121,7 +196,19 @@
 			"league": "Standard",
 			"maxStackSize": 5,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["5/5", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"5/5",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 5,
 			"typeLine": "The Gambler",
 			"verified": false,
@@ -132,8 +219,14 @@
 		{
 			"artFilename": "ThreeFacesInTheDark",
 			"baseType": "Three Faces in the Dark",
-			"explicitMods": ["<currencyitem>{3x Chaos Orb}"],
-			"flavourText": ["For every threat you spy in the shadows, there are two others you don't."],
+			"explicitMods": [
+				{
+					"description": "<currencyitem>{3x Chaos Orb}"
+				}
+			],
+			"flavourText": [
+				"For every threat you spy in the shadows, there are two others you don't."
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -144,7 +237,19 @@
 			"league": "Standard",
 			"maxStackSize": 7,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["5/7", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"5/7",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 5,
 			"typeLine": "Three Faces in the Dark",
 			"verified": false,
@@ -155,8 +260,14 @@
 		{
 			"artFilename": "TheTrial",
 			"baseType": "The Trial",
-			"explicitMods": ["<rareitem>{Map}\r\n<default>{Map Tier:} <normal>{15}\r\n<corrupted>{Corrupted}"],
-			"flavourText": ["You cannot journey to new lands until you have the courage to leave the safety of home."],
+			"explicitMods": [
+				{
+					"description": "<rareitem>{Map}\r\n<default>{Map Tier:} <normal>{15}\r\n<corrupted>{Corrupted}"
+				}
+			],
+			"flavourText": [
+				"You cannot journey to new lands until you have the courage to leave the safety of home."
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -167,7 +278,19 @@
 			"league": "Standard",
 			"maxStackSize": 7,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["5/7", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"5/7",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 5,
 			"typeLine": "The Trial",
 			"verified": false,
@@ -178,8 +301,14 @@
 		{
 			"artFilename": "TheTinkerersTable",
 			"baseType": "The Tinkerer's Table",
-			"explicitMods": ["<currencyitem>{5x Fossil}"],
-			"flavourText": ["Trying to bring your vision to life is enough to drive you mad."],
+			"explicitMods": [
+				{
+					"description": "<currencyitem>{5x Fossil}"
+				}
+			],
+			"flavourText": [
+				"Trying to bring your vision to life is enough to drive you mad."
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -190,7 +319,19 @@
 			"league": "Standard",
 			"maxStackSize": 5,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["4/5", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"4/5",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 4,
 			"typeLine": "The Tinkerer's Table",
 			"verified": false,
@@ -201,8 +342,14 @@
 		{
 			"artFilename": "TheArenaChampion",
 			"baseType": "The Arena Champion",
-			"explicitMods": ["<whiteitem>{Map}\r\n<default>{Map Tier:} <normal>{12}"],
-			"flavourText": ["The fight is the easy part. It's the years of training that'll kill you."],
+			"explicitMods": [
+				{
+					"description": "<whiteitem>{Map}\r\n<default>{Map Tier:} <normal>{12}"
+				}
+			],
+			"flavourText": [
+				"The fight is the easy part. It's the years of training that'll kill you."
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -213,7 +360,19 @@
 			"league": "Standard",
 			"maxStackSize": 10,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["4/10", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"4/10",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 4,
 			"typeLine": "The Arena Champion",
 			"verified": false,
@@ -224,8 +383,14 @@
 		{
 			"artFilename": "Prosperity",
 			"baseType": "Prosperity",
-			"explicitMods": ["<magicitem>{Perandus' Gold Ring}"],
-			"flavourText": ["Accumulating wealth has its own costs."],
+			"explicitMods": [
+				{
+					"description": "<magicitem>{Perandus' Gold Ring}"
+				}
+			],
+			"flavourText": [
+				"Accumulating wealth has its own costs."
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -236,7 +401,19 @@
 			"league": "Standard",
 			"maxStackSize": 10,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["4/10", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"4/10",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 4,
 			"typeLine": "Prosperity",
 			"verified": false,
@@ -247,7 +424,11 @@
 		{
 			"artFilename": "AssassinsFavor",
 			"baseType": "Assassin's Favour",
-			"explicitMods": ["<uniqueitem>{Dagger}"],
+			"explicitMods": [
+				{
+					"description": "<uniqueitem>{Dagger}"
+				}
+			],
 			"flavourText": [
 				"By the time their eyes meet, \r",
 				"the dark deal has long since been made, \r",
@@ -263,7 +444,19 @@
 			"league": "Standard",
 			"maxStackSize": 9,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["4/9", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"4/9",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 4,
 			"typeLine": "Assassin's Favour",
 			"verified": false,
@@ -274,7 +467,11 @@
 		{
 			"artFilename": "TheChainsThatBind",
 			"baseType": "The Chains that Bind",
-			"explicitMods": ["<whiteitem>{Six-Link Body Armour}"],
+			"explicitMods": [
+				{
+					"description": "<whiteitem>{Six-Link Body Armour}"
+				}
+			],
 			"flavourText": [
 				"Scarier than any criminal is an innocent man in chains, for when he breaks free, his revenge will be justified."
 			],
@@ -288,7 +485,19 @@
 			"league": "Standard",
 			"maxStackSize": 11,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["4/11", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"4/11",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 4,
 			"typeLine": "The Chains that Bind",
 			"verified": false,
@@ -299,8 +508,14 @@
 		{
 			"artFilename": "GlimmerOfHope",
 			"baseType": "Glimmer of Hope",
-			"explicitMods": ["<uniqueitem>{Gold Ring}"],
-			"flavourText": ["When you dwell in total darkness, even the faintest light may guide you out."],
+			"explicitMods": [
+				{
+					"description": "<uniqueitem>{Gold Ring}"
+				}
+			],
+			"flavourText": [
+				"When you dwell in total darkness, even the faintest light may guide you out."
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -311,7 +526,19 @@
 			"league": "Standard",
 			"maxStackSize": 8,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["4/8", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"4/8",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 4,
 			"typeLine": "Glimmer of Hope",
 			"verified": false,
@@ -322,8 +549,14 @@
 		{
 			"artFilename": "TheCatalyst",
 			"baseType": "The Catalyst",
-			"explicitMods": ["<currencyitem>{Vaal Orb}"],
-			"flavourText": ["Simple actions can lead the world to an early grave."],
+			"explicitMods": [
+				{
+					"description": "<currencyitem>{Vaal Orb}"
+				}
+			],
+			"flavourText": [
+				"Simple actions can lead the world to an early grave."
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -334,7 +567,19 @@
 			"league": "Standard",
 			"maxStackSize": 3,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["3/3", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"3/3",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 3,
 			"typeLine": "The Catalyst",
 			"verified": false,
@@ -345,8 +590,14 @@
 		{
 			"artFilename": "ImperialLegacy",
 			"baseType": "Imperial Legacy",
-			"explicitMods": ["<whiteitem>{Six-Link Imperial Bow}\r\n<default>{Item Level:} <normal>{100}"],
-			"flavourText": ["A life lost, A legacy born."],
+			"explicitMods": [
+				{
+					"description": "<whiteitem>{Six-Link Imperial Bow}\r\n<default>{Item Level:} <normal>{100}"
+				}
+			],
+			"flavourText": [
+				"A life lost, A legacy born."
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -357,7 +608,19 @@
 			"league": "Standard",
 			"maxStackSize": 22,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["3/22", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"3/22",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 3,
 			"typeLine": "Imperial Legacy",
 			"verified": false,
@@ -368,7 +631,11 @@
 		{
 			"artFilename": "TheStormcaller",
 			"baseType": "The Stormcaller",
-			"explicitMods": ["<uniqueitem>{Agnerod Staff}"],
+			"explicitMods": [
+				{
+					"description": "<uniqueitem>{Agnerod Staff}"
+				}
+			],
 			"flavourText": [
 				"If you beckon the\r",
 				"Lord of Lightning,\r",
@@ -385,7 +652,19 @@
 			"league": "Standard",
 			"maxStackSize": 4,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["3/4", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"3/4",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 3,
 			"typeLine": "The Stormcaller",
 			"verified": false,
@@ -396,8 +675,14 @@
 		{
 			"artFilename": "TheCardSharp",
 			"baseType": "The Card Sharp",
-			"explicitMods": ["<whiteitem>{Divination Scarab}"],
-			"flavourText": ["\"The house always wins... except when I do.\""],
+			"explicitMods": [
+				{
+					"description": "<whiteitem>{Divination Scarab}"
+				}
+			],
+			"flavourText": [
+				"\"The house always wins... except when I do.\""
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -408,7 +693,19 @@
 			"league": "Standard",
 			"maxStackSize": 4,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["3/4", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"3/4",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 3,
 			"typeLine": "The Card Sharp",
 			"verified": false,
@@ -420,7 +717,9 @@
 			"artFilename": "TheKingsBlade",
 			"baseType": "The King's Blade",
 			"explicitMods": [
-				"<size:31>{<magicitem>{Bloodthirsty Eternal Sword}\r\n<default>{Item Level:} <normal>{66}}"
+				{
+					"description": "<size:31>{<magicitem>{Bloodthirsty Eternal Sword}\r\n<default>{Item Level:} <normal>{66}}"
+				}
 			],
 			"flavourText": [
 				"<size:25>{\"To know for what you fight. To get up again when you've been struck down. To outmanoeuvre someone faster, trick someone smarter, crush someone stronger. That's what it takes to claim the crown.\"\r",
@@ -436,7 +735,19 @@
 			"league": "Standard",
 			"maxStackSize": 5,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["3/5", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"3/5",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 3,
 			"typeLine": "The King's Blade",
 			"verified": false,
@@ -447,7 +758,11 @@
 		{
 			"artFilename": "TheTower",
 			"baseType": "The Tower",
-			"explicitMods": ["<uniqueitem>{Staff}"],
+			"explicitMods": [
+				{
+					"description": "<uniqueitem>{Staff}"
+				}
+			],
 			"flavourText": [
 				"A tower built of the strongest stone is not eternal; a towering intellect is not enlightened."
 			],
@@ -461,7 +776,19 @@
 			"league": "Standard",
 			"maxStackSize": 6,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["3/6", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"3/6",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 3,
 			"typeLine": "The Tower",
 			"verified": false,
@@ -472,7 +799,11 @@
 		{
 			"artFilename": "TheForwardGaze",
 			"baseType": "The Forward Gaze",
-			"explicitMods": ["<uniqueitem>{Replica Item}"],
+			"explicitMods": [
+				{
+					"description": "<uniqueitem>{Replica Item}"
+				}
+			],
 			"flavourText": [
 				"\"When they realize our true intent, they will decry us, assault us, and try to crush what we have built. We must stand tall, Qotra, and make the future our own.\""
 			],
@@ -486,7 +817,19 @@
 			"league": "Standard",
 			"maxStackSize": 6,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["3/6", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"3/6",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 3,
 			"typeLine": "The Forward Gaze",
 			"verified": false,
@@ -497,7 +840,11 @@
 		{
 			"artFilename": "TheScarredMeadow",
 			"baseType": "The Scarred Meadow",
-			"explicitMods": ["<uniqueitem>{Wake of Destruction}"],
+			"explicitMods": [
+				{
+					"description": "<uniqueitem>{Wake of Destruction}"
+				}
+			],
 			"flavourText": [
 				"The earth offers nourishment, growth and healing. Unless, of course, the sky has other plans."
 			],
@@ -511,7 +858,19 @@
 			"league": "Standard",
 			"maxStackSize": 9,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["3/9", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"3/9",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 3,
 			"typeLine": "The Scarred Meadow",
 			"verified": false,
@@ -522,8 +881,14 @@
 		{
 			"artFilename": "Rats",
 			"baseType": "Rats",
-			"explicitMods": ["<uniqueitem>{Rat's Nest}"],
-			"flavourText": ["Whoever said 'more is always better' has obviously never met a rat."],
+			"explicitMods": [
+				{
+					"description": "<uniqueitem>{Rat's Nest}"
+				}
+			],
+			"flavourText": [
+				"Whoever said 'more is always better' has obviously never met a rat."
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -534,7 +899,19 @@
 			"league": "Standard",
 			"maxStackSize": 8,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["3/8", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"3/8",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 3,
 			"typeLine": "Rats",
 			"verified": false,
@@ -545,8 +922,14 @@
 		{
 			"artFilename": "TheBattleBorn",
 			"baseType": "The Battle Born",
-			"explicitMods": ["<uniqueitem>{Axe}"],
-			"flavourText": ["\"No man can best me, no demon can fell me. For I vanquish all with my axe!\""],
+			"explicitMods": [
+				{
+					"description": "<uniqueitem>{Axe}"
+				}
+			],
+			"flavourText": [
+				"\"No man can best me, no demon can fell me. For I vanquish all with my axe!\""
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -557,7 +940,19 @@
 			"league": "Standard",
 			"maxStackSize": 5,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["3/5", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"3/5",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 3,
 			"typeLine": "The Battle Born",
 			"verified": false,
@@ -568,7 +963,11 @@
 		{
 			"artFilename": "JackInTheBox",
 			"baseType": "Jack in the Box",
-			"explicitMods": ["<uniqueitem>{Item}"],
+			"explicitMods": [
+				{
+					"description": "<uniqueitem>{Item}"
+				}
+			],
 			"flavourText": [
 				"Turn the crank, \r",
 				"close your eyes, \r",
@@ -585,7 +984,19 @@
 			"league": "Standard",
 			"maxStackSize": 4,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["3/4", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"3/4",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 3,
 			"typeLine": "Jack in the Box",
 			"verified": false,
@@ -596,7 +1007,11 @@
 		{
 			"artFilename": "ThePenitent",
 			"baseType": "The Penitent",
-			"explicitMods": ["<uniqueitem>{Unset Ring}"],
+			"explicitMods": [
+				{
+					"description": "<uniqueitem>{Unset Ring}"
+				}
+			],
 			"flavourText": [
 				"<size:28>{First, I gave my wealth, and we went hungry. Next, I gave my land, and we were homeless. Then, I gave my family, and I was alone. Last, I gave my eyes, and all I could dream was mine.}"
 			],
@@ -610,7 +1025,19 @@
 			"league": "Standard",
 			"maxStackSize": 5,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["3/5", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"3/5",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 3,
 			"typeLine": "The Penitent",
 			"verified": false,
@@ -621,8 +1048,17 @@
 		{
 			"artFilename": "TheSurvivalist",
 			"baseType": "The Survivalist",
-			"explicitMods": ["<currencyitem>{7x Orb of Alchemy}"],
-			"flavourText": ["A lucky number \r", "For us all \r", "To help us through \r", "The perils told."],
+			"explicitMods": [
+				{
+					"description": "<currencyitem>{7x Orb of Alchemy}"
+				}
+			],
+			"flavourText": [
+				"A lucky number \r",
+				"For us all \r",
+				"To help us through \r",
+				"The perils told."
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -633,7 +1069,19 @@
 			"league": "Standard",
 			"maxStackSize": 3,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["3/3", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"3/3",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 3,
 			"typeLine": "The Survivalist",
 			"verified": false,
@@ -644,7 +1092,11 @@
 		{
 			"artFilename": "TheFlorasGift",
 			"baseType": "The Flora's Gift",
-			"explicitMods": ["<whiteitem>{Five-Link Staff}\r\n<default>{Item Level:} <normal>{66}"],
+			"explicitMods": [
+				{
+					"description": "<whiteitem>{Five-Link Staff}\r\n<default>{Item Level:} <normal>{66}"
+				}
+			],
 			"flavourText": [
 				"Sturdy and strong,\r",
 				"grown from the stream.\r",
@@ -661,7 +1113,19 @@
 			"league": "Standard",
 			"maxStackSize": 5,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["3/5", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"3/5",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 3,
 			"typeLine": "The Flora's Gift",
 			"verified": false,
@@ -672,8 +1136,14 @@
 		{
 			"artFilename": "ThePackLeader",
 			"baseType": "The Pack Leader",
-			"explicitMods": ["<uniqueitem>{Alpha's Howl}"],
-			"flavourText": ["Become the leader you were born to be."],
+			"explicitMods": [
+				{
+					"description": "<uniqueitem>{Alpha's Howl}"
+				}
+			],
+			"flavourText": [
+				"Become the leader you were born to be."
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -684,7 +1154,19 @@
 			"league": "Standard",
 			"maxStackSize": 6,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["3/6", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"3/6",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 3,
 			"typeLine": "The Pack Leader",
 			"verified": false,
@@ -695,8 +1177,14 @@
 		{
 			"artFilename": "CursedWords",
 			"baseType": "Cursed Words",
-			"explicitMods": ["<uniqueitem>{Maw of Mischief}"],
-			"flavourText": ["If you look hard enough for hidden meaning, you will find it."],
+			"explicitMods": [
+				{
+					"description": "<uniqueitem>{Maw of Mischief}"
+				}
+			],
+			"flavourText": [
+				"If you look hard enough for hidden meaning, you will find it."
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -707,7 +1195,19 @@
 			"league": "Standard",
 			"maxStackSize": 13,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["3/13", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"3/13",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 3,
 			"typeLine": "Cursed Words",
 			"verified": false,
@@ -718,8 +1218,14 @@
 		{
 			"artFilename": "TheSummoner",
 			"baseType": "The Summoner",
-			"explicitMods": ["<gemitem>{Minion Gem}\r\n<default>{Quality:} <augmented>{+20%}"],
-			"flavourText": ["To own a piece of the Nightmare, you must first belong to the Nightmare."],
+			"explicitMods": [
+				{
+					"description": "<gemitem>{Minion Gem}\r\n<default>{Quality:} <augmented>{+20%}"
+				}
+			],
+			"flavourText": [
+				"To own a piece of the Nightmare, you must first belong to the Nightmare."
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -730,7 +1236,19 @@
 			"league": "Standard",
 			"maxStackSize": 6,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["3/6", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"3/6",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 3,
 			"typeLine": "The Summoner",
 			"verified": false,
@@ -741,8 +1259,14 @@
 		{
 			"artFilename": "TheMasterArtisan",
 			"baseType": "The Master Artisan",
-			"explicitMods": ["<currencyitem>{20x Quality Currency}"],
-			"flavourText": ["Perfection is the standard, excellence will be handled on a case by case basis."],
+			"explicitMods": [
+				{
+					"description": "<currencyitem>{20x Quality Currency}"
+				}
+			],
+			"flavourText": [
+				"Perfection is the standard, excellence will be handled on a case by case basis."
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -753,7 +1277,19 @@
 			"league": "Standard",
 			"maxStackSize": 5,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["3/5", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"3/5",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 3,
 			"typeLine": "The Master Artisan",
 			"verified": false,
@@ -764,7 +1300,11 @@
 		{
 			"artFilename": "GemcuttersPromise",
 			"baseType": "Gemcutter's Promise",
-			"explicitMods": ["<gemitem>{Gem}\r\n<default>{Quality:} <augmented>{+20%}"],
+			"explicitMods": [
+				{
+					"description": "<gemitem>{Gem}\r\n<default>{Quality:} <augmented>{+20%}"
+				}
+			],
 			"flavourText": [
 				"<size:29>{\"I swore to use my position to help the people. What good is power when it just accumulates on the already-powerful?\" - Erasmus, Imperial Gemcutter}"
 			],
@@ -778,7 +1318,19 @@
 			"league": "Standard",
 			"maxStackSize": 3,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["2/3", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"2/3",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 2,
 			"typeLine": "Gemcutter's Promise",
 			"verified": false,
@@ -789,8 +1341,15 @@
 		{
 			"artFilename": "ShardofFate",
 			"baseType": "Shard of Fate",
-			"explicitMods": ["<magicitem>{Vivid Jewel}"],
-			"flavourText": ["Their whims left unknown,\r", "Their life left for others."],
+			"explicitMods": [
+				{
+					"description": "<magicitem>{Vivid Jewel}"
+				}
+			],
+			"flavourText": [
+				"Their whims left unknown,\r",
+				"Their life left for others."
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -801,7 +1360,19 @@
 			"league": "Standard",
 			"maxStackSize": 4,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["2/4", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"2/4",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 2,
 			"typeLine": "Shard of Fate",
 			"verified": false,
@@ -812,8 +1383,15 @@
 		{
 			"artFilename": "StruckbyLightning",
 			"baseType": "Struck by Lightning",
-			"explicitMods": ["<magicitem>{Electrocuting Jewellery}\r\n<default>{Item Level:} <normal>{76}"],
-			"flavourText": ["'Lightning never strikes the same place twice'\r", "is really just wishful thinking."],
+			"explicitMods": [
+				{
+					"description": "<magicitem>{Electrocuting Jewellery}\r\n<default>{Item Level:} <normal>{76}"
+				}
+			],
+			"flavourText": [
+				"'Lightning never strikes the same place twice'\r",
+				"is really just wishful thinking."
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -824,7 +1402,19 @@
 			"league": "Standard",
 			"maxStackSize": 3,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["2/3", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"2/3",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 2,
 			"typeLine": "Struck by Lightning",
 			"verified": false,
@@ -835,7 +1425,11 @@
 		{
 			"artFilename": "TheDragon",
 			"baseType": "The Dragon",
-			"explicitMods": ["<uniqueitem>{Coruscating Elixir}"],
+			"explicitMods": [
+				{
+					"description": "<uniqueitem>{Coruscating Elixir}"
+				}
+			],
 			"flavourText": [
 				"<size:28>{Scaly beast of the skies,\r",
 				"watching with his golden eyes.\r",
@@ -852,7 +1446,19 @@
 			"league": "Standard",
 			"maxStackSize": 4,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["2/4", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"2/4",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 2,
 			"typeLine": "The Dragon",
 			"verified": false,
@@ -863,7 +1469,11 @@
 		{
 			"artFilename": "HuntersResolve",
 			"baseType": "Hunter's Resolve",
-			"explicitMods": ["<uniqueitem>{Bow}"],
+			"explicitMods": [
+				{
+					"description": "<uniqueitem>{Bow}"
+				}
+			],
 			"flavourText": [
 				"Primed, curved and sleek.\r",
 				"Decisive and final.\r",
@@ -880,7 +1490,19 @@
 			"league": "Standard",
 			"maxStackSize": 8,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["2/8", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"2/8",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 2,
 			"typeLine": "Hunter's Resolve",
 			"verified": false,
@@ -891,8 +1513,14 @@
 		{
 			"artFilename": "TheWretched",
 			"baseType": "The Wretched",
-			"explicitMods": ["<uniqueitem>{Belt}"],
-			"flavourText": ["Necromancers, believe me, are more terrifying than their thralls."],
+			"explicitMods": [
+				{
+					"description": "<uniqueitem>{Belt}"
+				}
+			],
+			"flavourText": [
+				"Necromancers, believe me, are more terrifying than their thralls."
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -903,7 +1531,19 @@
 			"league": "Standard",
 			"maxStackSize": 6,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["2/6", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"2/6",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 2,
 			"typeLine": "The Wretched",
 			"verified": false,
@@ -914,7 +1554,11 @@
 		{
 			"artFilename": "Hubris",
 			"baseType": "Hubris",
-			"explicitMods": ["<uniqueitem>{Ring}"],
+			"explicitMods": [
+				{
+					"description": "<uniqueitem>{Ring}"
+				}
+			],
 			"flavourText": [
 				"\"This one? It is NOT for sale. You would sooner pry it from my lifeless hand.\"\r",
 				"- Jonfé Darontos, Ringmaker"
@@ -929,7 +1573,19 @@
 			"league": "Standard",
 			"maxStackSize": 5,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["2/5", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"2/5",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 2,
 			"typeLine": "Hubris",
 			"verified": false,
@@ -940,8 +1596,14 @@
 		{
 			"artFilename": "TheAdventuringSpirit",
 			"baseType": "The Adventuring Spirit",
-			"explicitMods": ["<uniqueitem>{Victario's Influence}"],
-			"flavourText": ["Dost thou lead my men to victory, my child?"],
+			"explicitMods": [
+				{
+					"description": "<uniqueitem>{Victario's Influence}"
+				}
+			],
+			"flavourText": [
+				"Dost thou lead my men to victory, my child?"
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -952,7 +1614,19 @@
 			"league": "Standard",
 			"maxStackSize": 6,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["2/6", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"2/6",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 2,
 			"typeLine": "The Adventuring Spirit",
 			"verified": false,
@@ -963,8 +1637,14 @@
 		{
 			"artFilename": "TheScavenger",
 			"baseType": "The Scavenger",
-			"explicitMods": ["<uniqueitem>{Carcass Jack}"],
-			"flavourText": ["Take small pieces of things and then assemble them together"],
+			"explicitMods": [
+				{
+					"description": "<uniqueitem>{Carcass Jack}"
+				}
+			],
+			"flavourText": [
+				"Take small pieces of things and then assemble them together"
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -975,7 +1655,19 @@
 			"league": "Standard",
 			"maxStackSize": 8,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["2/8", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"2/8",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 2,
 			"typeLine": "The Scavenger",
 			"verified": false,
@@ -986,8 +1678,14 @@
 		{
 			"artFilename": "TimeLostRelic",
 			"baseType": "Time-Lost Relic",
-			"explicitMods": ["<uniqueitem>{League-Specific Item}"],
-			"flavourText": ["Time cannot wash away that which cannot be forgotten."],
+			"explicitMods": [
+				{
+					"description": "<uniqueitem>{League-Specific Item}"
+				}
+			],
+			"flavourText": [
+				"Time cannot wash away that which cannot be forgotten."
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -998,7 +1696,19 @@
 			"league": "Standard",
 			"maxStackSize": 10,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["2/10", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"2/10",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 2,
 			"typeLine": "Time-Lost Relic",
 			"verified": false,
@@ -1009,7 +1719,11 @@
 		{
 			"artFilename": "SambodhisWisdom",
 			"baseType": "Sambodhi's Wisdom",
-			"explicitMods": ["<uniqueitem>{Armour}\r\n<default>{Quality:} <augmented>{+30%}"],
+			"explicitMods": [
+				{
+					"description": "<uniqueitem>{Armour}\r\n<default>{Quality:} <augmented>{+30%}"
+				}
+			],
 			"flavourText": [
 				"<size:28>{No blade conquers sin;\r",
 				"guide a sinner to virtue,\r",
@@ -1028,7 +1742,19 @@
 			"league": "Standard",
 			"maxStackSize": 3,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["2/3", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"2/3",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 2,
 			"typeLine": "Sambodhi's Wisdom",
 			"verified": false,
@@ -1039,7 +1765,11 @@
 		{
 			"artFilename": "TheSun",
 			"baseType": "The Sun",
-			"explicitMods": ["<uniqueitem>{Rise of the Phoenix}"],
+			"explicitMods": [
+				{
+					"description": "<uniqueitem>{Rise of the Phoenix}"
+				}
+			],
 			"flavourText": [
 				"<size:31>{Each night, the light dies, and each morning she is born anew, embracing the land in her golden wings.}"
 			],
@@ -1053,7 +1783,19 @@
 			"league": "Standard",
 			"maxStackSize": 7,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["2/7", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"2/7",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 2,
 			"typeLine": "The Sun",
 			"verified": false,
@@ -1064,7 +1806,11 @@
 		{
 			"artFilename": "TheLion",
 			"baseType": "The Lion",
-			"explicitMods": ["<uniqueitem>{Lioneye Item}"],
+			"explicitMods": [
+				{
+					"description": "<uniqueitem>{Lioneye Item}"
+				}
+			],
 			"flavourText": [
 				"<size:31>{The Eternals lauded his valour. The Karui relished his defeat. Yet the final thoughts of Marceus Lioneye were naught but lament for his pride.}"
 			],
@@ -1078,7 +1824,19 @@
 			"league": "Standard",
 			"maxStackSize": 5,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["2/5", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"2/5",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 2,
 			"typeLine": "The Lion",
 			"verified": false,
@@ -1089,8 +1847,14 @@
 		{
 			"artFilename": "DoedresMadness",
 			"baseType": "Doedre's Madness",
-			"explicitMods": ["<uniqueitem>{Doedre Item}"],
-			"flavourText": ["\"Hold your tongue before I claim it.\" - Doedre Darktongue"],
+			"explicitMods": [
+				{
+					"description": "<uniqueitem>{Doedre Item}"
+				}
+			],
+			"flavourText": [
+				"\"Hold your tongue before I claim it.\" - Doedre Darktongue"
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -1101,7 +1865,19 @@
 			"league": "Standard",
 			"maxStackSize": 9,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["2/9", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"2/9",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 2,
 			"typeLine": "Doedre's Madness",
 			"verified": false,
@@ -1112,7 +1888,11 @@
 		{
 			"artFilename": "TheHarvester",
 			"baseType": "The Harvester",
-			"explicitMods": ["<uniqueitem>{The Harvest}"],
+			"explicitMods": [
+				{
+					"description": "<uniqueitem>{The Harvest}"
+				}
+			],
 			"flavourText": [
 				"<size:30>{Taste not of their\r",
 				"forbidden fruit.\r",
@@ -1131,7 +1911,19 @@
 			"league": "Standard",
 			"maxStackSize": 11,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["2/11", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"2/11",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 2,
 			"typeLine": "The Harvester",
 			"verified": false,
@@ -1142,7 +1934,11 @@
 		{
 			"artFilename": "LostWorlds",
 			"baseType": "Lost Worlds",
-			"explicitMods": ["<whiteitem>{Map}\r\n<default>{Map Tier:} <normal>{15}"],
+			"explicitMods": [
+				{
+					"description": "<whiteitem>{Map}\r\n<default>{Map Tier:} <normal>{15}"
+				}
+			],
 			"flavourText": [
 				"<size:27>{\"There are worlds that lie beyond the edge of my page, the edge of my understanding. Worlds of wonder. Worlds of terror.\"\r",
 				"Aramil - Cartographer to Emperor Chitus}"
@@ -1157,7 +1953,19 @@
 			"league": "Standard",
 			"maxStackSize": 8,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["2/8", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"2/8",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 2,
 			"typeLine": "Lost Worlds",
 			"verified": false,
@@ -1168,7 +1976,11 @@
 		{
 			"artFilename": "TheWitch",
 			"baseType": "The Witch",
-			"explicitMods": ["<uniqueitem>{Kiara's Determination}"],
+			"explicitMods": [
+				{
+					"description": "<uniqueitem>{Kiara's Determination}"
+				}
+			],
 			"flavourText": [
 				"<size:27>{A wanderer in the wild strives \r",
 				"Against countless foes he survives \r",
@@ -1185,7 +1997,19 @@
 			"league": "Standard",
 			"maxStackSize": 8,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["2/8", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"2/8",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 2,
 			"typeLine": "The Witch",
 			"verified": false,
@@ -1196,8 +2020,14 @@
 		{
 			"artFilename": "TheScholar",
 			"baseType": "The Scholar",
-			"explicitMods": ["<currencyitem>{40x Scroll of Wisdom}"],
-			"flavourText": ["It is with the smallest of words that we find the largest of truths."],
+			"explicitMods": [
+				{
+					"description": "<currencyitem>{40x Scroll of Wisdom}"
+				}
+			],
+			"flavourText": [
+				"It is with the smallest of words that we find the largest of truths."
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -1208,7 +2038,19 @@
 			"league": "Standard",
 			"maxStackSize": 3,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["2/3", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"2/3",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 2,
 			"typeLine": "The Scholar",
 			"verified": false,
@@ -1219,8 +2061,14 @@
 		{
 			"artFilename": "ASeaOfBlue",
 			"baseType": "A Sea of Blue",
-			"explicitMods": ["<currencyitem>{13x Orb of Alteration}"],
-			"flavourText": ["The harvest ended, the floods began."],
+			"explicitMods": [
+				{
+					"description": "<currencyitem>{13x Orb of Alteration}"
+				}
+			],
+			"flavourText": [
+				"The harvest ended, the floods began."
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -1231,7 +2079,19 @@
 			"league": "Standard",
 			"maxStackSize": 3,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["2/3", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"2/3",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 2,
 			"typeLine": "A Sea of Blue",
 			"verified": false,
@@ -1242,7 +2102,11 @@
 		{
 			"artFilename": "Acclimatisation",
 			"baseType": "Acclimatisation",
-			"explicitMods": ["<currencyitem>{20x Orb of Alteration}"],
+			"explicitMods": [
+				{
+					"description": "<currencyitem>{20x Orb of Alteration}"
+				}
+			],
 			"flavourText": [
 				"The world is ever-changing.\r",
 				"Once-lush woods now lost beneath shifting sands,\r",
@@ -1259,7 +2123,19 @@
 			"league": "Standard",
 			"maxStackSize": 2,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["2/2", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"2/2",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 2,
 			"typeLine": "Acclimatisation",
 			"verified": false,
@@ -1270,7 +2146,11 @@
 		{
 			"artFilename": "SambodhisVow",
 			"baseType": "Sambodhi's Vow",
-			"explicitMods": ["<whiteitem>{Mortal Fragment}"],
+			"explicitMods": [
+				{
+					"description": "<whiteitem>{Mortal Fragment}"
+				}
+			],
 			"flavourText": [
 				"<size:34>{He dispels dark realms\r",
 				"until mortal sufferings\r",
@@ -1286,7 +2166,19 @@
 			"league": "Standard",
 			"maxStackSize": 3,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["2/3", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"2/3",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 2,
 			"typeLine": "Sambodhi's Vow",
 			"verified": false,
@@ -1297,7 +2189,11 @@
 		{
 			"artFilename": "DestinedtoCrumble",
 			"baseType": "Destined to Crumble",
-			"explicitMods": ["<rareitem>{Body Armour}\r\n<default>{Item Level:} <normal>{100}"],
+			"explicitMods": [
+				{
+					"description": "<rareitem>{Body Armour}\r\n<default>{Item Level:} <normal>{100}"
+				}
+			],
 			"flavourText": [
 				"<size:30>{\"Let us not forget the most important lesson the Vaal taught us:\r",
 				"Nothing is eternal.\"\r",
@@ -1313,7 +2209,19 @@
 			"league": "Standard",
 			"maxStackSize": 5,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["2/5", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"2/5",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 2,
 			"typeLine": "Destined to Crumble",
 			"verified": false,
@@ -1324,7 +2232,11 @@
 		{
 			"artFilename": "TheWrath",
 			"baseType": "The Wrath",
-			"explicitMods": ["<currencyitem>{10x Chaos Orb}"],
+			"explicitMods": [
+				{
+					"description": "<currencyitem>{10x Chaos Orb}"
+				}
+			],
 			"flavourText": [
 				"<size:31>{\"Daughter of catastrophe, mother of pain. Amongst the filth of Wraeclast, she wanders, and her wrath follows.\" - Quintoon the Returned}"
 			],
@@ -1338,7 +2250,19 @@
 			"league": "Standard",
 			"maxStackSize": 8,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["2/8", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"2/8",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 2,
 			"typeLine": "The Wrath",
 			"verified": false,
@@ -1349,7 +2273,11 @@
 		{
 			"artFilename": "TheFox",
 			"baseType": "The Fox",
-			"explicitMods": ["<gemitem>{Level 20 Gem}"],
+			"explicitMods": [
+				{
+					"description": "<gemitem>{Level 20 Gem}"
+				}
+			],
 			"flavourText": [
 				"\"Masters of wit, strength and cunning. To survive the harsh winters, you must be like the fox.\"\r",
 				"- Ezomyte Proverb"
@@ -1364,7 +2292,19 @@
 			"league": "Standard",
 			"maxStackSize": 6,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["2/6", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"2/6",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 2,
 			"typeLine": "The Fox",
 			"verified": false,
@@ -1375,8 +2315,15 @@
 		{
 			"artFilename": "HerMask",
 			"baseType": "Her Mask",
-			"explicitMods": ["<whiteitem>{Sacrifice Fragment}"],
-			"flavourText": ["To her beauty you submit,\r", "lest your neck the great Queen slit."],
+			"explicitMods": [
+				{
+					"description": "<whiteitem>{Sacrifice Fragment}"
+				}
+			],
+			"flavourText": [
+				"To her beauty you submit,\r",
+				"lest your neck the great Queen slit."
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -1387,7 +2334,19 @@
 			"league": "Standard",
 			"maxStackSize": 4,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/4", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/4",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "Her Mask",
 			"verified": false,
@@ -1398,8 +2357,14 @@
 		{
 			"artFilename": "UndergroundForest",
 			"baseType": "Underground Forest",
-			"explicitMods": ["Disabled"],
-			"flavourText": ["\"In the forest again... But at least I have these.\""],
+			"explicitMods": [
+				{
+					"description": "Disabled"
+				}
+			],
+			"flavourText": [
+				"\"In the forest again... But at least I have these.\""
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -1410,7 +2375,19 @@
 			"league": "Standard",
 			"maxStackSize": 4,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/4", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/4",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "Underground Forest",
 			"verified": false,
@@ -1421,8 +2398,14 @@
 		{
 			"artFilename": "ThePuzzle",
 			"baseType": "The Puzzle",
-			"explicitMods": ["<currencyitem>{5x Breachstone Splinter}"],
-			"flavourText": ["As countless fractures weaken the divide, nightmares seep through from the other side."],
+			"explicitMods": [
+				{
+					"description": "<currencyitem>{5x Breachstone Splinter}"
+				}
+			],
+			"flavourText": [
+				"As countless fractures weaken the divide, nightmares seep through from the other side."
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -1433,7 +2416,19 @@
 			"league": "Standard",
 			"maxStackSize": 5,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/5", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/5",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "The Puzzle",
 			"verified": false,
@@ -1444,7 +2439,11 @@
 		{
 			"artFilename": "TheDarkMage",
 			"baseType": "The Dark Mage",
-			"explicitMods": ["<whiteitem>{Six-Link Staff}\r\n<default>{Item Level:} <normal>{55}"],
+			"explicitMods": [
+				{
+					"description": "<whiteitem>{Six-Link Staff}\r\n<default>{Item Level:} <normal>{55}"
+				}
+			],
 			"flavourText": [
 				"With staff in hand\r",
 				"and wrath in heart,\r",
@@ -1461,7 +2460,19 @@
 			"league": "Standard",
 			"maxStackSize": 6,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/6", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/6",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "The Dark Mage",
 			"verified": false,
@@ -1472,7 +2483,11 @@
 		{
 			"artFilename": "TheWarden",
 			"baseType": "The Warden",
-			"explicitMods": ["<rareitem>{Amulet}\r\n<corrupted>{Corrupted}"],
+			"explicitMods": [
+				{
+					"description": "<rareitem>{Amulet}\r\n<corrupted>{Corrupted}"
+				}
+			],
 			"flavourText": [
 				"<size:31>{Brutus' first innovation as Lord Incarcerator was a weighted chain around every neck so that his prisoners would forever bow to him.}"
 			],
@@ -1486,7 +2501,19 @@
 			"league": "Standard",
 			"maxStackSize": 4,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/4", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/4",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "The Warden",
 			"verified": false,
@@ -1497,8 +2524,14 @@
 		{
 			"artFilename": "EmperorsLuck",
 			"baseType": "Emperor's Luck",
-			"explicitMods": ["<currencyitem>{5x Currency}"],
-			"flavourText": ["The house always wins."],
+			"explicitMods": [
+				{
+					"description": "<currencyitem>{5x Currency}"
+				}
+			],
+			"flavourText": [
+				"The house always wins."
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -1509,7 +2542,19 @@
 			"league": "Standard",
 			"maxStackSize": 5,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/5", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/5",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "Emperor's Luck",
 			"verified": false,
@@ -1520,8 +2565,14 @@
 		{
 			"artFilename": "TheStandOff",
 			"baseType": "The Standoff",
-			"explicitMods": ["<uniqueitem>{Rustic Sash}"],
-			"flavourText": ["Sometimes your greatest enemy is the only one keeping you breathing."],
+			"explicitMods": [
+				{
+					"description": "<uniqueitem>{Rustic Sash}"
+				}
+			],
+			"flavourText": [
+				"Sometimes your greatest enemy is the only one keeping you breathing."
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -1532,7 +2583,19 @@
 			"league": "Standard",
 			"maxStackSize": 3,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/3", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/3",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "The Standoff",
 			"verified": false,
@@ -1543,7 +2606,11 @@
 		{
 			"artFilename": "TheWolf",
 			"baseType": "The Wolf",
-			"explicitMods": ["<uniqueitem>{Rigwald Item}"],
+			"explicitMods": [
+				{
+					"description": "<uniqueitem>{Rigwald Item}"
+				}
+			],
 			"flavourText": [
 				"<size:29>{The largest beasts cannot be overpowered. The Greatwolf teaches us to use guile, not strength, to probe for the soft flesh and strike deep.}"
 			],
@@ -1557,7 +2624,19 @@
 			"league": "Standard",
 			"maxStackSize": 5,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/5", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/5",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "The Wolf",
 			"verified": false,
@@ -1568,7 +2647,11 @@
 		{
 			"artFilename": "RainOfChaos",
 			"baseType": "Rain of Chaos",
-			"explicitMods": ["<currencyitem>{Chaos Orb}"],
+			"explicitMods": [
+				{
+					"description": "<currencyitem>{Chaos Orb}"
+				}
+			],
 			"flavourText": [
 				"<size:27>{Fire filled the sky that night \r",
 				"Chaos reigned \r",
@@ -1586,7 +2669,19 @@
 			"league": "Standard",
 			"maxStackSize": 8,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/8", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/8",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "Rain of Chaos",
 			"verified": false,
@@ -1597,8 +2692,15 @@
 		{
 			"artFilename": "Loyalty",
 			"baseType": "Loyalty",
-			"explicitMods": ["<currencyitem>{3x Orb of Fusing}"],
-			"flavourText": ["Bound by fate,\r", "inseparable by choice."],
+			"explicitMods": [
+				{
+					"description": "<currencyitem>{3x Orb of Fusing}"
+				}
+			],
+			"flavourText": [
+				"Bound by fate,\r",
+				"inseparable by choice."
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -1609,7 +2711,19 @@
 			"league": "Standard",
 			"maxStackSize": 5,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/5", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/5",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "Loyalty",
 			"verified": false,
@@ -1620,7 +2734,11 @@
 		{
 			"artFilename": "Hope",
 			"baseType": "Hope",
-			"explicitMods": ["<uniqueitem>{Prismatic Ring}\r\n<corrupted>{Corrupted}"],
+			"explicitMods": [
+				{
+					"description": "<uniqueitem>{Prismatic Ring}\r\n<corrupted>{Corrupted}"
+				}
+			],
 			"flavourText": [
 				"<size:31>{The others succumbed to madness and depravity, but Lori fought on. Alone in the darkness, she could still see the dull light of hope's distant dawn.}"
 			],
@@ -1634,7 +2752,19 @@
 			"league": "Standard",
 			"maxStackSize": 5,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/5", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/5",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "Hope",
 			"verified": false,
@@ -1645,8 +2775,14 @@
 		{
 			"artFilename": "TheCatalyst",
 			"baseType": "The Catalyst",
-			"explicitMods": ["<currencyitem>{Vaal Orb}"],
-			"flavourText": ["Simple actions can lead the world to an early grave."],
+			"explicitMods": [
+				{
+					"description": "<currencyitem>{Vaal Orb}"
+				}
+			],
+			"flavourText": [
+				"Simple actions can lead the world to an early grave."
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -1657,7 +2793,19 @@
 			"league": "Standard",
 			"maxStackSize": 3,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/3", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/3",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "The Catalyst",
 			"verified": false,
@@ -1669,9 +2817,14 @@
 			"artFilename": "EldritchPerfection",
 			"baseType": "Eldritch Perfection",
 			"explicitMods": [
-				"<whiteitem>{Item}\r\n<default>{Item Level:} <normal>{100}\r\n<enchanted>{Perfect Eldritch Implicit Modifier}"
+				{
+					"description": "<whiteitem>{Item}\r\n<default>{Item Level:} <normal>{100}\r\n<enchanted>{Perfect Eldritch Implicit Modifier}"
+				}
 			],
-			"flavourText": ["Embrace horror.\r", "Bathe in its beauty."],
+			"flavourText": [
+				"Embrace horror.\r",
+				"Bathe in its beauty."
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -1682,7 +2835,19 @@
 			"league": "Standard",
 			"maxStackSize": 4,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/4", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/4",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "Eldritch Perfection",
 			"verified": false,
@@ -1693,7 +2858,11 @@
 		{
 			"artFilename": "TheMetalsmithsGift",
 			"baseType": "The Metalsmith's Gift",
-			"explicitMods": ["<whiteitem>{Prismatic Ring}"],
+			"explicitMods": [
+				{
+					"description": "<whiteitem>{Prismatic Ring}"
+				}
+			],
 			"flavourText": [
 				"<size:31>{A month's work, a year's wages, a foolish shortcut through a Rhoa's nest, and a grieving bride-to-be, who never received her betrothed's great gift.}"
 			],
@@ -1707,7 +2876,19 @@
 			"league": "Standard",
 			"maxStackSize": 6,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/6", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/6",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "The Metalsmith's Gift",
 			"verified": false,
@@ -1718,7 +2899,11 @@
 		{
 			"artFilename": "TheWeb",
 			"baseType": "The Web",
-			"explicitMods": ["<magicitem>{Weapon of Crafting}"],
+			"explicitMods": [
+				{
+					"description": "<magicitem>{Weapon of Crafting}"
+				}
+			],
 			"flavourText": [
 				"<size:30>{A weapon, a shelter, a prison.\r",
 				"The web's purpose changes\r",
@@ -1736,7 +2921,19 @@
 			"league": "Standard",
 			"maxStackSize": 8,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/8", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/8",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "The Web",
 			"verified": false,
@@ -1747,8 +2944,14 @@
 		{
 			"artFilename": "RainTempter",
 			"baseType": "Rain Tempter",
-			"explicitMods": ["<whiteitem>{Map}\r\n<default>{Map Tier:} <normal>{6}"],
-			"flavourText": ["Be like water, friend."],
+			"explicitMods": [
+				{
+					"description": "<whiteitem>{Map}\r\n<default>{Map Tier:} <normal>{6}"
+				}
+			],
+			"flavourText": [
+				"Be like water, friend."
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -1759,7 +2962,19 @@
 			"league": "Standard",
 			"maxStackSize": 9,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/9", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/9",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "Rain Tempter",
 			"verified": false,
@@ -1770,8 +2985,14 @@
 		{
 			"artFilename": "TheHermit",
 			"baseType": "The Hermit",
-			"explicitMods": ["<uniqueitem>{Lifesprig}"],
-			"flavourText": ["The hermit's only friend is the greenery he can find."],
+			"explicitMods": [
+				{
+					"description": "<uniqueitem>{Lifesprig}"
+				}
+			],
+			"flavourText": [
+				"The hermit's only friend is the greenery he can find."
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -1782,7 +3003,19 @@
 			"league": "Standard",
 			"maxStackSize": 9,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/9", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/9",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "The Hermit",
 			"verified": false,
@@ -1793,8 +3026,14 @@
 		{
 			"artFilename": "TheWolfsShadow",
 			"baseType": "The Wolf's Shadow",
-			"explicitMods": ["<uniqueitem>{Hyaon's Fury}"],
-			"flavourText": ["\"If I fall, we will fall together with my fangs in your throat.\""],
+			"explicitMods": [
+				{
+					"description": "<uniqueitem>{Hyaon's Fury}"
+				}
+			],
+			"flavourText": [
+				"\"If I fall, we will fall together with my fangs in your throat.\""
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -1805,7 +3044,19 @@
 			"league": "Standard",
 			"maxStackSize": 3,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/3", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/3",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "The Wolf's Shadow",
 			"verified": false,
@@ -1816,8 +3067,14 @@
 		{
 			"artFilename": "TheFinishingTouch",
 			"baseType": "The Finishing Touch",
-			"explicitMods": ["<currencyitem>{1x Fertile Catalyst}"],
-			"flavourText": ["<size:29>{A little extra flair never hurts.}"],
+			"explicitMods": [
+				{
+					"description": "<currencyitem>{1x Fertile Catalyst}"
+				}
+			],
+			"flavourText": [
+				"<size:29>{A little extra flair never hurts.}"
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -1828,7 +3085,19 @@
 			"league": "Standard",
 			"maxStackSize": 2,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/2", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/2",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "The Finishing Touch",
 			"verified": false,
@@ -1839,7 +3108,11 @@
 		{
 			"artFilename": "DarkTemptation",
 			"baseType": "Dark Temptation",
-			"explicitMods": ["<uniqueitem>{Obliteration}"],
+			"explicitMods": [
+				{
+					"description": "<uniqueitem>{Obliteration}"
+				}
+			],
 			"flavourText": [
 				"\"Only a fool looks to the occult for power and expects to be spared from its wrath.\" \r",
 				"- Voll, Emperor of Purity"
@@ -1854,7 +3127,19 @@
 			"league": "Standard",
 			"maxStackSize": 5,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/5", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/5",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "Dark Temptation",
 			"verified": false,
@@ -1865,7 +3150,11 @@
 		{
 			"artFilename": "EmperorOfPurity",
 			"baseType": "Emperor of Purity",
-			"explicitMods": ["<whiteitem>{Six-Link Holy Chainmail}\r\n<default>{Item Level:} <normal>{60}"],
+			"explicitMods": [
+				{
+					"description": "<whiteitem>{Six-Link Holy Chainmail}\r\n<default>{Item Level:} <normal>{60}"
+				}
+			],
 			"flavourText": [
 				"True to his title,\r",
 				"Voll, newly crowned,\r",
@@ -1883,7 +3172,19 @@
 			"league": "Standard",
 			"maxStackSize": 7,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/7", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/7",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "Emperor of Purity",
 			"verified": false,
@@ -1894,8 +3195,14 @@
 		{
 			"artFilename": "Bijoux",
 			"baseType": "Bijoux",
-			"explicitMods": ["<rareitem>{Cluster Jewel}\r\n<default>{Item Level:} <normal>{84}"],
-			"flavourText": ["\"Such fine trinkets show their true value in times of crisis.\" - Tangmazu"],
+			"explicitMods": [
+				{
+					"description": "<rareitem>{Cluster Jewel}\r\n<default>{Item Level:} <normal>{84}"
+				}
+			],
+			"flavourText": [
+				"\"Such fine trinkets show their true value in times of crisis.\" - Tangmazu"
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -1906,7 +3213,19 @@
 			"league": "Standard",
 			"maxStackSize": 3,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/3", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/3",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "Bijoux",
 			"verified": false,
@@ -1917,8 +3236,14 @@
 		{
 			"artFilename": "TheFathomlessDepths",
 			"baseType": "The Fathomless Depths",
-			"explicitMods": ["<uniqueitem>{Lightpoacher}"],
-			"flavourText": ["Fall into endless night; a voyage into an ocean of oblivion."],
+			"explicitMods": [
+				{
+					"description": "<uniqueitem>{Lightpoacher}"
+				}
+			],
+			"flavourText": [
+				"Fall into endless night; a voyage into an ocean of oblivion."
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -1929,7 +3254,19 @@
 			"league": "Standard",
 			"maxStackSize": 8,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/8", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/8",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "The Fathomless Depths",
 			"verified": false,
@@ -1940,7 +3277,11 @@
 		{
 			"artFilename": "ThirstForKnowledge",
 			"baseType": "Thirst for Knowledge",
-			"explicitMods": ["<uniqueitem>{Gluttony}"],
+			"explicitMods": [
+				{
+					"description": "<uniqueitem>{Gluttony}"
+				}
+			],
 			"flavourText": [
 				"<size:28>{A ravenous mind can readily take in ideas from any source. \r",
 				"Fortunately for the scholars, he has already learned about sustainability.}"
@@ -1955,7 +3296,19 @@
 			"league": "Standard",
 			"maxStackSize": 5,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/5", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/5",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "Thirst for Knowledge",
 			"verified": false,
@@ -1966,7 +3319,11 @@
 		{
 			"artFilename": "BlindVenture",
 			"baseType": "Blind Venture",
-			"explicitMods": ["<uniqueitem>{Ring}\r\n<corrupted>{Corrupted}"],
+			"explicitMods": [
+				{
+					"description": "<uniqueitem>{Ring}\r\n<corrupted>{Corrupted}"
+				}
+			],
 			"flavourText": [
 				"\"It's risky not knowing where your wares come from. That's why I source my own.\"\r",
 				"- Klayver, the Antiquarian"
@@ -1981,7 +3338,19 @@
 			"league": "Standard",
 			"maxStackSize": 7,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/7", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/7",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "Blind Venture",
 			"verified": false,
@@ -1993,9 +3362,15 @@
 			"artFilename": "LingeringRemnants",
 			"baseType": "Lingering Remnants",
 			"explicitMods": [
-				"<rareitem>{Vaal Temple Map}\r\n<default>{Item Level:} <normal>{83}\r\n<corrupted>{Corrupted}"
+				{
+					"description": "<rareitem>{Vaal Temple Map}\r\n<default>{Item Level:} <normal>{83}\r\n<corrupted>{Corrupted}"
+				}
 			],
-			"flavourText": ["Never dying, yet not living,\r", "Endlessly they wander\r", "beneath the harvest moon."],
+			"flavourText": [
+				"Never dying, yet not living,\r",
+				"Endlessly they wander\r",
+				"beneath the harvest moon."
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -2006,7 +3381,19 @@
 			"league": "Standard",
 			"maxStackSize": 16,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/16", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/16",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "Lingering Remnants",
 			"verified": false,
@@ -2018,9 +3405,13 @@
 			"artFilename": "Triskaidekaphobia",
 			"baseType": "Triskaidekaphobia",
 			"explicitMods": [
-				"<size:26>{<rareitem>{Map}}\r\n<size:26>{<default>{Map Tier:} <normal>{13}\r\n<default>{Quality:} <augmented>{+13%}\r\n<default>{Delirium:} <normal>{100%}\r\n<default>{Modifiers:} <normal>{8}\r\n<corrupted>{Corrupted}}"
+				{
+					"description": "<size:26>{<rareitem>{Map}}\r\n<size:26>{<default>{Map Tier:} <normal>{13}\r\n<default>{Quality:} <augmented>{+13%}\r\n<default>{Delirium:} <normal>{100%}\r\n<default>{Modifiers:} <normal>{8}\r\n<corrupted>{Corrupted}}"
+				}
 			],
-			"flavourText": ["The Mists of Madness prey on those who harbour the deepest of fears."],
+			"flavourText": [
+				"The Mists of Madness prey on those who harbour the deepest of fears."
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -2031,7 +3422,19 @@
 			"league": "Standard",
 			"maxStackSize": 13,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/13", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/13",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "Triskaidekaphobia",
 			"verified": false,
@@ -2042,7 +3445,11 @@
 		{
 			"artFilename": "TheEndurance",
 			"baseType": "The Endurance",
-			"explicitMods": ["<magicitem>{Vivid Crimson Jewel}"],
+			"explicitMods": [
+				{
+					"description": "<magicitem>{Vivid Crimson Jewel}"
+				}
+			],
 			"flavourText": [
 				"<size:28>{Crimson rubies, drops of vigour,\r",
 				"flowing through my veins,\r",
@@ -2059,7 +3466,19 @@
 			"league": "Standard",
 			"maxStackSize": 4,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/4", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/4",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "The Endurance",
 			"verified": false,
@@ -2070,8 +3489,14 @@
 		{
 			"artFilename": "Humility",
 			"baseType": "Humility",
-			"explicitMods": ["<uniqueitem>{Tabula Rasa}"],
-			"flavourText": [" "],
+			"explicitMods": [
+				{
+					"description": "<uniqueitem>{Tabula Rasa}"
+				}
+			],
+			"flavourText": [
+				" "
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -2082,7 +3507,19 @@
 			"league": "Standard",
 			"maxStackSize": 9,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/9", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/9",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "Humility",
 			"verified": false,
@@ -2093,7 +3530,11 @@
 		{
 			"artFilename": "LysahsRespite",
 			"baseType": "Lysah's Respite",
-			"explicitMods": ["<uniqueitem>{Agate Amulet}\r\n<corrupted>{Corrupted}"],
+			"explicitMods": [
+				{
+					"description": "<uniqueitem>{Agate Amulet}\r\n<corrupted>{Corrupted}"
+				}
+			],
 			"flavourText": [
 				"So many memories,\r",
 				"so much pain in\r",
@@ -2111,7 +3552,19 @@
 			"league": "Standard",
 			"maxStackSize": 6,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/6", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/6",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "Lysah's Respite",
 			"verified": false,
@@ -2122,7 +3575,11 @@
 		{
 			"artFilename": "TheUndaunted",
 			"baseType": "The Undaunted",
-			"explicitMods": ["<uniqueitem>{Nemesis Item}\r\n<corrupted>{Corrupted}"],
+			"explicitMods": [
+				{
+					"description": "<uniqueitem>{Nemesis Item}\r\n<corrupted>{Corrupted}"
+				}
+			],
 			"flavourText": [
 				"<size:29>{\"Fate was always my nemesis... \r",
 				"But it didn't stop me then, and it won't stop me now.\"\r",
@@ -2138,7 +3595,19 @@
 			"league": "Standard",
 			"maxStackSize": 5,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/5", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/5",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "The Undaunted",
 			"verified": false,
@@ -2149,7 +3618,11 @@
 		{
 			"artFilename": "TheSigil",
 			"baseType": "The Sigil",
-			"explicitMods": ["<magicitem>{Unassailable Amulet}"],
+			"explicitMods": [
+				{
+					"description": "<magicitem>{Unassailable Amulet}"
+				}
+			],
 			"flavourText": [
 				"<size:29>{Three men travel\r",
 				"through the gate;\r",
@@ -2168,7 +3641,19 @@
 			"league": "Standard",
 			"maxStackSize": 3,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/3", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/3",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "The Sigil",
 			"verified": false,
@@ -2179,7 +3664,11 @@
 		{
 			"artFilename": "ScholarOfTheSeas",
 			"baseType": "Scholar of the Seas",
-			"explicitMods": ["<uniqueitem>{Mao Kun}"],
+			"explicitMods": [
+				{
+					"description": "<uniqueitem>{Mao Kun}"
+				}
+			],
 			"flavourText": [
 				"I've never come upon a ship I could not command. I have however met sailors that were not willing to be led."
 			],
@@ -2193,7 +3682,19 @@
 			"league": "Standard",
 			"maxStackSize": 7,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/7", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/7",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "Scholar of the Seas",
 			"verified": false,
@@ -2204,8 +3705,14 @@
 		{
 			"artFilename": "BoundlessRealms",
 			"baseType": "Boundless Realms",
-			"explicitMods": ["<whiteitem>{Map}"],
-			"flavourText": ["Boundless is the distance between where we start and where we start again."],
+			"explicitMods": [
+				{
+					"description": "<whiteitem>{Map}"
+				}
+			],
+			"flavourText": [
+				"Boundless is the distance between where we start and where we start again."
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -2216,7 +3723,19 @@
 			"league": "Standard",
 			"maxStackSize": 4,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/4", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/4",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "Boundless Realms",
 			"verified": false,
@@ -2227,7 +3746,11 @@
 		{
 			"artFilename": "TheGladiator",
 			"baseType": "The Gladiator",
-			"explicitMods": ["<uniqueitem>{Nightmare Bascinet}"],
+			"explicitMods": [
+				{
+					"description": "<uniqueitem>{Nightmare Bascinet}"
+				}
+			],
 			"flavourText": [
 				"The thumb turns down\r",
 				"and the crowd roars, \r",
@@ -2244,7 +3767,19 @@
 			"league": "Standard",
 			"maxStackSize": 5,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/5", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/5",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "The Gladiator",
 			"verified": false,
@@ -2255,7 +3790,11 @@
 		{
 			"artFilename": "ThreeVoices",
 			"baseType": "Three Voices",
-			"explicitMods": ["<currencyitem>{3x Essence}"],
+			"explicitMods": [
+				{
+					"description": "<currencyitem>{3x Essence}"
+				}
+			],
 			"flavourText": [
 				"The village elders had a curious rule: If you hear three voices scream for aid, flee as fast as you can."
 			],
@@ -2269,7 +3808,19 @@
 			"league": "Standard",
 			"maxStackSize": 3,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/3", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/3",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "Three Voices",
 			"verified": false,
@@ -2280,8 +3831,14 @@
 		{
 			"artFilename": "ThePorcupine",
 			"baseType": "The Porcupine",
-			"explicitMods": ["<whiteitem>{Six-Link Short Bow}\r\n<default>{Item Level:} <normal>{50}"],
-			"flavourText": ["The first quill separates the quick learners from the dead."],
+			"explicitMods": [
+				{
+					"description": "<whiteitem>{Six-Link Short Bow}\r\n<default>{Item Level:} <normal>{50}"
+				}
+			],
+			"flavourText": [
+				"The first quill separates the quick learners from the dead."
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -2292,7 +3849,19 @@
 			"league": "Standard",
 			"maxStackSize": 6,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/6", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/6",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "The Porcupine",
 			"verified": false,
@@ -2303,7 +3872,11 @@
 		{
 			"artFilename": "TheInoculated",
 			"baseType": "The Inoculated",
-			"explicitMods": ["<magicitem>{Seraphim's Armour}"],
+			"explicitMods": [
+				{
+					"description": "<magicitem>{Seraphim's Armour}"
+				}
+			],
 			"flavourText": [
 				"Chaos spread, wreaking havoc and death. They said none would be spared, and yet here I stand."
 			],
@@ -2317,7 +3890,19 @@
 			"league": "Standard",
 			"maxStackSize": 4,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/4", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/4",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "The Inoculated",
 			"verified": false,
@@ -2328,7 +3913,11 @@
 		{
 			"artFilename": "TheRiteofElements",
 			"baseType": "The Rite of Elements",
-			"explicitMods": ["<gemitem>{Level 21 Golem Gem}\r\n<corrupted>{Corrupted}"],
+			"explicitMods": [
+				{
+					"description": "<gemitem>{Level 21 Golem Gem}\r\n<corrupted>{Corrupted}"
+				}
+			],
 			"flavourText": [
 				"<size:29>{A mind as quick as lightning, \r",
 				"fists as hard as stone, \r",
@@ -2345,7 +3934,19 @@
 			"league": "Standard",
 			"maxStackSize": 5,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/5", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/5",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "The Rite of Elements",
 			"verified": false,
@@ -2356,8 +3957,14 @@
 		{
 			"artFilename": "TheJournalist",
 			"baseType": "The Journalist",
-			"explicitMods": ["<rareitem>{Helmet}\r\n<default>{Double-Veiled Item}"],
-			"flavourText": ["A good spy doesn't forget she's gone undercover."],
+			"explicitMods": [
+				{
+					"description": "<rareitem>{Helmet}\r\n<default>{Double-Veiled Item}"
+				}
+			],
+			"flavourText": [
+				"A good spy doesn't forget she's gone undercover."
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -2368,7 +3975,19 @@
 			"league": "Standard",
 			"maxStackSize": 10,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/10", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/10",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "The Journalist",
 			"verified": false,
@@ -2379,7 +3998,11 @@
 		{
 			"artFilename": "TheGentleman",
 			"baseType": "The Gentleman",
-			"explicitMods": ["<uniqueitem>{Sword}\r\n<corrupted>{Corrupted}"],
+			"explicitMods": [
+				{
+					"description": "<uniqueitem>{Sword}\r\n<corrupted>{Corrupted}"
+				}
+			],
 			"flavourText": [
 				"\"Axes and mauls are so uncivilised. A good clean cut to the neck with a sharp blade, that's the Sarn way!\""
 			],
@@ -2393,7 +4016,19 @@
 			"league": "Standard",
 			"maxStackSize": 4,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/4", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/4",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "The Gentleman",
 			"verified": false,
@@ -2404,7 +4039,11 @@
 		{
 			"artFilename": "TheCarrionCrow",
 			"baseType": "The Carrion Crow",
-			"explicitMods": ["<magicitem>{Life Armour}"],
+			"explicitMods": [
+				{
+					"description": "<magicitem>{Life Armour}"
+				}
+			],
 			"flavourText": [
 				"From death, life. \r",
 				"From life, death. \r",
@@ -2421,7 +4060,19 @@
 			"league": "Standard",
 			"maxStackSize": 4,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/4", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/4",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "The Carrion Crow",
 			"verified": false,
@@ -2432,7 +4083,11 @@
 		{
 			"artFilename": "SocietysRemorse",
 			"baseType": "Society's Remorse",
-			"explicitMods": ["<currencyitem>{10x Orb of Alteration}"],
+			"explicitMods": [
+				{
+					"description": "<currencyitem>{10x Orb of Alteration}"
+				}
+			],
 			"flavourText": [
 				"<size:28>{We live to dream of worlds we aren't in,\r",
 				"a false narrative that we use to fill our souls\r",
@@ -2460,8 +4115,14 @@
 		{
 			"artFilename": "TheBeast",
 			"baseType": "The Beast",
-			"explicitMods": ["<uniqueitem>{Belly of the Beast}"],
-			"flavourText": ["To know the monster, you must become the monster."],
+			"explicitMods": [
+				{
+					"description": "<uniqueitem>{Belly of the Beast}"
+				}
+			],
+			"flavourText": [
+				"To know the monster, you must become the monster."
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -2472,7 +4133,19 @@
 			"league": "Standard",
 			"maxStackSize": 6,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/6", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/6",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "The Beast",
 			"verified": false,
@@ -2483,7 +4156,11 @@
 		{
 			"artFilename": "TheLover",
 			"baseType": "The Lover",
-			"explicitMods": ["<rareitem>{Jewellery}\r\n<default>{Item Level:} <normal>{79}"],
+			"explicitMods": [
+				{
+					"description": "<rareitem>{Jewellery}\r\n<default>{Item Level:} <normal>{79}"
+				}
+			],
 			"flavourText": [
 				"<size:26>{\"I wanted to give you three things. I've given you my eternal love. I've sung to you my most beautiful song. I'd have given you the moon last, but it couldn't be found. I hope you'll accept this instead.\"}"
 			],
@@ -2497,7 +4174,19 @@
 			"league": "Standard",
 			"maxStackSize": 2,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/2", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/2",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "The Lover",
 			"verified": false,
@@ -2508,8 +4197,14 @@
 		{
 			"artFilename": "VolatilePower",
 			"baseType": "Volatile Power",
-			"explicitMods": ["<gemitem>{Vaal Gem}\r\n<default>{Quality:} <augmented>{+20%}\r\n<corrupted>{Corrupted}"],
-			"flavourText": ["Unlimited power is apt to corrupt the minds of those who possess it."],
+			"explicitMods": [
+				{
+					"description": "<gemitem>{Vaal Gem}\r\n<default>{Quality:} <augmented>{+20%}\r\n<corrupted>{Corrupted}"
+				}
+			],
+			"flavourText": [
+				"Unlimited power is apt to corrupt the minds of those who possess it."
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -2520,7 +4215,19 @@
 			"league": "Standard",
 			"maxStackSize": 9,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/9", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/9",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "Volatile Power",
 			"verified": false,
@@ -2531,7 +4238,11 @@
 		{
 			"artFilename": "TheFoxInTheBrambles",
 			"baseType": "The Fox in the Brambles",
-			"explicitMods": ["<uniqueitem>{Bramblejack}\r\n<corrupted>{Two-Implicit}\r\n<corrupted>{Corrupted}"],
+			"explicitMods": [
+				{
+					"description": "<uniqueitem>{Bramblejack}\r\n<corrupted>{Two-Implicit}\r\n<corrupted>{Corrupted}"
+				}
+			],
 			"flavourText": [
 				"<size:26>{Hemmingsworth 6:10 - \"And the fox gazed out from the brambles, unreachable and smirking.\"}"
 			],
@@ -2545,7 +4256,19 @@
 			"league": "Standard",
 			"maxStackSize": 7,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/7", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/7",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "The Fox in the Brambles",
 			"verified": false,
@@ -2556,7 +4279,11 @@
 		{
 			"artFilename": "TheValkyrie",
 			"baseType": "The Valkyrie",
-			"explicitMods": ["<uniqueitem>{Nemesis Item}"],
+			"explicitMods": [
+				{
+					"description": "<uniqueitem>{Nemesis Item}"
+				}
+			],
 			"flavourText": [
 				"<size:26>{The villain strikes,\r",
 				"the world is torn.\r",
@@ -2576,7 +4303,19 @@
 			"league": "Standard",
 			"maxStackSize": 8,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/8", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/8",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "The Valkyrie",
 			"verified": false,
@@ -2587,8 +4326,14 @@
 		{
 			"artFilename": "TheFool",
 			"baseType": "The Fool",
-			"explicitMods": ["<currencyitem>{20x Orb of Chance}"],
-			"flavourText": ["Even the most learned man is a fool to his own fate."],
+			"explicitMods": [
+				{
+					"description": "<currencyitem>{20x Orb of Chance}"
+				}
+			],
+			"flavourText": [
+				"Even the most learned man is a fool to his own fate."
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -2599,7 +4344,19 @@
 			"league": "Standard",
 			"maxStackSize": 4,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/4", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/4",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "The Fool",
 			"verified": false,
@@ -2610,8 +4367,14 @@
 		{
 			"artFilename": "TheBlazingFire",
 			"baseType": "The Blazing Fire",
-			"explicitMods": ["<uniqueitem>{Chin Sol}"],
-			"flavourText": ["Lethal, untouchable, keen, aflame. Just what I was looking for."],
+			"explicitMods": [
+				{
+					"description": "<uniqueitem>{Chin Sol}"
+				}
+			],
+			"flavourText": [
+				"Lethal, untouchable, keen, aflame. Just what I was looking for."
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -2622,7 +4385,19 @@
 			"league": "Standard",
 			"maxStackSize": 6,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/6", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/6",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "The Blazing Fire",
 			"verified": false,
@@ -2633,8 +4408,14 @@
 		{
 			"artFilename": "TheDrunkenAristocrat",
 			"baseType": "The Drunken Aristocrat",
-			"explicitMods": ["<uniqueitem>{Divination Distillate}"],
-			"flavourText": ["The finer the brew, the harder it is to remember drinking it."],
+			"explicitMods": [
+				{
+					"description": "<uniqueitem>{Divination Distillate}"
+				}
+			],
+			"flavourText": [
+				"The finer the brew, the harder it is to remember drinking it."
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -2645,7 +4426,19 @@
 			"league": "Standard",
 			"maxStackSize": 8,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/8", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/8",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "The Drunken Aristocrat",
 			"verified": false,
@@ -2656,8 +4449,14 @@
 		{
 			"artFilename": "TheOpulecent",
 			"baseType": "The Opulent",
-			"explicitMods": ["<rareitem>{Ring}\r\n<default>{Item Level:} <normal>{100}"],
-			"flavourText": ["Wealth can, in fact, buy happiness."],
+			"explicitMods": [
+				{
+					"description": "<rareitem>{Ring}\r\n<default>{Item Level:} <normal>{100}"
+				}
+			],
+			"flavourText": [
+				"Wealth can, in fact, buy happiness."
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -2668,7 +4467,19 @@
 			"league": "Standard",
 			"maxStackSize": 5,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/5", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/5",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "The Opulent",
 			"verified": false,
@@ -2679,7 +4490,11 @@
 		{
 			"artFilename": "GiftOfTheGemlingQueen",
 			"baseType": "Gift of the Gemling Queen",
-			"explicitMods": ["<gemitem>{Level 20 Support Gem}"],
+			"explicitMods": [
+				{
+					"description": "<gemitem>{Level 20 Support Gem}"
+				}
+			],
 			"flavourText": [
 				"Our Lady Dialla,\r",
 				"as a symbol of our progress,\r",
@@ -2695,7 +4510,19 @@
 			"league": "Standard",
 			"maxStackSize": 9,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/9", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/9",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "Gift of the Gemling Queen",
 			"verified": false,
@@ -2706,8 +4533,14 @@
 		{
 			"artFilename": "Disdain",
 			"baseType": "Disdain",
-			"explicitMods": ["<currencyitem>{Delirium Orb}"],
-			"flavourText": ["<size:28>{No man sees all, but you'll see more than some see in a lifetime.}"],
+			"explicitMods": [
+				{
+					"description": "<currencyitem>{Delirium Orb}"
+				}
+			],
+			"flavourText": [
+				"<size:28>{No man sees all, but you'll see more than some see in a lifetime.}"
+			],
 			"frameType": 6,
 			"h": 1,
 			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvRGl2aW5hdGlvbi9JbnZlbnRvcnlJY29uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f34bf8cbb5/InventoryIcon.png",
@@ -2718,7 +4551,19 @@
 			"league": "Standard",
 			"maxStackSize": 5,
 			"name": "",
-			"properties": [{ "displayMode": 0, "name": "Stack Size", "type": 32, "values": [["1/5", 0]] }],
+			"properties": [
+				{
+					"displayMode": 0,
+					"name": "Stack Size",
+					"type": 32,
+					"values": [
+						[
+							"1/5",
+							0
+						]
+					]
+				}
+			],
 			"stackSize": 1,
 			"typeLine": "Disdain",
 			"verified": false,
@@ -2727,7 +4572,9 @@
 			"y": 3
 		}
 	],
-	"metadata": { "colour": "ff" },
+	"metadata": {
+		"colour": "ff"
+	},
 	"name": "d (Remove-only)",
 	"type": "PremiumStash"
 }

@@ -7,8 +7,7 @@ export const tabs = {
 			{
 				baseType: "Rogue's Marker",
 				descrText: 'Right click on this item while in a Town or Hideout to use it.',
-				explicitMods: [
-					'Creates a portal to the Rogue Harbour from a Town or Hideout\nUsed as Currency for services in the Rogue Harbour',
+				explicitMods: [{ description: 'Creates a portal to the Rogue Harbour from a Town or Hideout\\nUsed as Currency for services in the Rogue Harbour' },
 				],
 				frameType: 5,
 				h: 1,
@@ -32,7 +31,7 @@ export const tabs = {
 			{
 				baseType: 'Scroll of Wisdom',
 				descrText: 'Right click this item then left click an unidentified item to apply it.',
-				explicitMods: ['Identifies an item'],
+				explicitMods: [{ description: 'Identifies an item' }],
 				frameType: 5,
 				h: 1,
 				icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lJZGVudGlmaWNhdGlvbiIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/3a1e615322/CurrencyIdentification.png',
@@ -54,7 +53,7 @@ export const tabs = {
 			{
 				baseType: 'Portal Scroll',
 				descrText: 'Right click on this item to use it.',
-				explicitMods: ['Creates a portal to town'],
+				explicitMods: [{ description: 'Creates a portal to town' }],
 				frameType: 5,
 				h: 1,
 				icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lQb3J0YWwiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/a55c72f398/CurrencyPortal.png',
@@ -76,7 +75,7 @@ export const tabs = {
 			{
 				baseType: 'Scroll of Wisdom',
 				descrText: 'Right click this item then left click an unidentified item to apply it.',
-				explicitMods: ['Identifies an item'],
+				explicitMods: [{ description: 'Identifies an item' }],
 				frameType: 5,
 				h: 1,
 				icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lJZGVudGlmaWNhdGlvbiIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/3a1e615322/CurrencyIdentification.png',
@@ -98,7 +97,7 @@ export const tabs = {
 			{
 				baseType: 'Scroll of Wisdom',
 				descrText: 'Right click this item then left click an unidentified item to apply it.',
-				explicitMods: ['Identifies an item'],
+				explicitMods: [{ description: 'Identifies an item' }],
 				frameType: 5,
 				h: 1,
 				icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lJZGVudGlmaWNhdGlvbiIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/3a1e615322/CurrencyIdentification.png',
@@ -120,7 +119,7 @@ export const tabs = {
 			{
 				baseType: 'Portal Scroll',
 				descrText: 'Right click on this item to use it.',
-				explicitMods: ['Creates a portal to town'],
+				explicitMods: [{ description: 'Creates a portal to town' }],
 				frameType: 5,
 				h: 1,
 				icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lQb3J0YWwiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/a55c72f398/CurrencyPortal.png',
@@ -142,7 +141,7 @@ export const tabs = {
 			{
 				baseType: 'Scroll of Wisdom',
 				descrText: 'Right click this item then left click an unidentified item to apply it.',
-				explicitMods: ['Identifies an item'],
+				explicitMods: [{ description: 'Identifies an item' }],
 				frameType: 5,
 				h: 1,
 				icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lJZGVudGlmaWNhdGlvbiIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/3a1e615322/CurrencyIdentification.png',
@@ -164,7 +163,7 @@ export const tabs = {
 			{
 				baseType: 'Portal Scroll',
 				descrText: 'Right click on this item to use it.',
-				explicitMods: ['Creates a portal to town'],
+				explicitMods: [{ description: 'Creates a portal to town' }],
 				frameType: 5,
 				h: 1,
 				icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lQb3J0YWwiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/a55c72f398/CurrencyPortal.png',
@@ -186,7 +185,7 @@ export const tabs = {
 			{
 				baseType: 'Portal Scroll',
 				descrText: 'Right click on this item to use it.',
-				explicitMods: ['Creates a portal to town'],
+				explicitMods: [{ description: 'Creates a portal to town' }],
 				frameType: 5,
 				h: 1,
 				icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lQb3J0YWwiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/a55c72f398/CurrencyPortal.png',
@@ -229,7 +228,7 @@ export const tabs = {
 			{
 				baseType: 'Scroll of Wisdom',
 				descrText: 'Right click this item then left click an unidentified item to apply it.',
-				explicitMods: ['Identifies an item'],
+				explicitMods: [{ description: 'Identifies an item' }],
 				frameType: 5,
 				h: 1,
 				icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lJZGVudGlmaWNhdGlvbiIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/3a1e615322/CurrencyIdentification.png',
@@ -252,7 +251,7 @@ export const tabs = {
 				baseType: "Jeweller's Orb",
 				descrText:
 					"Right click this item then left click a socketed item to apply it. The item's quality increases the chances of obtaining more sockets.",
-				explicitMods: ['Reforges the number of sockets on an item'],
+				explicitMods: [{ description: 'Reforges the number of sockets on an item' }],
 				frameType: 5,
 				h: 1,
 				icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lSZXJvbGxTb2NrZXROdW1iZXJzIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/685633cb14/CurrencyRerollSocketNumbers.png',
@@ -316,7 +315,7 @@ export const tabs = {
 			{
 				baseType: 'Portal Scroll',
 				descrText: 'Right click on this item to use it.',
-				explicitMods: ['Creates a portal to town'],
+				explicitMods: [{ description: 'Creates a portal to town' }],
 				frameType: 5,
 				h: 1,
 				icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lQb3J0YWwiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/a55c72f398/CurrencyPortal.png',
@@ -339,7 +338,7 @@ export const tabs = {
 				baseType: "Cartographer's Chisel",
 				descrText:
 					'Right click this item then left click a map to apply it. Has greater effect on lower-rarity maps. The maximum quality is 20%.',
-				explicitMods: ['Improves the quality of a map'],
+				explicitMods: [{ description: 'Improves the quality of a map' }],
 				frameType: 5,
 				h: 1,
 				icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lNYXBRdWFsaXR5IiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/c83c35bed5/CurrencyMapQuality.png',
@@ -425,7 +424,7 @@ export const tabs = {
 				baseType: 'Orb of Fusing',
 				descrText:
 					"Right click this item then left click a socketed item to apply it. The item's quality increases the chances of obtaining more links.",
-				explicitMods: ['Reforges the links between sockets on an item'],
+				explicitMods: [{ description: 'Reforges the links between sockets on an item' }],
 				frameType: 5,
 				h: 1,
 				icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lSZXJvbGxTb2NrZXRMaW5rcyIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/f38529edfc/CurrencyRerollSocketLinks.png',
@@ -447,7 +446,7 @@ export const tabs = {
 			{
 				baseType: 'Orb of Alchemy',
 				descrText: 'Right click this item then left click a normal item to apply it.',
-				explicitMods: ['Upgrades a normal item to a rare item'],
+				explicitMods: [{ description: 'Upgrades a normal item to a rare item' }],
 				frameType: 5,
 				h: 1,
 				icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lVcGdyYWRlVG9SYXJlIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f0dc27cd7c/CurrencyUpgradeToRare.png',
@@ -469,7 +468,7 @@ export const tabs = {
 			{
 				artFilename: 'TheChainsThatBind',
 				baseType: 'The Chains that Bind',
-				explicitMods: ['<whiteitem>{Six-Link Body Armour}'],
+				explicitMods: [{ description: '<whiteitem>{Six-Link Body Armour}' }],
 				flavourText: [
 					'Scarier than any criminal is an innocent man in chains, for when he breaks free, his revenge will be justified.',
 				],
@@ -495,7 +494,7 @@ export const tabs = {
 				baseType: 'Vaal Orb',
 				descrText:
 					'Right click this item then left click an item to corrupt it. Corrupted items cannot be modified again.',
-				explicitMods: ['Corrupts an item, modifying it unpredictably'],
+				explicitMods: [{ description: 'Corrupts an item, modifying it unpredictably' }],
 				frameType: 5,
 				h: 1,
 				icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lWYWFsIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/304f775089/CurrencyVaal.png',
@@ -538,7 +537,7 @@ export const tabs = {
 			{
 				baseType: 'Orb of Regret',
 				descrText: 'Right click on this item to use it.',
-				explicitMods: ['Grants a passive skill refund point'],
+				explicitMods: [{ description: 'Grants a passive skill refund point' }],
 				frameType: 5,
 				h: 1,
 				icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lQYXNzaXZlU2tpbGxSZWZ1bmQiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/6b8ab3ff07/CurrencyPassiveSkillRefund.png',
@@ -560,7 +559,7 @@ export const tabs = {
 			{
 				baseType: 'Orb of Scouring',
 				descrText: 'Right click this item then left click on a magic or rare item to apply it.',
-				explicitMods: ['Removes all modifiers from an item'],
+				explicitMods: [{ description: 'Removes all modifiers from an item' }],
 				frameType: 5,
 				h: 1,
 				icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lDb252ZXJ0VG9Ob3JtYWwiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/6953e90545/CurrencyConvertToNormal.png',
@@ -603,7 +602,7 @@ export const tabs = {
 			{
 				baseType: 'Chromatic Orb',
 				descrText: 'Right click this item then left click a socketed item to apply it.',
-				explicitMods: ['Reforges the colour of sockets on an item'],
+				explicitMods: [{ description: 'Reforges the colour of sockets on an item' }],
 				frameType: 5,
 				h: 1,
 				icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lSZXJvbGxTb2NrZXRDb2xvdXJzIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/136314c10a/CurrencyRerollSocketColours.png',
@@ -625,7 +624,7 @@ export const tabs = {
 			{
 				baseType: 'Frigid Fossil',
 				descrText: 'Place in a Resonator to influence item crafting.',
-				explicitMods: ['More Cold modifiers\r\nNo Fire modifiers'],
+				explicitMods: [{ description: 'More Cold modifiers\\r\\nNo Fire modifiers' }],
 				frameType: 5,
 				h: 1,
 				icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvRGVsdmUvQW1iZXJGYW5nIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/559d8ae855/AmberFang.png',
@@ -691,8 +690,7 @@ export const tabs = {
 				baseType: 'Fossilised Incubator',
 				descrText:
 					'Right click this item then left click an item to apply it. The Incubated item drops after killing a specific number of monsters.',
-				explicitMods: [
-					'Adds an incubated Fossil item to an equippable item\r\nItem drops after killing 8924 monsters',
+				explicitMods: [{ description: 'Adds an incubated Fossil item to an equippable item\\r\\nItem drops after killing 8924 monsters' },
 				],
 				frameType: 5,
 				h: 1,
@@ -717,8 +715,7 @@ export const tabs = {
 				baseType: 'Fossilised Incubator',
 				descrText:
 					'Right click this item then left click an item to apply it. The Incubated item drops after killing a specific number of monsters.',
-				explicitMods: [
-					'Adds an incubated Fossil item to an equippable item\r\nItem drops after killing 8924 monsters',
+				explicitMods: [{ description: 'Adds an incubated Fossil item to an equippable item\\r\\nItem drops after killing 8924 monsters' },
 				],
 				frameType: 5,
 				h: 1,
@@ -743,8 +740,7 @@ export const tabs = {
 				baseType: 'Obscured Incubator',
 				descrText:
 					'Right click this item then left click an item to apply it. The Incubated item drops after killing a specific number of monsters.',
-				explicitMods: [
-					'Adds an incubated Breach item to an equippable item\r\nItem drops after killing 10407 monsters',
+				explicitMods: [{ description: 'Adds an incubated Breach item to an equippable item\\r\\nItem drops after killing 10407 monsters' },
 				],
 				frameType: 5,
 				h: 1,
@@ -769,8 +765,7 @@ export const tabs = {
 				baseType: 'Obscured Incubator',
 				descrText:
 					'Right click this item then left click an item to apply it. The Incubated item drops after killing a specific number of monsters.',
-				explicitMods: [
-					'Adds an incubated Breach item to an equippable item\r\nItem drops after killing 10407 monsters',
+				explicitMods: [{ description: 'Adds an incubated Breach item to an equippable item\\r\\nItem drops after killing 10407 monsters' },
 				],
 				frameType: 5,
 				h: 1,
@@ -794,7 +789,7 @@ export const tabs = {
 			{
 				artFilename: 'TheEndlessDarkness',
 				baseType: 'The Endless Darkness',
-				explicitMods: ['<uniqueitem>{Voidforge}'],
+				explicitMods: [{ description: '<uniqueitem>{Voidforge}' }],
 				flavourText: ['Gaze towards the stars, but beware what gazes back.'],
 				frameType: 6,
 				h: 1,
@@ -817,7 +812,7 @@ export const tabs = {
 			{
 				artFilename: 'TheLordofCelebration',
 				baseType: 'The Lord of Celebration',
-				explicitMods: ['<magicitem>{Sceptre of Celebration}\r\n<default>{Shaper Item}'],
+				explicitMods: [{ description: '<magicitem>{Sceptre of Celebration}\\r\\n<default>{Shaper Item}' }],
 				flavourText: [
 					"Though they were a pack of elite combatants, the Emperor's royal guards were not ready to face one of his notorious parties.",
 				],
@@ -842,18 +837,7 @@ export const tabs = {
 			{
 				baseType: 'Shrieking Essence of Torment',
 				descrText: 'Right click this item then left click a normal or rare item to apply it.',
-				explicitMods: [
-					'Upgrades a normal item to rare or reforges a rare item, guaranteeing one property',
-					'',
-					'One Handed Weapon: Adds (4-11) to (136-144) Lightning Damage to Spells',
-					'Two Handed Weapon: Adds (5-17) to (204-216) Lightning Damage to Spells',
-					'Gloves: Adds (1-3) to (33-34) Lightning Damage to Attacks',
-					'Body Armour: (8-9)% chance to Avoid Lightning Damage from Hits',
-					'Shield: (8-9)% chance to Avoid Lightning Damage from Hits',
-					'Other Armour: (51-55)% chance to Avoid being Shocked',
-					'Quiver: Adds (5-11) to (124-140) Lightning Damage to Attacks',
-					'Belt: (51-55)% chance to Avoid being Shocked',
-					'Other Jewellery: Adds (3-7) to (68-72) Lightning Damage to Attacks',
+				explicitMods: [{ description: 'Upgrades a normal item to rare or reforges a rare item, guaranteeing one property' }, { description: '' }, { description: 'One Handed Weapon: Adds (4-11) to (136-144) Lightning Damage to Spells' }, { description: 'Two Handed Weapon: Adds (5-17) to (204-216) Lightning Damage to Spells' }, { description: 'Gloves: Adds (1-3) to (33-34) Lightning Damage to Attacks' }, { description: 'Body Armour: (8-9)% chance to Avoid Lightning Damage from Hits' }, { description: 'Shield: (8-9)% chance to Avoid Lightning Damage from Hits' }, { description: 'Other Armour: (51-55)% chance to Avoid being Shocked' }, { description: 'Quiver: Adds (5-11) to (124-140) Lightning Damage to Attacks' }, { description: 'Belt: (51-55)% chance to Avoid being Shocked' }, { description: 'Other Jewellery: Adds (3-7) to (68-72) Lightning Damage to Attacks' },
 				],
 				frameType: 5,
 				h: 1,
@@ -876,7 +860,7 @@ export const tabs = {
 			{
 				artFilename: 'GarishPower',
 				baseType: 'The Garish Power',
-				explicitMods: ['<uniqueitem>{Jewel}'],
+				explicitMods: [{ description: '<uniqueitem>{Jewel}' }],
 				flavourText: [
 					'Maligaro may have valued function over form, but that did not mute his flair for the dramatic.',
 				],
@@ -902,7 +886,7 @@ export const tabs = {
 				baseType: "Jeweller's Orb",
 				descrText:
 					"Right click this item then left click a socketed item to apply it. The item's quality increases the chances of obtaining more sockets.",
-				explicitMods: ['Reforges the number of sockets on an item'],
+				explicitMods: [{ description: 'Reforges the number of sockets on an item' }],
 				frameType: 5,
 				h: 1,
 				icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lSZXJvbGxTb2NrZXROdW1iZXJzIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/685633cb14/CurrencyRerollSocketNumbers.png',
@@ -990,7 +974,7 @@ export const tabs = {
 			{
 				artFilename: 'TheGambler',
 				baseType: 'The Gambler',
-				explicitMods: ['<divination>{Divination Card}'],
+				explicitMods: [{ description: '<divination>{Divination Card}' }],
 				flavourText: ['"I don\'t believe in karma. If it were real, I would never win."'],
 				frameType: 6,
 				h: 1,
@@ -1013,7 +997,7 @@ export const tabs = {
 			{
 				artFilename: 'TheScavenger',
 				baseType: 'The Scavenger',
-				explicitMods: ['<uniqueitem>{Carcass Jack}'],
+				explicitMods: [{ description: '<uniqueitem>{Carcass Jack}' }],
 				flavourText: ['Take small pieces of things and then assemble them together'],
 				frameType: 6,
 				h: 1,
@@ -1037,7 +1021,7 @@ export const tabs = {
 				baseType: 'Orb of Augmentation',
 				descrText:
 					'Right click this item then left click a magic item to apply it. Magic items can have up to two random modifiers.',
-				explicitMods: ['Augments a magic item with a new random modifier'],
+				explicitMods: [{ description: 'Augments a magic item with a new random modifier' }],
 				frameType: 5,
 				h: 1,
 				icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lBZGRNb2RUb01hZ2ljIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/1a6cb2ad17/CurrencyAddModToMagic.png',
@@ -1059,7 +1043,7 @@ export const tabs = {
 			{
 				artFilename: 'AloneintheDarkness',
 				baseType: 'Alone in the Darkness',
-				explicitMods: ['<uniqueitem>{Delve Item}'],
+				explicitMods: [{ description: '<uniqueitem>{Delve Item}' }],
 				flavourText: [
 					'"Sometimes, the most beautiful treasures...are the ones you cannot have." \r',
 					'- Beryl, Survivor from the Azurite Mines',
@@ -1107,7 +1091,7 @@ export const tabs = {
 			{
 				baseType: 'Bound Fossil',
 				descrText: 'Place in a Resonator to influence item crafting.',
-				explicitMods: ['More Minion, Aura or Curse modifiers'],
+				explicitMods: [{ description: 'More Minion, Aura or Curse modifiers' }],
 				frameType: 5,
 				h: 1,
 				icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvRGVsdmUvUmVzb25hdGluZ0Zvc3NpbCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/836925ced6/ResonatingFossil.png',
@@ -1173,7 +1157,7 @@ export const tabs = {
 			{
 				artFilename: 'TheRiteofElements',
 				baseType: 'The Rite of Elements',
-				explicitMods: ['<gemitem>{Level 21 Golem Gem}\r\n<corrupted>{Corrupted}'],
+				explicitMods: [{ description: '<gemitem>{Level 21 Golem Gem}\\r\\n<corrupted>{Corrupted}' }],
 				flavourText: [
 					'<size:29>{A mind as quick as lightning, \r',
 					'fists as hard as stone, \r',
@@ -1201,7 +1185,7 @@ export const tabs = {
 			{
 				artFilename: 'ADabOfInk',
 				baseType: 'A Dab of Ink',
-				explicitMods: ["<uniqueitem>{The Poet's Pen}"],
+				explicitMods: [{ description: "<uniqueitem>{The Poet's Pen}" }],
 				flavourText: ["The Poet's blood is the Empire's ink."],
 				frameType: 6,
 				h: 1,
@@ -1224,17 +1208,7 @@ export const tabs = {
 			{
 				baseType: 'Screaming Essence of Fear',
 				descrText: 'Right click this item then left click a normal or rare item to apply it.',
-				explicitMods: [
-					'Upgrades a normal item to rare or reforges a rare item, guaranteeing one property',
-					'',
-					'One Handed Weapon: Minions deal (50-66)% increased Damage',
-					'Two Handed Weapon: Minions deal (85-106)% increased Damage',
-					'Gloves: Minions deal (22-24)% increased Damage',
-					'Helmet: (22-24)% increased Minion Accuracy Rating',
-					'Other Armour: Minions have (22-24)% increased maximum Life',
-					'Quiver: Minions have (22-24)% increased Movement Speed',
-					'Belt: Minions have (22-24)% increased maximum Life',
-					'Other Jewellery: Minions have (22-24)% increased Movement Speed',
+				explicitMods: [{ description: 'Upgrades a normal item to rare or reforges a rare item, guaranteeing one property' }, { description: '' }, { description: 'One Handed Weapon: Minions deal (50-66)% increased Damage' }, { description: 'Two Handed Weapon: Minions deal (85-106)% increased Damage' }, { description: 'Gloves: Minions deal (22-24)% increased Damage' }, { description: 'Helmet: (22-24)% increased Minion Accuracy Rating' }, { description: 'Other Armour: Minions have (22-24)% increased maximum Life' }, { description: 'Quiver: Minions have (22-24)% increased Movement Speed' }, { description: 'Belt: Minions have (22-24)% increased maximum Life' }, { description: 'Other Jewellery: Minions have (22-24)% increased Movement Speed' },
 				],
 				frameType: 5,
 				h: 1,
@@ -1257,17 +1231,7 @@ export const tabs = {
 			{
 				baseType: 'Screaming Essence of Scorn',
 				descrText: 'Right click this item then left click a normal or rare item to apply it.',
-				explicitMods: [
-					'Upgrades a normal item to rare or reforges a rare item, guaranteeing one property',
-					'',
-					'Weapon: (80-99)% increased Critical Strike Chance for Spells',
-					'Body Armour: (31-39)% increased Stun Threshold',
-					'Shield: (80-99)% increased Critical Strike Chance for Spells',
-					'Other Armour: (23-26)% chance to Avoid being Stunned',
-					'Quiver: (25-29)% to Global Critical Strike Multiplier',
-					'Amulet: (25-29)% to Global Critical Strike Multiplier',
-					'Ring: (15-17)% to Global Critical Strike Multiplier',
-					'Belt: (12-13)% reduced Enemy Stun Threshold',
+				explicitMods: [{ description: 'Upgrades a normal item to rare or reforges a rare item, guaranteeing one property' }, { description: '' }, { description: 'Weapon: (80-99)% increased Critical Strike Chance for Spells' }, { description: 'Body Armour: (31-39)% increased Stun Threshold' }, { description: 'Shield: (80-99)% increased Critical Strike Chance for Spells' }, { description: 'Other Armour: (23-26)% chance to Avoid being Stunned' }, { description: 'Quiver: (25-29)% to Global Critical Strike Multiplier' }, { description: 'Amulet: (25-29)% to Global Critical Strike Multiplier' }, { description: 'Ring: (15-17)% to Global Critical Strike Multiplier' }, { description: 'Belt: (12-13)% reduced Enemy Stun Threshold' },
 				],
 				frameType: 5,
 				h: 1,
@@ -1300,9 +1264,7 @@ export const tabs = {
 				baseType: 'Concentrated Effect Support',
 				descrText:
 					'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-				explicitMods: [
-					'Supported Skills deal 38% more Area Damage',
-					'Supported Skills have 30% less Area of Effect',
+				explicitMods: [{ description: 'Supported Skills deal 38% more Area Damage' }, { description: 'Supported Skills have 30% less Area of Effect' },
 				],
 				frameType: 4,
 				h: 1,
@@ -1334,10 +1296,7 @@ export const tabs = {
 			{
 				baseType: 'Gold Ring',
 				cisRaceReward: true,
-				explicitMods: [
-					'+10 to Dexterity',
-					'65% increased Rarity of Items found',
-					'-20% to all Elemental Resistances',
+				explicitMods: [{ description: '+10 to Dexterity' }, { description: '65% increased Rarity of Items found' }, { description: '-20% to all Elemental Resistances' },
 				],
 				flavourText: ['Danger is the price of wealth.'],
 				frameType: 3,
@@ -1346,7 +1305,7 @@ export const tabs = {
 				id: '29a0d5d73cc2b61842f2b2bc732eab57af207ec34c7db5d4650eb519c1cdd819',
 				identified: true,
 				ilvl: 100,
-				implicitMods: ['12% increased Rarity of Items found'],
+				implicitMods: [{ description: '12% increased Rarity of Items found' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: 'Andvarius',
@@ -1361,9 +1320,7 @@ export const tabs = {
 			{
 				baseType: 'Granite Flask',
 				descrText: 'Right click to drink. Can only hold charges while in belt. Refills as you kill monsters.',
-				explicitMods: [
-					'+30% Chance to Block Attack Damage during Effect',
-					'+14% Chance to Block Spell Damage during Effect',
+				explicitMods: [{ description: '+30% Chance to Block Attack Damage during Effect' }, { description: '+14% Chance to Block Spell Damage during Effect' },
 				],
 				flavourText: [
 					'"Yesterday I was clever, so I wanted to change the world.\r',
@@ -1404,11 +1361,7 @@ export const tabs = {
 			{
 				baseType: 'Slink Boots',
 				craftedMods: ['+60 to maximum Life'],
-				explicitMods: [
-					'+40% to Fire Resistance',
-					'+27% to Cold Resistance',
-					'+24% to Lightning Resistance',
-					'25% increased Movement Speed',
+				explicitMods: [{ description: '+40% to Fire Resistance' }, { description: '+27% to Cold Resistance' }, { description: '+24% to Lightning Resistance' }, { description: '25% increased Movement Speed' },
 				],
 				frameType: 2,
 				h: 2,
@@ -1443,13 +1396,7 @@ export const tabs = {
 						colour: 'D',
 						descrText:
 							'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-						explicitMods: [
-							'Base duration is 10.60 seconds',
-							'Grants 14% increased Attack Speed',
-							'1.2% of Attack Physical Damage Leeched as Life',
-							'You take 4% of your Maximum Life per second as Physical Damage',
-							'You take 4% of your Maximum Energy Shield per second as Physical Damage',
-							'25% chance to gain a Frenzy Charge on Kill',
+						explicitMods: [{ description: 'Base duration is 10.60 seconds' }, { description: 'Grants 14% increased Attack Speed' }, { description: '1.2% of Attack Physical Damage Leeched as Life' }, { description: 'You take 4% of your Maximum Life per second as Physical Damage' }, { description: 'You take 4% of your Maximum Energy Shield per second as Physical Damage' }, { description: '25% chance to gain a Frenzy Charge on Kill' },
 						],
 						frameType: 4,
 						h: 1,
@@ -1496,11 +1443,7 @@ export const tabs = {
 				corrupted: true,
 				descrText:
 					'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-				explicitMods: [
-					'Supported Skills deal 49% more Melee Physical Damage',
-					'Supported Skills deal 49% more Damage with Bleeding and Poison caused by Melee Hits',
-					'Supported Skills deal 10% increased Melee Physical Damage',
-					'Supported Skills have 10% less Attack Speed',
+				explicitMods: [{ description: 'Supported Skills deal 49% more Melee Physical Damage' }, { description: 'Supported Skills deal 49% more Damage with Bleeding and Poison caused by Melee Hits' }, { description: 'Supported Skills deal 10% increased Melee Physical Damage' }, { description: 'Supported Skills have 10% less Attack Speed' },
 				],
 				frameType: 4,
 				h: 1,
@@ -1542,10 +1485,7 @@ export const tabs = {
 				baseType: 'Hypothermia Support',
 				descrText:
 					'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-				explicitMods: [
-					'Supported Skills have +39% chance to Freeze Enemies which are Chilled',
-					'Supported Skills deal 28% more Cold Damage Over Time',
-					'Supported Skills deal 28% more Damage with Hits and Ailments against Chilled Enemies',
+				explicitMods: [{ description: 'Supported Skills have +39% chance to Freeze Enemies which are Chilled' }, { description: 'Supported Skills deal 28% more Cold Damage Over Time' }, { description: 'Supported Skills deal 28% more Damage with Hits and Ailments against Chilled Enemies' },
 				],
 				frameType: 4,
 				h: 1,
@@ -1577,12 +1517,7 @@ export const tabs = {
 			{
 				baseType: 'Granite Flask',
 				descrText: 'Right click to drink. Can only hold charges while in belt. Refills as you kill monsters.',
-				explicitMods: [
-					'89% increased Charges per use',
-					'Knocks Back Enemies in an Area when you use a Flask',
-					'75% chance to cause Enemies to Flee on use',
-					'Adds Knockback to Melee Attacks during Effect',
-					'34% more Melee Physical Damage during effect',
+				explicitMods: [{ description: '89% increased Charges per use' }, { description: 'Knocks Back Enemies in an Area when you use a Flask' }, { description: '75% chance to cause Enemies to Flee on use' }, { description: 'Adds Knockback to Melee Attacks during Effect' }, { description: '34% more Melee Physical Damage during effect' },
 				],
 				flavourText: ['A sprinkle of hunger, a spoonful of menace\r', 'and three generous cups of Might.'],
 				frameType: 3,
@@ -1638,11 +1573,7 @@ export const tabs = {
 			{
 				baseType: 'Ashscale Talisman',
 				corrupted: true,
-				explicitMods: [
-					'+7 to all Attributes',
-					'+32 to Strength',
-					'+30 to Dexterity',
-					'6% increased Elemental Damage with Attack Skills',
+				explicitMods: [{ description: '+7 to all Attributes' }, { description: '+32 to Strength' }, { description: '+30 to Dexterity' }, { description: '6% increased Elemental Damage with Attack Skills' },
 				],
 				flavourText: [
 					'The fire of the hearth is a docile dog,\r',
@@ -1658,7 +1589,7 @@ export const tabs = {
 				id: 'e6dca0b1f68c20fff1fc428ddd77929c50f7ba3c18383a9009995052023f75bd',
 				identified: true,
 				ilvl: 85,
-				implicitMods: ['23% increased Fire Damage'],
+				implicitMods: [{ description: '23% increased Fire Damage' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: 'Onslaught Medallion',
@@ -1674,11 +1605,7 @@ export const tabs = {
 			{
 				baseType: 'Undying Flesh Talisman',
 				corrupted: true,
-				explicitMods: [
-					'+19 to all Attributes',
-					'Adds 2 to 41 Lightning Damage to Attacks',
-					'+20 to maximum Energy Shield',
-					'0.72% of Physical Attack Damage Leeched as Life',
+				explicitMods: [{ description: '+19 to all Attributes' }, { description: 'Adds 2 to 41 Lightning Damage to Attacks' }, { description: '+20 to maximum Energy Shield' }, { description: '0.72% of Physical Attack Damage Leeched as Life' },
 				],
 				flavourText: [
 					"'Sleep when you are weary,' our mothers told us.\r",
@@ -1693,7 +1620,7 @@ export const tabs = {
 				id: 'ebc8627ed55828ee1cb5c1ce7a53e4ac3bb79d7b94ec621d0a6a4606ea8eca9f',
 				identified: true,
 				ilvl: 85,
-				implicitMods: ['+1 to maximum number of Raised Zombies'],
+				implicitMods: [{ description: '+1 to maximum number of Raised Zombies' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: 'Glyph Scarab',
@@ -1954,8 +1881,7 @@ export const tabs = {
 			},
 			{
 				baseType: 'Despot Axe',
-				explicitMods: [
-					'Adds 332 to 500 Cold Damage',
+				explicitMods: [{ description: 'Adds 332 to 500 Cold Damage' },
 					"15% increased Movement Speed if you've Warcried Recently",
 					"150% increased Elemental Damage if you've Warcried Recently",
 					'Warcries Knock Back and Interrupt Enemies in a smaller Area',
@@ -2006,12 +1932,7 @@ export const tabs = {
 						colour: 'D',
 						descrText:
 							'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-						explicitMods: [
-							'Supported Skills deal up to 37% more Melee Damage to Enemies, based on proximity',
-							'10% increased Damage with Hits to Close Range Enemies',
-							'Supported Skills grant Combat Rush on Hit\nCombat Rush lasts 2 seconds or until you use a Travel Skill',
-							'Combat Rush grants 20% more Attack Speed to Travel Skills not Supported by Close Combat',
-							'Supported Skills can only be used with Axes or Swords',
+						explicitMods: [{ description: 'Supported Skills deal up to 37% more Melee Damage to Enemies, based on proximity' }, { description: '10% increased Damage with Hits to Close Range Enemies' }, { description: 'Supported Skills grant Combat Rush on Hit\\nCombat Rush lasts 2 seconds or until you use a Travel Skill' }, { description: 'Combat Rush grants 20% more Attack Speed to Travel Skills not Supported by Close Combat' }, { description: 'Supported Skills can only be used with Axes or Swords' },
 						],
 						frameType: 4,
 						h: 1,
@@ -2053,13 +1974,7 @@ export const tabs = {
 						colour: 'S',
 						descrText:
 							'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-						explicitMods: [
-							'Supported Skills Repeat 2 additional times',
-							'Supported Skills have 43% more Melee Attack Speed',
-							'Supported Skills deal 22% less Attack Damage',
-							'Supported Skills deal 10% increased Melee Damage',
-							'First Repeat of Supported Skills deals 22% more Damage',
-							'Second Repeat of Supported Skills deals 44% more Damage',
+						explicitMods: [{ description: 'Supported Skills Repeat 2 additional times' }, { description: 'Supported Skills have 43% more Melee Attack Speed' }, { description: 'Supported Skills deal 22% less Attack Damage' }, { description: 'Supported Skills deal 10% increased Melee Damage' }, { description: 'First Repeat of Supported Skills deals 22% more Damage' }, { description: 'Second Repeat of Supported Skills deals 44% more Damage' },
 						],
 						frameType: 4,
 						h: 1,
@@ -2102,14 +2017,7 @@ export const tabs = {
 						colour: 'S',
 						descrText:
 							'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-						explicitMods: [
-							'Gain 15% of Physical Damage as Extra Cold Damage',
-							'100% of Physical Damage Converted to Cold Damage',
-							'Second Stage deals 15% less Damage',
-							'Third Stage deals 30% less Damage',
-							'Base radius is 1.1 metres',
-							'Base secondary radius is 2.1 metres',
-							'Base tertiary radius is 3.1 metres',
+						explicitMods: [{ description: 'Gain 15% of Physical Damage as Extra Cold Damage' }, { description: '100% of Physical Damage Converted to Cold Damage' }, { description: 'Second Stage deals 15% less Damage' }, { description: 'Third Stage deals 30% less Damage' }, { description: 'Base radius is 1.1 metres' }, { description: 'Base secondary radius is 2.1 metres' }, { description: 'Base tertiary radius is 3.1 metres' },
 						],
 						frameType: 4,
 						h: 1,
@@ -2155,11 +2063,7 @@ export const tabs = {
 						colour: 'S',
 						descrText:
 							'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-						explicitMods: [
-							'Melee Hits from Supported Skills Fortify',
-							'Supported Skills have 20% increased Fortification Duration',
-							'Supported Skills deal 18% more Damage with Ailments caused by Melee Hits',
-							'Supported Skills deal 18% more Melee Damage',
+						explicitMods: [{ description: 'Melee Hits from Supported Skills Fortify' }, { description: 'Supported Skills have 20% increased Fortification Duration' }, { description: 'Supported Skills deal 18% more Damage with Ailments caused by Melee Hits' }, { description: 'Supported Skills deal 18% more Melee Damage' },
 						],
 						frameType: 4,
 						h: 1,
@@ -2200,9 +2104,7 @@ export const tabs = {
 						colour: 'S',
 						descrText:
 							'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-						explicitMods: [
-							'10% increased Elemental Damage with Attack Skills',
-							'Supported Attack Skills deal 32% more Elemental Damage',
+						explicitMods: [{ description: '10% increased Elemental Damage with Attack Skills' }, { description: 'Supported Attack Skills deal 32% more Elemental Damage' },
 						],
 						frameType: 4,
 						h: 1,
@@ -2244,10 +2146,7 @@ export const tabs = {
 						colour: 'S',
 						descrText:
 							'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-						explicitMods: [
-							'Supported Skills have 43% increased Area of Effect',
-							'Supported Skills have 15% less Attack Speed',
-							'Supported Skills deal 47% more Melee Area Damage',
+						explicitMods: [{ description: 'Supported Skills have 43% increased Area of Effect' }, { description: 'Supported Skills have 15% less Attack Speed' }, { description: 'Supported Skills deal 47% more Melee Area Damage' },
 						],
 						frameType: 4,
 						h: 1,
@@ -2292,7 +2191,7 @@ export const tabs = {
 			{
 				baseType: 'Glorious Plate',
 				corrupted: true,
-				explicitMods: ['Has no Sockets', '30% increased Fire Damage', '+500 to maximum Life'],
+				explicitMods: [{ description: 'Has no Sockets' }, { description: '30% increased Fire Damage' }, { description: '+500 to maximum Life' }],
 				flavourText: ['The warrior who\r', 'fears will fall.'],
 				frameType: 3,
 				h: 3,
@@ -2300,7 +2199,7 @@ export const tabs = {
 				id: '0eb49e28b284e350f28dff9442710ef1ab83be8f513f0369cdefe2700602bc6f',
 				identified: true,
 				ilvl: 80,
-				implicitMods: ['+2 to Level of Socketed Aura Gems', '6% increased maximum Life'],
+				implicitMods: [{ description: '+2 to Level of Socketed Aura Gems' }, { description: '6% increased maximum Life' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: "Kaom's Heart",
@@ -2332,9 +2231,7 @@ export const tabs = {
 				baseType: 'Increased Area of Effect Support',
 				descrText:
 					'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-				explicitMods: [
-					'Supported Skills have 47% increased Area of Effect',
-					'Supported Skills deal 10% increased Area Damage',
+				explicitMods: [{ description: 'Supported Skills have 47% increased Area of Effect' }, { description: 'Supported Skills deal 10% increased Area Damage' },
 				],
 				frameType: 4,
 				h: 1,
@@ -2366,7 +2263,7 @@ export const tabs = {
 			{
 				baseType: 'Quartz Flask',
 				descrText: 'Right click to drink. Can only hold charges while in belt. Refills as you kill monsters.',
-				explicitMods: ['25% reduced Charges per use', 'Removes Curses on use'],
+				explicitMods: [{ description: '25% reduced Charges per use' }, { description: 'Removes Curses on use' }],
 				frameType: 1,
 				h: 2,
 				icon: 'https://web.poecdn.com/gen/image/WzksMTQseyJmIjoiMkRJdGVtcy9GbGFza3MvcGhhc2VmbGFzazAxIiwidyI6MSwiaCI6Miwic2NhbGUiOjEsImxldmVsIjoxfV0/6266d738e1/phaseflask01.png',
@@ -2401,13 +2298,7 @@ export const tabs = {
 			{
 				baseType: 'Blunt Arrow Quiver',
 				corrupted: true,
-				explicitMods: [
-					'+12 to Dexterity',
-					'Adds 3 to 4 Physical Damage to Attacks',
-					'Adds 2 to 22 Lightning Damage to Attacks',
-					'11% increased Attack Speed',
-					'+96 to maximum Life',
-					'+45% to Lightning Resistance',
+				explicitMods: [{ description: '+12 to Dexterity' }, { description: 'Adds 3 to 4 Physical Damage to Attacks' }, { description: 'Adds 2 to 22 Lightning Damage to Attacks' }, { description: '11% increased Attack Speed' }, { description: '+96 to maximum Life' }, { description: '+45% to Lightning Resistance' },
 				],
 				frameType: 2,
 				h: 3,
@@ -2415,7 +2306,7 @@ export const tabs = {
 				id: '306c38b5a161c16e4e5ff1ac2a009f847529cfaba33bb56ecb692a0e312e610d',
 				identified: true,
 				ilvl: 74,
-				implicitMods: ['25% increased Stun Duration on Enemies'],
+				implicitMods: [{ description: '25% increased Stun Duration on Enemies' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: 'Empyrean Hail',
@@ -2430,9 +2321,7 @@ export const tabs = {
 			{
 				baseType: 'Eternal Life Flask',
 				descrText: 'Right click to drink. Can only hold charges while in belt. Refills as you kill monsters.',
-				explicitMods: [
-					'21% reduced Charges per use',
-					'Grants Immunity to Bleeding for 4 seconds if used while Bleeding\nGrants Immunity to Corrupted Blood for 4 seconds if used while affected by Corrupted Blood',
+				explicitMods: [{ description: '21% reduced Charges per use' }, { description: 'Grants Immunity to Bleeding for 4 seconds if used while Bleeding\\nGrants Immunity to Corrupted Blood for 4 seconds if used while affected by Corrupted Blood' },
 				],
 				frameType: 1,
 				h: 2,
@@ -2474,11 +2363,7 @@ export const tabs = {
 			{
 				baseType: 'Eternal Mana Flask',
 				descrText: 'Right click to drink. Can only hold charges while in belt. Refills as you kill monsters.',
-				explicitMods: [
-					'30% reduced Amount Recovered',
-					'30% reduced Duration',
-					'Effect is not removed when Unreserved Mana is Filled\nEffect does not Queue',
-					'65% increased Armour during Effect',
+				explicitMods: [{ description: '30% reduced Amount Recovered' }, { description: '30% reduced Duration' }, { description: 'Effect is not removed when Unreserved Mana is Filled\\nEffect does not Queue' }, { description: '65% increased Armour during Effect' },
 				],
 				frameType: 1,
 				h: 2,
@@ -2579,11 +2464,7 @@ export const tabs = {
 				baseType: 'Fluted Bascinet',
 				craftedMods: ['+13% to Fire and Cold Resistances'],
 				enchantMods: ['Burning Arrow has +16% chance to Ignite'],
-				explicitMods: [
-					'+59 to Evasion Rating',
-					'16% increased Armour and Evasion',
-					'+65 to maximum Life',
-					'+26% to Cold Resistance',
+				explicitMods: [{ description: '+59 to Evasion Rating' }, { description: '16% increased Armour and Evasion' }, { description: '+65 to maximum Life' }, { description: '+26% to Cold Resistance' },
 				],
 				frameType: 2,
 				h: 2,
@@ -2620,10 +2501,7 @@ export const tabs = {
 						colour: 'D',
 						descrText:
 							'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-						explicitMods: [
-							'Adds 175 to 263 Fire Damage to Attacks against Ignited Enemies',
-							'100% of Physical Damage Converted to Fire Damage',
-							'25% chance to Ignite enemies',
+						explicitMods: [{ description: 'Adds 175 to 263 Fire Damage to Attacks against Ignited Enemies' }, { description: '100% of Physical Damage Converted to Fire Damage' }, { description: '25% chance to Ignite enemies' },
 						],
 						frameType: 4,
 						h: 1,
@@ -2666,10 +2544,7 @@ export const tabs = {
 						colour: 'S',
 						descrText:
 							'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-						explicitMods: [
-							'+1.8 metres to radius',
-							'You and nearby allies deal 101 to 145 additional Fire Damage with Attacks',
-							'You and nearby allies deal 101 to 145 additional Fire Damage with Spells',
+						explicitMods: [{ description: '+1.8 metres to radius' }, { description: 'You and nearby allies deal 101 to 145 additional Fire Damage with Attacks' }, { description: 'You and nearby allies deal 101 to 145 additional Fire Damage with Spells' },
 						],
 						frameType: 4,
 						h: 1,
@@ -2713,7 +2588,7 @@ export const tabs = {
 						colour: 'S',
 						descrText:
 							'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-						explicitMods: ['Maximum 1 Summoned Golem', 'Golems grant 103 Life Regenerated per second'],
+						explicitMods: [{ description: 'Maximum 1 Summoned Golem' }, { description: 'Golems grant 103 Life Regenerated per second' }],
 						frameType: 4,
 						h: 1,
 						icon: 'https://web.poecdn.com/gen/image/WzMwLDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9Sb2NrR29sZW0iLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/f0d237e67b/RockGolem.png',
@@ -2806,11 +2681,7 @@ export const tabs = {
 			{
 				baseType: 'Leather Belt',
 				craftedMods: ['15% increased Elemental Damage with Attack Skills'],
-				explicitMods: [
-					'+25 to Strength',
-					'+73 to maximum Life',
-					'+43% to Cold Resistance',
-					'25% increased Flask Effect Duration',
+				explicitMods: [{ description: '+25 to Strength' }, { description: '+73 to maximum Life' }, { description: '+43% to Cold Resistance' }, { description: '25% increased Flask Effect Duration' },
 				],
 				frameType: 2,
 				h: 1,
@@ -2818,7 +2689,7 @@ export const tabs = {
 				id: '1d2839c0ebed1079f2a81f0a3c42b962d08eac693ac9943d7f48d81d69d2ab86',
 				identified: true,
 				ilvl: 72,
-				implicitMods: ['+37 to maximum Life'],
+				implicitMods: [{ description: '+37 to maximum Life' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: 'Empyrean Twine',
@@ -2835,10 +2706,7 @@ export const tabs = {
 				corrupted: true,
 				descrText:
 					'Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.',
-				explicitMods: [
-					'12% increased Global Physical Damage',
-					'With at least 40 Strength in Radius, Ground Slam has a 35% chance\nto grant an Endurance Charge when you Stun an Enemy',
-					'With at least 40 Strength in Radius, Ground Slam\nhas a 50% increased angle',
+				explicitMods: [{ description: '12% increased Global Physical Damage' }, { description: 'With at least 40 Strength in Radius, Ground Slam has a 35% chance\\nto grant an Endurance Charge when you Stun an Enemy' }, { description: 'With at least 40 Strength in Radius, Ground Slam\\nhas a 50% increased angle' },
 				],
 				flavourText: [
 					'Chitus began to aggressively expand his empire\r',
@@ -2868,12 +2736,7 @@ export const tabs = {
 			},
 			{
 				baseType: 'Ruby Ring',
-				explicitMods: [
-					'+24 to Strength',
-					'Adds 21 to 34 Fire Damage',
-					'+23% to Fire Resistance',
-					'+56% to Fire Resistance while affected by Herald of Ash',
-					'Herald of Ash has 83% increased Buff Effect',
+				explicitMods: [{ description: '+24 to Strength' }, { description: 'Adds 21 to 34 Fire Damage' }, { description: '+23% to Fire Resistance' }, { description: '+56% to Fire Resistance while affected by Herald of Ash' }, { description: 'Herald of Ash has 83% increased Buff Effect' },
 				],
 				flavourText: [
 					'I condemned an innocent man to the pyres, but to admit this mistake is to condemn myself.\r',
@@ -2885,7 +2748,7 @@ export const tabs = {
 				id: '5fb0a84420393d095f2b342f9d91321392fadca2d2b380c78fc76f65166808ce',
 				identified: true,
 				ilvl: 78,
-				implicitMods: ['+14 to Strength', '4% increased maximum Life'],
+				implicitMods: [{ description: '+14 to Strength' }, { description: '4% increased maximum Life' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: 'Circle of Anguish',
@@ -2900,14 +2763,14 @@ export const tabs = {
 			},
 			{
 				baseType: 'Harbinger Bow',
-				explicitMods: ['+2 to Level of Socketed Bow Gems', 'Adds 15 to 29 Physical Damage'],
+				explicitMods: [{ description: '+2 to Level of Socketed Bow Gems' }, { description: 'Adds 15 to 29 Physical Damage' }],
 				frameType: 2,
 				h: 4,
 				icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Cb3dzL0JvdzgiLCJ3IjoyLCJoIjo0LCJzY2FsZSI6MX1d/8d079c60ed/Bow8.png',
 				id: 'cb14dabc100d20fc155def948a8476c218f7b4aa0000aa4032fd9b2e35986117',
 				identified: true,
 				ilvl: 75,
-				implicitMods: ['43% increased Critical Strike Chance'],
+				implicitMods: [{ description: '43% increased Critical Strike Chance' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: 'Blood Thirst',
@@ -2939,10 +2802,7 @@ export const tabs = {
 						corrupted: true,
 						descrText:
 							'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-						explicitMods: [
-							'Deals 1600.8 Base Chaos Damage per second',
-							'Base duration is 2.00 seconds',
-							'60% of Physical Damage Converted to Chaos Damage',
+						explicitMods: [{ description: 'Deals 1600.8 Base Chaos Damage per second' }, { description: 'Base duration is 2.00 seconds' }, { description: '60% of Physical Damage Converted to Chaos Damage' },
 							"Modifiers to Projectile Damage apply to this Skill's Damage Over Time effect",
 							'+0.8 metres to radius',
 						],
@@ -2980,9 +2840,7 @@ export const tabs = {
 						corrupted: true,
 						descrText:
 							'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-						explicitMods: [
-							'Supported Skills have 50% increased Area of Effect',
-							'Supported Skills deal 10% increased Area Damage',
+						explicitMods: [{ description: 'Supported Skills have 50% increased Area of Effect' }, { description: 'Supported Skills deal 10% increased Area Damage' },
 						],
 						frameType: 4,
 						h: 1,
@@ -3023,9 +2881,7 @@ export const tabs = {
 						colour: 'D',
 						descrText:
 							'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-						explicitMods: [
-							'Supported Skills deal 36% more Damage over Time',
-							'25% less Duration of Supported Skills and Damaging Ailments they inflict',
+						explicitMods: [{ description: 'Supported Skills deal 36% more Damage over Time' }, { description: '25% less Duration of Supported Skills and Damaging Ailments they inflict' },
 						],
 						frameType: 4,
 						h: 1,
@@ -3066,10 +2922,7 @@ export const tabs = {
 						colour: 'D',
 						descrText:
 							'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-						explicitMods: [
-							'Supported Skills deal 33% more Chaos Damage',
-							'Supported Skills deal 10% increased Chaos Damage',
-							'Supported Skills deal no Elemental Damage',
+						explicitMods: [{ description: 'Supported Skills deal 33% more Chaos Damage' }, { description: 'Supported Skills deal 10% increased Chaos Damage' }, { description: 'Supported Skills deal no Elemental Damage' },
 						],
 						frameType: 4,
 						h: 1,
@@ -3111,10 +2964,7 @@ export const tabs = {
 						colour: 'D',
 						descrText:
 							'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-						explicitMods: [
-							'Supported Skills have 28% less Projectile Speed',
-							'Supported Skills deal 10% increased Projectile Damage',
-							'Supported Skills deal 18% more Projectile Damage',
+						explicitMods: [{ description: 'Supported Skills have 28% less Projectile Speed' }, { description: 'Supported Skills deal 10% increased Projectile Damage' }, { description: 'Supported Skills deal 18% more Projectile Damage' },
 						],
 						frameType: 4,
 						h: 1,
@@ -3160,7 +3010,7 @@ export const tabs = {
 				baseType: 'Crimson Jewel',
 				descrText:
 					'Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.',
-				explicitMods: ['5% increased Attack Speed', '+10% to Fire and Lightning Resistances'],
+				explicitMods: [{ description: '5% increased Attack Speed' }, { description: '+10% to Fire and Lightning Resistances' }],
 				fractured: true,
 				fracturedMods: ['8% increased Attack Speed with Maces or Sceptres', '7% increased maximum Life'],
 				frameType: 2,
@@ -3183,7 +3033,7 @@ export const tabs = {
 				baseType: 'Cobalt Jewel',
 				descrText:
 					'Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.',
-				explicitMods: ['25% increased Critical Strike Chance per Grand Spectrum'],
+				explicitMods: [{ description: '25% increased Critical Strike Chance per Grand Spectrum' }],
 				flavourText: ['Thoughts that shimmer like light across the rain.'],
 				frameType: 3,
 				h: 1,
@@ -3205,13 +3055,7 @@ export const tabs = {
 			{
 				baseType: 'Shagreen Boots',
 				enchantMods: ['Regenerate 1.5% of Life per second if you were Hit Recently'],
-				explicitMods: [
-					'+26 to Dexterity',
-					'31% increased Evasion Rating',
-					'100% increased Evasion Rating during Onslaught',
-					'+69 to maximum Life',
-					'25% increased Movement Speed',
-					'10% chance to Avoid Elemental Ailments while Phasing',
+				explicitMods: [{ description: '+26 to Dexterity' }, { description: '31% increased Evasion Rating' }, { description: '100% increased Evasion Rating during Onslaught' }, { description: '+69 to maximum Life' }, { description: '25% increased Movement Speed' }, { description: '10% chance to Avoid Elemental Ailments while Phasing' },
 				],
 				flavourText: [
 					'Move in with haste.\r',
@@ -3249,9 +3093,7 @@ export const tabs = {
 						colour: 'D',
 						descrText:
 							'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-						explicitMods: [
-							'18% increased Cooldown Recovery Rate',
-							'54% increased travel distance',
+						explicitMods: [{ description: '18% increased Cooldown Recovery Rate' }, { description: '54% increased travel distance' },
 							"This Spell's Cast Speed cannot be modified",
 						],
 						frameType: 4,
@@ -3295,9 +3137,7 @@ export const tabs = {
 						colour: 'D',
 						descrText:
 							'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-						explicitMods: [
-							'Supported Skills have 6% reduced Cooldown Recovery Rate',
-							'Supported Non-Instant Skills have +1 Cooldown Use',
+						explicitMods: [{ description: 'Supported Skills have 6% reduced Cooldown Recovery Rate' }, { description: 'Supported Non-Instant Skills have +1 Cooldown Use' },
 						],
 						frameType: 4,
 						h: 1,
@@ -3338,10 +3178,7 @@ export const tabs = {
 						colour: 'D',
 						descrText:
 							'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-						explicitMods: [
-							'Base duration is 3.00 seconds',
-							'45% increased Cooldown Recovery Rate',
-							'Minions deal 54% more Damage',
+						explicitMods: [{ description: 'Base duration is 3.00 seconds' }, { description: '45% increased Cooldown Recovery Rate' }, { description: 'Minions deal 54% more Damage' },
 						],
 						frameType: 4,
 						h: 1,
@@ -3386,13 +3223,7 @@ export const tabs = {
 			{
 				baseType: 'Two-Point Arrow Quiver',
 				corrupted: true,
-				explicitMods: [
-					'-10% to Fire Resistance',
-					'+28% to Lightning Resistance',
-					'Gain 7 Life per Enemy Hit with Attacks',
-					'20% reduced Projectile Speed',
-					'39% increased Projectile Damage',
-					'Arrows Fork',
+				explicitMods: [{ description: '-10% to Fire Resistance' }, { description: '+28% to Lightning Resistance' }, { description: 'Gain 7 Life per Enemy Hit with Attacks' }, { description: '20% reduced Projectile Speed' }, { description: '39% increased Projectile Damage' }, { description: 'Arrows Fork' },
 				],
 				flavourText: [
 					'The fortunate inscribe their legacy\r',
@@ -3406,7 +3237,7 @@ export const tabs = {
 				id: '79e4c40a97f686b6a3c9690e22c01a004cb128c09678d0e39d82d76f09dd7739',
 				identified: true,
 				ilvl: 80,
-				implicitMods: ['30% increased Global Accuracy Rating'],
+				implicitMods: [{ description: '30% increased Global Accuracy Rating' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: "Rigwald's Quills",
@@ -3423,13 +3254,7 @@ export const tabs = {
 				corrupted: true,
 				descrText:
 					'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-				explicitMods: [
-					'Deals 185 to 278 Physical Damage',
-					'50% of Physical Damage Converted to Lightning Damage',
-					'Base duration is 1.60 seconds',
-					'+0.5 metres to radius',
-					'Orbs jump every 0.4 seconds',
-					'Exploding Orbs deal 75% of Skill Damage for each 0.4 seconds of remaining Duration',
+				explicitMods: [{ description: 'Deals 185 to 278 Physical Damage' }, { description: '50% of Physical Damage Converted to Lightning Damage' }, { description: 'Base duration is 1.60 seconds' }, { description: '+0.5 metres to radius' }, { description: 'Orbs jump every 0.4 seconds' }, { description: 'Exploding Orbs deal 75% of Skill Damage for each 0.4 seconds of remaining Duration' },
 				],
 				frameType: 4,
 				h: 1,
@@ -3468,9 +3293,7 @@ export const tabs = {
 				corrupted: true,
 				descrText:
 					'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-				explicitMods: [
-					'Supported Skills deal 10% increased Cold Damage',
-					'Supported Skills have 167 to 251 added Cold Damage',
+				explicitMods: [{ description: 'Supported Skills deal 10% increased Cold Damage' }, { description: 'Supported Skills have 167 to 251 added Cold Damage' },
 				],
 				frameType: 4,
 				h: 1,
@@ -3503,9 +3326,7 @@ export const tabs = {
 				baseType: 'Viridian Jewel',
 				descrText:
 					'Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.',
-				explicitMods: [
-					'Adds 1 to 2 Lightning Damage to Attacks',
-					'Adds 1 maximum Lightning Damage to Attacks per 1 Dexterity Allocated in Radius',
+				explicitMods: [{ description: 'Adds 1 to 2 Lightning Damage to Attacks' }, { description: 'Adds 1 maximum Lightning Damage to Attacks per 1 Dexterity Allocated in Radius' },
 				],
 				flavourText: [
 					'"Movement expends energy, but perhaps a little of that energy\r',
@@ -3532,14 +3353,7 @@ export const tabs = {
 			{
 				baseType: 'Dragonscale Boots',
 				corrupted: true,
-				explicitMods: [
-					'51% increased Armour and Evasion',
-					'+36% to Lightning Resistance',
-					'5% increased Movement Speed per Frenzy Charge',
-					'+1 to Maximum Frenzy Charges',
-					'40% reduced Frenzy Charge Duration',
-					'25% reduced Light Radius',
-					'+2% chance to Suppress Spell Damage per Frenzy Charge',
+				explicitMods: [{ description: '51% increased Armour and Evasion' }, { description: '+36% to Lightning Resistance' }, { description: '5% increased Movement Speed per Frenzy Charge' }, { description: '+1 to Maximum Frenzy Charges' }, { description: '40% reduced Frenzy Charge Duration' }, { description: '25% reduced Light Radius' }, { description: '+2% chance to Suppress Spell Damage per Frenzy Charge' },
 				],
 				flavourText: [
 					'"Sirrius flew on wings of light, faster than wind, faster\r',
@@ -3553,7 +3367,7 @@ export const tabs = {
 				id: '39fb4e5289c2198702bb9de404d4913c536167ea567a35f765a231ccb2184e26',
 				identified: true,
 				ilvl: 82,
-				implicitMods: ['6% increased maximum Life'],
+				implicitMods: [{ description: '6% increased maximum Life' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: 'Darkray Vectors',
@@ -3575,11 +3389,7 @@ export const tabs = {
 						corrupted: true,
 						descrText:
 							'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-						explicitMods: [
-							'Maximum 1 Summoned Golem',
-							'Golems Grant 30% increased Critical Strike Chance',
-							'Golems Grant 30% increased Accuracy',
-							'20% increased Buff Effect',
+						explicitMods: [{ description: 'Maximum 1 Summoned Golem' }, { description: 'Golems Grant 30% increased Critical Strike Chance' }, { description: 'Golems Grant 30% increased Accuracy' }, { description: '20% increased Buff Effect' },
 						],
 						frameType: 4,
 						h: 1,
@@ -3615,9 +3425,7 @@ export const tabs = {
 						colour: 'S',
 						descrText:
 							'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-						explicitMods: [
-							'Supported Skills have 19% increased Aura effect',
-							'Supported Skills Reserve Life instead of Mana',
+						explicitMods: [{ description: 'Supported Skills have 19% increased Aura effect' }, { description: 'Supported Skills Reserve Life instead of Mana' },
 						],
 						frameType: 4,
 						h: 1,
@@ -3660,7 +3468,7 @@ export const tabs = {
 				baseType: 'Increased Area of Effect Support',
 				descrText:
 					'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-				explicitMods: ['Supported Skills have 49% increased Area of Effect'],
+				explicitMods: [{ description: 'Supported Skills have 49% increased Area of Effect' }],
 				frameType: 4,
 				h: 1,
 				icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9TdXBwb3J0L0luY3JlYXNlZEFPRSIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/a4111d2154/IncreasedAOE.png',
@@ -3690,9 +3498,7 @@ export const tabs = {
 			{
 				baseType: 'Basalt Flask',
 				descrText: 'Right click to drink. Can only hold charges while in belt. Refills as you kill monsters.',
-				explicitMods: [
-					'25% reduced Charges per use',
-					'0.4% of Physical Attack Damage Leeched as Mana during Effect',
+				explicitMods: [{ description: '25% reduced Charges per use' }, { description: '0.4% of Physical Attack Damage Leeched as Mana during Effect' },
 				],
 				frameType: 1,
 				h: 2,
@@ -3728,7 +3534,7 @@ export const tabs = {
 			{
 				baseType: 'Diamond Flask',
 				descrText: 'Right click to drink. Can only hold charges while in belt. Refills as you kill monsters.',
-				explicitMods: ['40% increased Duration', '20% additional Elemental Resistances during Effect'],
+				explicitMods: [{ description: '40% increased Duration' }, { description: '20% additional Elemental Resistances during Effect' }],
 				frameType: 1,
 				h: 2,
 				icon: 'https://web.poecdn.com/gen/image/WzksMTQseyJmIjoiMkRJdGVtcy9GbGFza3MvZGlhbW9uZCIsInciOjEsImgiOjIsInNjYWxlIjoxLCJsZXZlbCI6MX1d/98bf48b8dd/diamond.png',
@@ -3762,11 +3568,7 @@ export const tabs = {
 			},
 			{
 				baseType: 'Diamond Ring',
-				explicitMods: [
-					'+17 to Strength',
-					'17% increased Fire Damage',
-					'10% increased Rarity of Items found',
-					'Minions deal 16% increased Damage',
+				explicitMods: [{ description: '+17 to Strength' }, { description: '17% increased Fire Damage' }, { description: '10% increased Rarity of Items found' }, { description: 'Minions deal 16% increased Damage' },
 				],
 				frameType: 2,
 				h: 1,
@@ -3774,7 +3576,7 @@ export const tabs = {
 				id: '18e13aef51daebd42c95fd296f6337fcee60ba5c9c0744de1b481df4246b5509',
 				identified: true,
 				ilvl: 86,
-				implicitMods: ['30% increased Global Critical Strike Chance'],
+				implicitMods: [{ description: '30% increased Global Critical Strike Chance' }],
 				influences: { redeemer: true },
 				inventoryId: 'Stash1',
 				league: 'Standard',
@@ -3789,12 +3591,7 @@ export const tabs = {
 			},
 			{
 				baseType: 'Blood Raiment',
-				explicitMods: [
-					'8% increased Intelligence',
-					'+13 to maximum Energy Shield',
-					'+36 to maximum Mana',
-					'+46% to Fire Resistance',
-					'22% increased Stun and Block Recovery',
+				explicitMods: [{ description: '8% increased Intelligence' }, { description: '+13 to maximum Energy Shield' }, { description: '+36 to maximum Mana' }, { description: '+46% to Fire Resistance' }, { description: '22% increased Stun and Block Recovery' },
 				],
 				frameType: 2,
 				h: 3,
@@ -3829,12 +3626,7 @@ export const tabs = {
 			},
 			{
 				baseType: 'Chain Belt',
-				explicitMods: [
-					'7% increased Attributes',
-					'12% reduced Enemy Stun Threshold',
-					'+66 to maximum Life',
-					'7% increased maximum Life',
-					'+21% to Fire Resistance',
+				explicitMods: [{ description: '7% increased Attributes' }, { description: '12% reduced Enemy Stun Threshold' }, { description: '+66 to maximum Life' }, { description: '7% increased maximum Life' }, { description: '+21% to Fire Resistance' },
 				],
 				frameType: 2,
 				h: 1,
@@ -3842,7 +3634,7 @@ export const tabs = {
 				id: 'e7046e6d29a59ce7c620a9cc06a375b54fdd19e11129af49bfe8ebc650cdaa4c',
 				identified: true,
 				ilvl: 86,
-				implicitMods: ['+12 to maximum Energy Shield'],
+				implicitMods: [{ description: '+12 to maximum Energy Shield' }],
 				influences: { hunter: true },
 				inventoryId: 'Stash1',
 				league: 'Standard',
@@ -3911,16 +3703,7 @@ export const tabs = {
 				baseType: 'Herald of Agony',
 				descrText:
 					'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-				explicitMods: [
-					'Maximum 1 Summoned Agony Crawler',
-					'Buff grants 20% chance to Poison on Hit',
-					'Grants Virulence when you Poison an Enemy',
-					'Buff grants 10% more Damage with Poison',
-					'40 Maximum Virulence',
-					'Agony Crawler has 4% increased Attack Speed per Virulence you have',
-					'Agony Crawler deals 9% increased Physical Damage per Virulence you have',
-					'Agony Crawler has 45 to 84 Added Physical Damage per Virulence you have',
-					'Minions cannot Taunt Enemies',
+				explicitMods: [{ description: 'Maximum 1 Summoned Agony Crawler' }, { description: 'Buff grants 20% chance to Poison on Hit' }, { description: 'Grants Virulence when you Poison an Enemy' }, { description: 'Buff grants 10% more Damage with Poison' }, { description: '40 Maximum Virulence' }, { description: 'Agony Crawler has 4% increased Attack Speed per Virulence you have' }, { description: 'Agony Crawler deals 9% increased Physical Damage per Virulence you have' }, { description: 'Agony Crawler has 45 to 84 Added Physical Damage per Virulence you have' }, { description: 'Minions cannot Taunt Enemies' },
 				],
 				frameType: 4,
 				h: 1,
@@ -3954,7 +3737,7 @@ export const tabs = {
 			{
 				baseType: 'Glorious Plate',
 				corrupted: true,
-				explicitMods: ['Has no Sockets', '29% increased Fire Damage', '+500 to maximum Life'],
+				explicitMods: [{ description: 'Has no Sockets' }, { description: '29% increased Fire Damage' }, { description: '+500 to maximum Life' }],
 				flavourText: ['The warrior who\r', 'fears will fall.'],
 				frameType: 3,
 				h: 3,
@@ -3962,7 +3745,7 @@ export const tabs = {
 				id: 'e571946f27d41e0534a69a1b37e3612b5d0819945dd92744ee46c2fa3a3a023f',
 				identified: true,
 				ilvl: 80,
-				implicitMods: ['You take 50% reduced Extra Damage from Critical Strikes'],
+				implicitMods: [{ description: 'You take 50% reduced Extra Damage from Critical Strikes' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: "Kaom's Heart",
@@ -3995,9 +3778,7 @@ export const tabs = {
 				corrupted: true,
 				descrText:
 					'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-				explicitMods: [
-					'Supported Skills have 134% increased Critical Strike Chance',
-					'Supported Skills have +2% to Critical Strike Chance',
+				explicitMods: [{ description: 'Supported Skills have 134% increased Critical Strike Chance' }, { description: 'Supported Skills have +2% to Critical Strike Chance' },
 				],
 				frameType: 4,
 				h: 1,
@@ -4030,11 +3811,7 @@ export const tabs = {
 				baseType: 'Viridian Jewel',
 				descrText:
 					'Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.',
-				explicitMods: [
-					'14% increased Global Physical Damage',
-					'6% increased maximum Life',
-					'+11% to Fire and Cold Resistances',
-					'+10% to Cold and Lightning Resistances',
+				explicitMods: [{ description: '14% increased Global Physical Damage' }, { description: '6% increased maximum Life' }, { description: '+11% to Fire and Cold Resistances' }, { description: '+10% to Cold and Lightning Resistances' },
 				],
 				frameType: 2,
 				h: 1,
@@ -4054,12 +3831,7 @@ export const tabs = {
 			},
 			{
 				baseType: 'Full Wyrmscale',
-				explicitMods: [
-					'155% increased Armour',
-					'36% increased maximum Life',
-					'+10% to all Elemental Resistances',
-					'50% increased Flask Life Recovery rate',
-					'Extra gore',
+				explicitMods: [{ description: '155% increased Armour' }, { description: '36% increased maximum Life' }, { description: '+10% to all Elemental Resistances' }, { description: '50% increased Flask Life Recovery rate' }, { description: 'Extra gore' },
 				],
 				flavourText: ['There is no safer place\r', 'Than the Belly of the Beast'],
 				frameType: 3,
@@ -4098,14 +3870,7 @@ export const tabs = {
 						colour: 'S',
 						descrText:
 							'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-						explicitMods: [
-							'Base duration is 2.00 seconds',
-							'Regenerate 1914 Life over 1 second',
-							'36% increased Warcry Speed',
-							'Counts total Power of Enemies in Range',
-							'Gain 1 Endurance Charge per 5 Power',
-							'Buff grants 2% additional Physical Damage Reduction per Endurance Charge',
-							'Buff grants +2% to all Elemental Resistances per Endurance Charge',
+						explicitMods: [{ description: 'Base duration is 2.00 seconds' }, { description: 'Regenerate 1914 Life over 1 second' }, { description: '36% increased Warcry Speed' }, { description: 'Counts total Power of Enemies in Range' }, { description: 'Gain 1 Endurance Charge per 5 Power' }, { description: 'Buff grants 2% additional Physical Damage Reduction per Endurance Charge' }, { description: 'Buff grants +2% to all Elemental Resistances per Endurance Charge' },
 						],
 						frameType: 4,
 						h: 1,
@@ -4148,10 +3913,7 @@ export const tabs = {
 						colour: 'S',
 						descrText:
 							'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-						explicitMods: [
-							'This Gem can only Support Skill Gems requiring Level 56 or lower',
-							'Supported Skills deal 47% less Damage',
-							'Trigger Supported Spells when you take 1354 total Damage from Hits',
+						explicitMods: [{ description: 'This Gem can only Support Skill Gems requiring Level 56 or lower' }, { description: 'Supported Skills deal 47% less Damage' }, { description: 'Trigger Supported Spells when you take 1354 total Damage from Hits' },
 						],
 						frameType: 4,
 						h: 1,
@@ -4199,9 +3961,7 @@ export const tabs = {
 						colour: 'S',
 						descrText:
 							'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-						explicitMods: [
-							'Base duration is 1.00 seconds',
-							'20% increased Buff Duration per Endurance Charge removed',
+						explicitMods: [{ description: 'Base duration is 1.00 seconds' }, { description: '20% increased Buff Duration per Endurance Charge removed' },
 							"This Skill's Cooldown does not recover during its effect",
 							'30% less Elemental Damage taken',
 							'31% less Physical Damage taken',
@@ -4252,7 +4012,7 @@ export const tabs = {
 						colour: 'S',
 						descrText:
 							'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-						explicitMods: ['Supported Skills have 63% increased Skill Effect Duration'],
+						explicitMods: [{ description: 'Supported Skills have 63% increased Skill Effect Duration' }],
 						frameType: 4,
 						h: 1,
 						icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9TdXBwb3J0L0luY3JlYXNlZER1cmF0aW9uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/a5db7ae0bd/IncreasedDuration.png',
@@ -4293,9 +4053,7 @@ export const tabs = {
 			{
 				baseType: 'Basalt Flask',
 				descrText: 'Right click to drink. Can only hold charges while in belt. Refills as you kill monsters.',
-				explicitMods: [
-					'25% reduced Charges per use',
-					'Grants Immunity to Shock for 4 seconds if used while Shocked',
+				explicitMods: [{ description: '25% reduced Charges per use' }, { description: 'Grants Immunity to Shock for 4 seconds if used while Shocked' },
 				],
 				frameType: 1,
 				h: 2,
@@ -4331,12 +4089,7 @@ export const tabs = {
 			{
 				baseType: 'Coral Amulet',
 				enchantMods: ['Allocates Arsonist'],
-				explicitMods: [
-					'67% increased Fire Damage',
-					'+100 to Evasion Rating while on Low Life',
-					'+47 to maximum Life',
-					'+28% to Fire Resistance',
-					'Regenerate 1% of Life per second while on Low Life',
+				explicitMods: [{ description: '67% increased Fire Damage' }, { description: '+100 to Evasion Rating while on Low Life' }, { description: '+47 to maximum Life' }, { description: '+28% to Fire Resistance' }, { description: 'Regenerate 1% of Life per second while on Low Life' },
 				],
 				flavourText: [
 					'Flames to guide the Great Spirit to the site of the dead,\r',
@@ -4348,7 +4101,7 @@ export const tabs = {
 				id: '06418418ea0f7bf53f5c8a09e6e6adef065f96850852cf2dbf771bdef85dd36b',
 				identified: true,
 				ilvl: 8,
-				implicitMods: ['Regenerate 3.1 Life per second'],
+				implicitMods: [{ description: 'Regenerate 3.1 Life per second' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: 'Ngamahu Tiki',
@@ -4363,13 +4116,7 @@ export const tabs = {
 			{
 				baseType: 'Fancy Foil',
 				craftedMods: ['27% increased Critical Strike Chance'],
-				explicitMods: [
-					'Socketed Gems are Supported by Level 16 Added Fire Damage',
-					'101% increased Physical Damage',
-					'Adds 22 to 40 Physical Damage',
-					'23% increased Attack Speed',
-					'+38% to Global Critical Strike Multiplier',
-					'Gain 34% of Physical Damage as Extra Cold Damage',
+				explicitMods: [{ description: 'Socketed Gems are Supported by Level 16 Added Fire Damage' }, { description: '101% increased Physical Damage' }, { description: 'Adds 22 to 40 Physical Damage' }, { description: '23% increased Attack Speed' }, { description: '+38% to Global Critical Strike Multiplier' }, { description: 'Gain 34% of Physical Damage as Extra Cold Damage' },
 				],
 				frameType: 2,
 				h: 4,
@@ -4377,7 +4124,7 @@ export const tabs = {
 				id: 'c391bcbf356fc916af138c5a72b199bc758a9a7fb1111d46d0a85af8e219d505',
 				identified: true,
 				ilvl: 86,
-				implicitMods: ['+25% to Global Critical Strike Multiplier'],
+				implicitMods: [{ description: '+25% to Global Critical Strike Multiplier' }],
 				influences: { shaper: true },
 				inventoryId: 'Stash1',
 				league: 'Standard',
@@ -4413,10 +4160,7 @@ export const tabs = {
 				corrupted: true,
 				descrText:
 					'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-				explicitMods: [
-					'Supported Skills deal 39% more Area Damage',
-					'Supported Skills have 30% less Area of Effect',
-					'Supported Skills deal 6% increased Area Damage',
+				explicitMods: [{ description: 'Supported Skills deal 39% more Area Damage' }, { description: 'Supported Skills have 30% less Area of Effect' }, { description: 'Supported Skills deal 6% increased Area Damage' },
 				],
 				frameType: 4,
 				h: 1,
@@ -4448,11 +4192,7 @@ export const tabs = {
 			},
 			{
 				baseType: 'Jade Amulet',
-				explicitMods: [
-					'+30 to Dexterity',
-					'23% increased Cold Damage',
-					'+85 to maximum Life',
-					'+46% to Cold Resistance',
+				explicitMods: [{ description: '+30 to Dexterity' }, { description: '23% increased Cold Damage' }, { description: '+85 to maximum Life' }, { description: '+46% to Cold Resistance' },
 				],
 				frameType: 2,
 				h: 1,
@@ -4460,7 +4200,7 @@ export const tabs = {
 				id: 'ef1390e5e0dad2c2febeea2ed400cad7bb2f6a4ab7c2149adb27536d4b3c95e6',
 				identified: true,
 				ilvl: 85,
-				implicitMods: ['+22 to Dexterity'],
+				implicitMods: [{ description: '+22 to Dexterity' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: 'Cataclysm Beads',
@@ -4475,7 +4215,7 @@ export const tabs = {
 			{
 				baseType: 'Silver Flask',
 				descrText: 'Right click to drink. Can only hold charges while in belt. Refills as you kill monsters.',
-				explicitMods: ['25% reduced Charges per use', 'Removes Curses on use'],
+				explicitMods: [{ description: '25% reduced Charges per use' }, { description: 'Removes Curses on use' }],
 				frameType: 1,
 				h: 2,
 				icon: 'https://web.poecdn.com/gen/image/WzksMTQseyJmIjoiMkRJdGVtcy9GbGFza3Mvc2lsdmVyIiwidyI6MSwiaCI6Miwic2NhbGUiOjEsImxldmVsIjoxfV0/a2143b575d/silver.png',
@@ -4510,9 +4250,7 @@ export const tabs = {
 			{
 				baseType: 'Bismuth Flask',
 				descrText: 'Right click to drink. Can only hold charges while in belt. Refills as you kill monsters.',
-				explicitMods: [
-					'During Effect, 10% reduced Damage taken of each Element for which your Uncapped Elemental Resistance is lowest',
-					'During Effect, Damage Penetrates 14% Resistance of each Element for which your Uncapped Elemental Resistance is highest',
+				explicitMods: [{ description: 'During Effect, 10% reduced Damage taken of each Element for which your Uncapped Elemental Resistance is lowest' }, { description: 'During Effect, Damage Penetrates 14% Resistance of each Element for which your Uncapped Elemental Resistance is highest' },
 				],
 				flavourText: [
 					'The summer sun dries the soil and burns the leaves.\r',
@@ -4554,12 +4292,7 @@ export const tabs = {
 			{
 				baseType: 'Titanium Spirit Shield',
 				craftedMods: ['14% chance to deal Double Damage while Focused'],
-				explicitMods: [
-					'71% increased Spell Damage',
-					'+130 to maximum Energy Shield',
-					'123% increased Energy Shield',
-					'51% increased Mana Regeneration Rate',
-					'+6% Chance to Block',
+				explicitMods: [{ description: '71% increased Spell Damage' }, { description: '+130 to maximum Energy Shield' }, { description: '123% increased Energy Shield' }, { description: '51% increased Mana Regeneration Rate' }, { description: '+6% Chance to Block' },
 				],
 				frameType: 2,
 				h: 2,
@@ -4594,12 +4327,7 @@ export const tabs = {
 			},
 			{
 				baseType: 'Citadel Bow',
-				explicitMods: [
-					'Socketed Gems are Supported by Level 20 Ignite Proliferation',
-					'309% increased Physical Damage',
-					'50% of Physical Damage Converted to Fire Damage',
-					'10% chance to Ignite',
-					'Recover 58 Life when you Ignite an Enemy',
+				explicitMods: [{ description: 'Socketed Gems are Supported by Level 20 Ignite Proliferation' }, { description: '309% increased Physical Damage' }, { description: '50% of Physical Damage Converted to Fire Damage' }, { description: '10% chance to Ignite' }, { description: 'Recover 58 Life when you Ignite an Enemy' },
 				],
 				flavourText: ['Upon the grey winds his love spreads.'],
 				frameType: 3,
@@ -4640,10 +4368,7 @@ export const tabs = {
 						colour: 'I',
 						descrText:
 							'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-						explicitMods: [
-							'Supported Skills deal 19% more Fire Damage',
-							'Supported Skills have 25% chance to Ignite',
-							'Enemies Ignited by Supported Skills have -10% to Fire Resistance',
+						explicitMods: [{ description: 'Supported Skills deal 19% more Fire Damage' }, { description: 'Supported Skills have 25% chance to Ignite' }, { description: 'Enemies Ignited by Supported Skills have -10% to Fire Resistance' },
 						],
 						frameType: 4,
 						h: 1,
@@ -4684,7 +4409,7 @@ export const tabs = {
 						colour: 'S',
 						descrText:
 							'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-						explicitMods: ['Supported Attack Skills deal 33% more Elemental Damage'],
+						explicitMods: [{ description: 'Supported Attack Skills deal 33% more Elemental Damage' }],
 						frameType: 4,
 						h: 1,
 						icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9TdXBwb3J0L1dlYXBvbkVsZW1lbnRhbERhbWFnZSIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/2cfbdc80b2/WeaponElementalDamage.png',
@@ -4724,9 +4449,7 @@ export const tabs = {
 						colour: 'D',
 						descrText:
 							'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-						explicitMods: [
-							'Supported Skills deal 43% more Damage with Ailments',
-							'Supported Skills deal 80% less Damage with Hits',
+						explicitMods: [{ description: 'Supported Skills deal 43% more Damage with Ailments' }, { description: 'Supported Skills deal 80% less Damage with Hits' },
 						],
 						frameType: 4,
 						h: 1,
@@ -4767,9 +4490,7 @@ export const tabs = {
 						colour: 'D',
 						descrText:
 							'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-						explicitMods: [
-							'Supported Skills deal 26% less Projectile Damage',
-							'Supported Skills fire 4 additional Projectiles',
+						explicitMods: [{ description: 'Supported Skills deal 26% less Projectile Damage' }, { description: 'Supported Skills fire 4 additional Projectiles' },
 						],
 						frameType: 4,
 						h: 1,
@@ -4814,9 +4535,7 @@ export const tabs = {
 				corrupted: true,
 				descrText:
 					'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-				explicitMods: [
-					'Supported Skills Penetrate 35% Cold Resistance',
-					'Supported Skills deal 10% increased Cold Damage',
+				explicitMods: [{ description: 'Supported Skills Penetrate 35% Cold Resistance' }, { description: 'Supported Skills deal 10% increased Cold Damage' },
 				],
 				frameType: 4,
 				h: 1,
@@ -4850,11 +4569,7 @@ export const tabs = {
 				baseType: 'Cobalt Jewel',
 				descrText:
 					'Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.',
-				explicitMods: [
-					'+8 to Dexterity and Intelligence',
-					'5% increased maximum Life',
-					'12% increased Mana Regeneration Rate',
-					'6% increased Projectile Speed',
+				explicitMods: [{ description: '+8 to Dexterity and Intelligence' }, { description: '5% increased maximum Life' }, { description: '12% increased Mana Regeneration Rate' }, { description: '6% increased Projectile Speed' },
 				],
 				frameType: 2,
 				h: 1,
@@ -4930,12 +4645,7 @@ export const tabs = {
 				corrupted: true,
 				descrText:
 					'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-				explicitMods: [
-					'Every third Attack with Supported Melee Attacks deals a Ruthless Blow',
-					'Ruthless Blows with Supported Skills deal 98% more Melee Damage',
-					'Ruthless Blows with Supported Skills deal 98% more Damage with\nAilments caused by Melee Hits',
-					'Ruthless Blows with Supported Skills have a base Stun Duration of 0.8 seconds',
-					'Supported Skills deal 10% increased Attack Damage',
+				explicitMods: [{ description: 'Every third Attack with Supported Melee Attacks deals a Ruthless Blow' }, { description: 'Ruthless Blows with Supported Skills deal 98% more Melee Damage' }, { description: 'Ruthless Blows with Supported Skills deal 98% more Damage with\\nAilments caused by Melee Hits' }, { description: 'Ruthless Blows with Supported Skills have a base Stun Duration of 0.8 seconds' }, { description: 'Supported Skills deal 10% increased Attack Damage' },
 				],
 				frameType: 4,
 				h: 1,
@@ -4973,7 +4683,7 @@ export const tabs = {
 				id: '608189e46eb819a4e31a6507d0eb4616e710397fa3775734b01452d9719c8b60',
 				identified: true,
 				ilvl: 3,
-				implicitMods: ['Grants 3 Life per Enemy Hit'],
+				implicitMods: [{ description: 'Grants 3 Life per Enemy Hit' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: '',
@@ -5003,12 +4713,7 @@ export const tabs = {
 				baseType: 'Ancestral Protector',
 				descrText:
 					'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-				explicitMods: [
-					'Totem lasts 12 seconds',
-					'Summons a Totem which uses this Skill',
-					'10% more Attack Speed while Totem is Active',
-					'50% increased Totem Placement speed',
-					'+1.6 metres to Melee Strike Range',
+				explicitMods: [{ description: 'Totem lasts 12 seconds' }, { description: 'Summons a Totem which uses this Skill' }, { description: '10% more Attack Speed while Totem is Active' }, { description: '50% increased Totem Placement speed' }, { description: '+1.6 metres to Melee Strike Range' },
 				],
 				frameType: 4,
 				h: 1,
@@ -5046,8 +4751,7 @@ export const tabs = {
 				baseType: 'Steelskin',
 				descrText:
 					'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-				explicitMods: [
-					'Base duration is 1.50 seconds',
+				explicitMods: [{ description: 'Base duration is 1.50 seconds' },
 					"This Skill's Cooldown does not recover during its effect",
 					'70% of Damage from Hits is taken from the Buff before Life or Energy Shield\nBuff can take 54 Damage',
 					'Buff grants Immunity to Bleeding',
@@ -5088,15 +4792,7 @@ export const tabs = {
 				baseType: 'War Banner',
 				descrText:
 					'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-				explicitMods: [
-					'You and nearby allies gain 15% increased Accuracy Rating',
-					'Nearby Enemies take 8% increased Physical Damage',
-					'Gain 1 Stage when you Kill an Enemy while carrying the Banner',
-					'Gain Adrenaline for 0.05 seconds per Stage on Placing the Banner',
-					'Base Duration of 10.00 seconds after being Placed',
-					'+1 second to Base Placed Banner Duration per Stage',
-					'When placed, 8% increased Area of Effect per Stage',
-					'When placed, 1% increased Aura effect per Stage',
+				explicitMods: [{ description: 'You and nearby allies gain 15% increased Accuracy Rating' }, { description: 'Nearby Enemies take 8% increased Physical Damage' }, { description: 'Gain 1 Stage when you Kill an Enemy while carrying the Banner' }, { description: 'Gain Adrenaline for 0.05 seconds per Stage on Placing the Banner' }, { description: 'Base Duration of 10.00 seconds after being Placed' }, { description: '+1 second to Base Placed Banner Duration per Stage' }, { description: 'When placed, 8% increased Area of Effect per Stage' }, { description: 'When placed, 1% increased Aura effect per Stage' },
 				],
 				frameType: 4,
 				h: 1,
@@ -5129,13 +4825,7 @@ export const tabs = {
 			},
 			{
 				baseType: 'Amber Amulet',
-				explicitMods: [
-					'10% increased Strength',
-					'10% increased maximum Life',
-					'+26% to Fire Resistance',
-					'Damage Penetrates 10% Fire Resistance',
-					'Cover Enemies in Ash when they Hit you',
-					'Avatar of Fire',
+				explicitMods: [{ description: '10% increased Strength' }, { description: '10% increased maximum Life' }, { description: '+26% to Fire Resistance' }, { description: 'Damage Penetrates 10% Fire Resistance' }, { description: 'Cover Enemies in Ash when they Hit you' }, { description: 'Avatar of Fire' },
 				],
 				flavourText: ['We are his blood.\r', 'Through us he carries his burning message.'],
 				frameType: 3,
@@ -5144,7 +4834,7 @@ export const tabs = {
 				id: '0cdb62f2f77a254738edc79354088ab0c2d941b54f3d073ff34c249995d9d9b1',
 				identified: true,
 				ilvl: 84,
-				implicitMods: ['+30 to Strength'],
+				implicitMods: [{ description: '+30 to Strength' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: "Xoph's Blood",
@@ -5159,11 +4849,7 @@ export const tabs = {
 			{
 				baseType: 'Ruby Ring',
 				craftedMods: ['+13% to Cold and Lightning Resistances'],
-				explicitMods: [
-					'+15 to Dexterity',
-					'Adds 4 to 7 Physical Damage to Attacks',
-					'6% increased Lightning Damage',
-					'+56 to maximum Life',
+				explicitMods: [{ description: '+15 to Dexterity' }, { description: 'Adds 4 to 7 Physical Damage to Attacks' }, { description: '6% increased Lightning Damage' }, { description: '+56 to maximum Life' },
 				],
 				frameType: 2,
 				h: 1,
@@ -5171,7 +4857,7 @@ export const tabs = {
 				id: '8daebaaa55fa2a8c72aae9ae8f7d6be101bb3300f3f624321ce3ef5bd614f6de',
 				identified: true,
 				ilvl: 43,
-				implicitMods: ['+30% to Fire Resistance'],
+				implicitMods: [{ description: '+30% to Fire Resistance' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: 'Dusk Whorl',
@@ -5187,7 +4873,7 @@ export const tabs = {
 				baseType: 'Viridian Jewel',
 				descrText:
 					'Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.',
-				explicitMods: ['Projectiles Pierce an additional Target', '10% increased Projectile Damage'],
+				explicitMods: [{ description: 'Projectiles Pierce an additional Target' }, { description: '10% increased Projectile Damage' }],
 				flavourText: ['A sharp eye can be more deadly than a sharp blade.'],
 				frameType: 3,
 				h: 1,
@@ -5209,11 +4895,7 @@ export const tabs = {
 			{
 				baseType: 'Ambush Mitts',
 				craftedMods: ['+19% to Cold and Lightning Resistances'],
-				explicitMods: [
-					'Adds 3 to 4 Physical Damage to Attacks',
-					'+75 to maximum Life',
-					'+33% to Cold Resistance',
-					'+27% to Lightning Resistance',
+				explicitMods: [{ description: 'Adds 3 to 4 Physical Damage to Attacks' }, { description: '+75 to maximum Life' }, { description: '+33% to Cold Resistance' }, { description: '+27% to Lightning Resistance' },
 				],
 				frameType: 2,
 				h: 2,
@@ -5250,16 +4932,7 @@ export const tabs = {
 						colour: 'D',
 						descrText:
 							'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-						explicitMods: [
-							'Maximum 1 Summoned Agony Crawler',
-							'Buff grants 20% chance to Poison on Hit',
-							'Grants Virulence when you Poison an Enemy',
-							'Buff grants 10% more Damage with Poison',
-							'40 Maximum Virulence',
-							'Agony Crawler has 4% increased Attack Speed per Virulence you have',
-							'Agony Crawler deals 9% increased Physical Damage per Virulence you have',
-							'Agony Crawler has 40 to 75 Added Physical Damage per Virulence you have',
-							'Minions cannot Taunt Enemies',
+						explicitMods: [{ description: 'Maximum 1 Summoned Agony Crawler' }, { description: 'Buff grants 20% chance to Poison on Hit' }, { description: 'Grants Virulence when you Poison an Enemy' }, { description: 'Buff grants 10% more Damage with Poison' }, { description: '40 Maximum Virulence' }, { description: 'Agony Crawler has 4% increased Attack Speed per Virulence you have' }, { description: 'Agony Crawler deals 9% increased Physical Damage per Virulence you have' }, { description: 'Agony Crawler has 40 to 75 Added Physical Damage per Virulence you have' }, { description: 'Minions cannot Taunt Enemies' },
 						],
 						frameType: 4,
 						h: 1,
@@ -5302,9 +4975,7 @@ export const tabs = {
 						colour: 'D',
 						descrText:
 							'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-						explicitMods: [
-							'Kill Enemies that have 10% Life or lower when Hit by Supported Skills',
-							'Supported Skills deal 34% increased Damage',
+						explicitMods: [{ description: 'Kill Enemies that have 10% Life or lower when Hit by Supported Skills' }, { description: 'Supported Skills deal 34% increased Damage' },
 						],
 						frameType: 4,
 						h: 1,
@@ -5345,7 +5016,7 @@ export const tabs = {
 						colour: 'D',
 						descrText:
 							'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-						explicitMods: ['Supported Skills have 43% increased Attack Speed'],
+						explicitMods: [{ description: 'Supported Skills have 43% increased Attack Speed' }],
 						frameType: 4,
 						h: 1,
 						icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9TdXBwb3J0L0Zhc3RlckF0dGFja3MiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/c3e1544a95/FasterAttacks.png',
@@ -5386,10 +5057,7 @@ export const tabs = {
 			{
 				baseType: 'Imperial Claw',
 				craftedMods: ['83% increased Physical Damage', '15% chance to Blind Enemies on hit'],
-				explicitMods: [
-					'Adds 18 to 37 Physical Damage',
-					'23% increased Attack Speed',
-					'Gain 2 Mana per Enemy Killed',
+				explicitMods: [{ description: 'Adds 18 to 37 Physical Damage' }, { description: '23% increased Attack Speed' }, { description: 'Gain 2 Mana per Enemy Killed' },
 				],
 				frameType: 2,
 				h: 2,
@@ -5397,7 +5065,7 @@ export const tabs = {
 				id: 'a77d89248d7ea1bcd892cc4a0ceef7d1606fc569d7679d59ca1baf403a0f13b8',
 				identified: true,
 				ilvl: 69,
-				implicitMods: ['Grants 46 Life per Enemy Hit'],
+				implicitMods: [{ description: 'Grants 46 Life per Enemy Hit' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: 'Foe Razor',
@@ -5430,10 +5098,7 @@ export const tabs = {
 						colour: 'I',
 						descrText:
 							'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-						explicitMods: [
-							'Base duration is 11.60 seconds',
-							'+0.9 metres to radius',
-							'Cursed enemies have -29% to Chaos Resistance',
+						explicitMods: [{ description: 'Base duration is 11.60 seconds' }, { description: '+0.9 metres to radius' }, { description: 'Cursed enemies have -29% to Chaos Resistance' },
 						],
 						frameType: 4,
 						h: 1,
@@ -5475,7 +5140,7 @@ export const tabs = {
 						colour: 'I',
 						descrText:
 							'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-						explicitMods: ['Supported Skills have 47% increased Area of Effect'],
+						explicitMods: [{ description: 'Supported Skills have 47% increased Area of Effect' }],
 						frameType: 4,
 						h: 1,
 						icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9TdXBwb3J0L0luY3JlYXNlZEFPRSIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/a4111d2154/IncreasedAOE.png',
@@ -5518,11 +5183,7 @@ export const tabs = {
 						colour: 'D',
 						descrText:
 							'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-						explicitMods: [
-							'+0.3 metres to radius',
-							'20% less Damage with Poison while Incubating and not at Maximum Plague Value',
-							'When you inflict Poison while Incubating, adds 40% of the Expected Poison\nDamage to Plague Value',
-							'While Infecting, deals Chaos Damage per second equal to 12% of the Plague Value when Infecting began, and loses Plague Value at the same rate',
+						explicitMods: [{ description: '+0.3 metres to radius' }, { description: '20% less Damage with Poison while Incubating and not at Maximum Plague Value' }, { description: 'When you inflict Poison while Incubating, adds 40% of the Expected Poison\\nDamage to Plague Value' }, { description: 'While Infecting, deals Chaos Damage per second equal to 12% of the Plague Value when Infecting began, and loses Plague Value at the same rate' },
 						],
 						frameType: 4,
 						h: 1,
@@ -5571,7 +5232,7 @@ export const tabs = {
 				id: '47e8965b868290d784838b182962fd2079199fbf34579779402454c81edb3a17',
 				identified: true,
 				ilvl: 40,
-				implicitMods: ['+25% to Global Critical Strike Multiplier'],
+				implicitMods: [{ description: '+25% to Global Critical Strike Multiplier' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: '',
@@ -5603,15 +5264,7 @@ export const tabs = {
 						colour: 'D',
 						descrText:
 							'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-						explicitMods: [
-							'Base duration is 12.00 seconds',
-							'60% of Physical Damage Converted to Chaos Damage',
-							'Projectiles Return to you',
-							'40% chance to Poison on Hit',
-							'Returning Projectiles deal 75% less Damage with Hits and Ailments',
-							'Returning Projectiles Pierce all Targets',
-							'Maximum 30 caught Projectiles',
-							'40% chance to keep each caught Projectile fired with Whirling Blades',
+						explicitMods: [{ description: 'Base duration is 12.00 seconds' }, { description: '60% of Physical Damage Converted to Chaos Damage' }, { description: 'Projectiles Return to you' }, { description: '40% chance to Poison on Hit' }, { description: 'Returning Projectiles deal 75% less Damage with Hits and Ailments' }, { description: 'Returning Projectiles Pierce all Targets' }, { description: 'Maximum 30 caught Projectiles' }, { description: '40% chance to keep each caught Projectile fired with Whirling Blades' },
 						],
 						frameType: 4,
 						h: 1,
@@ -5656,15 +5309,7 @@ export const tabs = {
 						colour: 'D',
 						descrText:
 							'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-						explicitMods: [
-							'Base duration is 12.00 seconds',
-							'60% of Physical Damage Converted to Chaos Damage',
-							'Projectiles Return to you',
-							'40% chance to Poison on Hit',
-							'Returning Projectiles deal 75% less Damage with Hits and Ailments',
-							'Returning Projectiles Pierce all Targets',
-							'Maximum 30 caught Projectiles',
-							'40% chance to keep each caught Projectile fired with Whirling Blades',
+						explicitMods: [{ description: 'Base duration is 12.00 seconds' }, { description: '60% of Physical Damage Converted to Chaos Damage' }, { description: 'Projectiles Return to you' }, { description: '40% chance to Poison on Hit' }, { description: 'Returning Projectiles deal 75% less Damage with Hits and Ailments' }, { description: 'Returning Projectiles Pierce all Targets' }, { description: 'Maximum 30 caught Projectiles' }, { description: '40% chance to keep each caught Projectile fired with Whirling Blades' },
 						],
 						frameType: 4,
 						h: 1,
@@ -5709,15 +5354,7 @@ export const tabs = {
 						colour: 'D',
 						descrText:
 							'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-						explicitMods: [
-							'Base duration is 12.00 seconds',
-							'60% of Physical Damage Converted to Chaos Damage',
-							'Projectiles Return to you',
-							'40% chance to Poison on Hit',
-							'Returning Projectiles deal 75% less Damage with Hits and Ailments',
-							'Returning Projectiles Pierce all Targets',
-							'Maximum 30 caught Projectiles',
-							'40% chance to keep each caught Projectile fired with Whirling Blades',
+						explicitMods: [{ description: 'Base duration is 12.00 seconds' }, { description: '60% of Physical Damage Converted to Chaos Damage' }, { description: 'Projectiles Return to you' }, { description: '40% chance to Poison on Hit' }, { description: 'Returning Projectiles deal 75% less Damage with Hits and Ailments' }, { description: 'Returning Projectiles Pierce all Targets' }, { description: 'Maximum 30 caught Projectiles' }, { description: '40% chance to keep each caught Projectile fired with Whirling Blades' },
 						],
 						frameType: 4,
 						h: 1,
@@ -5763,10 +5400,7 @@ export const tabs = {
 			{
 				baseType: 'Divine Life Flask',
 				descrText: 'Right click to drink. Can only hold charges while in belt. Refills as you kill monsters.',
-				explicitMods: [
-					'66% reduced Amount Recovered',
-					'Instant Recovery',
-					'Grants Immunity to Bleeding for 4 seconds if used while Bleeding\nGrants Immunity to Corrupted Blood for 4 seconds if used while affected by Corrupted Blood',
+				explicitMods: [{ description: '66% reduced Amount Recovered' }, { description: 'Instant Recovery' }, { description: 'Grants Immunity to Bleeding for 4 seconds if used while Bleeding\\nGrants Immunity to Corrupted Blood for 4 seconds if used while affected by Corrupted Blood' },
 				],
 				frameType: 1,
 				h: 2,
@@ -5808,9 +5442,7 @@ export const tabs = {
 			{
 				baseType: 'Quartz Flask',
 				descrText: 'Right click to drink. Can only hold charges while in belt. Refills as you kill monsters.',
-				explicitMods: [
-					'37% increased Duration',
-					'Grants Immunity to Chill for 4 seconds if used while Chilled\nGrants Immunity to Freeze for 4 seconds if used while Frozen',
+				explicitMods: [{ description: '37% increased Duration' }, { description: 'Grants Immunity to Chill for 4 seconds if used while Chilled\\nGrants Immunity to Freeze for 4 seconds if used while Frozen' },
 				],
 				frameType: 1,
 				h: 2,
@@ -5846,12 +5478,7 @@ export const tabs = {
 			{
 				baseType: 'Two-Stone Ring',
 				craftedMods: ['Adds 11 to 25 Chaos Damage to Attacks'],
-				explicitMods: [
-					'+10 to Strength',
-					'+52 to maximum Life',
-					'+19% to Fire Resistance',
-					'+28% to Lightning Resistance',
-					'0.24% of Physical Attack Damage Leeched as Life',
+				explicitMods: [{ description: '+10 to Strength' }, { description: '+52 to maximum Life' }, { description: '+19% to Fire Resistance' }, { description: '+28% to Lightning Resistance' }, { description: '0.24% of Physical Attack Damage Leeched as Life' },
 				],
 				frameType: 2,
 				h: 1,
@@ -5859,7 +5486,7 @@ export const tabs = {
 				id: '6ee7a6d4dd92ce923072d804ac6e7d2a8258269a96c0fadad0f7b2b2bd3b50f4',
 				identified: true,
 				ilvl: 53,
-				implicitMods: ['+13% to Fire and Cold Resistances'],
+				implicitMods: [{ description: '+13% to Fire and Cold Resistances' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: 'Tempest Nail',
@@ -5874,7 +5501,7 @@ export const tabs = {
 			{
 				baseType: 'Jade Flask',
 				descrText: 'Right click to drink. Can only hold charges while in belt. Refills as you kill monsters.',
-				explicitMods: ['39% increased Charge Recovery', '100% increased Evasion Rating during Effect'],
+				explicitMods: [{ description: '39% increased Charge Recovery' }, { description: '100% increased Evasion Rating during Effect' }],
 				frameType: 1,
 				h: 2,
 				icon: 'https://web.poecdn.com/gen/image/WzksMTQseyJmIjoiMkRJdGVtcy9GbGFza3MvZXZhc2lvbmZsYXNrMDEiLCJ3IjoxLCJoIjoyLCJzY2FsZSI6MSwibGV2ZWwiOjF9XQ/8ead4435df/evasionflask01.png',
@@ -5910,11 +5537,7 @@ export const tabs = {
 				baseType: 'Agate Amulet',
 				craftedMods: ['+16% to Cold and Lightning Resistances'],
 				enchantMods: ['Allocates Prowess'],
-				explicitMods: [
-					'13% increased Spell Damage',
-					'+62 to maximum Life',
-					'+35 to maximum Mana',
-					'+28% to Fire Resistance',
+				explicitMods: [{ description: '13% increased Spell Damage' }, { description: '+62 to maximum Life' }, { description: '+35 to maximum Mana' }, { description: '+28% to Fire Resistance' },
 				],
 				frameType: 2,
 				h: 1,
@@ -5922,7 +5545,7 @@ export const tabs = {
 				id: '788937aa523abced9ee3b16f442fe1d12a79954c11f67ba4e4eee1158204b540',
 				identified: true,
 				ilvl: 43,
-				implicitMods: ['+24 to Strength and Intelligence'],
+				implicitMods: [{ description: '+24 to Strength and Intelligence' }],
 				incubatedItem: { level: 59, name: 'Fossil Item', progress: 7399, total: 7485 },
 				inventoryId: 'Stash1',
 				league: 'Standard',
@@ -5938,11 +5561,7 @@ export const tabs = {
 			{
 				baseType: 'Enameled Buckler',
 				craftedMods: ['+17% to Cold and Lightning Resistances'],
-				explicitMods: [
-					'+180 to Accuracy Rating',
-					'22% increased Evasion Rating',
-					'+69 to maximum Life',
-					'+27% to Fire Resistance',
+				explicitMods: [{ description: '+180 to Accuracy Rating' }, { description: '22% increased Evasion Rating' }, { description: '+69 to maximum Life' }, { description: '+27% to Fire Resistance' },
 				],
 				frameType: 2,
 				h: 2,
@@ -5950,7 +5569,7 @@ export const tabs = {
 				id: 'b56447cb8e35af4c31b185c71fc6c195c9d695e7d57e3b83a3fa85288ca6a262',
 				identified: true,
 				ilvl: 45,
-				implicitMods: ['6% increased Movement Speed'],
+				implicitMods: [{ description: '6% increased Movement Speed' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: 'Viper Refuge',
@@ -5980,12 +5599,7 @@ export const tabs = {
 						colour: 'S',
 						descrText:
 							'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-						explicitMods: [
-							'Totem lasts 12 seconds',
-							'Summons a Totem which uses this Skill',
-							'15% more Attack Speed while Totem is Active',
-							'50% increased Totem Placement speed',
-							'+1.7 metres to Melee Strike Range',
+						explicitMods: [{ description: 'Totem lasts 12 seconds' }, { description: 'Summons a Totem which uses this Skill' }, { description: '15% more Attack Speed while Totem is Active' }, { description: '50% increased Totem Placement speed' }, { description: '+1.7 metres to Melee Strike Range' },
 						],
 						frameType: 4,
 						h: 1,
@@ -6032,9 +5646,7 @@ export const tabs = {
 						colour: 'D',
 						descrText:
 							'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-						explicitMods: [
-							'Supported Skills have 6% reduced Cooldown Recovery Rate',
-							'Supported Non-Instant Skills have +1 Cooldown Use',
+						explicitMods: [{ description: 'Supported Skills have 6% reduced Cooldown Recovery Rate' }, { description: 'Supported Non-Instant Skills have +1 Cooldown Use' },
 						],
 						frameType: 4,
 						h: 1,
@@ -6075,9 +5687,7 @@ export const tabs = {
 						colour: 'D',
 						descrText:
 							'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-						explicitMods: [
-							'18% increased Cooldown Recovery Rate',
-							'54% increased travel distance',
+						explicitMods: [{ description: '18% increased Cooldown Recovery Rate' }, { description: '54% increased travel distance' },
 							"This Spell's Cast Speed cannot be modified",
 						],
 						frameType: 4,
@@ -6123,13 +5733,7 @@ export const tabs = {
 				baseType: 'Ursine Pelt',
 				craftedMods: ['+35% to Cold Resistance'],
 				enchantMods: ['Smite deals 25% increased Damage'],
-				explicitMods: [
-					'+40 to Evasion Rating',
-					'18% increased Evasion Rating',
-					'+119 to maximum Life',
-					'9% increased Rarity of Items found',
-					'+20% to Fire Resistance',
-					'8% increased Stun and Block Recovery',
+				explicitMods: [{ description: '+40 to Evasion Rating' }, { description: '18% increased Evasion Rating' }, { description: '+119 to maximum Life' }, { description: '9% increased Rarity of Items found' }, { description: '+20% to Fire Resistance' }, { description: '8% increased Stun and Block Recovery' },
 				],
 				frameType: 2,
 				h: 2,
@@ -6163,7 +5767,7 @@ export const tabs = {
 						colour: 'S',
 						descrText:
 							'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-						explicitMods: ['Maximum 1 Summoned Golem', 'Golems grant 103 Life Regenerated per second'],
+						explicitMods: [{ description: 'Maximum 1 Summoned Golem' }, { description: 'Golems grant 103 Life Regenerated per second' }],
 						frameType: 4,
 						h: 1,
 						icon: 'https://web.poecdn.com/gen/image/WzMwLDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9Sb2NrR29sZW0iLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/f0d237e67b/RockGolem.png',
@@ -6206,10 +5810,7 @@ export const tabs = {
 						colour: 'D',
 						descrText:
 							'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-						explicitMods: [
-							'+1.8 metres to radius',
-							'You and nearby allies gain 2335 additional Evasion Rating',
-							'You and nearby allies gain 29% more Evasion rating',
+						explicitMods: [{ description: '+1.8 metres to radius' }, { description: 'You and nearby allies gain 2335 additional Evasion Rating' }, { description: 'You and nearby allies gain 29% more Evasion rating' },
 						],
 						frameType: 4,
 						h: 1,
@@ -6251,13 +5852,7 @@ export const tabs = {
 						colour: 'D',
 						descrText:
 							'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-						explicitMods: [
-							'Base duration is 10.60 seconds',
-							'Grants 14% increased Attack Speed',
-							'1.2% of Attack Physical Damage Leeched as Life',
-							'You take 4% of your Maximum Life per second as Physical Damage',
-							'You take 4% of your Maximum Energy Shield per second as Physical Damage',
-							'25% chance to gain a Frenzy Charge on Kill',
+						explicitMods: [{ description: 'Base duration is 10.60 seconds' }, { description: 'Grants 14% increased Attack Speed' }, { description: '1.2% of Attack Physical Damage Leeched as Life' }, { description: 'You take 4% of your Maximum Life per second as Physical Damage' }, { description: 'You take 4% of your Maximum Energy Shield per second as Physical Damage' }, { description: '25% chance to gain a Frenzy Charge on Kill' },
 						],
 						frameType: 4,
 						h: 1,
@@ -6300,10 +5895,7 @@ export const tabs = {
 						colour: 'D',
 						descrText:
 							'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-						explicitMods: [
-							'Withered lasts 3 seconds',
-							'+0.6 metres to radius',
-							'Cannot be Cast or Triggered while Elusive\nGrants Elusive',
+						explicitMods: [{ description: 'Withered lasts 3 seconds' }, { description: '+0.6 metres to radius' }, { description: 'Cannot be Cast or Triggered while Elusive\\nGrants Elusive' },
 							"This Skill's Cooldown does not recover during its effect",
 							'36% increased Effect of Elusive from this Skill',
 							'Inflicts 6 Withered Debuffs the first time each Enemy enters the Area',
@@ -6357,12 +5949,7 @@ export const tabs = {
 			{
 				baseType: 'Legion Boots',
 				craftedMods: ['+29% to Cold Resistance'],
-				explicitMods: [
-					'37% increased Armour and Energy Shield',
-					'+72 to maximum Life',
-					'+23% to Lightning Resistance',
-					'25% increased Movement Speed',
-					'14% increased Stun and Block Recovery',
+				explicitMods: [{ description: '37% increased Armour and Energy Shield' }, { description: '+72 to maximum Life' }, { description: '+23% to Lightning Resistance' }, { description: '25% increased Movement Speed' }, { description: '14% increased Stun and Block Recovery' },
 				],
 				frameType: 2,
 				h: 2,
@@ -6399,10 +5986,7 @@ export const tabs = {
 						colour: 'S',
 						descrText:
 							'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-						explicitMods: [
-							'Melee Hits from Supported Skills Fortify',
-							'Supported Skills deal 15% more Damage with Ailments caused by Melee Hits',
-							'Supported Skills deal 15% more Melee Damage',
+						explicitMods: [{ description: 'Melee Hits from Supported Skills Fortify' }, { description: 'Supported Skills deal 15% more Damage with Ailments caused by Melee Hits' }, { description: 'Supported Skills deal 15% more Melee Damage' },
 						],
 						frameType: 4,
 						h: 1,
@@ -6446,7 +6030,7 @@ export const tabs = {
 						colour: 'D',
 						descrText:
 							'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-						explicitMods: ['Supported Skills have 43% increased Attack Speed'],
+						explicitMods: [{ description: 'Supported Skills have 43% increased Attack Speed' }],
 						frameType: 4,
 						h: 1,
 						icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9TdXBwb3J0L0Zhc3RlckF0dGFja3MiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/c3e1544a95/FasterAttacks.png',
@@ -6485,9 +6069,7 @@ export const tabs = {
 						colour: 'S',
 						descrText:
 							'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-						explicitMods: [
-							'Supported Skills have 15% increased Aura effect',
-							'Supported Skills Reserve Life instead of Mana',
+						explicitMods: [{ description: 'Supported Skills have 15% increased Aura effect' }, { description: 'Supported Skills Reserve Life instead of Mana' },
 						],
 						frameType: 4,
 						h: 1,
@@ -6531,9 +6113,7 @@ export const tabs = {
 						colour: 'D',
 						descrText:
 							'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-						explicitMods: [
-							'When Dual Wielding, Deals 75% Damage from each Weapon combined',
-							'+0.6 seconds to Attack Time',
+						explicitMods: [{ description: 'When Dual Wielding, Deals 75% Damage from each Weapon combined' }, { description: '+0.6 seconds to Attack Time' },
 						],
 						frameType: 4,
 						h: 1,
@@ -6578,13 +6158,7 @@ export const tabs = {
 			},
 			{
 				baseType: 'Judgement Staff',
-				explicitMods: [
-					'+6% Chance to Block Attack Damage while wielding a Staff',
-					'Adds 186 to 193 Physical Damage',
-					'16% increased Attack Speed',
-					'22% increased Critical Strike Chance',
-					'+1 to Maximum Power Charges',
-					'10% chance to gain a Power Charge if you Knock an Enemy Back with Melee Damage',
+				explicitMods: [{ description: '+6% Chance to Block Attack Damage while wielding a Staff' }, { description: 'Adds 186 to 193 Physical Damage' }, { description: '16% increased Attack Speed' }, { description: '22% increased Critical Strike Chance' }, { description: '+1 to Maximum Power Charges' }, { description: '10% chance to gain a Power Charge if you Knock an Enemy Back with Melee Damage' },
 				],
 				flavourText: [
 					'The right to rule demands mental acuity,\r',
@@ -6597,7 +6171,7 @@ export const tabs = {
 				id: '1450722cada98edd41eb457a3654399ada1bf8cd3a1a1e3251040f8dd3aaa11f',
 				identified: true,
 				ilvl: 71,
-				implicitMods: ['+18% Chance to Block Attack Damage while wielding a Staff'],
+				implicitMods: [{ description: '+18% Chance to Block Attack Damage while wielding a Staff' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: "Hegemony's Era",
@@ -6630,13 +6204,7 @@ export const tabs = {
 						colour: 'S',
 						descrText:
 							'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-						explicitMods: [
-							'Beams Hit Enemies every 0.34 seconds',
-							'50% of Physical Damage Converted to Lightning Damage',
-							'Base duration is 3.00 seconds',
-							'Chains +1 Times',
-							'Beams deal 40% less Damage',
-							'5 maximum Beam Targets',
+						explicitMods: [{ description: 'Beams Hit Enemies every 0.34 seconds' }, { description: '50% of Physical Damage Converted to Lightning Damage' }, { description: 'Base duration is 3.00 seconds' }, { description: 'Chains +1 Times' }, { description: 'Beams deal 40% less Damage' }, { description: '5 maximum Beam Targets' },
 						],
 						frameType: 4,
 						h: 1,
@@ -6676,11 +6244,7 @@ export const tabs = {
 						corrupted: true,
 						descrText:
 							'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-						explicitMods: [
-							'Supported Skills deal 50% more Melee Physical Damage',
-							'Supported Skills deal 50% more Damage with Bleeding and Poison caused by Melee Hits',
-							'Supported Skills deal 10% increased Melee Physical Damage',
-							'Supported Skills have 10% less Attack Speed',
+						explicitMods: [{ description: 'Supported Skills deal 50% more Melee Physical Damage' }, { description: 'Supported Skills deal 50% more Damage with Bleeding and Poison caused by Melee Hits' }, { description: 'Supported Skills deal 10% increased Melee Physical Damage' }, { description: 'Supported Skills have 10% less Attack Speed' },
 						],
 						frameType: 4,
 						h: 1,
@@ -6721,15 +6285,13 @@ export const tabs = {
 						colour: 'S',
 						descrText:
 							'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-						explicitMods: [
-							'Supported Skills will Trigger Shockwave on Melee Hit',
-							'Supported Skills can only be used with Maces, Sceptres or Staves',
+						explicitMods: [{ description: 'Supported Skills will Trigger Shockwave on Melee Hit' }, { description: 'Supported Skills can only be used with Maces, Sceptres or Staves' },
 						],
 						frameType: 4,
 						h: 1,
 						hybrid: {
 							baseTypeName: 'Shockwave Support',
-							explicitMods: ['+0.3 metres to radius', '30% increased Cooldown Recovery Rate'],
+							explicitMods: [{ description: '+0.3 metres to radius' }, { description: '30% increased Cooldown Recovery Rate' }],
 							properties: [
 								{ displayMode: 0, name: 'Cooldown Time', values: [['1.00 sec (4 uses)', 0]] },
 								{ displayMode: 0, name: 'Attack Damage', values: [['238.9% of base', 0]] },
@@ -6766,9 +6328,7 @@ export const tabs = {
 						corrupted: true,
 						descrText:
 							'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-						explicitMods: [
-							'10% increased Elemental Damage with Attack Skills',
-							'Supported Attack Skills deal 34% more Elemental Damage',
+						explicitMods: [{ description: '10% increased Elemental Damage with Attack Skills' }, { description: 'Supported Attack Skills deal 34% more Elemental Damage' },
 						],
 						frameType: 4,
 						h: 1,
@@ -6815,12 +6375,7 @@ export const tabs = {
 				baseType: 'Prismatic Jewel',
 				descrText:
 					'Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.',
-				explicitMods: [
-					'5% increased maximum Energy Shield',
-					'5% increased maximum Life',
-					'5% increased maximum Mana',
-					'+8% Chance to Block Attack Damage while affected by Determination',
-					'25% increased Life Recovery Rate while affected by Vitality',
+				explicitMods: [{ description: '5% increased maximum Energy Shield' }, { description: '5% increased maximum Life' }, { description: '5% increased maximum Mana' }, { description: '+8% Chance to Block Attack Damage while affected by Determination' }, { description: '25% increased Life Recovery Rate while affected by Vitality' },
 				],
 				flavourText: [
 					'One by one, they stood their ground against a creature \r',
@@ -6849,7 +6404,7 @@ export const tabs = {
 				corrupted: true,
 				descrText:
 					'Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.',
-				explicitMods: ['10% increased Projectile Damage', 'Projectiles Pierce an additional Target'],
+				explicitMods: [{ description: '10% increased Projectile Damage' }, { description: 'Projectiles Pierce an additional Target' }],
 				flavourText: ['A sharp eye can be more deadly than a sharp blade.'],
 				frameType: 3,
 				h: 1,
@@ -6857,7 +6412,7 @@ export const tabs = {
 				id: '2f0fd71e627dec4949c2d088ea0ced7c7c700e06b71cfc6d79ca69209e3c868c',
 				identified: true,
 				ilvl: 1,
-				implicitMods: ['4% reduced Ignite Duration on you'],
+				implicitMods: [{ description: '4% reduced Ignite Duration on you' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: "Poacher's Aim",
@@ -6871,12 +6426,7 @@ export const tabs = {
 			},
 			{
 				baseType: 'Topaz Ring',
-				explicitMods: [
-					'+20 to Intelligence',
-					'5% increased maximum Energy Shield',
-					'5% increased maximum Life',
-					'2 to 40 Lightning Damage per Power Charge',
-					'You can apply an additional Curse while at maximum Power Charges',
+				explicitMods: [{ description: '+20 to Intelligence' }, { description: '5% increased maximum Energy Shield' }, { description: '5% increased maximum Life' }, { description: '2 to 40 Lightning Damage per Power Charge' }, { description: 'You can apply an additional Curse while at maximum Power Charges' },
 				],
 				flavourText: ['History teaches humility.'],
 				frameType: 3,
@@ -6885,7 +6435,7 @@ export const tabs = {
 				id: 'dbc894ace661a4acd82719033a5f415c2be13036ac72aca9f6f6b16f53baf747',
 				identified: true,
 				ilvl: 79,
-				implicitMods: ['+30% to Lightning Resistance'],
+				implicitMods: [{ description: '+30% to Lightning Resistance' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: "Precursor's Emblem",
@@ -6900,10 +6450,7 @@ export const tabs = {
 			{
 				baseType: 'Simple Robe',
 				corrupted: true,
-				explicitMods: [
-					'Sockets cannot be modified',
-					'+1 to Level of Socketed Gems',
-					'100% increased Global Defences',
+				explicitMods: [{ description: 'Sockets cannot be modified' }, { description: '+1 to Level of Socketed Gems' }, { description: '100% increased Global Defences' },
 				],
 				flavourText: [
 					'We happily give our limbs.\r',
@@ -6917,7 +6464,7 @@ export const tabs = {
 				id: 'e30d8419e3f828a1330d86ef8b9607c256d84e0d51d89ed274228b2e434b789f',
 				identified: true,
 				ilvl: 25,
-				implicitMods: ['+2 to Level of Socketed AoE Gems', '+2 to Level of Socketed Projectile Gems'],
+				implicitMods: [{ description: '+2 to Level of Socketed AoE Gems' }, { description: '+2 to Level of Socketed Projectile Gems' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: 'Skin of the Loyal',
@@ -6942,11 +6489,7 @@ export const tabs = {
 			{
 				baseType: 'Leather Belt',
 				craftedMods: ['+23% to Lightning Resistance'],
-				explicitMods: [
-					'+23 to maximum Energy Shield',
-					'+61 to maximum Life',
-					'+40% to Fire Resistance',
-					'+40% to Cold Resistance',
+				explicitMods: [{ description: '+23 to maximum Energy Shield' }, { description: '+61 to maximum Life' }, { description: '+40% to Fire Resistance' }, { description: '+40% to Cold Resistance' },
 				],
 				frameType: 2,
 				h: 1,
@@ -6954,7 +6497,7 @@ export const tabs = {
 				id: '97c24785c41c60d4b13f3392b420a7e5fb1aec18c1734f56221cd6d6330f7f95',
 				identified: true,
 				ilvl: 80,
-				implicitMods: ['+40 to maximum Life'],
+				implicitMods: [{ description: '+40 to maximum Life' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: 'Eagle Thread',
@@ -6969,13 +6512,7 @@ export const tabs = {
 			{
 				baseType: 'Jade Amulet',
 				elder: true,
-				explicitMods: [
-					'+30% to Global Critical Strike Multiplier',
-					'+89 to maximum Life',
-					'+21 to maximum Mana',
-					'+15% to all Elemental Resistances',
-					'+30% to Lightning Resistance',
-					'+1 to maximum number of Skeletons',
+				explicitMods: [{ description: '+30% to Global Critical Strike Multiplier' }, { description: '+89 to maximum Life' }, { description: '+21 to maximum Mana' }, { description: '+15% to all Elemental Resistances' }, { description: '+30% to Lightning Resistance' }, { description: '+1 to maximum number of Skeletons' },
 				],
 				frameType: 2,
 				h: 1,
@@ -6983,7 +6520,7 @@ export const tabs = {
 				id: 'cf096c9373a3a92f26dd7cc7db89af3bd721c7258a1219ed1710c3ec467f523a',
 				identified: true,
 				ilvl: 82,
-				implicitMods: ['+26 to Dexterity'],
+				implicitMods: [{ description: '+26 to Dexterity' }],
 				influences: { elder: true },
 				inventoryId: 'Stash1',
 				league: 'Standard',
@@ -7001,13 +6538,7 @@ export const tabs = {
 				corrupted: true,
 				descrText:
 					'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-				explicitMods: [
-					'Supported Skills Repeat 2 additional times',
-					'Supported Skills have 44% more Melee Attack Speed',
-					'Supported Skills deal 20% less Attack Damage',
-					'Supported Skills deal 10% increased Melee Damage',
-					'First Repeat of Supported Skills deals 22% more Damage',
-					'Second Repeat of Supported Skills deals 44% more Damage',
+				explicitMods: [{ description: 'Supported Skills Repeat 2 additional times' }, { description: 'Supported Skills have 44% more Melee Attack Speed' }, { description: 'Supported Skills deal 20% less Attack Damage' }, { description: 'Supported Skills deal 10% increased Melee Damage' }, { description: 'First Repeat of Supported Skills deals 22% more Damage' }, { description: 'Second Repeat of Supported Skills deals 44% more Damage' },
 				],
 				frameType: 4,
 				h: 1,
@@ -7043,11 +6574,7 @@ export const tabs = {
 				corrupted: true,
 				descrText:
 					'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-				explicitMods: [
-					'60% of Physical Damage Converted to Fire Damage',
-					'5% more Area of Effect per Endurance Charge',
-					'+5% fissure branching chance per Endurance Charge',
-					'60% fissure branching chance',
+				explicitMods: [{ description: '60% of Physical Damage Converted to Fire Damage' }, { description: '5% more Area of Effect per Endurance Charge' }, { description: '+5% fissure branching chance per Endurance Charge' }, { description: '60% fissure branching chance' },
 				],
 				frameType: 4,
 				h: 1,
@@ -7082,12 +6609,7 @@ export const tabs = {
 			},
 			{
 				baseType: 'Sadist Garb',
-				explicitMods: [
-					'+69 to maximum Life',
-					'30% increased Damage if you have Shocked an Enemy Recently',
-					'35% increased Effect of Shock',
-					'Shocked Enemies you Kill Explode, dealing 10% of\ntheir Life as Lightning Damage which cannot Shock',
-					'Unaffected by Shock',
+				explicitMods: [{ description: '+69 to maximum Life' }, { description: '30% increased Damage if you have Shocked an Enemy Recently' }, { description: '35% increased Effect of Shock' }, { description: 'Shocked Enemies you Kill Explode, dealing 10% of\\ntheir Life as Lightning Damage which cannot Shock' }, { description: 'Unaffected by Shock' },
 				],
 				flavourText: [
 					"Don't hesitate; bring death to all, conclusively and swiftly,\r",
@@ -7128,12 +6650,7 @@ export const tabs = {
 						colour: 'I',
 						descrText:
 							'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-						explicitMods: [
-							'Cursed enemies have a 100% chance to grant a Power Charge when slain',
-							'Hits against Cursed Enemies have +1.5% to Critical Strike Chance',
-							'Hits against Cursed Enemies have +48% to Critical Strike Multiplier',
-							'Cursed enemies grant 576 Life when Killed',
-							'Cursed enemies grant 77 Mana when Killed',
+						explicitMods: [{ description: 'Cursed enemies have a 100% chance to grant a Power Charge when slain' }, { description: 'Hits against Cursed Enemies have +1.5% to Critical Strike Chance' }, { description: 'Hits against Cursed Enemies have +48% to Critical Strike Multiplier' }, { description: 'Cursed enemies grant 576 Life when Killed' }, { description: 'Cursed enemies grant 77 Mana when Killed' },
 						],
 						frameType: 4,
 						h: 1,
@@ -7180,7 +6697,7 @@ export const tabs = {
 			{
 				baseType: 'Glorious Plate',
 				corrupted: true,
-				explicitMods: ['Has no Sockets', '22% increased Fire Damage', '+500 to maximum Life'],
+				explicitMods: [{ description: 'Has no Sockets' }, { description: '22% increased Fire Damage' }, { description: '+500 to maximum Life' }],
 				flavourText: ['The warrior who\r', 'fears will fall.'],
 				frameType: 3,
 				h: 3,
@@ -7188,7 +6705,7 @@ export const tabs = {
 				id: '69cf1fe698a59e458320d38419d2cbd444d877716b299eaa7b1821a3a7e266ab',
 				identified: true,
 				ilvl: 80,
-				implicitMods: ['6% increased maximum Life'],
+				implicitMods: [{ description: '6% increased maximum Life' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: "Kaom's Heart",
@@ -7209,12 +6726,7 @@ export const tabs = {
 			},
 			{
 				baseType: 'Coral Ring',
-				explicitMods: [
-					'Adds 10 to 24 Cold Damage to Attacks',
-					'+70 to maximum Life',
-					'5% increased maximum Life',
-					'+43% to Cold Resistance',
-					'+14% to Lightning Resistance',
+				explicitMods: [{ description: 'Adds 10 to 24 Cold Damage to Attacks' }, { description: '+70 to maximum Life' }, { description: '5% increased maximum Life' }, { description: '+43% to Cold Resistance' }, { description: '+14% to Lightning Resistance' },
 				],
 				frameType: 2,
 				h: 1,
@@ -7222,7 +6734,7 @@ export const tabs = {
 				id: '9a22ac65b6ef629ac6dbca22d08fb38aa92d7e5fe705550b975cec491fba7ebd',
 				identified: true,
 				ilvl: 73,
-				implicitMods: ['+20 to maximum Life'],
+				implicitMods: [{ description: '+20 to maximum Life' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: 'Maelström Finger',
@@ -7245,14 +6757,14 @@ export const tabs = {
 					'Attacks with this Weapon Penetrate 15% Elemental Resistances',
 					'+18% to Quality',
 				],
-				explicitMods: ['Damage Penetrates 20% Cold Resistance'],
+				explicitMods: [{ description: 'Damage Penetrates 20% Cold Resistance' }],
 				frameType: 2,
 				h: 3,
 				icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Cb3dzL0JvdzIiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MSwic3ludGhlc2lzZWQiOnRydWV9XQ/b19466e79d/Bow2.png',
 				id: 'c22d5ccb8801023bf7f6049064194954971cc887d4cdc1a994526217bb5e038c',
 				identified: true,
 				ilvl: 83,
-				implicitMods: ['Adds 3 to 5 Cold Damage to Attacks with this Weapon per 10 Dexterity'],
+				implicitMods: [{ description: 'Adds 3 to 5 Cold Damage to Attacks with this Weapon per 10 Dexterity' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: 'Rapture Blast',
@@ -7287,13 +6799,7 @@ export const tabs = {
 			{
 				baseType: 'Jade Amulet',
 				corrupted: true,
-				explicitMods: [
-					'+59 to maximum Life',
-					'+27 to maximum Mana',
-					'20% increased Duration of Elemental Ailments on Enemies',
-					'Items and Gems have 10% reduced Attribute Requirements',
-					'5% chance to Freeze, Shock and Ignite',
-					'Cannot gain Power Charges',
+				explicitMods: [{ description: '+59 to maximum Life' }, { description: '+27 to maximum Mana' }, { description: '20% increased Duration of Elemental Ailments on Enemies' }, { description: 'Items and Gems have 10% reduced Attribute Requirements' }, { description: '5% chance to Freeze, Shock and Ignite' }, { description: 'Cannot gain Power Charges' },
 				],
 				flavourText: ["Fate's smile, man's ruin."],
 				frameType: 3,
@@ -7302,7 +6808,7 @@ export const tabs = {
 				id: '178442dee78e538451483d4a9c2186273c0d7d8dc8a9b7f5f179aef8a627d3af',
 				identified: true,
 				ilvl: 84,
-				implicitMods: ['4% increased Dexterity', '5% increased Intelligence'],
+				implicitMods: [{ description: '4% increased Dexterity' }, { description: '5% increased Intelligence' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: "Rashkaldor's Patience",
@@ -7321,13 +6827,7 @@ export const tabs = {
 				baseType: 'Blood Rage',
 				descrText:
 					'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-				explicitMods: [
-					'Base duration is 7.80 seconds',
-					'Grants 12% increased Attack Speed',
-					'1.2% of Attack Physical Damage Leeched as Life',
-					'You take 4% of your Maximum Life per second as Physical Damage',
-					'You take 4% of your Maximum Energy Shield per second as Physical Damage',
-					'25% chance to gain a Frenzy Charge on Kill',
+				explicitMods: [{ description: 'Base duration is 7.80 seconds' }, { description: 'Grants 12% increased Attack Speed' }, { description: '1.2% of Attack Physical Damage Leeched as Life' }, { description: 'You take 4% of your Maximum Life per second as Physical Damage' }, { description: 'You take 4% of your Maximum Energy Shield per second as Physical Damage' }, { description: '25% chance to gain a Frenzy Charge on Kill' },
 				],
 				frameType: 4,
 				h: 1,
@@ -7366,12 +6866,7 @@ export const tabs = {
 			{
 				baseType: 'Coral Ring',
 				craftedMods: ['+28% to Cold Resistance'],
-				explicitMods: [
-					'+38 to maximum Energy Shield',
-					'+71 to maximum Life',
-					'5% increased maximum Life',
-					'+7% to all Elemental Resistances',
-					'+23% to Fire Resistance',
+				explicitMods: [{ description: '+38 to maximum Energy Shield' }, { description: '+71 to maximum Life' }, { description: '5% increased maximum Life' }, { description: '+7% to all Elemental Resistances' }, { description: '+23% to Fire Resistance' },
 				],
 				frameType: 2,
 				h: 1,
@@ -7379,7 +6874,7 @@ export const tabs = {
 				id: '86ab97b2067a6ab9d8ae56dfb9c3d4393dad39e58b61b3ce0c670f31fc918d8d',
 				identified: true,
 				ilvl: 79,
-				implicitMods: ['+27 to maximum Life'],
+				implicitMods: [{ description: '+27 to maximum Life' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: 'Blight Turn',
@@ -7396,13 +6891,7 @@ export const tabs = {
 				corrupted: true,
 				descrText:
 					'Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.',
-				explicitMods: [
-					'4% increased maximum Energy Shield',
-					'5% increased maximum Life',
-					'6% increased maximum Mana',
-					'40% of Physical Damage Converted to Lightning Damage while affected by Wrath',
-					'120% increased Critical Strike Chance against Enemies on Consecrated Ground while affected by Zealotry',
-					'Gain 22% of Physical Damage as Extra Lightning Damage while affected by Wrath',
+				explicitMods: [{ description: '4% increased maximum Energy Shield' }, { description: '5% increased maximum Life' }, { description: '6% increased maximum Mana' }, { description: '40% of Physical Damage Converted to Lightning Damage while affected by Wrath' }, { description: '120% increased Critical Strike Chance against Enemies on Consecrated Ground while affected by Zealotry' }, { description: 'Gain 22% of Physical Damage as Extra Lightning Damage while affected by Wrath' },
 				],
 				flavourText: [
 					'One by one, they stood their ground against a creature \r',
@@ -7429,12 +6918,7 @@ export const tabs = {
 			},
 			{
 				baseType: 'Ruby Ring',
-				explicitMods: [
-					'+29 to Strength',
-					'Adds 25 to 30 Fire Damage',
-					'+23% to Fire Resistance',
-					'48% increased Fire Damage while affected by Herald of Ash',
-					'Herald of Ash has 91% increased Buff Effect',
+				explicitMods: [{ description: '+29 to Strength' }, { description: 'Adds 25 to 30 Fire Damage' }, { description: '+23% to Fire Resistance' }, { description: '48% increased Fire Damage while affected by Herald of Ash' }, { description: 'Herald of Ash has 91% increased Buff Effect' },
 				],
 				flavourText: [
 					'I condemned an innocent man to the pyres, but to admit this mistake is to condemn myself.\r',
@@ -7446,7 +6930,7 @@ export const tabs = {
 				id: '5552f1a061071cc5fb68bd3f3eb3b35844d93330baf9d519f42fd4e7973f6958',
 				identified: true,
 				ilvl: 84,
-				implicitMods: ['+14 to Strength', '4% increased maximum Life'],
+				implicitMods: [{ description: '+14 to Strength' }, { description: '4% increased maximum Life' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: 'Circle of Anguish',
@@ -7463,11 +6947,7 @@ export const tabs = {
 			{
 				baseType: 'Granite Flask',
 				descrText: 'Right click to drink. Can only hold charges while in belt. Refills as you kill monsters.',
-				explicitMods: [
-					'Knocks Back Enemies in an Area when you use a Flask',
-					'75% chance to cause Enemies to Flee on use',
-					'Adds Knockback to Melee Attacks during Effect',
-					'24% more Melee Physical Damage during effect',
+				explicitMods: [{ description: 'Knocks Back Enemies in an Area when you use a Flask' }, { description: '75% chance to cause Enemies to Flee on use' }, { description: 'Adds Knockback to Melee Attacks during Effect' }, { description: '24% more Melee Physical Damage during effect' },
 				],
 				flavourText: ['A sprinkle of hunger, a spoonful of menace\r', 'and three generous cups of Might.'],
 				frameType: 3,
@@ -7504,12 +6984,7 @@ export const tabs = {
 			{
 				baseType: 'Coral Ring',
 				craftedMods: ['+54 to maximum Life'],
-				explicitMods: [
-					'+49 to Strength',
-					'Adds 16 to 33 Fire Damage to Attacks',
-					'9% increased Rarity of Items found',
-					'Curse Enemies with Flammability on Hit',
-					'10% increased Elemental Damage with Attack Skills',
+				explicitMods: [{ description: '+49 to Strength' }, { description: 'Adds 16 to 33 Fire Damage to Attacks' }, { description: '9% increased Rarity of Items found' }, { description: 'Curse Enemies with Flammability on Hit' }, { description: '10% increased Elemental Damage with Attack Skills' },
 				],
 				frameType: 2,
 				h: 1,
@@ -7517,7 +6992,7 @@ export const tabs = {
 				id: '4ac2193553e6e21b51c06ec69b0adfb36d643853d0eacf2fa542b1b71ad1bcbc',
 				identified: true,
 				ilvl: 74,
-				implicitMods: ['+27 to maximum Life'],
+				implicitMods: [{ description: '+27 to maximum Life' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: 'Viper Knot',
@@ -7532,9 +7007,7 @@ export const tabs = {
 			{
 				baseType: 'Basalt Flask',
 				descrText: 'Right click to drink. Can only hold charges while in belt. Refills as you kill monsters.',
-				explicitMods: [
-					'23% reduced Charges per use',
-					'Grants Immunity to Chill for 4 seconds if used while Chilled\nGrants Immunity to Freeze for 4 seconds if used while Frozen',
+				explicitMods: [{ description: '23% reduced Charges per use' }, { description: 'Grants Immunity to Chill for 4 seconds if used while Chilled\\nGrants Immunity to Freeze for 4 seconds if used while Frozen' },
 				],
 				frameType: 1,
 				h: 2,
@@ -7571,10 +7044,7 @@ export const tabs = {
 				corrupted: true,
 				descrText:
 					'Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.',
-				explicitMods: [
-					'+8 to all Attributes',
-					'15% increased Global Physical Damage',
-					'5% increased maximum Life',
+				explicitMods: [{ description: '+8 to all Attributes' }, { description: '15% increased Global Physical Damage' }, { description: '5% increased maximum Life' },
 				],
 				frameType: 2,
 				h: 1,
@@ -7594,14 +7064,7 @@ export const tabs = {
 			},
 			{
 				baseType: "Assassin's Mitts",
-				explicitMods: [
-					'+25 to Dexterity',
-					'11% increased Attack Speed',
-					'22% increased Evasion and Energy Shield',
-					'+13 to maximum Energy Shield',
-					'+115 to maximum Life',
-					'+17% to Lightning Resistance',
-					'11% increased Stun and Block Recovery',
+				explicitMods: [{ description: '+25 to Dexterity' }, { description: '11% increased Attack Speed' }, { description: '22% increased Evasion and Energy Shield' }, { description: '+13 to maximum Energy Shield' }, { description: '+115 to maximum Life' }, { description: '+17% to Lightning Resistance' }, { description: '11% increased Stun and Block Recovery' },
 				],
 				frameType: 2,
 				h: 2,
@@ -7638,10 +7101,7 @@ export const tabs = {
 						colour: 'S',
 						descrText:
 							'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-						explicitMods: [
-							'Supported Skills deal 46% more Melee Physical Damage',
-							'Supported Skills deal 46% more Damage with Bleeding and Poison caused by Melee Hits',
-							'Supported Skills have 10% less Attack Speed',
+						explicitMods: [{ description: 'Supported Skills deal 46% more Melee Physical Damage' }, { description: 'Supported Skills deal 46% more Damage with Bleeding and Poison caused by Melee Hits' }, { description: 'Supported Skills have 10% less Attack Speed' },
 						],
 						frameType: 4,
 						h: 1,
@@ -7682,22 +7142,13 @@ export const tabs = {
 						corrupted: true,
 						descrText:
 							'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-						explicitMods: [
-							'Totem lasts 12 seconds',
-							'Summons a Totem which uses this Skill',
-							'16% more Melee Damage while Totem is Active',
-							'50% increased Totem Placement speed',
-							'+1 metre to Melee Strike Range',
-							'28% increased Activation range',
+						explicitMods: [{ description: 'Totem lasts 12 seconds' }, { description: 'Summons a Totem which uses this Skill' }, { description: '16% more Melee Damage while Totem is Active' }, { description: '50% increased Totem Placement speed' }, { description: '+1 metre to Melee Strike Range' }, { description: '28% increased Activation range' },
 						],
 						frameType: 4,
 						h: 1,
 						hybrid: {
 							baseTypeName: 'Ancestral Warchief',
-							explicitMods: [
-								'19% increased Totem Damage',
-								'+1 to maximum number of Summoned Totems',
-								'Totem lasts 6 seconds',
+							explicitMods: [{ description: '19% increased Totem Damage' }, { description: '+1 to maximum number of Summoned Totems' }, { description: 'Totem lasts 6 seconds' },
 								"Modifiers to Totem Duration also apply to this Skill's Soul Gain Prevention",
 								'Summons a Totem which uses this Skill',
 								'32% more Melee Damage while Totem is Active',
@@ -7756,9 +7207,7 @@ export const tabs = {
 						colour: 'I',
 						descrText:
 							'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-						explicitMods: [
-							'Supported Skills deal 37% more Area Damage',
-							'Supported Skills have 30% less Area of Effect',
+						explicitMods: [{ description: 'Supported Skills deal 37% more Area Damage' }, { description: 'Supported Skills have 30% less Area of Effect' },
 						],
 						frameType: 4,
 						h: 1,
@@ -7799,7 +7248,7 @@ export const tabs = {
 						colour: 'S',
 						descrText:
 							'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-						explicitMods: ['Maximum 1 Summoned Golem', 'Golems grant 100 Life Regenerated per second'],
+						explicitMods: [{ description: 'Maximum 1 Summoned Golem' }, { description: 'Golems grant 100 Life Regenerated per second' }],
 						frameType: 4,
 						h: 1,
 						icon: 'https://web.poecdn.com/gen/image/WzMwLDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9Sb2NrR29sZW0iLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/f0d237e67b/RockGolem.png',
@@ -7845,11 +7294,7 @@ export const tabs = {
 				baseType: 'Eelskin Boots',
 				craftedMods: ['18% increased Movement Speed', '8% chance to gain Onslaught for 4 seconds on Kill'],
 				enchantMods: ["10% increased Movement Speed if you haven't been Hit Recently"],
-				explicitMods: [
-					'+33 to Evasion Rating',
-					'+112 to maximum Life',
-					'+27% to Fire Resistance',
-					'+18% to Lightning Resistance',
+				explicitMods: [{ description: '+33 to Evasion Rating' }, { description: '+112 to maximum Life' }, { description: '+27% to Fire Resistance' }, { description: '+18% to Lightning Resistance' },
 				],
 				frameType: 2,
 				h: 2,
@@ -7883,15 +7328,7 @@ export const tabs = {
 						colour: 'S',
 						descrText:
 							'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-						explicitMods: [
-							'You and nearby allies gain 21% increased Accuracy Rating',
-							'Nearby Enemies take 11% increased Physical Damage',
-							'Gain 1 Stage when you Kill an Enemy while carrying the Banner',
-							'Gain Adrenaline for 0.05 seconds per Stage on Placing the Banner',
-							'Base Duration of 10.00 seconds after being Placed',
-							'+1 second to Base Placed Banner Duration per Stage',
-							'When placed, 8% increased Area of Effect per Stage',
-							'When placed, 1% increased Aura effect per Stage',
+						explicitMods: [{ description: 'You and nearby allies gain 21% increased Accuracy Rating' }, { description: 'Nearby Enemies take 11% increased Physical Damage' }, { description: 'Gain 1 Stage when you Kill an Enemy while carrying the Banner' }, { description: 'Gain Adrenaline for 0.05 seconds per Stage on Placing the Banner' }, { description: 'Base Duration of 10.00 seconds after being Placed' }, { description: '+1 second to Base Placed Banner Duration per Stage' }, { description: 'When placed, 8% increased Area of Effect per Stage' }, { description: 'When placed, 1% increased Aura effect per Stage' },
 						],
 						frameType: 4,
 						h: 1,
@@ -7934,12 +7371,7 @@ export const tabs = {
 						colour: 'S',
 						descrText:
 							'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-						explicitMods: [
-							'Base duration is 4.00 seconds',
-							'Base Burning Damage is 25% of Overkill Damage',
-							'36% more Burning Damage',
-							'Buff grants 15% of your Physical Damage as Extra Fire Damage',
-							'Buff grants 12% more Spell Fire Damage',
+						explicitMods: [{ description: 'Base duration is 4.00 seconds' }, { description: 'Base Burning Damage is 25% of Overkill Damage' }, { description: '36% more Burning Damage' }, { description: 'Buff grants 15% of your Physical Damage as Extra Fire Damage' }, { description: 'Buff grants 12% more Spell Fire Damage' },
 						],
 						frameType: 4,
 						h: 1,
@@ -7983,10 +7415,7 @@ export const tabs = {
 						colour: 'D',
 						descrText:
 							'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-						explicitMods: [
-							'+1.6 metres to radius',
-							'You and nearby allies gain 24% of Physical Damage as Extra Cold Damage',
-							'You and nearby allies deal 18% more Cold Damage',
+						explicitMods: [{ description: '+1.6 metres to radius' }, { description: 'You and nearby allies gain 24% of Physical Damage as Extra Cold Damage' }, { description: 'You and nearby allies deal 18% more Cold Damage' },
 						],
 						frameType: 4,
 						h: 1,
@@ -8035,13 +7464,7 @@ export const tabs = {
 						colour: 'D',
 						descrText:
 							'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-						explicitMods: [
-							'Base duration is 8.20 seconds',
-							'Grants 13% increased Attack Speed',
-							'1.2% of Attack Physical Damage Leeched as Life',
-							'You take 4% of your Maximum Life per second as Physical Damage',
-							'You take 4% of your Maximum Energy Shield per second as Physical Damage',
-							'25% chance to gain a Frenzy Charge on Kill',
+						explicitMods: [{ description: 'Base duration is 8.20 seconds' }, { description: 'Grants 13% increased Attack Speed' }, { description: '1.2% of Attack Physical Damage Leeched as Life' }, { description: 'You take 4% of your Maximum Life per second as Physical Damage' }, { description: 'You take 4% of your Maximum Energy Shield per second as Physical Damage' }, { description: '25% chance to gain a Frenzy Charge on Kill' },
 						],
 						frameType: 4,
 						h: 1,
@@ -8091,12 +7514,7 @@ export const tabs = {
 			{
 				baseType: 'Ancient Gauntlets',
 				enchantMods: ['Trigger Word of Spite when Hit'],
-				explicitMods: [
-					'+56 to maximum Life',
-					'30% increased Projectile Speed',
-					'7% reduced Movement Speed',
-					'10% chance to Knock Enemies Back on hit',
-					'47% increased Projectile Damage',
+				explicitMods: [{ description: '+56 to maximum Life' }, { description: '30% increased Projectile Speed' }, { description: '7% reduced Movement Speed' }, { description: '10% chance to Knock Enemies Back on hit' }, { description: '47% increased Projectile Damage' },
 				],
 				flavourText: [
 					'Izaro was slow to see the treachery growing in his own court\r',
@@ -8136,17 +7554,13 @@ export const tabs = {
 						corrupted: true,
 						descrText:
 							'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-						explicitMods: [
-							'+1.6 metres to radius',
-							'You and nearby allies gain 1914 additional Evasion Rating',
-							'You and nearby allies gain 28% more Evasion rating',
+						explicitMods: [{ description: '+1.6 metres to radius' }, { description: 'You and nearby allies gain 1914 additional Evasion Rating' }, { description: 'You and nearby allies gain 28% more Evasion rating' },
 						],
 						frameType: 4,
 						h: 1,
 						hybrid: {
 							baseTypeName: 'Grace',
-							explicitMods: [
-								'Base duration is 6.00 seconds',
+							explicitMods: [{ description: 'Base duration is 6.00 seconds' },
 								"Modifiers to Buff Duration also apply to this Skill's Soul Gain Prevention",
 								'+1.6 metres to radius',
 								'You and nearby allies have +15% chance to Evade Attack Hits',
@@ -8201,7 +7615,7 @@ export const tabs = {
 						colour: 'S',
 						descrText:
 							'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-						explicitMods: ['Supported Skills have 62% increased Skill Effect Duration'],
+						explicitMods: [{ description: 'Supported Skills have 62% increased Skill Effect Duration' }],
 						frameType: 4,
 						h: 1,
 						icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9TdXBwb3J0L0luY3JlYXNlZER1cmF0aW9uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/a5db7ae0bd/IncreasedDuration.png',
@@ -8241,17 +7655,13 @@ export const tabs = {
 						corrupted: true,
 						descrText:
 							'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-						explicitMods: [
-							'+1.6 metres to radius',
-							'You and nearby allies gain 1914 additional Evasion Rating',
-							'You and nearby allies gain 28% more Evasion rating',
+						explicitMods: [{ description: '+1.6 metres to radius' }, { description: 'You and nearby allies gain 1914 additional Evasion Rating' }, { description: 'You and nearby allies gain 28% more Evasion rating' },
 						],
 						frameType: 4,
 						h: 1,
 						hybrid: {
 							baseTypeName: 'Grace',
-							explicitMods: [
-								'Base duration is 6.00 seconds',
+							explicitMods: [{ description: 'Base duration is 6.00 seconds' },
 								"Modifiers to Buff Duration also apply to this Skill's Soul Gain Prevention",
 								'+1.6 metres to radius',
 								'You and nearby allies have +15% chance to Evade Attack Hits',
@@ -8307,26 +7717,13 @@ export const tabs = {
 						corrupted: true,
 						descrText:
 							'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-						explicitMods: [
-							'Deals 529 to 1586 Lightning Damage',
-							'Trap lasts 4 seconds',
-							'Fires 9 Projectiles',
-							'Fires Projectiles in a circle',
-							'20% chance to Shock enemies',
-							'12% Chance for Trap to Trigger an additional time',
-							'114% increased Critical Strike Chance against Shocked Enemies',
-							'17% increased Effect of Shock',
+						explicitMods: [{ description: 'Deals 529 to 1586 Lightning Damage' }, { description: 'Trap lasts 4 seconds' }, { description: 'Fires 9 Projectiles' }, { description: 'Fires Projectiles in a circle' }, { description: '20% chance to Shock enemies' }, { description: '12% Chance for Trap to Trigger an additional time' }, { description: '114% increased Critical Strike Chance against Shocked Enemies' }, { description: '17% increased Effect of Shock' },
 						],
 						frameType: 4,
 						h: 1,
 						hybrid: {
 							baseTypeName: 'Lightning Trap',
-							explicitMods: [
-								'Deals 569 to 1707 Lightning Damage',
-								'Projectiles Pierce all Targets',
-								'Trap lasts 4 seconds',
-								'Base duration is 4.00 seconds',
-								'Fires 9 Projectiles',
+							explicitMods: [{ description: 'Deals 569 to 1707 Lightning Damage' }, { description: 'Projectiles Pierce all Targets' }, { description: 'Trap lasts 4 seconds' }, { description: 'Base duration is 4.00 seconds' }, { description: 'Fires 9 Projectiles' },
 								"Modifiers to Skill Effect Duration also apply to this Skill's Soul Gain Prevention",
 								'Fires Projectiles in a circle',
 								'Projectiles leave Shocked Ground',
@@ -8393,11 +7790,7 @@ export const tabs = {
 				baseType: 'Praetor Crown',
 				craftedMods: ['+16% to Fire and Lightning Resistances'],
 				enchantMods: ['Consecrated Path has 8% increased Area of Effect'],
-				explicitMods: [
-					'+35 to Armour',
-					'+104 to maximum Life',
-					'+37% to Cold Resistance',
-					'+20% to Lightning Resistance',
+				explicitMods: [{ description: '+35 to Armour' }, { description: '+104 to maximum Life' }, { description: '+37% to Cold Resistance' }, { description: '+20% to Lightning Resistance' },
 				],
 				frameType: 2,
 				h: 2,
@@ -8434,7 +7827,7 @@ export const tabs = {
 						colour: 'D',
 						descrText:
 							'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-						explicitMods: ['Supported Skills have 47% increased Attack Speed'],
+						explicitMods: [{ description: 'Supported Skills have 47% increased Attack Speed' }],
 						frameType: 4,
 						h: 1,
 						icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9TdXBwb3J0L0Zhc3RlckF0dGFja3MiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/c3e1544a95/FasterAttacks.png',
@@ -8474,9 +7867,7 @@ export const tabs = {
 						colour: 'S',
 						descrText:
 							'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-						explicitMods: [
-							'Supported Skills have 18% increased Aura effect',
-							'Supported Skills Reserve Life instead of Mana',
+						explicitMods: [{ description: 'Supported Skills have 18% increased Aura effect' }, { description: 'Supported Skills Reserve Life instead of Mana' },
 						],
 						frameType: 4,
 						h: 1,
@@ -8516,11 +7907,7 @@ export const tabs = {
 						colour: 'S',
 						descrText:
 							'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-						explicitMods: [
-							'38% increased Stun Duration against Enemies that are on Full Life',
-							'+0.55 seconds to Attack Time',
-							'Base radius is 1.5 metres',
-							'Damaging Hits always Stun Enemies that are on Full Life',
+						explicitMods: [{ description: '38% increased Stun Duration against Enemies that are on Full Life' }, { description: '+0.55 seconds to Attack Time' }, { description: 'Base radius is 1.5 metres' }, { description: 'Damaging Hits always Stun Enemies that are on Full Life' },
 						],
 						frameType: 4,
 						h: 1,
@@ -8563,7 +7950,7 @@ export const tabs = {
 						colour: 'S',
 						descrText:
 							'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-						explicitMods: ['Supported Skills gain 37% of Physical Damage as Extra Fire Damage'],
+						explicitMods: [{ description: 'Supported Skills gain 37% of Physical Damage as Extra Fire Damage' }],
 						frameType: 4,
 						h: 1,
 						icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9TdXBwb3J0L0FkZGVkRmlyZURhbWFnZSIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/021b8c80d0/AddedFireDamage.png',
@@ -8605,11 +7992,7 @@ export const tabs = {
 				baseType: 'Viridian Jewel',
 				descrText:
 					'Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.',
-				explicitMods: [
-					'6% increased maximum Life',
-					'+10% to all Elemental Resistances',
-					'9% increased Totem Life',
-					'+11% to Fire and Cold Resistances',
+				explicitMods: [{ description: '6% increased maximum Life' }, { description: '+10% to all Elemental Resistances' }, { description: '9% increased Totem Life' }, { description: '+11% to Fire and Cold Resistances' },
 				],
 				frameType: 2,
 				h: 1,
@@ -8631,9 +8014,7 @@ export const tabs = {
 				baseType: 'Cobalt Jewel',
 				descrText:
 					'Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.',
-				explicitMods: [
-					'Summon 2 additional Skeletons with Summon Skeletons',
-					'+1 second to Summon Skeleton Cooldown',
+				explicitMods: [{ description: 'Summon 2 additional Skeletons with Summon Skeletons' }, { description: '+1 second to Summon Skeleton Cooldown' },
 				],
 				flavourText: [
 					'"Would you leave an orchard of apples to rot unharvested?\r',
@@ -8671,7 +8052,7 @@ export const tabs = {
 				corrupted: true,
 				descrText:
 					'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-				explicitMods: ['Supported Skills have 53% increased Attack Speed'],
+				explicitMods: [{ description: 'Supported Skills have 53% increased Attack Speed' }],
 				frameType: 4,
 				h: 1,
 				icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9TdXBwb3J0L0Zhc3RlckF0dGFja3MiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/c3e1544a95/FasterAttacks.png',
@@ -8712,9 +8093,7 @@ export const tabs = {
 				baseType: 'Culling Strike Support',
 				descrText:
 					'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-				explicitMods: [
-					'Kill Enemies that have 10% Life or lower when Hit by Supported Skills',
-					'Supported Skills deal 20% increased Damage',
+				explicitMods: [{ description: 'Kill Enemies that have 10% Life or lower when Hit by Supported Skills' }, { description: 'Supported Skills deal 20% increased Damage' },
 				],
 				frameType: 4,
 				h: 1,
@@ -8750,9 +8129,7 @@ export const tabs = {
 				baseType: 'Hatred',
 				descrText:
 					'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-				explicitMods: [
-					'You and nearby allies gain 16% of Physical Damage as Extra Cold Damage',
-					'You and nearby allies deal 14% more Cold Damage',
+				explicitMods: [{ description: 'You and nearby allies gain 16% of Physical Damage as Extra Cold Damage' }, { description: 'You and nearby allies deal 14% more Cold Damage' },
 				],
 				frameType: 4,
 				h: 1,
@@ -8811,10 +8188,7 @@ export const tabs = {
 				baseType: 'Storm Call',
 				descrText:
 					'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-				explicitMods: [
-					'Deals 21 to 39 Lightning Damage',
-					'Base duration is 1.50 seconds',
-					'9% chance for Lightning to Strike the Marker when Cast',
+				explicitMods: [{ description: 'Deals 21 to 39 Lightning Damage' }, { description: 'Base duration is 1.50 seconds' }, { description: '9% chance for Lightning to Strike the Marker when Cast' },
 				],
 				frameType: 4,
 				h: 1,
@@ -8851,8 +8225,7 @@ export const tabs = {
 				baseType: 'Detonate Mines',
 				descrText:
 					'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-				explicitMods: [
-					'First Mine Detonates Instantly\nMines get 10% more Detonation Speed for each prior Mine in Detonation Sequence',
+				explicitMods: [{ description: 'First Mine Detonates Instantly\\nMines get 10% more Detonation Speed for each prior Mine in Detonation Sequence' },
 				],
 				frameType: 4,
 				h: 1,
@@ -8892,7 +8265,7 @@ export const tabs = {
 				baseType: 'Chain Support',
 				descrText:
 					'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-				explicitMods: ['Supported Skills Chain +2 times', 'Supported Skills deal 22% less Damage with Hits'],
+				explicitMods: [{ description: 'Supported Skills Chain +2 times' }, { description: 'Supported Skills deal 22% less Damage with Hits' }],
 				frameType: 4,
 				h: 1,
 				icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9TdXBwb3J0L2NoYWluIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/812e47f631/chain.png',
@@ -8922,11 +8295,7 @@ export const tabs = {
 			{
 				baseType: 'Sapphire Flask',
 				descrText: 'Right click to drink. Can only hold charges while in belt. Refills as you kill monsters.',
-				explicitMods: [
-					'20% of Physical Damage from Hits taken as Cold Damage during Effect',
-					'Gain 17% of Physical Damage as Extra Cold Damage during effect',
-					'30% chance to Avoid being Chilled during Effect',
-					'30% chance to Avoid being Frozen during Effect',
+				explicitMods: [{ description: '20% of Physical Damage from Hits taken as Cold Damage during Effect' }, { description: 'Gain 17% of Physical Damage as Extra Cold Damage during effect' }, { description: '30% chance to Avoid being Chilled during Effect' }, { description: '30% chance to Avoid being Frozen during Effect' },
 				],
 				flavourText: [
 					'A sip will freeze your lips,\r',
@@ -8967,12 +8336,7 @@ export const tabs = {
 			{
 				baseType: 'Topaz Ring',
 				craftedMods: ['+27% to Cold Resistance'],
-				explicitMods: [
-					'22% increased Fire Damage',
-					'Adds 7 to 13 Fire Damage to Attacks',
-					'+44 to maximum Energy Shield',
-					'+52 to maximum Life',
-					'+41% to Lightning Resistance',
+				explicitMods: [{ description: '22% increased Fire Damage' }, { description: 'Adds 7 to 13 Fire Damage to Attacks' }, { description: '+44 to maximum Energy Shield' }, { description: '+52 to maximum Life' }, { description: '+41% to Lightning Resistance' },
 				],
 				frameType: 2,
 				h: 1,
@@ -8980,7 +8344,7 @@ export const tabs = {
 				id: 'daa6b6b468c5b60c165f219f11beb2d3811cebae0fab9006208c3cf6e6cd0a47',
 				identified: true,
 				ilvl: 79,
-				implicitMods: ['+30% to Lightning Resistance'],
+				implicitMods: [{ description: '+30% to Lightning Resistance' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: 'Bramble Knuckle',
@@ -9005,9 +8369,7 @@ export const tabs = {
 				baseType: 'Increased Area of Effect Support',
 				descrText:
 					'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-				explicitMods: [
-					'Supported Skills have 31% increased Area of Effect',
-					'Supported Skills deal 2% increased Area Damage',
+				explicitMods: [{ description: 'Supported Skills have 31% increased Area of Effect' }, { description: 'Supported Skills deal 2% increased Area Damage' },
 				],
 				frameType: 4,
 				h: 1,
@@ -9040,10 +8402,7 @@ export const tabs = {
 				baseType: 'Viridian Jewel',
 				descrText:
 					'Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.',
-				explicitMods: [
-					'+15% to Critical Strike Multiplier with Cold Skills',
-					'+15% to Critical Strike Multiplier with Elemental Skills',
-					'7% increased Projectile Speed',
+				explicitMods: [{ description: '+15% to Critical Strike Multiplier with Cold Skills' }, { description: '+15% to Critical Strike Multiplier with Elemental Skills' }, { description: '7% increased Projectile Speed' },
 				],
 				frameType: 2,
 				h: 1,
@@ -9064,10 +8423,7 @@ export const tabs = {
 			{
 				baseType: 'Ruby Flask',
 				descrText: 'Right click to drink. Can only hold charges while in belt. Refills as you kill monsters.',
-				explicitMods: [
-					'8% reduced Charges per use',
-					'30% increased Area of Effect during Effect',
-					'Skills fire 2 additional Projectiles during Effect',
+				explicitMods: [{ description: '8% reduced Charges per use' }, { description: '30% increased Area of Effect during Effect' }, { description: 'Skills fire 2 additional Projectiles during Effect' },
 				],
 				flavourText: ['All things must die.\r', 'Whether you burn out or explode is up to you.'],
 				frameType: 3,
@@ -9105,12 +8461,7 @@ export const tabs = {
 				baseType: 'Sapphire Ring',
 				craftedMods: ['10% faster start of Energy Shield Recharge'],
 				enchantMods: ['Your Freezebolt Towers deal 25% increased Damage'],
-				explicitMods: [
-					'+17 to Intelligence',
-					'+2 to maximum Energy Shield',
-					'+56 to maximum Life',
-					'+44% to Cold Resistance',
-					'+41% to Lightning Resistance',
+				explicitMods: [{ description: '+17 to Intelligence' }, { description: '+2 to maximum Energy Shield' }, { description: '+56 to maximum Life' }, { description: '+44% to Cold Resistance' }, { description: '+41% to Lightning Resistance' },
 				],
 				frameType: 2,
 				h: 1,
@@ -9118,7 +8469,7 @@ export const tabs = {
 				id: '975894d6cdb706827bb4e4cef0e12ac5e808b902b3aa22a81341833c2734e886',
 				identified: true,
 				ilvl: 83,
-				implicitMods: ['+29% to Cold Resistance'],
+				implicitMods: [{ description: '+29% to Cold Resistance' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: 'Plague Grip',
@@ -9132,13 +8483,7 @@ export const tabs = {
 			},
 			{
 				baseType: 'Serpentine Staff',
-				explicitMods: [
-					'Socketed Gems fire 4 additional Projectiles',
-					'Socketed Gems fire Projectiles in a circle',
-					'+19 to all Attributes',
-					'+6% to all Elemental Resistances',
-					'95% increased Projectile Damage',
-					'20% increased Light Radius',
+				explicitMods: [{ description: 'Socketed Gems fire 4 additional Projectiles' }, { description: 'Socketed Gems fire Projectiles in a circle' }, { description: '+19 to all Attributes' }, { description: '+6% to all Elemental Resistances' }, { description: '95% increased Projectile Damage' }, { description: '20% increased Light Radius' },
 				],
 				flavourText: ['That which was broken may yet break.'],
 				frameType: 3,
@@ -9147,7 +8492,7 @@ export const tabs = {
 				id: '06ee36ccad330146a9f761c9dffd867679b950d933cba47e213338b65396f7c6',
 				identified: true,
 				ilvl: 80,
-				implicitMods: ['+20% Chance to Block Attack Damage while wielding a Staff'],
+				implicitMods: [{ description: '+20% Chance to Block Attack Damage while wielding a Staff' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: 'Sire of Shards',
@@ -9175,10 +8520,7 @@ export const tabs = {
 						colour: 'D',
 						descrText:
 							'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-						explicitMods: [
-							'Supported Skills fire 2 additional Projectiles',
-							'Supported Skills also fire Projectiles from up to 2 points on each side of you',
-							'Supported Skills deal 12% less Projectile Damage',
+						explicitMods: [{ description: 'Supported Skills fire 2 additional Projectiles' }, { description: 'Supported Skills also fire Projectiles from up to 2 points on each side of you' }, { description: 'Supported Skills deal 12% less Projectile Damage' },
 						],
 						frameType: 4,
 						h: 1,
@@ -9216,10 +8558,7 @@ export const tabs = {
 						colour: 'I',
 						descrText:
 							'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-						explicitMods: [
-							'Supported Skills have 30% increased Area of Effect',
-							'Supported Spells lose 1 Intensity every 0.25 seconds while moving, or immediately if you teleport',
-							'Supported Spells gain Intensity when you Cast them, to a maximum of 3\nSupported Skills deal 10% more Area Damage with Hits per Intensity\nSupported Skills have 15% less Area of Effect per Intensity',
+						explicitMods: [{ description: 'Supported Skills have 30% increased Area of Effect' }, { description: 'Supported Spells lose 1 Intensity every 0.25 seconds while moving, or immediately if you teleport' }, { description: 'Supported Spells gain Intensity when you Cast them, to a maximum of 3\\nSupported Skills deal 10% more Area Damage with Hits per Intensity\\nSupported Skills have 15% less Area of Effect per Intensity' },
 						],
 						frameType: 4,
 						h: 1,
@@ -9251,9 +8590,7 @@ export const tabs = {
 						colour: 'I',
 						descrText:
 							'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-						explicitMods: [
-							'Supported Skills have 80% less Critical Strike Chance',
-							'Supported Skills deal 39% more Spell Damage',
+						explicitMods: [{ description: 'Supported Skills have 80% less Critical Strike Chance' }, { description: 'Supported Skills deal 39% more Spell Damage' },
 						],
 						frameType: 4,
 						h: 1,
@@ -9293,10 +8630,7 @@ export const tabs = {
 						colour: 'I',
 						descrText:
 							'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-						explicitMods: [
-							'Deals 10 to 14 Fire Damage',
-							'Chains +2 Times',
-							'Projectiles can Chain when impacting the ground\nProjectiles do not change direction when Chaining',
+						explicitMods: [{ description: 'Deals 10 to 14 Fire Damage' }, { description: 'Chains +2 Times' }, { description: 'Projectiles can Chain when impacting the ground\\nProjectiles do not change direction when Chaining' },
 						],
 						frameType: 4,
 						h: 1,
@@ -9341,12 +8675,7 @@ export const tabs = {
 						colour: 'I',
 						descrText:
 							'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-						explicitMods: [
-							'Supported Spells gain Intensity when you Cast them, to a maximum of 3\nSupported Skills fire 1 fewer Projectile per Intensity',
-							'Supported Spells lose 1 Intensity every 0.25 seconds while moving, or immediately if you teleport',
-							'Projectiles from Supported Skills deal 20% more Damage with Hits per Intensity',
-							'Supported Skills fire 3 additional Projectiles',
-							'Supported Skills deal 25% less Projectile Damage',
+						explicitMods: [{ description: 'Supported Spells gain Intensity when you Cast them, to a maximum of 3\\nSupported Skills fire 1 fewer Projectile per Intensity' }, { description: 'Supported Spells lose 1 Intensity every 0.25 seconds while moving, or immediately if you teleport' }, { description: 'Projectiles from Supported Skills deal 20% more Damage with Hits per Intensity' }, { description: 'Supported Skills fire 3 additional Projectiles' }, { description: 'Supported Skills deal 25% less Projectile Damage' },
 						],
 						frameType: 4,
 						h: 1,
@@ -9394,9 +8723,7 @@ export const tabs = {
 				corrupted: true,
 				descrText:
 					'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-				explicitMods: [
-					'Supported Skills have 50% increased Area of Effect',
-					'Supported Skills deal 10% increased Area Damage',
+				explicitMods: [{ description: 'Supported Skills have 50% increased Area of Effect' }, { description: 'Supported Skills deal 10% increased Area Damage' },
 				],
 				frameType: 4,
 				h: 1,
@@ -9430,9 +8757,7 @@ export const tabs = {
 				corrupted: true,
 				descrText:
 					'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-				explicitMods: [
-					'Supported Skills have 137% increased Critical Strike Chance',
-					'Supported Skills have +2% to Critical Strike Chance',
+				explicitMods: [{ description: 'Supported Skills have 137% increased Critical Strike Chance' }, { description: 'Supported Skills have +2% to Critical Strike Chance' },
 				],
 				frameType: 4,
 				h: 1,
@@ -9474,9 +8799,7 @@ export const tabs = {
 				baseType: 'Slower Projectiles Support',
 				descrText:
 					'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-				explicitMods: [
-					'Supported Skills have 26% less Projectile Speed',
-					'Supported Skills deal 16% more Projectile Damage',
+				explicitMods: [{ description: 'Supported Skills have 26% less Projectile Speed' }, { description: 'Supported Skills deal 16% more Projectile Damage' },
 				],
 				frameType: 4,
 				h: 1,
@@ -9507,13 +8830,7 @@ export const tabs = {
 			{
 				baseType: 'Studded Belt',
 				corrupted: true,
-				explicitMods: [
-					'+22 to Strength',
-					'38% more Maximum Physical Attack Damage',
-					'37% less Minimum Physical Attack Damage',
-					'Adds 1 to 18 Physical Damage to Attacks',
-					'+97 to maximum Life',
-					'Gain 50 Life when you Stun an Enemy',
+				explicitMods: [{ description: '+22 to Strength' }, { description: '38% more Maximum Physical Attack Damage' }, { description: '37% less Minimum Physical Attack Damage' }, { description: 'Adds 1 to 18 Physical Damage to Attacks' }, { description: '+97 to maximum Life' }, { description: 'Gain 50 Life when you Stun an Enemy' },
 				],
 				flavourText: ['All creatures have the potential for greatness\r', 'or unequivocal failure.'],
 				frameType: 3,
@@ -9522,9 +8839,7 @@ export const tabs = {
 				id: '9402d7952cb8665e0dfa4969d4ed436b660c033fc0001bdb1313741ab6b72228',
 				identified: true,
 				ilvl: 82,
-				implicitMods: [
-					'20% increased Rarity of Items found',
-					'+21% to Critical Strike Multiplier during any Flask Effect',
+				implicitMods: [{ description: '20% increased Rarity of Items found' }, { description: '+21% to Critical Strike Multiplier during any Flask Effect' },
 				],
 				inventoryId: 'Stash1',
 				league: 'Standard',
@@ -9540,13 +8855,7 @@ export const tabs = {
 			{
 				baseType: "Assassin's Mitts",
 				craftedMods: ['+65 to maximum Life'],
-				explicitMods: [
-					'+3 to Evasion Rating',
-					'+4 to maximum Energy Shield',
-					'+47% to Fire Resistance',
-					'+32% to Cold Resistance',
-					'+21% to Lightning Resistance',
-					'52 to 78 added Fire Damage against Burning Enemies',
+				explicitMods: [{ description: '+3 to Evasion Rating' }, { description: '+4 to maximum Energy Shield' }, { description: '+47% to Fire Resistance' }, { description: '+32% to Cold Resistance' }, { description: '+21% to Lightning Resistance' }, { description: '52 to 78 added Fire Damage against Burning Enemies' },
 				],
 				frameType: 2,
 				h: 2,
@@ -9583,9 +8892,7 @@ export const tabs = {
 						colour: 'D',
 						descrText:
 							'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-						explicitMods: [
-							'Supported Skills deal 38% more Damage over Time',
-							'25% less Duration of Supported Skills and Damaging Ailments they inflict',
+						explicitMods: [{ description: 'Supported Skills deal 38% more Damage over Time' }, { description: '25% less Duration of Supported Skills and Damaging Ailments they inflict' },
 						],
 						frameType: 4,
 						h: 1,
@@ -9626,13 +8933,7 @@ export const tabs = {
 						colour: 'D',
 						descrText:
 							'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-						explicitMods: [
-							'Base duration is 10.60 seconds',
-							'Grants 14% increased Attack Speed',
-							'1.2% of Attack Physical Damage Leeched as Life',
-							'You take 4% of your Maximum Life per second as Physical Damage',
-							'You take 4% of your Maximum Energy Shield per second as Physical Damage',
-							'25% chance to gain a Frenzy Charge on Kill',
+						explicitMods: [{ description: 'Base duration is 10.60 seconds' }, { description: 'Grants 14% increased Attack Speed' }, { description: '1.2% of Attack Physical Damage Leeched as Life' }, { description: 'You take 4% of your Maximum Life per second as Physical Damage' }, { description: 'You take 4% of your Maximum Energy Shield per second as Physical Damage' }, { description: '25% chance to gain a Frenzy Charge on Kill' },
 						],
 						frameType: 4,
 						h: 1,
@@ -9675,7 +8976,7 @@ export const tabs = {
 						colour: 'S',
 						descrText:
 							'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-						explicitMods: ['Supported Skills deal 33% more Burning Damage'],
+						explicitMods: [{ description: 'Supported Skills deal 33% more Burning Damage' }],
 						frameType: 4,
 						h: 1,
 						icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9TdXBwb3J0L0luY3JlYXNlZEJ1cm5EdXJhdGlvbiIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/46900a1f5b/IncreasedBurnDuration.png',
@@ -9717,12 +9018,7 @@ export const tabs = {
 			{
 				baseType: 'Siege Helmet',
 				enchantMods: ['Consecrated Path deals 40% increased Damage'],
-				explicitMods: [
-					'+37 to Intelligence',
-					'+88 to Armour',
-					'+118 to maximum Life',
-					'Regenerate 4 Life per second',
-					'+36% to Lightning Resistance',
+				explicitMods: [{ description: '+37 to Intelligence' }, { description: '+88 to Armour' }, { description: '+118 to maximum Life' }, { description: 'Regenerate 4 Life per second' }, { description: '+36% to Lightning Resistance' },
 				],
 				frameType: 2,
 				h: 2,
@@ -9730,7 +9026,7 @@ export const tabs = {
 				id: '9c53fa8be62a1bf56183ebded62721e37b419291ddf60c9b89393d71167c29d7',
 				identified: true,
 				ilvl: 79,
-				implicitMods: ['+30 to maximum Life', '4% increased maximum Life'],
+				implicitMods: [{ description: '+30 to maximum Life' }, { description: '4% increased maximum Life' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: 'Miracle Visage',
@@ -9758,11 +9054,7 @@ export const tabs = {
 						colour: 'S',
 						descrText:
 							'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-						explicitMods: [
-							'38% increased Stun Duration against Enemies that are on Full Life',
-							'+0.55 seconds to Attack Time',
-							'Base radius is 1.5 metres',
-							'Damaging Hits always Stun Enemies that are on Full Life',
+						explicitMods: [{ description: '38% increased Stun Duration against Enemies that are on Full Life' }, { description: '+0.55 seconds to Attack Time' }, { description: 'Base radius is 1.5 metres' }, { description: 'Damaging Hits always Stun Enemies that are on Full Life' },
 						],
 						frameType: 4,
 						h: 1,
@@ -9805,10 +9097,7 @@ export const tabs = {
 						colour: 'S',
 						descrText:
 							'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-						explicitMods: [
-							'Melee Hits from Supported Skills Fortify',
-							'Supported Skills deal 18% more Damage with Ailments caused by Melee Hits',
-							'Supported Skills deal 18% more Melee Damage',
+						explicitMods: [{ description: 'Melee Hits from Supported Skills Fortify' }, { description: 'Supported Skills deal 18% more Damage with Ailments caused by Melee Hits' }, { description: 'Supported Skills deal 18% more Melee Damage' },
 						],
 						frameType: 4,
 						h: 1,
@@ -9848,14 +9137,7 @@ export const tabs = {
 						colour: 'S',
 						descrText:
 							'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-						explicitMods: [
-							'Base duration is 2.00 seconds',
-							'Regenerate 1914 Life over 1 second',
-							'36% increased Warcry Speed',
-							'Counts total Power of Enemies in Range',
-							'Gain 1 Endurance Charge per 5 Power',
-							'Buff grants 2% additional Physical Damage Reduction per Endurance Charge',
-							'Buff grants +2% to all Elemental Resistances per Endurance Charge',
+						explicitMods: [{ description: 'Base duration is 2.00 seconds' }, { description: 'Regenerate 1914 Life over 1 second' }, { description: '36% increased Warcry Speed' }, { description: 'Counts total Power of Enemies in Range' }, { description: 'Gain 1 Endurance Charge per 5 Power' }, { description: 'Buff grants 2% additional Physical Damage Reduction per Endurance Charge' }, { description: 'Buff grants +2% to all Elemental Resistances per Endurance Charge' },
 						],
 						frameType: 4,
 						h: 1,
@@ -9905,9 +9187,7 @@ export const tabs = {
 				baseType: 'Stun Support',
 				descrText:
 					'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-				explicitMods: [
-					'Supported Skills have 30% reduced Enemy Stun Threshold',
-					'Supported Skills have 7% chance to double Stun Duration',
+				explicitMods: [{ description: 'Supported Skills have 30% reduced Enemy Stun Threshold' }, { description: 'Supported Skills have 7% chance to double Stun Duration' },
 				],
 				frameType: 4,
 				h: 1,
@@ -9973,10 +9253,7 @@ export const tabs = {
 				baseType: 'Withering Touch Support',
 				descrText:
 					'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-				explicitMods: [
-					'Supported Skills have 25% chance to inflict Withered on Hit',
-					'Withered lasts 2 seconds',
-					'Supported Skills gain 10% of Physical Damage as Extra Chaos Damage',
+				explicitMods: [{ description: 'Supported Skills have 25% chance to inflict Withered on Hit' }, { description: 'Withered lasts 2 seconds' }, { description: 'Supported Skills gain 10% of Physical Damage as Extra Chaos Damage' },
 				],
 				frameType: 4,
 				h: 1,
@@ -10012,7 +9289,7 @@ export const tabs = {
 				id: 'f1a46c9f1867ac035e97a00cb1c77a17a8b34be6ffd7437b16bb875b73d4986c',
 				identified: false,
 				ilvl: 63,
-				implicitMods: ['Gain 3 Life per Enemy Hit with Attacks'],
+				implicitMods: [{ description: 'Gain 3 Life per Enemy Hit with Attacks' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: '',
@@ -10046,7 +9323,7 @@ export const tabs = {
 			{
 				baseType: 'Silver Flask',
 				descrText: 'Right click to drink. Can only hold charges while in belt. Refills as you kill monsters.',
-				explicitMods: ['32% increased Duration', 'Removes Curses on use'],
+				explicitMods: [{ description: '32% increased Duration' }, { description: 'Removes Curses on use' }],
 				frameType: 1,
 				h: 2,
 				icon: 'https://web.poecdn.com/gen/image/WzksMTQseyJmIjoiMkRJdGVtcy9GbGFza3Mvc2lsdmVyIiwidyI6MSwiaCI6Miwic2NhbGUiOjEsImxldmVsIjoxfV0/a2143b575d/silver.png',
@@ -10082,11 +9359,7 @@ export const tabs = {
 				baseType: 'Onyx Amulet',
 				craftedMods: ['+54 to maximum Life'],
 				elder: true,
-				explicitMods: [
-					'+20 to Strength',
-					'23% increased Global Physical Damage',
-					'Gain 4 Mana per Enemy Killed',
-					'Gain 18% of Physical Damage as Extra Fire Damage',
+				explicitMods: [{ description: '+20 to Strength' }, { description: '23% increased Global Physical Damage' }, { description: 'Gain 4 Mana per Enemy Killed' }, { description: 'Gain 18% of Physical Damage as Extra Fire Damage' },
 				],
 				frameType: 2,
 				h: 1,
@@ -10094,7 +9367,7 @@ export const tabs = {
 				id: 'b6e113d4dfeafc11f8740c57a2efc50a2781b3a4b17bd820231b4a1e9574be2a',
 				identified: true,
 				ilvl: 83,
-				implicitMods: ['+13 to all Attributes'],
+				implicitMods: [{ description: '+13 to all Attributes' }],
 				influences: { elder: true },
 				inventoryId: 'Stash1',
 				league: 'Standard',
@@ -10158,13 +9431,7 @@ export const tabs = {
 				baseType: 'Pyroclast Mine',
 				descrText:
 					'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-				explicitMods: [
-					'Mine lasts 5 seconds',
-					'Deals 26 to 39 Fire Damage',
-					'Base Mine Detonation Time is 0.35 seconds',
-					'Fires 3 Projectiles',
-					'Fires an additional Projectile for every 4 prior Mines in Detonation Sequence',
-					'Each Mine Adds 1 to 2 Fire Damage to Hits against Enemies near it, up\nto a maximum of 64 to 96',
+				explicitMods: [{ description: 'Mine lasts 5 seconds' }, { description: 'Deals 26 to 39 Fire Damage' }, { description: 'Base Mine Detonation Time is 0.35 seconds' }, { description: 'Fires 3 Projectiles' }, { description: 'Fires an additional Projectile for every 4 prior Mines in Detonation Sequence' }, { description: 'Each Mine Adds 1 to 2 Fire Damage to Hits against Enemies near it, up\\nto a maximum of 64 to 96' },
 				],
 				frameType: 4,
 				h: 1,
@@ -10202,9 +9469,7 @@ export const tabs = {
 			{
 				baseType: 'Eternal Life Flask',
 				descrText: 'Right click to drink. Can only hold charges while in belt. Refills as you kill monsters.',
-				explicitMods: [
-					'50% increased Recovery rate',
-					'Grants Immunity to Bleeding for 4 seconds if used while Bleeding\nGrants Immunity to Corrupted Blood for 4 seconds if used while affected by Corrupted Blood',
+				explicitMods: [{ description: '50% increased Recovery rate' }, { description: 'Grants Immunity to Bleeding for 4 seconds if used while Bleeding\\nGrants Immunity to Corrupted Blood for 4 seconds if used while affected by Corrupted Blood' },
 				],
 				frameType: 1,
 				h: 2,
@@ -10245,9 +9510,7 @@ export const tabs = {
 			{
 				baseType: 'Sapphire Flask',
 				descrText: 'Right click to drink. Can only hold charges while in belt. Refills as you kill monsters.',
-				explicitMods: [
-					'20% reduced Charges per use',
-					'Grants Immunity to Ignite for 4 seconds if used while Ignited\nRemoves all Burning when used',
+				explicitMods: [{ description: '20% reduced Charges per use' }, { description: 'Grants Immunity to Ignite for 4 seconds if used while Ignited\\nRemoves all Burning when used' },
 				],
 				frameType: 1,
 				h: 2,
@@ -10350,7 +9613,7 @@ export const tabs = {
 				id: '1f37ec3055220fa07a7470d01c1bb31a8af16e5bc4bfade9541c968557864e83',
 				identified: false,
 				ilvl: 84,
-				implicitMods: ['+25 to maximum Life'],
+				implicitMods: [{ description: '+25 to maximum Life' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: '',
@@ -10364,11 +9627,7 @@ export const tabs = {
 			{
 				baseType: 'Samnite Helmet',
 				craftedMods: ['+1 to Level of Socketed Melee Gems', '+0.1 metres to Melee Strike Range'],
-				explicitMods: [
-					'19% increased Global Accuracy Rating',
-					'+4 to maximum Life',
-					'24% increased Rarity of Items found',
-					'15% increased Light Radius',
+				explicitMods: [{ description: '19% increased Global Accuracy Rating' }, { description: '+4 to maximum Life' }, { description: '24% increased Rarity of Items found' }, { description: '15% increased Light Radius' },
 				],
 				frameType: 2,
 				h: 2,
@@ -10405,7 +9664,7 @@ export const tabs = {
 				id: 'd2b99d4fd4da61ce27981ed140d806bc84a990378569c814c37634847ca4f975',
 				identified: false,
 				ilvl: 83,
-				implicitMods: ['Grants 40 Life per Enemy Hit'],
+				implicitMods: [{ description: 'Grants 40 Life per Enemy Hit' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: '',
@@ -10436,12 +9695,7 @@ export const tabs = {
 			{
 				baseType: 'Crimson Raiment',
 				craftedMods: ['+1145 to Armour during Soul Gain Prevention'],
-				explicitMods: [
-					'+14 to Intelligence',
-					'+179 to Evasion Rating',
-					'+60 to maximum Energy Shield',
-					'Regenerate 3.8 Life per second',
-					'+37% to Fire Resistance',
+				explicitMods: [{ description: '+14 to Intelligence' }, { description: '+179 to Evasion Rating' }, { description: '+60 to maximum Energy Shield' }, { description: 'Regenerate 3.8 Life per second' }, { description: '+37% to Fire Resistance' },
 				],
 				frameType: 2,
 				h: 3,
@@ -10475,12 +9729,7 @@ export const tabs = {
 			},
 			{
 				baseType: 'Gold Ring',
-				explicitMods: [
-					'+10 to all Attributes',
-					'+9 to Dexterity',
-					'6% increased Lightning Damage',
-					'+77 to maximum Mana',
-					'Regenerate 6.3 Mana per second',
+				explicitMods: [{ description: '+10 to all Attributes' }, { description: '+9 to Dexterity' }, { description: '6% increased Lightning Damage' }, { description: '+77 to maximum Mana' }, { description: 'Regenerate 6.3 Mana per second' },
 				],
 				frameType: 2,
 				h: 1,
@@ -10488,7 +9737,7 @@ export const tabs = {
 				id: 'cff577d17c5d526609465d3523c30cef0e9c811992c8354bf8cb28ccc1c645b9',
 				identified: true,
 				ilvl: 83,
-				implicitMods: ['11% increased Rarity of Items found'],
+				implicitMods: [{ description: '11% increased Rarity of Items found' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: 'Loath Nail',
@@ -10542,13 +9791,7 @@ export const tabs = {
 			},
 			{
 				baseType: 'Studded Belt',
-				explicitMods: [
-					'+25 to Strength',
-					'38% more Maximum Physical Attack Damage',
-					'31% less Minimum Physical Attack Damage',
-					'Adds 1 to 19 Physical Damage to Attacks',
-					'+99 to maximum Life',
-					'Gain 50 Life when you Stun an Enemy',
+				explicitMods: [{ description: '+25 to Strength' }, { description: '38% more Maximum Physical Attack Damage' }, { description: '31% less Minimum Physical Attack Damage' }, { description: 'Adds 1 to 19 Physical Damage to Attacks' }, { description: '+99 to maximum Life' }, { description: 'Gain 50 Life when you Stun an Enemy' },
 				],
 				flavourText: ['All creatures have the potential for greatness\r', 'or unequivocal failure.'],
 				frameType: 3,
@@ -10557,7 +9800,7 @@ export const tabs = {
 				id: '0ea50c328d1f8fcc8642fe2bf6354344e129151720cba5669afb12a4d6043727',
 				identified: true,
 				ilvl: 64,
-				implicitMods: ['30% increased Stun Duration on Enemies'],
+				implicitMods: [{ description: '30% increased Stun Duration on Enemies' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: "Ryslatha's Coil",
@@ -10637,7 +9880,7 @@ export const tabs = {
 				id: 'c0f07a93ebb446ce572091aa230cd3e887f975390fd71317f7285ca24c8650c0',
 				identified: false,
 				ilvl: 83,
-				implicitMods: ['18% increased Rarity of Items found'],
+				implicitMods: [{ description: '18% increased Rarity of Items found' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: '',
@@ -10655,9 +9898,7 @@ export const tabs = {
 				baseType: 'Shockwave Support',
 				descrText:
 					'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-				explicitMods: [
-					'Supported Skills will Trigger Shockwave on Melee Hit',
-					'Supported Skills can only be used with Maces, Sceptres or Staves',
+				explicitMods: [{ description: 'Supported Skills will Trigger Shockwave on Melee Hit' }, { description: 'Supported Skills can only be used with Maces, Sceptres or Staves' },
 				],
 				frameType: 4,
 				h: 1,
@@ -10824,10 +10065,7 @@ export const tabs = {
 					'1 Added Passive Skill is a Jewel Socket',
 					'Added Small Passive Skills grant: 12% increased Burning Damage',
 				],
-				explicitMods: [
-					'Added Small Passive Skills also grant: +5 to Dexterity',
-					'1 Added Passive Skill is Blowback',
-					'1 Added Passive Skill is Flow of Life',
+				explicitMods: [{ description: 'Added Small Passive Skills also grant: +5 to Dexterity' }, { description: '1 Added Passive Skill is Blowback' }, { description: '1 Added Passive Skill is Flow of Life' },
 				],
 				frameType: 2,
 				h: 1,
@@ -10894,7 +10132,7 @@ export const tabs = {
 				id: '0e1b6b388a36c62915b2a0d54f4399a40ec0b17f37333b48dcea3002bab1e126',
 				identified: false,
 				ilvl: 83,
-				implicitMods: ['+30% to Cold Resistance'],
+				implicitMods: [{ description: '+30% to Cold Resistance' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: '',
@@ -10909,9 +10147,7 @@ export const tabs = {
 				baseType: 'Bloodlust Support',
 				descrText:
 					'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-				explicitMods: [
-					'Supported Skills deal 39% more Melee Physical Damage against Bleeding enemies',
-					'Supported Attacks cannot cause Bleeding',
+				explicitMods: [{ description: 'Supported Skills deal 39% more Melee Physical Damage against Bleeding enemies' }, { description: 'Supported Attacks cannot cause Bleeding' },
 				],
 				frameType: 4,
 				h: 1,
@@ -10948,7 +10184,7 @@ export const tabs = {
 				id: 'a96e0f5ae358c799e67c4f02bc6e31746cf114581987377c6f7d19a6d3640094',
 				identified: false,
 				ilvl: 83,
-				implicitMods: ['+15% to Fire and Cold Resistances'],
+				implicitMods: [{ description: '+15% to Fire and Cold Resistances' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: '',
@@ -10964,7 +10200,7 @@ export const tabs = {
 				baseType: 'Ghastly Eye Jewel',
 				descrText:
 					'Place into an Abyssal Socket on an Item or into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.',
-				explicitMods: ['+48 to maximum Mana', 'Minions have 6% chance to Hinder Enemies on Hit with Spells'],
+				explicitMods: [{ description: '+48 to maximum Mana' }, { description: 'Minions have 6% chance to Hinder Enemies on Hit with Spells' }],
 				frameType: 1,
 				h: 1,
 				icon: 'https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0doYXN0bHlFeWUiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/ed72511412/GhastlyEye.png',
@@ -11016,9 +10252,7 @@ export const tabs = {
 				baseType: 'Bladestorm',
 				descrText:
 					'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-				explicitMods: [
-					'Base duration is 3.00 seconds',
-					'94% more Damage with Bleeding while in Blood Stance',
+				explicitMods: [{ description: 'Base duration is 3.00 seconds' }, { description: '94% more Damage with Bleeding while in Blood Stance' },
 					"11% more Attack Speed while you're in a Blood Bladestorm",
 					'Maximum of 3 Bladestorms at a time',
 					'Sand Bladestorms grant 35% increased Movement Speed to you',
@@ -11068,10 +10302,7 @@ export const tabs = {
 				baseType: 'Pulverise Support',
 				descrText:
 					'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-				explicitMods: [
-					'Supported Skills have 27% increased Area of Effect',
-					'Supported Skills have 15% less Attack Speed',
-					'Supported Skills deal 38% more Melee Area Damage',
+				explicitMods: [{ description: 'Supported Skills have 27% increased Area of Effect' }, { description: 'Supported Skills have 15% less Attack Speed' }, { description: 'Supported Skills deal 38% more Melee Area Damage' },
 				],
 				frameType: 4,
 				h: 1,
@@ -11103,10 +10334,7 @@ export const tabs = {
 				baseType: 'Brutality Support',
 				descrText:
 					'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-				explicitMods: [
-					'Supported Skills deal 39% more Physical Damage',
-					'Supported Skills deal no Chaos Damage',
-					'Supported Skills deal no Elemental Damage',
+				explicitMods: [{ description: 'Supported Skills deal 39% more Physical Damage' }, { description: 'Supported Skills deal no Chaos Damage' }, { description: 'Supported Skills deal no Elemental Damage' },
 				],
 				frameType: 4,
 				h: 1,
@@ -11136,13 +10364,7 @@ export const tabs = {
 			},
 			{
 				baseType: 'Praetor Crown',
-				explicitMods: [
-					'+20 to all Attributes',
-					'119% increased Armour and Energy Shield',
-					'+69 to maximum Life',
-					'-1 to Maximum Power Charges',
-					'Gain 10% of Physical Damage as Extra Chaos Damage while at maximum Power Charges',
-					'You take 50% reduced Extra Damage from Critical Strikes while you have no Power Charges',
+				explicitMods: [{ description: '+20 to all Attributes' }, { description: '119% increased Armour and Energy Shield' }, { description: '+69 to maximum Life' }, { description: '-1 to Maximum Power Charges' }, { description: 'Gain 10% of Physical Damage as Extra Chaos Damage while at maximum Power Charges' }, { description: 'You take 50% reduced Extra Damage from Critical Strikes while you have no Power Charges' },
 				],
 				flavourText: [
 					'"To touch it is to be overwhelmed with the need to carve your name into history.\r',
@@ -11184,7 +10406,7 @@ export const tabs = {
 				baseType: 'Viridian Jewel',
 				descrText:
 					'Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.',
-				explicitMods: ['15% increased Elemental Damage per Grand Spectrum'],
+				explicitMods: [{ description: '15% increased Elemental Damage per Grand Spectrum' }],
 				flavourText: ['Fists that strike like a falling tree.'],
 				frameType: 3,
 				h: 1,
@@ -11208,9 +10430,7 @@ export const tabs = {
 				corrupted: true,
 				descrText:
 					'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-				explicitMods: [
-					'Supported Skills deal 19% more Damage',
-					'Supported Skills have 59% less Skill Effect Duration',
+				explicitMods: [{ description: 'Supported Skills deal 19% more Damage' }, { description: 'Supported Skills have 59% less Skill Effect Duration' },
 				],
 				frameType: 4,
 				h: 1,
@@ -11242,10 +10462,7 @@ export const tabs = {
 			{
 				baseType: 'Crater Map',
 				descrText: 'Travel to this Map by using it in a personal Map Device. Maps can only be used once.',
-				explicitMods: [
-					'25% more Magic Monsters',
-					'Monsters have 391% increased Critical Strike Chance',
-					'+43% to Monster Critical Strike Multiplier',
+				explicitMods: [{ description: '25% more Magic Monsters' }, { description: 'Monsters have 391% increased Critical Strike Chance' }, { description: '+43% to Monster Critical Strike Multiplier' },
 					"Monsters' skills Chain 2 additional times",
 					'+25% Monster Chaos Resistance',
 					'+40% Monster Elemental Resistances',
@@ -11371,7 +10588,7 @@ export const tabs = {
 				id: '12eaf32ddb4a7c720421d1982e31b1919c3d90fd5e8f7919d214f95b63020661',
 				identified: false,
 				ilvl: 82,
-				implicitMods: ['Area is influenced by The Shaper'],
+				implicitMods: [{ description: 'Area is influenced by The Shaper' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: '',
@@ -11390,13 +10607,7 @@ export const tabs = {
 			{
 				baseType: 'Pit of the Chimera Map',
 				descrText: 'Travel to this Map by using it in a personal Map Device. Maps can only be used once.',
-				explicitMods: [
-					'25% more Magic Monsters',
-					'Monsters have 70% chance to Avoid Elemental Ailments',
-					'27% increased Monster Movement Speed',
-					'38% increased Monster Attack Speed',
-					'36% increased Monster Cast Speed',
-					'Monsters take 40% reduced Extra Damage from Critical Strikes',
+				explicitMods: [{ description: '25% more Magic Monsters' }, { description: 'Monsters have 70% chance to Avoid Elemental Ailments' }, { description: '27% increased Monster Movement Speed' }, { description: '38% increased Monster Attack Speed' }, { description: '36% increased Monster Cast Speed' }, { description: 'Monsters take 40% reduced Extra Damage from Critical Strikes' },
 				],
 				frameType: 2,
 				h: 1,
@@ -11404,7 +10615,7 @@ export const tabs = {
 				id: '2ac36aa0365721f3883adae177adc07f4f1146a47b4d5c16ae6f032ee03aad07',
 				identified: true,
 				ilvl: 82,
-				implicitMods: ['Area is influenced by The Shaper'],
+				implicitMods: [{ description: 'Area is influenced by The Shaper' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: 'Forbidden Vault',
@@ -11427,9 +10638,7 @@ export const tabs = {
 				corrupted: true,
 				descrText:
 					'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-				explicitMods: [
-					'Supported Attack Skills deal 34% more Damage while on Full Life',
-					'Supported Skills deal 10% increased Damage',
+				explicitMods: [{ description: 'Supported Attack Skills deal 34% more Damage while on Full Life' }, { description: 'Supported Skills deal 10% increased Damage' },
 				],
 				frameType: 4,
 				h: 1,
@@ -11468,7 +10677,7 @@ export const tabs = {
 				id: '46822df4eaf4fdec3271eef20f5aa54cf8de6e36f23f9001b5504a57a508c58c',
 				identified: false,
 				ilvl: 82,
-				implicitMods: ['Area is influenced by The Shaper'],
+				implicitMods: [{ description: 'Area is influenced by The Shaper' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: '',
@@ -11486,14 +10695,7 @@ export const tabs = {
 			},
 			{
 				baseType: 'Destiny Leather',
-				explicitMods: [
-					'29% increased Evasion Rating',
-					'+75 to maximum Life',
-					'Regenerate 1 Life per second',
-					'+36% to Cold Resistance',
-					'+46% to Lightning Resistance',
-					'12% increased Stun and Block Recovery',
-					'Nearby Enemies are Blinded',
+				explicitMods: [{ description: '29% increased Evasion Rating' }, { description: '+75 to maximum Life' }, { description: 'Regenerate 1 Life per second' }, { description: '+36% to Cold Resistance' }, { description: '+46% to Lightning Resistance' }, { description: '12% increased Stun and Block Recovery' }, { description: 'Nearby Enemies are Blinded' },
 				],
 				frameType: 2,
 				h: 3,
@@ -11528,7 +10730,7 @@ export const tabs = {
 				id: 'ddb3dbbac7fd8cc210aa759deec68c3aae318e7ccb37939b3c1e67ecd72777bc',
 				identified: false,
 				ilvl: 82,
-				implicitMods: ['Area is influenced by The Shaper'],
+				implicitMods: [{ description: 'Area is influenced by The Shaper' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: '',
@@ -11547,12 +10749,7 @@ export const tabs = {
 			{
 				baseType: 'Pit of the Chimera Map',
 				descrText: 'Travel to this Map by using it in a personal Map Device. Maps can only be used once.',
-				explicitMods: [
-					'Area contains many Totems',
-					'Players are Cursed with Vulnerability',
-					'Players are Cursed with Temporal Chains',
-					'Players are Cursed with Elemental Weakness',
-					'Monsters are Hexproof',
+				explicitMods: [{ description: 'Area contains many Totems' }, { description: 'Players are Cursed with Vulnerability' }, { description: 'Players are Cursed with Temporal Chains' }, { description: 'Players are Cursed with Elemental Weakness' }, { description: 'Monsters are Hexproof' },
 				],
 				frameType: 2,
 				h: 1,
@@ -11560,7 +10757,7 @@ export const tabs = {
 				id: '4ff4e481ee7d4794d81266022c4864e49662cd7b4079b7e7ae05fe291c5596b7',
 				identified: true,
 				ilvl: 82,
-				implicitMods: ['Area is influenced by The Shaper'],
+				implicitMods: [{ description: 'Area is influenced by The Shaper' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: 'Stained Haven',
@@ -11581,11 +10778,7 @@ export const tabs = {
 			{
 				baseType: 'Pit of the Chimera Map',
 				descrText: 'Travel to this Map by using it in a personal Map Device. Maps can only be used once.',
-				explicitMods: [
-					'Players are Cursed with Vulnerability',
-					'25% increased Monster Damage',
-					'Monsters fire 2 additional Projectiles',
-					'+40% Monster Physical Damage Reduction',
+				explicitMods: [{ description: 'Players are Cursed with Vulnerability' }, { description: '25% increased Monster Damage' }, { description: 'Monsters fire 2 additional Projectiles' }, { description: '+40% Monster Physical Damage Reduction' },
 				],
 				frameType: 2,
 				h: 1,
@@ -11593,7 +10786,7 @@ export const tabs = {
 				id: '805cd6f916448ec56832f64c3710aa62bb313a37f3bf740a802c049ee3f28d44',
 				identified: true,
 				ilvl: 82,
-				implicitMods: ['Area is influenced by The Shaper'],
+				implicitMods: [{ description: 'Area is influenced by The Shaper' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: 'Pain Quarters',
@@ -11620,7 +10813,7 @@ export const tabs = {
 				id: '2b1311f2d3f2efd8f1456a208aac6330301abb3b3e3ef5c2da92fdbcc9769b1e',
 				identified: false,
 				ilvl: 82,
-				implicitMods: ['Area is influenced by The Shaper'],
+				implicitMods: [{ description: 'Area is influenced by The Shaper' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: '',
@@ -11659,11 +10852,7 @@ export const tabs = {
 			{
 				baseType: 'Granite Flask',
 				descrText: 'Right click to drink. Can only hold charges while in belt. Refills as you kill monsters.',
-				explicitMods: [
-					'Knocks Back Enemies in an Area when you use a Flask',
-					'75% chance to cause Enemies to Flee on use',
-					'Adds Knockback to Melee Attacks during Effect',
-					'25% more Melee Physical Damage during effect',
+				explicitMods: [{ description: 'Knocks Back Enemies in an Area when you use a Flask' }, { description: '75% chance to cause Enemies to Flee on use' }, { description: 'Adds Knockback to Melee Attacks during Effect' }, { description: '25% more Melee Physical Damage during effect' },
 				],
 				flavourText: ['A sprinkle of hunger, a spoonful of menace\r', 'and three generous cups of Might.'],
 				frameType: 3,
@@ -11700,13 +10889,7 @@ export const tabs = {
 				baseType: 'Goliath Greaves',
 				craftedMods: ['+32% to Cold Resistance'],
 				enchantMods: ['Regenerate 2% of Life per second if you were Hit Recently'],
-				explicitMods: [
-					'32% reduced Attribute Requirements',
-					'31% increased Armour',
-					'+85 to maximum Life',
-					'+31% to Lightning Resistance',
-					'25% increased Movement Speed',
-					'13% increased Stun and Block Recovery',
+				explicitMods: [{ description: '32% reduced Attribute Requirements' }, { description: '31% increased Armour' }, { description: '+85 to maximum Life' }, { description: '+31% to Lightning Resistance' }, { description: '25% increased Movement Speed' }, { description: '13% increased Stun and Block Recovery' },
 				],
 				frameType: 2,
 				h: 2,
@@ -11714,7 +10897,7 @@ export const tabs = {
 				id: '99d621849802a85180a85ba6d5b9ee5f13bd46ed64e105f0d0e274d33cce5650',
 				identified: true,
 				ilvl: 83,
-				implicitMods: ['+10 to maximum Life', '+1 to Maximum Endurance Charges'],
+				implicitMods: [{ description: '+10 to maximum Life' }, { description: '+1 to Maximum Endurance Charges' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: 'Spirit Span',
@@ -11743,15 +10926,7 @@ export const tabs = {
 						colour: 'S',
 						descrText:
 							'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-						explicitMods: [
-							'You and nearby allies gain 21% increased Accuracy Rating',
-							'Nearby Enemies take 11% increased Physical Damage',
-							'Gain 1 Stage when you Kill an Enemy while carrying the Banner',
-							'Gain Adrenaline for 0.05 seconds per Stage on Placing the Banner',
-							'Base Duration of 10.00 seconds after being Placed',
-							'+1 second to Base Placed Banner Duration per Stage',
-							'When placed, 8% increased Area of Effect per Stage',
-							'When placed, 1% increased Aura effect per Stage',
+						explicitMods: [{ description: 'You and nearby allies gain 21% increased Accuracy Rating' }, { description: 'Nearby Enemies take 11% increased Physical Damage' }, { description: 'Gain 1 Stage when you Kill an Enemy while carrying the Banner' }, { description: 'Gain Adrenaline for 0.05 seconds per Stage on Placing the Banner' }, { description: 'Base Duration of 10.00 seconds after being Placed' }, { description: '+1 second to Base Placed Banner Duration per Stage' }, { description: 'When placed, 8% increased Area of Effect per Stage' }, { description: 'When placed, 1% increased Aura effect per Stage' },
 						],
 						frameType: 4,
 						h: 1,
@@ -11794,15 +10969,7 @@ export const tabs = {
 						colour: 'S',
 						descrText:
 							'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-						explicitMods: [
-							'50% of Physical Damage Converted to Lightning Damage',
-							'Base duration is 4.00 seconds',
-							'21% less Area Damage',
-							'Base radius is 2.1 metres',
-							'Base Aura radius is 4.2 metres',
-							'Lightning strikes 1 target within 5 metres',
-							'Aura grants 10 to 195 added Lightning Damage',
-							'Aura grants 19% chance to Shock',
+						explicitMods: [{ description: '50% of Physical Damage Converted to Lightning Damage' }, { description: 'Base duration is 4.00 seconds' }, { description: '21% less Area Damage' }, { description: 'Base radius is 2.1 metres' }, { description: 'Base Aura radius is 4.2 metres' }, { description: 'Lightning strikes 1 target within 5 metres' }, { description: 'Aura grants 10 to 195 added Lightning Damage' }, { description: 'Aura grants 19% chance to Shock' },
 						],
 						frameType: 4,
 						h: 1,
@@ -11851,12 +11018,7 @@ export const tabs = {
 						colour: 'S',
 						descrText:
 							'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-						explicitMods: [
-							'Totem lasts 12 seconds',
-							'Summons a Totem which uses this Skill',
-							'19% more Attack Speed while Totem is Active',
-							'50% increased Totem Placement speed',
-							'+1.8 metres to Melee Strike Range',
+						explicitMods: [{ description: 'Totem lasts 12 seconds' }, { description: 'Summons a Totem which uses this Skill' }, { description: '19% more Attack Speed while Totem is Active' }, { description: '50% increased Totem Placement speed' }, { description: '+1.8 metres to Melee Strike Range' },
 						],
 						frameType: 4,
 						h: 1,
@@ -11903,11 +11065,7 @@ export const tabs = {
 				baseType: 'Crimson Jewel',
 				descrText:
 					'Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.',
-				explicitMods: [
-					'15% increased Global Physical Damage',
-					'7% increased maximum Life',
-					'10% increased Projectile Damage',
-					'4% increased Attack and Cast Speed',
+				explicitMods: [{ description: '15% increased Global Physical Damage' }, { description: '7% increased maximum Life' }, { description: '10% increased Projectile Damage' }, { description: '4% increased Attack and Cast Speed' },
 				],
 				frameType: 2,
 				h: 1,
@@ -11928,12 +11086,7 @@ export const tabs = {
 			{
 				baseType: 'Ruby Ring',
 				craftedMods: ['+28% to Lightning Resistance'],
-				explicitMods: [
-					'Adds 3 to 6 Physical Damage to Attacks',
-					'+52 to maximum Life',
-					'+63 to maximum Mana',
-					'+15% to all Elemental Resistances',
-					'+45% to Cold Resistance',
+				explicitMods: [{ description: 'Adds 3 to 6 Physical Damage to Attacks' }, { description: '+52 to maximum Life' }, { description: '+63 to maximum Mana' }, { description: '+15% to all Elemental Resistances' }, { description: '+45% to Cold Resistance' },
 				],
 				frameType: 2,
 				h: 1,
@@ -11941,7 +11094,7 @@ export const tabs = {
 				id: '92e5f80d00791145838b76da5a4e9aa3a496f7cb629244ede243548fa9e3e080',
 				identified: true,
 				ilvl: 74,
-				implicitMods: ['+25% to Fire Resistance'],
+				implicitMods: [{ description: '+25% to Fire Resistance' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: 'Agony Hold',
@@ -11957,11 +11110,7 @@ export const tabs = {
 				baseType: 'Eternal Burgonet',
 				craftedMods: ['+11% to Fire and Lightning Resistances'],
 				enchantMods: ['Spectral Shield Throw fires 5 additional Shard Projectiles'],
-				explicitMods: [
-					'+160 to Accuracy Rating',
-					'90% increased Armour',
-					'+80 to maximum Life',
-					'+41% to Fire Resistance',
+				explicitMods: [{ description: '+160 to Accuracy Rating' }, { description: '90% increased Armour' }, { description: '+80 to maximum Life' }, { description: '+41% to Fire Resistance' },
 				],
 				frameType: 2,
 				h: 2,
@@ -11997,14 +11146,7 @@ export const tabs = {
 			{
 				baseType: 'Crusader Gloves',
 				corrupted: true,
-				explicitMods: [
-					'107% increased Armour and Energy Shield',
-					'+4 Accuracy Rating per 2 Intelligence',
-					'+1 Life per 4 Dexterity',
-					'+2 Mana per 4 Strength',
-					'2% increased Energy Shield per 10 Strength',
-					'2% increased Evasion Rating per 10 Intelligence',
-					'2% increased Melee Physical Damage per 10 Dexterity',
+				explicitMods: [{ description: '107% increased Armour and Energy Shield' }, { description: '+4 Accuracy Rating per 2 Intelligence' }, { description: '+1 Life per 4 Dexterity' }, { description: '+2 Mana per 4 Strength' }, { description: '2% increased Energy Shield per 10 Strength' }, { description: '2% increased Evasion Rating per 10 Intelligence' }, { description: '2% increased Melee Physical Damage per 10 Dexterity' },
 				],
 				flavourText: [
 					'By my hand, the inert is given life.\r',
@@ -12049,12 +11191,7 @@ export const tabs = {
 			},
 			{
 				baseType: 'Full Wyrmscale',
-				explicitMods: [
-					'180% increased Armour',
-					'38% increased maximum Life',
-					'+15% to all Elemental Resistances',
-					'50% increased Flask Life Recovery rate',
-					'Extra gore',
+				explicitMods: [{ description: '180% increased Armour' }, { description: '38% increased maximum Life' }, { description: '+15% to all Elemental Resistances' }, { description: '50% increased Flask Life Recovery rate' }, { description: 'Extra gore' },
 				],
 				flavourText: ['There is no safer place\r', 'Than the Belly of the Beast'],
 				frameType: 3,
@@ -12097,7 +11234,7 @@ export const tabs = {
 				corrupted: true,
 				descrText:
 					'Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.',
-				explicitMods: ['15% increased Elemental Damage per Grand Spectrum'],
+				explicitMods: [{ description: '15% increased Elemental Damage per Grand Spectrum' }],
 				flavourText: ['Fists that strike like a falling tree.'],
 				frameType: 3,
 				h: 1,
@@ -12105,7 +11242,7 @@ export const tabs = {
 				id: '329e84978dfc4aad38f850f3df8d8586ce763d52c0d244779ea8ae161ba4d467',
 				identified: true,
 				ilvl: 58,
-				implicitMods: ['Overwhelm 2% Physical Damage Reduction'],
+				implicitMods: [{ description: 'Overwhelm 2% Physical Damage Reduction' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: 'Grand Spectrum',
@@ -12122,9 +11259,7 @@ export const tabs = {
 				corrupted: true,
 				descrText:
 					'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-				explicitMods: [
-					'Supported Skills have 137% increased Critical Strike Chance',
-					'Supported Skills have +2% to Critical Strike Chance',
+				explicitMods: [{ description: 'Supported Skills have 137% increased Critical Strike Chance' }, { description: 'Supported Skills have +2% to Critical Strike Chance' },
 				],
 				frameType: 4,
 				h: 1,
@@ -12156,12 +11291,7 @@ export const tabs = {
 			{
 				baseType: 'Penetrating Arrow Quiver',
 				corrupted: true,
-				explicitMods: [
-					'8% increased Attack Speed',
-					'+350 to Evasion Rating',
-					'+48 to maximum Life',
-					'14 to 24 Added Physical Damage with Bow Attacks',
-					'Arrows deal 50% increased Damage with Hits and Ailments to Targets they Pierce',
+				explicitMods: [{ description: '8% increased Attack Speed' }, { description: '+350 to Evasion Rating' }, { description: '+48 to maximum Life' }, { description: '14 to 24 Added Physical Damage with Bow Attacks' }, { description: 'Arrows deal 50% increased Damage with Hits and Ailments to Targets they Pierce' },
 				],
 				flavourText: ['"Why waste such a fine arrow on just one man?" \r', '- Kiravi, Vaal Archer'],
 				frameType: 3,
@@ -12190,10 +11320,7 @@ export const tabs = {
 					'2 Added Passive Skills are Jewel Sockets',
 					'Added Small Passive Skills grant: 12% increased Damage with Bows\nAdded Small Passive Skills grant: 12% increased Damage Over Time with Bow Skills',
 				],
-				explicitMods: [
-					'Added Small Passive Skills also grant: +2% to all Elemental Resistances',
-					'1 Added Passive Skill is Martial Prowess',
-					'1 Added Passive Skill is Tempered Arrowheads',
+				explicitMods: [{ description: 'Added Small Passive Skills also grant: +2% to all Elemental Resistances' }, { description: '1 Added Passive Skill is Martial Prowess' }, { description: '1 Added Passive Skill is Tempered Arrowheads' },
 				],
 				frameType: 2,
 				h: 1,
@@ -12217,11 +11344,7 @@ export const tabs = {
 				corrupted: true,
 				descrText:
 					'This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Skill Gem you wish to augment. Right click to remove from a socket.',
-				explicitMods: [
-					'Supported Triggered Spells deal 30% less Damage',
-					'Trigger a Supported Spell every 0.35 seconds while Channelling Supported Skills',
-					'Supported Channelling Skills deal 8% increased Damage',
-					'Supported Triggered Spells deal 8% increased Damage',
+				explicitMods: [{ description: 'Supported Triggered Spells deal 30% less Damage' }, { description: 'Trigger a Supported Spell every 0.35 seconds while Channelling Supported Skills' }, { description: 'Supported Channelling Skills deal 8% increased Damage' }, { description: 'Supported Triggered Spells deal 8% increased Damage' },
 				],
 				frameType: 4,
 				h: 1,
@@ -12254,11 +11377,7 @@ export const tabs = {
 			},
 			{
 				baseType: "Assassin's Garb",
-				explicitMods: [
-					'89% increased Evasion Rating',
-					'+86 to maximum Life',
-					'+24% to Fire Resistance',
-					'+39% to Cold Resistance',
+				explicitMods: [{ description: '89% increased Evasion Rating' }, { description: '+86 to maximum Life' }, { description: '+24% to Fire Resistance' }, { description: '+39% to Cold Resistance' },
 				],
 				frameType: 2,
 				h: 3,
@@ -12266,7 +11385,7 @@ export const tabs = {
 				id: 'fd5c0095fd7fa35ceab7b5cf7e5f43374105ab2f8bdce66f2ced1f64a6061021',
 				identified: true,
 				ilvl: 72,
-				implicitMods: ['3% increased Movement Speed'],
+				implicitMods: [{ description: '3% increased Movement Speed' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: 'Brood Shell',
@@ -12296,10 +11415,7 @@ export const tabs = {
 					'1 Added Passive Skill is a Jewel Socket',
 					'Added Small Passive Skills grant: 12% increased Burning Damage',
 				],
-				explicitMods: [
-					'Added Small Passive Skills also grant: 1% increased Damage over Time',
-					'1 Added Passive Skill is Blowback',
-					'1 Added Passive Skill is Exposure Therapy',
+				explicitMods: [{ description: 'Added Small Passive Skills also grant: 1% increased Damage over Time' }, { description: '1 Added Passive Skill is Blowback' }, { description: '1 Added Passive Skill is Exposure Therapy' },
 				],
 				frameType: 2,
 				h: 1,
@@ -12320,11 +11436,7 @@ export const tabs = {
 			},
 			{
 				baseType: 'Triumphant Lamellar',
-				explicitMods: [
-					'65% increased Chaos Damage',
-					'176% increased Armour and Evasion',
-					'+83 to maximum Life',
-					'100% increased total Recovery per second from Life Leech',
+				explicitMods: [{ description: '65% increased Chaos Damage' }, { description: '176% increased Armour and Evasion' }, { description: '+83 to maximum Life' }, { description: '100% increased total Recovery per second from Life Leech' },
 				],
 				flavourText: [
 					'"The Consort of Chaos descended,\r',
@@ -12367,10 +11479,7 @@ export const tabs = {
 						colour: 'D',
 						descrText:
 							'Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.',
-						explicitMods: [
-							'+1.8 metres to radius',
-							'You and nearby allies gain 2335 additional Evasion Rating',
-							'You and nearby allies gain 29% more Evasion rating',
+						explicitMods: [{ description: '+1.8 metres to radius' }, { description: 'You and nearby allies gain 2335 additional Evasion Rating' }, { description: 'You and nearby allies gain 29% more Evasion rating' },
 						],
 						frameType: 4,
 						h: 1,
@@ -12412,13 +11521,7 @@ export const tabs = {
 			{
 				baseType: 'Studded Belt',
 				corrupted: true,
-				explicitMods: [
-					'+36 to Strength',
-					'37% more Maximum Physical Attack Damage',
-					'36% less Minimum Physical Attack Damage',
-					'Adds 1 to 19 Physical Damage to Attacks',
-					'+84 to maximum Life',
-					'Gain 50 Life when you Stun an Enemy',
+				explicitMods: [{ description: '+36 to Strength' }, { description: '37% more Maximum Physical Attack Damage' }, { description: '36% less Minimum Physical Attack Damage' }, { description: 'Adds 1 to 19 Physical Damage to Attacks' }, { description: '+84 to maximum Life' }, { description: 'Gain 50 Life when you Stun an Enemy' },
 				],
 				flavourText: ['All creatures have the potential for greatness\r', 'or unequivocal failure.'],
 				frameType: 3,
@@ -12427,7 +11530,7 @@ export const tabs = {
 				id: '5e7307c704c49d31da50764d2c09b9b4aeed0fdbf9f1f39deecced24d4014695',
 				identified: true,
 				ilvl: 82,
-				implicitMods: ['29% increased Stun Duration on Enemies'],
+				implicitMods: [{ description: '29% increased Stun Duration on Enemies' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: "Ryslatha's Coil",
@@ -12443,11 +11546,7 @@ export const tabs = {
 				baseType: 'Crimson Jewel',
 				descrText:
 					'Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.',
-				explicitMods: [
-					'6% increased Attack Speed with Two Handed Melee Weapons',
-					'5% increased maximum Life',
-					'+11% to Fire and Cold Resistances',
-					'+11% to Fire and Lightning Resistances',
+				explicitMods: [{ description: '6% increased Attack Speed with Two Handed Melee Weapons' }, { description: '5% increased maximum Life' }, { description: '+11% to Fire and Cold Resistances' }, { description: '+11% to Fire and Lightning Resistances' },
 				],
 				frameType: 2,
 				h: 1,
@@ -12470,7 +11569,7 @@ export const tabs = {
 				corrupted: true,
 				descrText:
 					'Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.',
-				explicitMods: ['16% increased Damage per Curse on you', 'An additional Curse can be applied to you'],
+				explicitMods: [{ description: '16% increased Damage per Curse on you' }, { description: 'An additional Curse can be applied to you' }],
 				flavourText: ['Beg for forgiveness.'],
 				frameType: 3,
 				h: 1,
@@ -12493,12 +11592,7 @@ export const tabs = {
 				baseType: 'Maze of the Minotaur Map',
 				corrupted: true,
 				descrText: 'Travel to this Map by using it in a personal Map Device. Maps can only be used once.',
-				explicitMods: [
-					'Players are Cursed with Vulnerability',
-					'42% more Monster Life',
-					'Monsters reflect 18% of Elemental Damage',
-					'Monsters have a 20% chance to Ignite, Freeze and Shock on Hit',
-					'Players cannot Regenerate Life, Mana or Energy Shield',
+				explicitMods: [{ description: 'Players are Cursed with Vulnerability' }, { description: '42% more Monster Life' }, { description: 'Monsters reflect 18% of Elemental Damage' }, { description: 'Monsters have a 20% chance to Ignite, Freeze and Shock on Hit' }, { description: 'Players cannot Regenerate Life, Mana or Energy Shield' },
 				],
 				frameType: 2,
 				h: 1,
@@ -12526,11 +11620,7 @@ export const tabs = {
 			{
 				baseType: 'Granite Flask',
 				descrText: 'Right click to drink. Can only hold charges while in belt. Refills as you kill monsters.',
-				explicitMods: [
-					'Knocks Back Enemies in an Area when you use a Flask',
-					'75% chance to cause Enemies to Flee on use',
-					'Adds Knockback to Melee Attacks during Effect',
-					'33% more Melee Physical Damage during effect',
+				explicitMods: [{ description: 'Knocks Back Enemies in an Area when you use a Flask' }, { description: '75% chance to cause Enemies to Flee on use' }, { description: 'Adds Knockback to Melee Attacks during Effect' }, { description: '33% more Melee Physical Damage during effect' },
 				],
 				flavourText: ['A sprinkle of hunger, a spoonful of menace\r', 'and three generous cups of Might.'],
 				frameType: 3,
@@ -12567,12 +11657,7 @@ export const tabs = {
 			{
 				baseType: 'Ruby Ring',
 				craftedMods: ['+54 to maximum Life'],
-				explicitMods: [
-					'Adds 7 to 16 Fire Damage to Attacks',
-					'+4% to all Elemental Resistances',
-					'+47% to Cold Resistance',
-					'+43% to Lightning Resistance',
-					'0.25% of Physical Attack Damage Leeched as Mana',
+				explicitMods: [{ description: 'Adds 7 to 16 Fire Damage to Attacks' }, { description: '+4% to all Elemental Resistances' }, { description: '+47% to Cold Resistance' }, { description: '+43% to Lightning Resistance' }, { description: '0.25% of Physical Attack Damage Leeched as Mana' },
 				],
 				frameType: 2,
 				h: 1,
@@ -12580,7 +11665,7 @@ export const tabs = {
 				id: '593a841eec6a647014bcc0a4310210b7a643c0baa4d57e91170aea321e8719ed',
 				identified: true,
 				ilvl: 85,
-				implicitMods: ['+27% to Fire Resistance'],
+				implicitMods: [{ description: '+27% to Fire Resistance' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: 'Behemoth Loop',
@@ -12595,7 +11680,7 @@ export const tabs = {
 			{
 				baseType: 'Quicksilver Flask',
 				descrText: 'Right click to drink. Can only hold charges while in belt. Refills as you kill monsters.',
-				explicitMods: ['20% increased Charge Recovery', '30% increased Movement Speed during Effect'],
+				explicitMods: [{ description: '20% increased Charge Recovery' }, { description: '30% increased Movement Speed during Effect' }],
 				frameType: 1,
 				h: 2,
 				icon: 'https://web.poecdn.com/gen/image/WzksMTQseyJmIjoiMkRJdGVtcy9GbGFza3Mvc3ByaW50IiwidyI6MSwiaCI6Miwic2NhbGUiOjEsImxldmVsIjoxfV0/aa66be180b/sprint.png',
@@ -12630,13 +11715,7 @@ export const tabs = {
 			{
 				baseType: 'Citrine Amulet',
 				corrupted: true,
-				explicitMods: [
-					'50% reduced maximum Energy Shield',
-					'+36% to Fire Resistance',
-					'+34% to Cold Resistance',
-					'10% increased Movement Speed when on Full Life',
-					'+0.2 metres to Melee Strike Range',
-					'60% increased Melee Damage when on Full Life',
+				explicitMods: [{ description: '50% reduced maximum Energy Shield' }, { description: '+36% to Fire Resistance' }, { description: '+34% to Cold Resistance' }, { description: '10% increased Movement Speed when on Full Life' }, { description: '+0.2 metres to Melee Strike Range' }, { description: '60% increased Melee Damage when on Full Life' },
 				],
 				flavourText: [
 					'"A bit short in the arm, are you? \r',
@@ -12649,7 +11728,7 @@ export const tabs = {
 				id: 'ecbe812661657148a826a014134dfcc5818b501bba3ff2d36e5185bb9cb9cefb',
 				identified: true,
 				ilvl: 27,
-				implicitMods: ['6% increased Strength', '9% increased Dexterity', '6% increased Intelligence'],
+				implicitMods: [{ description: '6% increased Strength' }, { description: '9% increased Dexterity' }, { description: '6% increased Intelligence' }],
 				inventoryId: 'Stash1',
 				league: 'Standard',
 				name: "Daresso's Salute",

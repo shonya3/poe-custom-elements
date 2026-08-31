@@ -276,9 +276,7 @@ export const blight: TabWithItems = {
 			id: 'd4c89c222cb230854a0ad3080db5bf3c917fd558a135b00eb32e9d4fc055ab90',
 			identified: true,
 			ilvl: 83,
-			implicitMods: [
-				"Area is infested with Fungal Growths\nMap's Item Quantity Modifiers also affect Blight Chest count at 25% value\nCan be Anointed up to 3 times",
-				'Natural inhabitants of this area have been removed',
+			implicitMods: [{ description: 'Area is infested with Fungal Growths\\nMap\'s Item Quantity Modifiers also affect Blight Chest count at 25% value\\nCan be Anointed up to 3 times' }, { description: 'Natural inhabitants of this area have been removed' },
 			],
 			inventoryId: 'Stash1',
 			league: 'Standard',
@@ -300,9 +298,7 @@ export const blight: TabWithItems = {
 			id: 'c2124e3306dd26a40c4e092aa2165fcbb3ce35b6345a9d8348a392a3cfd4210a',
 			identified: true,
 			ilvl: 83,
-			implicitMods: [
-				"Area is infested with Fungal Growths\nMap's Item Quantity Modifiers also affect Blight Chest count at 25% value\nCan be Anointed up to 3 times",
-				'Natural inhabitants of this area have been removed',
+			implicitMods: [{ description: 'Area is infested with Fungal Growths\\nMap\'s Item Quantity Modifiers also affect Blight Chest count at 25% value\\nCan be Anointed up to 3 times' }, { description: 'Natural inhabitants of this area have been removed' },
 			],
 			inventoryId: 'Stash1',
 			league: 'Standard',
@@ -324,9 +320,7 @@ export const blight: TabWithItems = {
 			id: '7d654bc156a7b486d83a9885e6aca9caf0b5ec3c64dfbb42ccdd646fcef980f9',
 			identified: true,
 			ilvl: 82,
-			implicitMods: [
-				"Area is infested with Fungal Growths\nMap's Item Quantity Modifiers also affect Blight Chest count at 25% value\nCan be Anointed up to 3 times",
-				'Natural inhabitants of this area have been removed',
+			implicitMods: [{ description: 'Area is infested with Fungal Growths\\nMap\'s Item Quantity Modifiers also affect Blight Chest count at 25% value\\nCan be Anointed up to 3 times' }, { description: 'Natural inhabitants of this area have been removed' },
 			],
 			inventoryId: 'Stash1',
 			league: 'Standard',
@@ -348,9 +342,7 @@ export const blight: TabWithItems = {
 			id: 'ef060852531f7072d6f3eb2c28e5c3619515241b35e019d0c413c99420410a21',
 			identified: true,
 			ilvl: 84,
-			implicitMods: [
-				"Area is infested with Fungal Growths\nMap's Item Quantity Modifiers also affect Blight Chest count at 25% value\nCan be Anointed up to 3 times",
-				'Natural inhabitants of this area have been removed',
+			implicitMods: [{ description: 'Area is infested with Fungal Growths\\nMap\'s Item Quantity Modifiers also affect Blight Chest count at 25% value\\nCan be Anointed up to 3 times' }, { description: 'Natural inhabitants of this area have been removed' },
 			],
 			inventoryId: 'Stash1',
 			league: 'Standard',
@@ -372,9 +364,7 @@ export const blight: TabWithItems = {
 			id: 'fc21ac8cc5e1ed7cf23484e3b951df568af5b2c768d29e96ea0d84c3790f14bb',
 			identified: true,
 			ilvl: 81,
-			implicitMods: [
-				"Area is infested with Fungal Growths\nMap's Item Quantity Modifiers also affect Blight Chest count at 25% value\nCan be Anointed up to 3 times",
-				'Natural inhabitants of this area have been removed',
+			implicitMods: [{ description: 'Area is infested with Fungal Growths\\nMap\'s Item Quantity Modifiers also affect Blight Chest count at 25% value\\nCan be Anointed up to 3 times' }, { description: 'Natural inhabitants of this area have been removed' },
 			],
 			inventoryId: 'Stash1',
 			league: 'Standard',
@@ -396,9 +386,7 @@ export const blight: TabWithItems = {
 			id: '1f40a42a5ee8c4636ababe40f2ea46baef82d881ca0d40e06700dbb862b9ecc7',
 			identified: true,
 			ilvl: 81,
-			implicitMods: [
-				"Area is infested with Fungal Growths\nMap's Item Quantity Modifiers also affect Blight Chest count at 25% value\nCan be Anointed up to 3 times",
-				'Natural inhabitants of this area have been removed',
+			implicitMods: [{ description: 'Area is infested with Fungal Growths\\nMap\'s Item Quantity Modifiers also affect Blight Chest count at 25% value\\nCan be Anointed up to 3 times' }, { description: 'Natural inhabitants of this area have been removed' },
 			],
 			inventoryId: 'Stash1',
 			league: 'Standard',
@@ -420,9 +408,7 @@ export const blight: TabWithItems = {
 			id: 'ec88150223017896f56b4276bd1ca3ea371f9876c4ee0df0e9bc38c8908e42a4',
 			identified: true,
 			ilvl: 82,
-			implicitMods: [
-				"Area is infested with Fungal Growths\nMap's Item Quantity Modifiers also affect Blight Chest count at 25% value\nCan be Anointed up to 3 times",
-				'Natural inhabitants of this area have been removed',
+			implicitMods: [{ description: 'Area is infested with Fungal Growths\\nMap\'s Item Quantity Modifiers also affect Blight Chest count at 25% value\\nCan be Anointed up to 3 times' }, { description: 'Natural inhabitants of this area have been removed' },
 			],
 			inventoryId: 'Stash1',
 			league: 'Standard',
@@ -444,9 +430,7 @@ export const blight: TabWithItems = {
 			id: 'ee4e55075bca4bde857110ee06a1bf9af810d6e61aded74fe631804dd273714a',
 			identified: true,
 			ilvl: 82,
-			implicitMods: [
-				"Area is infested with Fungal Growths\nMap's Item Quantity Modifiers also affect Blight Chest count at 25% value\nCan be Anointed up to 3 times",
-				'Natural inhabitants of this area have been removed',
+			implicitMods: [{ description: 'Area is infested with Fungal Growths\\nMap\'s Item Quantity Modifiers also affect Blight Chest count at 25% value\\nCan be Anointed up to 3 times' }, { description: 'Natural inhabitants of this area have been removed' },
 			],
 			inventoryId: 'Stash1',
 			league: 'Standard',
@@ -468,9 +452,7 @@ export const blight: TabWithItems = {
 			id: '9ef3887fa32158d1cad8817834ee3ba06628f557b390e140a9f4f1e91c53ffa4',
 			identified: true,
 			ilvl: 83,
-			implicitMods: [
-				"Area is infested with Fungal Growths\nMap's Item Quantity Modifiers also affect Blight Chest count at 25% value\nCan be Anointed up to 3 times",
-				'Natural inhabitants of this area have been removed',
+			implicitMods: [{ description: 'Area is infested with Fungal Growths\\nMap\'s Item Quantity Modifiers also affect Blight Chest count at 25% value\\nCan be Anointed up to 3 times' }, { description: 'Natural inhabitants of this area have been removed' },
 			],
 			inventoryId: 'Stash1',
 			league: 'Standard',
@@ -492,9 +474,7 @@ export const blight: TabWithItems = {
 			id: 'a191550061c42d6076c8cbe220c03630162dd93dd773dd7960b8b0969ba787cb',
 			identified: true,
 			ilvl: 83,
-			implicitMods: [
-				"Area is infested with Fungal Growths\nMap's Item Quantity Modifiers also affect Blight Chest count at 25% value\nCan be Anointed up to 3 times",
-				'Natural inhabitants of this area have been removed',
+			implicitMods: [{ description: 'Area is infested with Fungal Growths\\nMap\'s Item Quantity Modifiers also affect Blight Chest count at 25% value\\nCan be Anointed up to 3 times' }, { description: 'Natural inhabitants of this area have been removed' },
 			],
 			inventoryId: 'Stash1',
 			league: 'Standard',
@@ -515,4 +495,4 @@ export const blight: TabWithItems = {
 	metadata: { colour: 'ffd500' },
 	name: 'Oil (Remove-only)',
 	type: 'BlightStash',
-} satisfies TabWithItems;
+} as TabWithItems;

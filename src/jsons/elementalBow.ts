@@ -1,11 +1,7 @@
 import { PoeItem } from '../poe.types.js';
 export const elementalBow = {
 	baseType: 'Decimation Bow',
-	explicitMods: [
-		'Adds 85 to 176 Fire Damage',
-		'Adds 101 to 156 Cold Damage',
-		'Adds 3 to 47 Lightning Damage',
-		'+24% to Global Critical Strike Multiplier',
+	explicitMods: [{ description: 'Adds 85 to 176 Fire Damage' }, { description: 'Adds 101 to 156 Cold Damage' }, { description: 'Adds 3 to 47 Lightning Damage' }, { description: '+24% to Global Critical Strike Multiplier' },
 	],
 	frameType: 2,
 	h: 4,
@@ -13,7 +9,7 @@ export const elementalBow = {
 	id: 'a554ec0f46a4801ef9115d6ff87e7816b1523e6b3b98c80db138d7930feee002',
 	identified: true,
 	ilvl: 55,
-	implicitMods: ['46% increased Critical Strike Chance'],
+	implicitMods: [{ description: '46% increased Critical Strike Chance' }],
 	inventoryId: 'Stash1',
 	league: 'Standard',
 	name: 'Foe Volley',
